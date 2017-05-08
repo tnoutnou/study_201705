@@ -1,0 +1,187 @@
+2017-05-02 17:26:19 Error: [MissingControllerException] Controller class PsotsController could not be found.
+Exception Attributes: array (
+  'class' => 'PsotsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/psots
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-02 19:06:53 Error: Fatal Error (1): Call to a member function success() on a non-object in [/var/www/html/vagrant/cakephpc/app/Controller/GroupsController.php, line 52]
+2017-05-02 19:06:53 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /cakephpc/groups/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/v...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/v...', 52, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/v...', 52, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-08 10:01:54 Error: Fatal Error (1): Call to a member function success() on a non-object in [/var/www/html/vagrant/cakephpc/app/Controller/GroupsController.php, line 52]
+2017-05-08 10:01:54 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /cakephpc/groups/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/v...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/v...', 52, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/v...', 52, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-08 12:24:11 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 12:30:30 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 12:30:38 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 12:31:39 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 12:58:04 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 14:27:00 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 14:27:31 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 14:27:46 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 14:42:46 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 14:43:31 Error: Fatal Error (1): Call to a member function success() on a non-object in [/var/www/html/vagrant/cakephpc/app/Controller/CategoriesController.php, line 52]
+2017-05-08 14:43:31 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /cakephpc/categories/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/v...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/v...', 52, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/v...', 52, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-08 15:09:11 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/Category.php, line 27]
+2017-05-08 15:09:11 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting function (T_FUNCTION)
+Request URL: /cakephpc/categories/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 27, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 27, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-08 15:11:39 Error: Fatal Error (64): Cannot redeclare Post::$belongsTo in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 63]
+2017-05-08 15:11:39 Error: [FatalErrorException] Cannot redeclare Post::$belongsTo
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/v...', 63)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/v...', 63, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/v...', 63, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-08 16:18:12 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 16:29:22 Error: Fatal Error (4): syntax error, unexpected ''Tag'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 79]
+2017-05-08 16:29:22 Error: [FatalErrorException] syntax error, unexpected ''Tag'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-08 16:31:43 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 118]
+2017-05-08 16:31:43 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 118, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 118, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-08 16:38:40 Error: [MissingControllerException] Controller class PoststagsController could not be found.
+Exception Attributes: array (
+  'class' => 'PoststagsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/poststags
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-08 16:39:08 Error: [MissingControllerException] Controller class PoststagsController could not be found.
+Exception Attributes: array (
+  'class' => 'PoststagsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/poststags/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
