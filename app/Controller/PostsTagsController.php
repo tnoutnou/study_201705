@@ -45,7 +45,8 @@ class PostsTagsController extends AppController {
  *
  * @return void
  */
-	public function add() {
+//	public function add() {
+	public function add($id = null) {
 		if ($this->request->is('post')) {
 			$this->PostsTag->create();
 			if ($this->PostsTag->save($this->request->data)) {
@@ -55,8 +56,15 @@ class PostsTagsController extends AppController {
 				$this->Flash->error(__('The posts tag could not be saved. Please, try again.'));
 			}
 		}
-		$posts = $this->PostsTag->Post->find('list');
-		$tags = $this->PostsTag->Tag->find('list');
+//		$posts = $this->PostsTag->Post->find('list');
+		if ($id === null) {
+			$posts = $this->PostsTag->Post->find('list');
+		} else {
+			$options = array('conditions' => array('Post.' . 'id' => $id));
+			$posts = $this->PostsTag->Post->find('list', $options);
+		}
+//		$tags = $this->PostsTag->Tag->find('list');
+		$tags = $this->PostsTag->Tag->find('list',array('fields'=>array('id','tagname')));
 		$this->set(compact('posts', 'tags'));
 	}
 
@@ -83,7 +91,8 @@ class PostsTagsController extends AppController {
 			$this->request->data = $this->PostsTag->find('first', $options);
 		}
 		$posts = $this->PostsTag->Post->find('list');
-		$tags = $this->PostsTag->Tag->find('list');
+//		$tags = $this->PostsTag->Tag->find('list');
+		$tags = $this->PostsTag->Tag->find('list',array('fields'=>array('id','tagname')));
 		$this->set(compact('posts', 'tags'));
 	}
 

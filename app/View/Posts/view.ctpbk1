@@ -21,6 +21,13 @@
 			<?php echo h($post['Post']['body']); ?>
 			&nbsp;
 		</dd>
+
+		<dt><?php echo __('Category_id'); ?></dt>
+		<dd>
+			<?php echo h($post['Post']['category_id']); ?>
+			&nbsp;
+		</dd>
+		
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['created']); ?>

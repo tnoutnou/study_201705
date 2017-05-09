@@ -4,11 +4,12 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('ユーザ'); ?></th>
 			<th><?php echo $this->Paginator->sort('title'); ?></th>
 			<th><?php echo $this->Paginator->sort('body'); ?></th>
-			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
+			<th><?php echo $this->Paginator->sort('カテゴリ'); ?></th>
+			<th><?php echo $this->Paginator->sort('tag'); ?></th>
+<!--			<th><?php echo $this->Paginator->sort('created'); ?></th>	-->
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -18,12 +19,20 @@
 	<tr>
 		<td><?php echo h($post['Post']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
+<!--			<?php echo $this->Html->link($post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>	-->
+			<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
 		</td>
 		<td><?php echo h($post['Post']['title']); ?>&nbsp;</td>
 		<td><?php echo h($post['Post']['body']); ?>&nbsp;</td>
-		<td><?php echo h($post['Post']['category_id']); ?>&nbsp;</td>
-		<td><?php echo h($post['Post']['created']); ?>&nbsp;</td>
+<!--		<td><?php echo h($post['Post']['category_id']); ?>&nbsp;</td>	-->
+		<td><?php echo h($post['Category']['categoryname']); ?>&nbsp;</td>
+		<td>
+			<?php foreach ($post['Tag'] as $taglist) {?>
+			<?php echo h($taglist['tagname']); ?>
+			<?php } ?>
+			&nbsp;
+		</td>
+<!--		<td><?php echo h($post['Post']['created']); ?>&nbsp;</td>		-->
 		<td><?php echo h($post['Post']['modified']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $post['Post']['id'])); ?>
@@ -59,5 +68,6 @@
 		<li><?php echo $this->Html->link(__('List Tags'), array('controller' => 'tags', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Images'), array('controller' => 'images', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('List PostsTags'), array('controller' => 'PostsTags', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('ログアウト'), array('controller' => 'users', 'action' => 'logout')); ?> </li>
 	</ul>
 </div>

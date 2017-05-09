@@ -21,8 +21,9 @@ class PostsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Post->recursive = 0;
+		$this->Post->recursive = 1;			// 0 から 1に変更
 		$this->set('posts', $this->Paginator->paginate());
+//		debug($this->Paginator->paginate());
 	}
 
 /**
@@ -38,6 +39,16 @@ class PostsController extends AppController {
 		}
 		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 		$this->set('post', $this->Post->find('first', $options));
+//		
+//		$poststags = $this->Post->Tag->find('list');
+//		$this->set(compact('poststags'));
+//		debug($poststags);
+//		$options1 = array('conditions' => array('Tag.' . 'post_id' => $id));
+//		$this->set('poststags', $this->Post->Tag->find('list', $options1));
+//		debug($this->Post->find('first', $options));
+//		debug($poststags);
+//		var_dump($poststags); 
+
 	}
 
 /**
@@ -55,9 +66,11 @@ class PostsController extends AppController {
 				$this->Flash->error(__('The post could not be saved. Please, try again.'));
 			}
 		}
-		$users = $this->Post->User->find('list');
+//		$users = $this->Post->User->find('list');
+		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
 		$this->set(compact('users'));
-		$categories = $this->Post->Category->find('list');
+//		$categories = $this->Post->Category->find('list');
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
 		
 	}
@@ -82,12 +95,21 @@ class PostsController extends AppController {
 			}
 		} else {
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
+//			debug($this->Post->find('first', $options));
 			$this->request->data = $this->Post->find('first', $options);
+		// ?? post にも設定（たぶん不適切）
+			$this->set('post', $this->Post->find('first', $options));
+//			debug($this->Post->find('first', $options));
 		}
-		$users = $this->Post->User->find('list');
+//		$users = $this->Post->User->find('list');
+		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
 		$this->set(compact('users'));
-		$categories = $this->Post->Category->find('list');
+//		$categories = $this->Post->Category->find('list');
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
+//		$tags = $this->Post->Tag->find('list');
+//		$options = array('conditions' => array('Tag.' . 'post_id' => $id));
+
 	}
 
 /**

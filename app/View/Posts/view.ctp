@@ -27,6 +27,14 @@
 			<?php echo h($post['Post']['category_id']); ?>
 			&nbsp;
 		</dd>
+
+		<dt><?php echo __('tag_name'); ?></dt>
+		<dd>
+			<?php foreach ($post['Tag'] as $taglist) {?>
+			<?php echo h($taglist['tagname']); ?>
+			<?php } ?>
+			&nbsp;
+		</dd>
 		
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
