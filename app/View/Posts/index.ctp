@@ -2,6 +2,14 @@
 	<h2><?php echo __('Posts'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
+	<div>
+		<?php echo $this->Form->create('Post', array('url'=>'index')); ?>
+			<legend>検索</legend>
+			<?php echo $this->Form->input('category_id', array('label'=>'カテゴリ', 'empty' => true));  ?>
+			<?php echo $this->Form->input('title', array('label'=>'タイトル', 'placeholder' => '部分一致検索'));  ?>
+			<?php echo $this->Form->input('tag_id', array('label'=>'タグ', 'empty' => true));  ?>
+		<?php echo $this->Form->end('検索'); ?>
+	</div>	
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('ユーザ'); ?></th>

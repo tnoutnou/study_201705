@@ -12,6 +12,14 @@ class Post extends AppModel {
  *
  * @var array
  */
+ // サーチフィルタ
+	public $actsAs = array('Search.Searchable');
+	public $filterArgs = array(
+		'category_id' => array('type' => 'value'),
+		'title' => array('type' => 'like'),
+		'tag_id' => array('type' => 'query', 'method' => 'findByTags')
+	);
+
 	public $validate = array(
 		'user_id' => array(
 			'numeric' => array(
@@ -113,5 +121,31 @@ class Post extends AppModel {
 		)
 	);
 
+	//タグの検索
+	public function findByTags($data = array()){
+
+//		debug($data['tag_id']);
+//		$condition = array('tag_id' => $data['tag_id']);
+		
+		$options = array('fields'=>array('post_id') , 'conditions' => array('tag_id' => $data['tag_id']));
+		
+		$tmps = $this->PostsTag->find('list', $options);
+		
+//		debug($tmps);
+
+		/*
+		$tmp_arr = [];
+
+		foreach ($tmps as $tmp) {
+			debug($tmp);
+			array_push($tmp_arr, $tmp);			
+		};
+*/
+		
+//		$condition = array('Post.id' => $tmp_arr);
+		$condition = array('Post.id' => $tmps);
+		return $condition;
+		
+	}
 	
 }

@@ -13,7 +13,7 @@ class PostsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator','Flash');
+	public $components = array('Paginator','Flash','Search.Prg');
 
 /**
  * index method
@@ -22,8 +22,19 @@ class PostsController extends AppController {
  */
 	public function index() {
 		$this->Post->recursive = 1;			// 0 から 1に変更
-		$this->set('posts', $this->Paginator->paginate());
+		//タイトルの必須入力を無効にする。	検索条件で利用しているタイトル
+		unset($this->Post->validate['title']);
+		$this->Prg->commonProcess();
+//		$this->set('posts', $this->Paginator->paginate());
+		$this->paginate = array(
+			'conditions' => $this->Post->parseCriteria($this->passedArgs),
+		);
+		$this->set('posts', $this->paginate());
 //		debug($this->Paginator->paginate());
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
+		$this->set(compact('categories'));
+		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
+		$this->set(compact('tags'));
 	}
 
 /**

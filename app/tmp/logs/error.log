@@ -461,3 +461,467 @@ Stack Trace:
 #9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsTagsController), Object(CakeRequest))
 #10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2017-05-11 14:46:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.tag_id' in 'where clause'
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=2
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(32): Controller->paginate()
+#9 [internal function]: PostsController->index()
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-11 14:46:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.tag_id' in 'where clause'
+Request URL: /cakephpc/posts?category_id=1&title=&tag_id=1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(32): Controller->paginate()
+#9 [internal function]: PostsController->index()
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-11 15:29:30 Error: Fatal Error (4): syntax error, unexpected ';', expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 130]
+2017-05-11 15:29:30 Error: [FatalErrorException] syntax error, unexpected ';', expecting function (T_FUNCTION)
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 130)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 130, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 130, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 15:33:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.Post_id' in 'where clause'
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(32): Controller->paginate()
+#9 [internal function]: PostsController->index()
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-11 15:39:45 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 129]
+2017-05-11 15:39:45 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=3
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 129)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 129, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 129, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 15:40:03 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 129]
+2017-05-11 15:40:03 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=3
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 129)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 129, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 129, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 15:40:13 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 129]
+2017-05-11 15:40:13 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=3
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/v...', 129)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/v...', 129, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/v...', 129, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 15:40:49 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 129]
+2017-05-11 15:40:49 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=3
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/v...', 129)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/v...', 129, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/v...', 129, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=2
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=2
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=2
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=2
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:41 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:41 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts?category_id=&title=&tag_id=2
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:46 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:46 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:46 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:46 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:01:46 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:01:46 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:03 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:03 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:03 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:03 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:03 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:03 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:11 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:11 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:02:36 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:02:36 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:11 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:11 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:11 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:11 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:11 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:11 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:16 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:16 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:24 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:24 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:24 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:24 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:24 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:24 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:24 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:24 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:27 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:27 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:27 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:27 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:27 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:27 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:27 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:27 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:03:57 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:03:57 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:04:12 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:04:12 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:04:12 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:04:12 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:04:12 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:04:12 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 16:04:17 Error: Fatal Error (64): Only variables can be passed by reference in [/var/www/html/vagrant/cakephpc/app/Model/Post.php, line 141]
+2017-05-11 16:04:17 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Only variables ...', '/var/www/html/v...', 141)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/var/www/html/v...', 141, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
