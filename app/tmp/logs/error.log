@@ -925,3 +925,31 @@ Stack Trace:
 #3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2017-05-11 17:52:52 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/Image.php, line 26]
+2017-05-11 17:52:52 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 17:53:21 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'dirname' doesn't have a default value
+Request URL: /cakephpc/posts/edit/4
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(106): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('4')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

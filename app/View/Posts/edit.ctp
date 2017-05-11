@@ -1,5 +1,5 @@
 <div class="posts form">
-<?php echo $this->Form->create('Post'); ?>
+<?php echo $this->Form->create('Post', array('type' => 'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Edit Post'); ?></legend>
 	<?php
@@ -12,6 +12,8 @@
 /**        echo $this->Form->input( $this->Form->defaultModel . '.tag.1');		*/
 /**        echo $this->Form->input('tag.1.tag_id');		**/
 /**		echo $this->Form->input('tag_id'); */
+		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => 'Image'));
+/**		echo $this->Form->input('Image.0.model', array('type' => 'hidden', 'value' => 'Post'));		*/
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

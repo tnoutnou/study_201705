@@ -94,11 +94,16 @@ class PostsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		
+		//ファイル名の必須入力を無効にする。
+		unset($this->Post->validate['filename']);
+
 		if (!$this->Post->exists($id)) {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Post->save($this->request->data)) {
+//			if ($this->Post->save($this->request->data)) {
+			if ($this->Post->saveAll($this->request->data)) {
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
