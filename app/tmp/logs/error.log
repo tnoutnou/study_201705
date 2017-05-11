@@ -953,3 +953,346 @@ Stack Trace:
 #12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2017-05-11 18:36:22 Error: Fatal Error (4): syntax error, unexpected ']' in [/var/www/html/vagrant/cakephpc/app/View/Posts/view.ctp, line 48]
+2017-05-11 18:36:22 Error: [FatalErrorException] syntax error, unexpected ']'
+Request URL: /cakephpc/posts/view/4
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 48, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 48, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-11 18:41:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/img/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:42:04 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:42:04 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:42:04 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:01 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:01 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:01 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:47 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:47 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:47 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:52 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:52 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:43:52 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:44:40 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:44:40 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:44:40 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:45:19 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:45:19 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:45:19 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:45:45 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:45:45 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:45:45 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:46:58 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:46:58 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:46:58 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:47:25 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:47:25 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:47:25 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:47:45 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:47:45 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:47:45 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:48:01 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:48:01 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:48:01 Error: [MissingControllerException] Controller class VarController could not be found.
+Exception Attributes: array (
+  'class' => 'VarController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/var/www/html/vagrant/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:48:10 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/app/webroot/files/image/filename/5/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:48:10 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/app/webroot/files/image/filename/4/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-11 18:48:10 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/cakephpc/app/webroot/files/image/filename/3/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

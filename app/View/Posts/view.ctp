@@ -35,6 +35,18 @@
 			<?php } ?>
 			&nbsp;
 		</dd>
+
+		<dt><?php echo __('image'); ?></dt>
+		<dd>
+			<?php $base = $this->Html->url( "/app/webroot/files/image/filename/" ); ?>
+			<?php $base = "/app/webroot/files/image/filename/"; ?>
+			<?php foreach ($post['Image'] as $image) {?>
+			<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] ); ?>
+			<?php } ?>
+			&nbsp;
+			<?php echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); ?>
+		</dd>
+		
 		
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
