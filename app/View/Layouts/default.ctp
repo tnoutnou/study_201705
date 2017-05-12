@@ -25,6 +25,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $cakeDescription ?>:
 		<?php echo $this->fetch('title'); ?>
 	</title>
+<!--	<script type="text/javascript" src="js/jquery-git.js"></script>	-->
+	<?php echo $this->Html->script('jquery-git'); ?>
 	<?php
 		echo $this->Html->meta('icon');
 
@@ -33,6 +35,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+    /* Bootstrap */
+		echo $this->Html->css('bootstrap');
+		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->css('custom');
+		
+
 	?>
 </head>
 <body>
@@ -59,5 +67,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	-->
+<!--	<script type="text/javascript" src="js/jquery-git.js"></script>	-->
+	<?php echo $this->Html->script('jquery-git'); ?>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<?php echo $this->Html->css('bootstrap'); ?>
+	<?php echo $this->Html->script('bootstrap.min'); ?>
+	<?php echo $this->Html->css('custom'); ?>
+	
 </body>
 </html>

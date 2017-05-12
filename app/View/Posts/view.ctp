@@ -38,13 +38,13 @@
 
 		<dt><?php echo __('image'); ?></dt>
 		<dd>
-			<?php $base = $this->Html->url( "/app/webroot/files/image/filename/" ); ?>
+			<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>
 			<?php $base = "/app/webroot/files/image/filename/"; ?>
 			<?php foreach ($post['Image'] as $image) {?>
-			<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] ); ?>
+			<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')); ?>
 			<?php } ?>
 			&nbsp;
-			<?php echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); ?>
+			<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>
 		</dd>
 		
 		

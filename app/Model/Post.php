@@ -71,7 +71,8 @@ class Post extends AppModel {
 		'Image' => array(
 			'className' => 'Image',
 			'foreignKey' => 'post_id',
-			'dependent' => false,
+//			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',

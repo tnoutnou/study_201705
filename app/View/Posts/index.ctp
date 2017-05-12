@@ -1,4 +1,7 @@
-<div class="posts index">
+<div class="container">
+<div class="row">
+<!--	<div class="posts index">	-->
+<div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 	<h2><?php echo __('Posts'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
@@ -65,7 +68,8 @@
 	?>
 	</div>
 </div>
-<div class="actions">
+<!--	<div class="actions">	-->
+<div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?></li>
@@ -79,3 +83,5 @@
 		<li><?php echo $this->Html->link(__('ログアウト'), array('controller' => 'users', 'action' => 'logout')); ?> </li>
 	</ul>
 </div>
+</div>
+

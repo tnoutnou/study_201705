@@ -103,6 +103,8 @@ class ImagesController extends AppController {
 		} else {
 			$this->Flash->error(__('The image could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+//		return $this->redirect(array('action' => 'index'));
+//		return $this->redirect(array('controller' => 'posts', 'action' => 'index'));
+		return $this->redirect($this->request->referer());
 	}
 }
