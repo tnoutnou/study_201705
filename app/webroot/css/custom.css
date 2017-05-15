@@ -39,12 +39,10 @@ a {
 
 
 .blogposts {
-	color: red !important;
 	float: left !important;
 }
 
 .blogaction {
-	color: blue !important;
 	float: right !important;
 }
 

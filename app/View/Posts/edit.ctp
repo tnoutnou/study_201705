@@ -74,11 +74,5 @@
 </div>
 </div>
 </div>
-<div class="container">
-<div class="row">
-<div class="col-xs-12 col-sm-9 col-md-6" style="background-color: blue;">test1</div>
-<div class="col-xs-6 col-sm-3 col-md-6" style="background-color: red;">test2</div>
-</div>
-</div>
 
 
