@@ -1,13 +1,21 @@
+<?php echo $this->Html->script( 'jquery-git.js'); ?>
+<?php echo $this->Html->script( 'test.js'); ?>
+<?php echo $this->Html->css( 'custom.css'); ?>
 <div class="container">
 <div class="row">
 <!--	<div class="posts index">	-->
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
-	<h2><?php echo __('Post11s'); ?></h2>
+	<h2><?php echo __('Posts11'); ?></h2>
+
+	<p>
+		<input class="btn btn-default btn-sm" id="search-btn" type="button" value="検索非表示">
+	</p>
+
 	<?php echo $this->Form->create('Post', array('url'=>'index')); ?>
 		<legend>検索</legend>
 		<div class="input-group">
 			<span class="input-group-addon">カテゴリ</span>
-			<?php echo $this->Form->input('category_id', array('label'=>false, 'div'=>false ,'empty' => true));  ?>
+			<?php echo $this->Form->input('category_id', array('label'=>false, 'div'=>false ,'empty' => true, 'style' => 'font-size:14px;padding-bottom:5px;padding-top:5px;'));  ?>
 		</div>
 		<div class="input-group">
 			<span class="input-group-addon">タイトル</span>
@@ -15,10 +23,11 @@
 		</div>
 		<div class="input-group">
 			<span class="input-group-addon">タグ</span>
-			<?php echo $this->Form->input('tag_id', array('label'=>false, 'div'=>false, 'empty' => true,'font-size'=>'14px'));  ?>
+			<?php echo $this->Form->input('tag_id', array('label'=>false, 'div'=>false, 'empty' => true, 'style' => 'font-size:14px;padding-bottom:5px;padding-top:5px;'));  ?>
 		</div>
 	<?php echo $this->Form->end('検索'); ?>
 
+	<?php $i = 1; ?>
 	<?php foreach ($posts as $post): ?>
 		<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>
 		<p>
@@ -40,7 +49,10 @@
 
 			<?php $base = "/app/webroot/files/image/filename/"; ?>
 			<?php foreach ($post['Image'] as $image) {?>
-				<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'80','height'=>'80')); ?>
+<!--				<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'80','height'=>'80','class'=>'popupimg')); */ ?>	-->				
+			<?php $str_i = "popupimg" . $i; ?>
+				<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'80','height'=>'80')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg', 'id'=>$str_i)); ?>
+			<?php $i = $i + 1; ?>
 			<?php } ?>
 			&nbsp;
 		
@@ -48,15 +60,9 @@
 		<p class="actions">		
 			<div class="btn-toolbar">
 			<div class="btn-group">
-				<div class="btn btn-default btn-sm">
-					<?php echo $this->Html->link(__('View'), array('action' => 'view', $post['Post']['id'])); ?>
-				</div>
-				<div class="btn btn-default btn-sm">
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $post['Post']['id'])); ?>
-				</div>
-				<div class="btn btn-default btn-sm">
-					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']))); ?>
-				</div>
+					<?php echo $this->Html->link(__('View'), array('action' => 'view', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?>
 			</div>
 			</div>
 		</p>
@@ -95,4 +101,16 @@
 	</ul>
 </div>
 </div>
+	<!-- ポップアップ用の背景とimg -->
+	<div id="popup-background">
+	</div>
+		<img id="popup-item" src=""/>
+	<div id="popup-text">
+		tesaa
+	</div>
+	<div id="hoge1">
+	</div>
+
+
+	
 

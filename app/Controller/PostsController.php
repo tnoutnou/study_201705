@@ -28,6 +28,7 @@ class PostsController extends AppController {
 //		$this->set('posts', $this->Paginator->paginate());
 		$this->paginate = array(
 			'conditions' => $this->Post->parseCriteria($this->passedArgs),
+			'limit' => 10,
 		);
 		$this->set('posts', $this->paginate());
 //		debug($this->Paginator->paginate());

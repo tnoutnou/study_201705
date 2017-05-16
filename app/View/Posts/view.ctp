@@ -1,3 +1,4 @@
+<?php echo $this->Html->css( 'custom.css'); ?>
 <div class="posts view">
 <h2><?php echo __('Post'); ?></h2>
 	<dl>

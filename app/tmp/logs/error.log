@@ -3054,3 +3054,355 @@ Stack Trace:
 #1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2017-05-16 11:09:22 Error: [MissingControllerException] Controller class Test.jsController could not be found.
+Exception Attributes: array (
+  'class' => 'Test.jsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/test.js
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 11:43:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/js/js/test.js
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 11:43:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/js/js/jquery-git.js
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 11:43:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/js/js/test.js
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 12:12:35 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 59]
+2017-05-16 12:12:35 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 59, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 59, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 14:06:26 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:06:28 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:08:38 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:08:39 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:10:31 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:10:44 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:11:34 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:16:28 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:16:35 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:16:37 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 14:16:40 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 15:48:02 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 15:56:55 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 53]
+2017-05-16 15:56:55 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 53, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 53, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 15:57:58 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 15:57:58 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 15:58:03 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 15:58:03 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 15:58:09 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 15:58:09 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 15:58:24 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 15:58:24 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 15:59:30 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 15:59:30 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 15:59:50 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 15:59:50 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:00:11 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 16:00:11 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:00:37 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 16:00:37 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:01:00 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 16:01:00 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:01:01 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 16:01:01 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:01:12 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 54]
+2017-05-16 16:01:12 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:02:50 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 55]
+2017-05-16 16:02:50 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:03:38 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 55]
+2017-05-16 16:03:38 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:03:39 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 55]
+2017-05-16 16:03:39 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:04:04 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 55]
+2017-05-16 16:04:04 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:04:28 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 55]
+2017-05-16 16:04:28 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:04:58 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 55]
+2017-05-16 16:04:58 Error: [FatalErrorException] syntax error, unexpected '　' (T_STRING), expecting ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 55, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-16 16:09:19 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-16 16:12:25 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+Exception Attributes: array (
+  'class' => 'UndefinedController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/undefined
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

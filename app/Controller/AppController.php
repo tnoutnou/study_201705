@@ -61,7 +61,7 @@ class AppController extends Controller {
         );
         $this->Auth->loginRedirect = array(
           'controller' => 'posts',
-          'action' => 'add'
+          'action' => 'index'
         );
 		
 		$this->Auth->allow('display');
