@@ -106,8 +106,8 @@ class PostsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 //			if ($this->Post->save($this->request->data)) {
-			debug($this->request->data);
-			debug($this->request->data['Image'][0]['filename']['name']);
+//			debug($this->request->data);
+//			debug($this->request->data['Image'][0]['filename']['name']);
 			
 			if (empty($this->request->data['Image'][0]['filename']['name'])) {
 				// ファイルが指定されなかった場合

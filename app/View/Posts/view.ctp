@@ -1,5 +1,8 @@
+<div class="container">
+<div class="row">
 <?php echo $this->Html->css( 'custom.css'); ?>
 <div class="posts view">
+<div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <h2><?php echo __('Post'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -61,14 +64,19 @@
 		</dd>
 	</dl>
 </div>
+</div>
+<div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Post'), array('action' => 'edit', $post['Post']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Post'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']))); ?> </li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+	<ul style="list-style:none;">
+		<li><?php echo $this->Html->link(__('Edit Post'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Post'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Posts'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 	</ul>
+</div>
+</div>
+</div>
 </div>
