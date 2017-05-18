@@ -137,6 +137,11 @@ ul {
 	color: #c73e14;
 }
 
+.control-label {
+	@extend .label;
+}
+
+
 
 
 

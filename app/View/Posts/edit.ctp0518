@@ -9,16 +9,16 @@
 		<legend><?php echo __('Edit Post !!'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('user_id', array('label' => array('text' => 'user' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
+		echo $this->Form->input('user_id', array('label' => array('text' => 'user' ,'class' => 'label label-default'), 'class' => 'form-control'));
 /**		echo $this->Form->input('title');	*/
 		echo $this->Form->input('title', array('label' => array('text' => 'title' ,'class' => 'label label-default'), 'class' => 'form-control'));
 /**		echo $this->Form->input('body');	*/
 		echo $this->Form->input('body', array('label' => array('text' => 'body' ,'class' => 'label label-default'), 'class' => 'form-control'));
 /**		echo $this->Form->input('category_id');		*/
-		echo $this->Form->input('category_id', array('label' => array('text' => 'body' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
+		echo $this->Form->input('category_id', array('label' => array('text' => 'body' ,'class' => 'label label-default'), 'class' => 'form-control'));
 /**        echo $this->Form->input( $this->Form->defaultModel . '.tag.1');		*/
 /**        echo $this->Form->input('tag.1.tag_id');		**/
-		echo $this->Form->input('tag_id',array('label' => array('text' => 'tag' ,'class' => 'label label-default'), 'type'=>'select', 'multiple'=>true, 'options'=>$tags, 'selected'=>$selected, 'class' => 'selectpicker show-menu-arrow form-control'));
+/**		echo $this->Form->input('tag_id'); */
 	?>
 <label class="label label-default">ImageAdd</label>
 <div class="input-group">
@@ -55,25 +55,27 @@
 	&nbsp;
 </ul>
 
+		<?php /* debug($this->request->data); */ ?>
 
-		
 <!--	<?php foreach ($data['Tag'] as $taglist) {?>	-->
 <!--	<?php echo h($taglist['tagname']); ?>	-->
 <!--	<?php } ?>	-->
-<!--	<ul>	-->
-<!--		<?php foreach ($post['Tag'] as $taglist) {?>	-->
-<!--		<li>	-->
-<!--			<?php echo h($taglist['tagname']); ?>	-->
-<!--			<td class="actions">	-->
-<!--				<?php echo $this->Html->link(__('TagEdit'), array('controller' => 'PostsTags', 'action' => 'edit', $taglist['PostsTag']['id'])); ?>	-->
+<ul>
+	<?php foreach ($post['Tag'] as $taglist) {?>
+	<li>
+		<?php echo h($taglist['tagname']); ?>
+		<td class="actions">
+			<?php echo $this->Html->link(__('TagEdit'), array('controller' => 'PostsTags', 'action' => 'edit', $taglist['PostsTag']['id'])); ?>
 <!--	/**		<?php echo $this->Form->postLink(__('TagDelete'), array('controller' => 'PostsTags', 'action' => 'delete', $taglist['PostsTag']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $taglist['id']))); ?>	*/ -->
-<!--			</td>			-->
-<!--		</li>	-->
-<!--		<?php } ?>	-->
-<!--		<?php echo $this->Html->link(__('TagAdd'), array('controller' => 'PostsTags', 'action' => 'add', $this->Form->value('Post.id'))); ?>	-->
-<!--		-->
-<!--		&nbsp;	--> 
-<!--	</ul>	-->
+		</td>		
+	</li>
+	<?php } ?>
+	<?php echo $this->Html->link(__('TagAdd'), array('controller' => 'PostsTags', 'action' => 'add', $this->Form->value('Post.id'))); ?>
+
+	&nbsp;
+</ul>
+
+
 
 
 

@@ -1,5 +1,6 @@
 <div class="container">
 <div class="row">
+<div class="col-sm-6">
 <h2>Login</h2>
 <?php
 echo $this->Form->create('User', array(
@@ -8,8 +9,8 @@ echo $this->Form->create('User', array(
         'action' => 'login'
     )
 ));
-echo $this->Form->input('User.username');
-echo $this->Form->input('User.password');
+echo $this->Form->input('User.username', array('class' => 'form-control'));
+echo $this->Form->input('User.password', array('class' => 'form-control'));
 echo $this->Form->end('Login');
 ?>
 

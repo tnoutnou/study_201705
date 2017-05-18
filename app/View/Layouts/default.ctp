@@ -38,6 +38,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     /* Bootstrap */
 		echo $this->Html->css('bootstrap');
 		echo $this->Html->script('bootstrap.min');
+
+		echo $this->Html->css('bootstrap-select');
+		echo $this->Html->script('bootstrap-select');
 		echo $this->Html->css('custom');
 		
 

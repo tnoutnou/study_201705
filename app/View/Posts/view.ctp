@@ -1,3 +1,6 @@
+<?php echo $this->Html->script( 'jquery-git.js'); ?>
+<?php echo $this->Html->script( 'test.js'); ?>
+<?php echo $this->Html->css( 'custom.css'); ?>
 <div class="container">
 <div class="row">
 <?php echo $this->Html->css( 'custom.css'); ?>
@@ -12,7 +15,7 @@
 		</dd>
 		<dt><?php echo __('User'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
+			<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Title'); ?></dt>
@@ -26,9 +29,9 @@
 			&nbsp;
 		</dd>
 
-		<dt><?php echo __('Category_id'); ?></dt>
+		<dt><?php echo __('カテゴリ'); ?></dt>
 		<dd>
-			<?php echo h($post['Post']['category_id']); ?>
+			<?php echo h($post['Category']['categoryname']); ?>
 			&nbsp;
 		</dd>
 
@@ -44,8 +47,16 @@
 		<dd>
 			<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>
 			<?php $base = "/app/webroot/files/image/filename/"; ?>
+
+			<?php $i = 1; ?>
 			<?php foreach ($post['Image'] as $image) {?>
-			<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')); ?>
+
+			<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100','class'=>'popupimg')); */ ?>
+
+			<?php $str_i = "popupimg" . $i; ?>
+				<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg', 'id'=>$str_i)); ?>
+			<?php $i = $i + 1; ?>
+
 			<?php } ?>
 			&nbsp;
 			<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>
@@ -80,3 +91,14 @@
 </div>
 </div>
 </div>
+	<!-- ポップアップ用の背景とimg -->
+	<div id="popup-background">
+	</div>
+		<img id="popup-item" src=""/>
+	<div id="popup-text">
+		tesaa
+	</div>
+	<div id="hoge1">
+	</div>
+
+
