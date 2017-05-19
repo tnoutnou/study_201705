@@ -123,6 +123,7 @@ class PostsController extends AppController {
 			$this->request->data['Tag'] = $this->data['Post']['tag_id'];
 			
 //			debug($this->request->data);
+//			return;
 
 			
 			if (empty($this->request->data['Image'][0]['filename']['name'])) {
@@ -140,18 +141,35 @@ class PostsController extends AppController {
 //				return;
 
 //				$var_end = $this->Post->save($this->request->data);
-				$var_end = $this->Post->saveAll($this->request->data);
 				
 				
 			} else {
 				// ファイルが指定された場合
 //				debug('2');
-				$var_end = $this->Post->saveAll($this->request->data);
 			}
 
+//			debug($this->request->data);
+			//
+//			debug($selected);
+//			debug($this->Post->PostsTag->find('list',array('fields'=>array('tag_id'),'conditions' => array('PostsTag.' . 'post_id' => $id ))));
+
+			// タグが全解除の場合に登録されていたタグを削除する
+			if (empty($this->request->data['Tag'])) {
+				$poststags = $this->Post->PostsTag->find('list',array('fields'=>array('id'),'conditions' => array('PostsTag.' . 'post_id' => $id )));
+				foreach ($poststags as $poststag) {
+//					debug($poststag);
+					$this->PostsTag->delete($poststag);
+				}
+			}
+			
+			$var_end = $this->Post->saveAll($this->request->data);
+
+			
+			
 			if ($var_end) {
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
+//				return;
 			} else {
 				$this->Flash->error(__('The post could not be saved. Please, try again.'));
 			}
