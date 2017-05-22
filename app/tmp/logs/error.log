@@ -6101,3 +6101,792 @@ Stack Trace:
 #3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2017-05-22 15:21:37 Error: [MissingControllerException] Controller class BusersController could not be found.
+Exception Attributes: array (
+  'class' => 'BusersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/busers
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-22 17:02:15 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/add.ctp, line 18]
+2017-05-22 17:02:15 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 18, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 18, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-22 17:10:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-22 17:12:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-22 17:13:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-22 17:28:23 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522B
+            [body] => 本文
+２行目
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => daisies-2271473_640.jpg
+                )
+
+        )
+
+)
+
+2017-05-22 17:29:42 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522C
+            [body] => 本文
+２２
+３３
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => 
+                )
+
+        )
+
+)
+
+2017-05-22 17:32:10 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522D
+            [body] => 本文
+２行目
+３行目
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => fruit-2287298_640.png
+                )
+
+        )
+
+)
+
+2017-05-22 17:47:38 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522E
+            [body] => h
+1
+2
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 17:49:19 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522F
+            [body] => h
+2
+3
+            [category_id] => 1
+        )
+
+)
+
+2017-05-22 17:50:18 Error: 111
+2017-05-22 17:50:18 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522I
+            [body] => 1
+2
+3
+            [category_id] => 1
+        )
+
+)
+
+2017-05-22 17:51:52 Error: 000
+2017-05-22 17:51:52 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522G
+            [body] => 1
+2
+3
+
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 17:51:52 Error: 111
+2017-05-22 17:51:52 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522G
+            [body] => 1
+2
+3
+
+            [category_id] => 1
+        )
+
+)
+
+2017-05-22 17:53:47 Error: 000
+2017-05-22 17:53:47 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522K
+            [body] => 1
+2
+4
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 17:53:47 Error: 111
+2017-05-22 17:53:47 Error: rakugaki.png
+2017-05-22 17:53:47 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522K
+            [body] => 1
+2
+4
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 17:53:47 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 17:53:52 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 17:53:58 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 17:54:00 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 17:54:01 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:03:54 Error: 000
+2017-05-22 18:03:54 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522L
+            [body] => L
+1
+22
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 18:03:54 Error: 111
+2017-05-22 18:03:54 Error: rakugaki.png
+2017-05-22 18:03:54 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522L
+            [body] => L
+1
+22
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 18:03:54 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:04:00 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:05:13 Error: 000
+2017-05-22 18:05:13 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522M
+            [body] => M
+12
+22
+            [category_id] => 2
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 18:05:13 Error: 111
+2017-05-22 18:05:13 Error: rakugaki.png
+2017-05-22 18:05:13 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522M
+            [body] => M
+12
+22
+            [category_id] => 2
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 18:05:24 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:07:49 Error: 111
+2017-05-22 18:07:49 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522N
+            [body] => N
+1
+22
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => daisies-2271473_640.jpg
+                )
+
+        )
+
+)
+
+2017-05-22 18:07:49 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/daisies-2271473_640.jpg
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:07:54 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/daisies-2271473_640.jpg
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:09:19 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/daisies-2271473_640.jpg
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:09:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/daisies-2271473_640.jpg
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:13:09 Error: 111
+2017-05-22 18:13:09 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => 0522O
+            [body] => O
+11
+22
+            [category_id] => 2
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 18:13:13 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:13:28 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:14:17 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:14:53 Error: 111
+2017-05-22 18:14:53 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522P
+            [body] => P
+11
+22
+            [category_id] => 2
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [filename] => rakugaki.png
+                )
+
+        )
+
+)
+
+2017-05-22 18:14:57 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephpc/app/webroot/files/image/filename/rakugaki.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-22 18:32:05 Error: 111
+2017-05-22 18:32:05 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522Q
+            [body] => Q
+11
+22
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpFS5OS4
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-22 18:33:12 Error: 111
+2017-05-22 18:33:12 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522R
+            [body] => R
+11
+22
+            [category_id] => 3
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpooWNdA
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-22 18:33:58 Error: 111
+2017-05-22 18:33:58 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522S
+            [body] => S
+1111
+222
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/php1nnbYO
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-22 18:35:42 Error: 111
+2017-05-22 18:35:42 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522T
+            [body] => TT
+22
+33
+            [category_id] => 1
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/phpqUlFao
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-22 18:44:43 Error: [MissingControllerException] Controller class UploadmultiController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadmultiController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/uploadmulti
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-22 18:49:18 Error: [MissingControllerException] Controller class UploadmultiController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadmultiController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/uploadmulti
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-22 18:49:52 Error: 111
+2017-05-22 18:49:52 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0522V
+            [body] => V
+11
+22
+            [category_id] => 2
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpjoP8hN
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/phpp23q8X
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+)
+

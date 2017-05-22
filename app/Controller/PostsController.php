@@ -79,7 +79,21 @@ class PostsController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Post->create();
-			if ($this->Post->save($this->request->data)) {
+
+//$this->log('000');
+//$this->log($this->request->data);
+
+			
+			if (empty($this->request->data['Image'][0]['filename'])) {
+				unset($this->request->data['Image']);
+			}
+
+$this->log('111');
+//$this->log($this->request->data['Image'][0]['filename']);
+$this->log($this->request->data);
+
+			
+			if ($this->Post->saveall($this->request->data)) {
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
