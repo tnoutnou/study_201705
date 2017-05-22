@@ -34,7 +34,7 @@
 			<?php echo h(substr($post['Post']['created'],0,10)  . " By " . $post['User']['username']); ?>
 		</p>
 		<p>
-			<?php echo h($post['Post']['body']); ?>
+			<?php echo nl2br(h($post['Post']['body'])); ?>
 		</p>
 		<p>
 			<?php echo h("カテゴリ：　" . $post['Category']['categoryname']); ?>
