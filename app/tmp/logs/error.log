@@ -6890,3 +6890,2320 @@ Stack Trace:
 
 )
 
+2017-05-23 10:02:15 Error: 111
+2017-05-23 10:02:15 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523A
+            [body] => 本文１１１
+２２
+３３３
+４４
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/php0SoYw5
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/phpiLaKml
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 10:02:52 Error: 111
+2017-05-23 10:02:52 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523B
+            [body] => 本文
+１１
+２２
+３３
+            [category_id] => 2
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpTQXOlN
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 10:25:58 Error: 111
+2017-05-23 10:25:58 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523C
+            [body] => 本文
+２２
+３３
+４４
+            [category_id] => 2
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpIEyUMy
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 10:25:58 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 99]
+2017-05-23 10:25:58 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/v...', 99)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/v...', 99, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/v...', 99, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 10:27:57 Error: 111
+2017-05-23 10:27:57 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => title0523C
+            [body] => 本文本文
+２２２
+３３３
+            [category_id] => 3
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/php2tsBp9
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 10:27:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(99): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 10:29:42 Error: 111
+2017-05-23 10:29:42 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523D
+            [body] => 本文
+２２２２２２
+３３３３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpej8ewM
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 10:29:42 Error: 222
+2017-05-23 10:29:42 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523D
+            [body] => 本文
+２２２２２２
+３３３３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpej8ewM
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [post_id] => 
+                )
+
+        )
+
+)
+
+2017-05-23 10:30:51 Error: 111
+2017-05-23 10:30:51 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523E
+            [body] => 本文
+２２２
+３３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpS1sTIh
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 10:30:51 Error: 222
+2017-05-23 10:30:51 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523E
+            [body] => 本文
+２２２
+３３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpS1sTIh
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [post_id] => 
+                )
+
+        )
+
+)
+
+2017-05-23 10:32:10 Error: 111
+2017-05-23 10:32:10 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523F
+            [body] => 本文
+２２２
+３３３３３
+            [category_id] => 2
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpeIBhFw
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 10:32:10 Error: 222
+2017-05-23 10:32:10 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523F
+            [body] => 本文
+２２２
+３３３３３
+            [category_id] => 2
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpeIBhFw
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [post_id] => 
+                )
+
+        )
+
+)
+
+2017-05-23 10:35:26 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(99): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 10:38:41 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(99): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 10:45:43 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(99): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 10:47:59 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2513): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(100): Model->saveAssociated(Array)
+#7 [internal function]: PostsController->add()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-05-23 10:55:32 Error: 333
+2017-05-23 10:55:32 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 12
+            [user_id] => 1
+            [title] => title0516B
+            [body] => 1111
+2222 232
+3333 fdfdf
+4444 2121
+
+            [category_id] => 1
+            [tag_id] => Array
+                (
+                    [0] => 1
+                    [1] => 2
+                    [2] => 3
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => daisies-2271473_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/phpLsKO2j
+                            [error] => 0
+                            [size] => 126455
+                        )
+
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+)
+
+2017-05-23 11:00:30 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2513): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(100): Model->saveAssociated(Array)
+#7 [internal function]: PostsController->add()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-05-23 11:02:34 Error: 111
+2017-05-23 11:02:34 Error: 50
+2017-05-23 11:02:34 Error: id
+2017-05-23 11:02:34 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2513): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(104): Model->saveAssociated(Array)
+#7 [internal function]: PostsController->add()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-05-23 11:04:40 Error: 111
+2017-05-23 11:04:40 Error: 52
+2017-05-23 11:04:40 Error: id
+2017-05-23 11:04:40 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(104): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 11:07:26 Error: 111
+2017-05-23 11:07:26 Error: 53
+2017-05-23 11:07:26 Error: id
+2017-05-23 11:07:26 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523K
+            [body] => KK
+11
+22
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpWS3yuq
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 11:07:26 Error: 222
+2017-05-23 11:07:26 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523K
+            [body] => KK
+11
+22
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpWS3yuq
+                            [error] => 0
+                            [size] => 10545
+                            [post_id] => 53
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 11:07:26 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(108): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 11:24:32 Error: 111
+2017-05-23 11:24:32 Error: 54
+2017-05-23 11:24:32 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523K
+            [body] => 本文
+２２２
+３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpyLg5og
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 11:24:32 Error: 111BBB
+2017-05-23 11:24:32 Error: Array
+(
+    [0] => Array
+        (
+            [name] => rakugaki.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpyLg5og
+            [error] => 0
+            [size] => 10545
+            [post_id] => 54
+        )
+
+)
+
+2017-05-23 11:24:32 Error: 222
+2017-05-23 11:24:32 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523K
+            [body] => 本文
+２２２
+３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpyLg5og
+                            [error] => 0
+                            [size] => 10545
+                            [post_id] => 54
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 11:24:32 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(112): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 11:26:27 Error: 111BBB
+2017-05-23 11:26:27 Error: Array
+(
+    [0] => Array
+        (
+            [name] => rakugaki.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpW3HqyG
+            [error] => 0
+            [size] => 10545
+            [post_id] => 55
+        )
+
+    [1] => Array
+        (
+            [name] => tulips-2289976_640.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpN4CVqq
+            [error] => 0
+            [size] => 56764
+        )
+
+)
+
+2017-05-23 11:26:27 Error: 222
+2017-05-23 11:26:27 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523L
+            [body] => 本文
+２２２
+３３３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpW3HqyG
+                            [error] => 0
+                            [size] => 10545
+                            [post_id] => 55
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/phpN4CVqq
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 11:26:27 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(112): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 11:39:58 Error: 111BBB
+2017-05-23 11:39:58 Error: Array
+(
+    [0] => Array
+        (
+            [name] => rakugaki.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpplX4GF
+            [error] => 0
+            [size] => 10545
+            [post_id] => 56
+        )
+
+)
+
+2017-05-23 11:39:58 Error: 
+2017-05-23 11:39:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'post_id' doesn't have a default value
+Request URL: /cakephpc/posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(NULL, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(121): Model->save(NULL)
+#6 [internal function]: PostsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-05-23 11:44:24 Error: 111BBB
+2017-05-23 11:44:24 Error: Array
+(
+    [0] => Array
+        (
+            [name] => rakugaki.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpIv5JiP
+            [error] => 0
+            [size] => 10545
+            [post_id] => 57
+        )
+
+)
+
+2017-05-23 11:44:24 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => rakugaki.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpIv5JiP
+                    [error] => 0
+                    [size] => 10545
+                    [post_id] => 57
+                )
+
+            [post_id] => 57
+        )
+
+)
+
+2017-05-23 11:44:24 Error: 333
+2017-05-23 11:44:24 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523O
+            [body] => 本文本文
+２２２
+３３３３
+            [category_id] => 2
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpIv5JiP
+                            [error] => 0
+                            [size] => 10545
+                            [post_id] => 57
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 11:48:05 Error: 111BBB
+2017-05-23 11:48:05 Error: Array
+(
+    [0] => Array
+        (
+            [name] => rakugaki.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpneErdT
+            [error] => 0
+            [size] => 10545
+        )
+
+)
+
+2017-05-23 11:48:05 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => rakugaki.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpneErdT
+                    [error] => 0
+                    [size] => 10545
+                )
+
+            [post_id] => 58
+        )
+
+)
+
+2017-05-23 12:02:37 Error: 111BBB
+2017-05-23 12:02:37 Error: Array
+(
+    [0] => Array
+        (
+            [name] => fruit-2287298_640.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpAfxQ16
+            [error] => 0
+            [size] => 335575
+        )
+
+)
+
+2017-05-23 12:02:37 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => fruit-2287298_640.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpAfxQ16
+                    [error] => 0
+                    [size] => 335575
+                )
+
+            [post_id] => 59
+        )
+
+)
+
+2017-05-23 12:05:17 Error: 111BBB
+2017-05-23 12:05:17 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => rakugaki.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpy6dzr3
+                    [error] => 0
+                    [size] => 10545
+                )
+
+        )
+
+)
+
+2017-05-23 12:05:17 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523KK
+            [body] => 本文
+２２２
+３３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpy6dzr3
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpy6dzr3
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 12:07:26 Error: 111BBB
+2017-05-23 12:07:26 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => rakugaki.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpH3QfTC
+                    [error] => 0
+                    [size] => 10545
+                )
+
+        )
+
+)
+
+2017-05-23 12:07:26 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523AA
+            [body] => AA
+2
+3
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpH3QfTC
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpH3QfTC
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 12:08:52 Error: 111BBB
+2017-05-23 12:08:52 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => rakugaki.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpndAv7M
+                    [error] => 0
+                    [size] => 10545
+                )
+
+        )
+
+)
+
+2017-05-23 12:08:52 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523BB
+            [body] => BB
+本文
+２２２
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpndAv7M
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpndAv7M
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 12:17:29 Error: 111BBB
+2017-05-23 12:17:29 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => rakugaki.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpJzZcrX
+                    [error] => 0
+                    [size] => 10545
+                )
+
+        )
+
+    [1] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => tulips-2289976_640.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => /tmp/phpVlBbAp
+                    [error] => 0
+                    [size] => 56764
+                )
+
+        )
+
+)
+
+2017-05-23 12:17:29 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523CC
+            [body] => 本文
+２２２
+３３３
+            [category_id] => 1
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpJzZcrX
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/phpVlBbAp
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpJzZcrX
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/phpVlBbAp
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 12:18:52 Error: 111BBB
+2017-05-23 12:18:52 Error: Array
+(
+    [0] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => rakugaki.png
+                    [type] => image/png
+                    [tmp_name] => /tmp/phpA1i0ir
+                    [error] => 0
+                    [size] => 10545
+                )
+
+        )
+
+    [1] => Array
+        (
+            [model] => Post
+            [filename] => Array
+                (
+                    [name] => tulips-2289976_640.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => /tmp/php0UYPYH
+                    [error] => 0
+                    [size] => 56764
+                )
+
+        )
+
+)
+
+2017-05-23 12:18:52 Error: Array
+(
+    [Post] => Array
+        (
+            [user_id] => 1
+            [title] => t0523DD
+            [body] => DD
+22
+33
+            [category_id] => 2
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpA1i0ir
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/php0UYPYH
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => rakugaki.png
+                            [type] => image/png
+                            [tmp_name] => /tmp/phpA1i0ir
+                            [error] => 0
+                            [size] => 10545
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [model] => Post
+                    [filename] => Array
+                        (
+                            [name] => tulips-2289976_640.jpg
+                            [type] => image/jpeg
+                            [tmp_name] => /tmp/php0UYPYH
+                            [error] => 0
+                            [size] => 56764
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-23 12:20:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 12:58:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:13:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:16:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:28:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:38:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:39:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:41:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:42:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:49:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:49:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:49:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:49:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:50:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:51:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:53:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:56:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 13:57:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:46:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:46:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:48:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:48:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:48:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:48:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:48:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:49:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:49:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:52:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:52:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 14:58:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:41:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:48:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:48:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:48:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:51:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:55:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:55:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:55:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:55:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:56:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:56:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:56:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:56:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:56:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:56:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:57:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:57:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 15:59:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:00:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:00:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:00:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:00:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:03:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:04:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:04:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:09:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:11:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:12:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:12:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:14:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:21:54 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(205): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 16:26:36 Error: Fatal Error (4): syntax error, unexpected '2' (T_LNUMBER), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 41]
+2017-05-23 16:26:36 Error: [FatalErrorException] syntax error, unexpected '2' (T_LNUMBER), expecting ')'
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 41, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 41, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 16:26:51 Error: Fatal Error (4): syntax error, unexpected '2' (T_LNUMBER), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 41]
+2017-05-23 16:26:51 Error: [FatalErrorException] syntax error, unexpected '2' (T_LNUMBER), expecting ')'
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 41, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 41, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 16:27:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:37:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:40:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:41:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:43:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:43:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:47:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 16:53:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:03:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:06:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:07:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:07:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:07:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:07:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:13:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:15:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:15:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 17:21:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(205): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 17:24:22 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(205): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 17:26:39 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(207): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 17:30:53 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(207): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 17:52:37 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(220): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 17:54:13 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(220): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 17:57:08 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(223): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 17:58:38 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'filename' doesn't have a default value
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(225): Model->saveAll(Array)
+#9 [internal function]: PostsController->edit('12')
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-05-23 18:17:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:18:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:18:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:32:32 Error: Fatal Error (4): syntax error, unexpected '>' in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 54]
+2017-05-23 18:32:32 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 54, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 18:32:46 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 56]
+2017-05-23 18:32:46 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 56, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 56, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 18:33:20 Error: Fatal Error (4): syntax error, unexpected 'input' (T_STRING), expecting ',' or ';' in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 56]
+2017-05-23 18:33:20 Error: [FatalErrorException] syntax error, unexpected 'input' (T_STRING), expecting ',' or ';'
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 56, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 56, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 18:33:39 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 57]
+2017-05-23 18:33:39 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 57, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 57, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 18:35:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:38:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:41:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:41:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:44:02 Error: Fatal Error (4): syntax error, unexpected ''.filename'' (T_CONSTANT_ENCAPSED_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 58]
+2017-05-23 18:44:02 Error: [FatalErrorException] syntax error, unexpected ''.filename'' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /cakephpc/posts/edit/12
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 58, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 58, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-23 18:44:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:45:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-23 18:47:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

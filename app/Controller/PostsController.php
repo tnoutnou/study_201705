@@ -82,18 +82,52 @@ class PostsController extends AppController {
 
 //$this->log('000');
 //$this->log($this->request->data);
-
+		
+		
+		
+		if (empty($this->request->data['Image'][0]['filename'])) {
+			unset($this->request->data['Image']);
+		}
 			
-			if (empty($this->request->data['Image'][0]['filename'])) {
-				unset($this->request->data['Image']);
-			}
-
-$this->log('111');
+			
+//$this->log('111');
+//$this->log($this->request->data);
+			
+			
+			
+//$this->log('111');
 //$this->log($this->request->data['Image'][0]['filename']);
-$this->log($this->request->data);
+//$this->log($this->request->data);
 
+			 
+//			if ($this->Post->save($this->request->data)) {
+								
+//			$this->request->data['Post']['Image'][0]['post_id'] = $this->Post->id;  // id
 			
-			if ($this->Post->saveall($this->request->data)) {
+			foreach ($this->request->data['Post']['Image'] as $img_o) {
+				$img_lst2[] = array("model"=>"Post",
+									"filename" => $img_o,
+//									"post_id" => $this->Post->id				
+				);
+			}
+//			}
+			
+			$this->request->data['Image'] = $img_lst2;
+			
+//$this->log('111BBB');
+//$this->log($img_lst2);
+//$this->log($this->request->data);
+				
+//$this->log('222');
+//$this->log($this->request->data);
+
+			if($this->Post->saveall($this->request->data)) {
+//				$this->Post->Image->save($img_lst2);
+//	return;			
+//$this->log('333');
+//$this->log($this->request->data['Image'][0]['filename']);
+//$this->log($this->request->data);
+				
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -139,6 +173,18 @@ $this->log($this->request->data);
 //			debug($this->request->data);
 //			return;
 
+//			debug($this->request->data);
+
+			for ($i = 0; $i < count($this->request->data['Image']) ; $i++){
+//				debug($i);
+//				debug($this->request->data['Image'][$i]['filename']['name']);
+				if (empty($this->request->data['Image'][$i]['filename']['name'])) {
+					unset($this->request->data['Image'][$i]);
+//				debug($i . '!');
+				}		
+			}
+
+//			debug($this->request->data);
 			
 			if (empty($this->request->data['Image'][0]['filename']['name'])) {
 				// ファイルが指定されなかった場合
@@ -175,6 +221,7 @@ $this->log($this->request->data);
 					$this->PostsTag->delete($poststag);
 				}
 			}
+
 			
 			$var_end = $this->Post->saveAll($this->request->data);
 

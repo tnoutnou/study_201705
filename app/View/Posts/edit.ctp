@@ -6,7 +6,7 @@
 <div class="posts form col-xs-12 col-sm-8 col-md-9">
 <?php echo $this->Form->create('Post', array('type' => 'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Post !!'); ?></legend>
+		<legend><?php echo __('Edit Post !3!'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('user_id', array('label' => array('text' => 'user' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
@@ -21,26 +21,58 @@
 		echo $this->Form->input('tag_id',array('label' => array('text' => 'tag' ,'class' => 'label label-default'), 'type'=>'select', 'multiple'=>true, 'options'=>$tags, 'selected'=>$selected, 'class' => 'selectpicker show-menu-arrow form-control'));
 	?>
 <label class="label label-default">ImageAdd</label>
-<div class="input-group">
- <input type="text" class="form-control" id="selectedFile" readonly>
+<div class="input-group"　id="file-input-group1">
+ <input type="text" class="form-control" id="selectedFile1" readonly>
  <?php
 /**		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => array('text' => 'ImageAdd','class' => 'label label-default'), 'class'=>'btn btn-default btn-sm'));	*/
 /**		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => 'ImageAdd'));	*/
 /**		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => array('text' => 'ImageAdd','class' => 'label label-default'), 'style'=>'display:none'));	*/
 /**		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => array('text' => 'ImageAdd','class' => 'label label-default'), 'style'=>'display:none', 'id'=>'inputFile'));	*/
-		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'id'=>'inputFile'));
+		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'inputFile1'));
 	?>
  <span class="input-group-btn">
- <button id="selectFile" class="btn btn-default" type="button">ファイル選択</button>
+ <button id="selectFile1" class="btn btn-default" type="button">ファイル選択</button>
  </span>
 </div>
+
+<div class="input-group"　id="file-input-group2" style="display:none">
+ <input type="text" class="form-control" id="selectedFile2" readonly>
+ <?php echo $this->Form->input('Image.1.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'inputFile2')); ?>
+ <span class="input-group-btn">
+ <button id="selectFile2" class="btn btn-default" type="button">ファイル選択</button>
+ </span>
+</div>
+
+<div class="input-group"　id="file-input-group3" style="display:none">
+ <input type="text" class="form-control" id="selectedFile3" readonly>
+ <?php echo $this->Form->input('Image.2.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'inputFile3')); ?>
+ <span class="input-group-btn">
+ <button id="selectFile3" class="btn btn-default" type="button">ファイル選択</button>
+ </span>
+</div>
+
+<?php for ($i = 4; $i <= 3; $i++) {   ?>
+<?php $j=$i - 1;   ?>
+
+<?php echo '<div class="input-group"　id="file-input-group' . $i .'" style="display:none">';   ?>
+<?php echo '<input type="text" class="form-control" id="selectedFile'. $i .'" readonly>'   ?>
+ <?php echo $this->Form->input('Image.' . "$j" . '.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'inputFile3')); ?>
+<?php echo  '<span class="input-group-btn">'   ?>
+<?php echo  '<button id="selectFile'. $i .'" class="btn btn-default" type="button">ファイル選択</button>'   ?>
+<?php echo  '</span>'   ?>
+<?php echo '</div>'   ?>
+
+<?php }   ?>
+
+
+
 	<?php
 		echo $this->Form->input('Image.0.model', array('type' => 'hidden', 'value' => 'Post'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 
-<ul>
+<ul id="img_ul">
 	<?php $base = "/app/webroot/files/image/filename/"; ?>
 	<?php foreach ($post['Image'] as $image) {?>
 	<li>
