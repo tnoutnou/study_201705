@@ -98,22 +98,13 @@ class PostsController extends AppController {
 //			$this->request->data['Post']['Image'][0]['post_id'] = $this->Post->id;  // id
 
 			
-/*			if(!empty($this->request->data['Post']['Image'][0]['name'])) {
+			if(!empty($this->request->data['Post']['Image'][0]['name'])) {
 				foreach ($this->request->data['Post']['Image'] as $img_o) {
 					$img_lst2[] = array("model"=>"Post",
 										"filename" => $img_o,
 					);
 				}
 				$this->request->data['Image'] = $img_lst2;
-			}
-*/
-
-			$j = count($this->request->data['Image']);
-			
-			for ($i = 0; $i < $j ; $i++){
-				if (empty($this->request->data['Image'][$i]['filename']['name'])) {
-					unset($this->request->data['Image'][$i]);
-				}		
 			}
 			
 			$this->request->data['Tag'] = $this->request->data['Post'][tag_id];
@@ -199,6 +190,7 @@ class PostsController extends AppController {
 			
 			$var_end = $this->Post->saveAll($this->request->data);
 
+			
 			
 			if ($var_end) {
 				$this->Flash->success(__('The post has been saved.'));

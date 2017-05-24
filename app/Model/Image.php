@@ -49,10 +49,9 @@ class Image extends AppModel {
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+				'on' => 'update', // Limit validation to 'create' or 'update' operations
 			),
-		),
-*/
+		),*/
 /*		'dirname' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
