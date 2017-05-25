@@ -26,19 +26,7 @@
 		</dd>
 	</dl>
 </div>
-</div>
-<div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Group'), array('action' => 'edit', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Group'), array('action' => 'delete', $group['Group']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $group['Group']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Group'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-	</ul>
-</div>
+
 <div class="related">
 	<h3><?php echo __('Related Users'); ?></h3>
 	<?php if (!empty($group['User'])): ?>
@@ -68,14 +56,26 @@
 		</tr>
 	<?php endforeach; ?>
 	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
+	<?php endif; ?>
 </div>
+
+
+
+</div>
+<div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Group'), array('action' => 'edit', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Group'), array('action' => 'delete', $group['Group']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $group['Group']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Group'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+	</ul>
+</div>
+
+
 </div>
 </div>
 </div>

@@ -26,19 +26,7 @@
 		</dd>
 	</dl>
 </div>
-</div>
-<div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Tag'), array('action' => 'edit', $tag['Tag']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Tag'), array('action' => 'delete', $tag['Tag']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $tag['Tag']['id']))); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tags'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tag'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+
 <div class="related">
 	<h3><?php echo __('Related Posts'); ?></h3>
 	<?php if (!empty($tag['Post'])): ?>
@@ -70,13 +58,24 @@
 		</tr>
 	<?php endforeach; ?>
 	</table>
-<?php endif; ?>
-
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		</ul>
-	</div>
+	<?php endif; ?>
 </div>
+
+
+
+</div>
+<div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Tag'), array('action' => 'edit', $tag['Tag']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Tag'), array('action' => 'delete', $tag['Tag']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $tag['Tag']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Tags'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Tag'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+	</ul>
+</div>
+
+
 </div>

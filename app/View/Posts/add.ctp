@@ -9,7 +9,7 @@
 <div class="posts form">
 <?php echo $this->Form->create('Post', array('type' => 'file', 'enctype' => 'multipart/form-data')); ?>
 	<fieldset>
-		<legend><?php echo __('Add Post !'); ?></legend>
+		<legend><?php echo __('Add Post !!'); ?></legend>
 	<?php
 		echo $this->Form->input('user_id', array('label' => array('text' => 'user' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
 		echo $this->Form->input('title', array('label' => array('text' => 'title' ,'class' => 'label label-default'), 'class' => 'form-control'));
@@ -21,10 +21,10 @@
 <div class="input-group"　id="file-input-group1">
 <input type="text" class="form-control" id="selectedFile1" readonly>
  <?php
-		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'inputFile1'));
+		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'addinputFile1'));
 	?>
 <span class="input-group-btn">
-<button id="selectFile1" class="btn btn-default" type="button">新規ファイル追加</button>
+<button id="addselectFile1" class="btn btn-default" type="button">新規ファイル追加</button>
 <button id="delFilebtn" class="btn btn-default" type="button">新規ファイル全削除</button>
  </span>
 </div>
@@ -34,7 +34,7 @@
 
 <?php echo '<div class="input-group"　id="file-input-group' . $i .'" style="display:none">';   ?>
 <?php echo '<input type="text" class="form-control" id="selectedFile'. $i .'" readonly>'   ?>
- <?php echo $this->Form->input('Image.' . "$j" . '.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'inputFile' . $i)); ?>
+ <?php echo $this->Form->input('Image.' . "$j" . '.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'addinputFile' . $i)); ?>
 <?php echo '</div>'   ?>
 
 <?php }   ?>

@@ -13,7 +13,7 @@ class PostsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator','Flash','Search.Prg');
+	public $components = array('Paginator','Flash','Search.Prg' , 'Session');
 	
 	public $uses = array('Post', 'Category', 'Tag','PostsTag');
 
@@ -42,7 +42,6 @@ class PostsController extends AppController {
 	}
 
 	
-	
 /**
  * view method
  *
@@ -70,6 +69,7 @@ class PostsController extends AppController {
 
 	}
 
+	
 /**
  * add method
  *
@@ -79,24 +79,11 @@ class PostsController extends AppController {
 		
 		if ($this->request->is('post')) {
 
-		$this->Post->create();
+			$this->Post->create();
 
-
-			//ファイル名の必須入力を無効にする。
-//			unset($this->Post->validate['filename']);
-
-//$this->log('88888');
-//$this->log($this->request->data);
-		
-		if (empty($this->request->data['Image'][0]['filename'])) {
-			unset($this->request->data['Image']);
-		}
-
-			 
-//			if ($this->Post->save($this->request->data)) {
-								
-//			$this->request->data['Post']['Image'][0]['post_id'] = $this->Post->id;  // id
-
+			if (empty($this->request->data['Image'][0]['filename'])) {
+				unset($this->request->data['Image']);
+			}
 			
 /*			if(!empty($this->request->data['Post']['Image'][0]['name'])) {
 				foreach ($this->request->data['Post']['Image'] as $img_o) {
@@ -107,7 +94,6 @@ class PostsController extends AppController {
 				$this->request->data['Image'] = $img_lst2;
 			}
 */
-
 			$j = count($this->request->data['Image']);
 			
 			for ($i = 0; $i < $j ; $i++){
@@ -117,11 +103,23 @@ class PostsController extends AppController {
 			}
 			
 			$this->request->data['Tag'] = $this->request->data['Post'][tag_id];
-			
 
 			if($this->Post->saveall($this->request->data)) {
 //				$this->Post->Image->save($img_lst2);
-
+				
+				// 一時ファイルの削除
+//				$add_files　= $this->Session->read('add_files');
+//				$this->log($add_files);
+			
+//				foreach ($add_files　 as $afl) {
+//					$this->log($afl);
+//					if(file_exists($afl)) {
+//						$this->log(' !!! exists !!!');
+//						unlink($afl);
+//					}
+//				}
+//				$this->Session->delete('add_files');
+				$this->deltmpfile();
 				
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
@@ -144,6 +142,57 @@ class PostsController extends AppController {
 		
 	}
 
+
+	public function addfile() {
+		// ビューの使用無を設定
+		$this->autoRender = false;
+		
+		$prefile = $_POST["file_pre"];
+		$dir = $_POST["dir"];
+
+		if($_FILES["file"]["tmp_name"]){
+			list($file_name,$file_type) = explode(".",$_FILES['file']['name']);
+
+			$name = $prefile . $_FILES['file']['name'];
+
+			$file = "img/".$dir;
+			
+			//ディレクトリを作成してその中にアップロードしている。
+			if(!file_exists($file)){
+			  mkdir($file,0755);
+			}
+
+			if (move_uploaded_file($_FILES['file']['tmp_name'], $file."/".$name)) {
+			  chmod($file."/".$name, 0644);
+			}
+		}
+
+	// 一時的に取り込んだファイルを記録する（後で削除するときに利用）
+	$add_files = $this->Session->read('add_files');
+	$add_files[] = $file . "/" . $name;
+	$this->Session->write('add_files', $add_files);
+		
+	}
+
+	public function deltmpfile() {
+		// ビューの使用無を設定
+		$this->autoRender = false;
+		// 一時ファイルの削除
+		$add_files　= $this->Session->read('add_files');
+//		$this->log($add_files);
+		
+		foreach ($add_files　 as $afl) {
+			$this->log($afl);
+			if(file_exists($afl)) {
+				$this->log(' !!! exists !!!');
+				unlink($afl);
+			}
+		}
+		$this->Session->delete('add_files');
+		return;
+	}
+
+	
 /**
  * edit method
  *
@@ -173,7 +222,6 @@ class PostsController extends AppController {
 					unset($this->request->data['Image'][$i]);
 				}		
 			}
-
 
 			
 			if (empty($this->request->data['Image'][0]['filename']['name'])) {
@@ -254,7 +302,7 @@ class PostsController extends AppController {
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view');
+		$this->Auth->allow('index', 'view', 'addfile', 'deltmpfile');
 	}
 	
 }
