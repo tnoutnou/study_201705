@@ -14137,3 +14137,30 @@ Stack Trace:
 2017-05-25 17:05:50 Error:  !!! exists !!!
 2017-05-25 17:05:50 Error: img/tmp/201752517544jellyfish-154799_640.png
 2017-05-25 17:05:50 Error:  !!! exists !!!
+2017-05-26 10:13:17 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/page/display/home
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-26 10:13:34 Error: [MissingViewException] View file "Pages/display/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/display/home.ctp',
+)
+Request URL: /cakephpc/pages/display/home
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/View/View.php(470): View->_getViewFileName('display/home')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(963): View->render('display/home', NULL)
+#2 /var/www/html/vagrant/cakephpc/app/Controller/PagesController.php(72): Controller->render('display/home')
+#3 [internal function]: PagesController->display('display', 'home')
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-05-26 15:31:30 Error: 
+2017-05-26 15:36:32 Error: webroot
+2017-05-26 16:40:03 Error: webroot

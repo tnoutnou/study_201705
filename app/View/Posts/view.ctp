@@ -82,10 +82,9 @@
 	<ul style="list-style:none;">
 		<li><?php echo $this->Html->link(__('Edit Post'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Post'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<?php echo $this->element('actlistlist'); ?>
+		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
 </div>

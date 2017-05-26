@@ -22,8 +22,8 @@
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Image.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Image.id')), 'class'=>'btn btn-default btn-sm')); ?></li>
 		<li><?php echo $this->Html->link(__('List Images'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<?php echo $this->element('actlistall'); ?>
+
 	</ul>
 </div>
 </div>

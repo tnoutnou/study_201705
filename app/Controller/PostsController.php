@@ -66,7 +66,7 @@ class PostsController extends AppController {
 		$this->set(compact('categories'));
 		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
 		$this->set(compact('tags'));
-
+$this->log(WEBROOT_DIR);
 	}
 
 	

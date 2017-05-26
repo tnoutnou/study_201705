@@ -20,6 +20,7 @@
 		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
 </div>

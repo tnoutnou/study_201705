@@ -72,6 +72,7 @@
 		<li><?php echo $this->Html->link(__('New Group'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
 

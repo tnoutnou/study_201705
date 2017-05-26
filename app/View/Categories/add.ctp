@@ -18,6 +18,7 @@
 	<ul>
 
 		<li><?php echo $this->Html->link(__('List Categories'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
 </div>

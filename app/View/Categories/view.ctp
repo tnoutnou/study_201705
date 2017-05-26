@@ -35,6 +35,7 @@
 		<li><?php echo $this->Form->postLink(__('Delete Category'), array('action' => 'delete', $category['Category']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $category['Category']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Categories'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Category'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
 </div>
