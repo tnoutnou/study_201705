@@ -3,12 +3,13 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="groups form">
 <?php echo $this->Form->create('Group'); ?>
-	<fieldset>
+<?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>	<fieldset>
 		<legend><?php echo __('Add Group'); ?></legend>
 	<?php
-		echo $this->Form->input('name');
+		echo $this->Form->input('name', array('label' => array('text' => 'name')));
 	?>
 	</fieldset>
+<?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 </div>
@@ -17,9 +18,9 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>

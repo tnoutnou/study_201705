@@ -39,6 +39,9 @@ class PostsController extends AppController {
 		$this->set(compact('categories'));
 		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
 		$this->set(compact('tags'));
+		
+//		$this->log($this->Auth->user());
+
 	}
 
 	
@@ -66,7 +69,7 @@ class PostsController extends AppController {
 		$this->set(compact('categories'));
 		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
 		$this->set(compact('tags'));
-$this->log(WEBROOT_DIR);
+//$this->log(WEBROOT_DIR);
 	}
 
 	
@@ -128,7 +131,14 @@ $this->log(WEBROOT_DIR);
 			}
 		}
 //		$users = $this->Post->User->find('list');
-		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
+
+		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
+
+//		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
+//		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
+		$users = $this->Post->User->find('list', $options );
+
+		
 		$this->set(compact('users'));
 //		$categories = $this->Post->Category->find('list');
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
@@ -212,8 +222,7 @@ $this->log(WEBROOT_DIR);
 //			if ($this->Post->save($this->request->data)) {
 
 //			$this->request->data['Tag'] = implode( ',', $this->data['Post']['tag_id']);
-			$this->request->data['Tag'] = $this->data['Post']['tag_id'];
-			
+			$this->request->data['Tag'] = $this->data['Post']['tag_id'];			
 
 			$j = count($this->request->data['Image']);
 			
@@ -222,7 +231,6 @@ $this->log(WEBROOT_DIR);
 					unset($this->request->data['Image'][$i]);
 				}		
 			}
-
 			
 			if (empty($this->request->data['Image'][0]['filename']['name'])) {
 				// ファイルが指定されなかった場合
@@ -258,11 +266,26 @@ $this->log(WEBROOT_DIR);
 		} else {
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 			$this->request->data = $this->Post->find('first', $options);
-		// ?? post にも設定（たぶん不適切）
+			// ?? post にも設定（たぶん不適切）
 			$this->set('post', $this->Post->find('first', $options));
+//			debug($this->Post->find('first', $options));
+			// 投稿者で無い場合は、編集画面を起動しない。
+//			debug($this->request->data['User']['username']);
+//			debug($this->Session->read('login_user'));
+			if (!(($this->request->data['User']['username']) === $this->Session->read('login_user')) ) {
+				$this->Flash->success(__('投稿者しか編集できません。'));
+				return $this->redirect(array('action' => 'index'));
+			}
+			
+
 		}
+
+		
+		
+		
 //		$users = $this->Post->User->find('list');
 		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
+		
 		$this->set(compact('users'));
 //		$categories = $this->Post->Category->find('list');
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
@@ -290,7 +313,18 @@ $this->log(WEBROOT_DIR);
 		if (!$this->Post->exists()) {
 			throw new NotFoundException(__('Invalid post'));
 		}
+
 		$this->request->allowMethod('post', 'delete');
+
+		// 投稿者しか削除できないように。
+//		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
+//		$posts = $this->Post->find('first', $options);
+//		if (!(($posts['User']['username']) === $this->Session->read('login_user')) ) {
+//			$this->Flash->success(__('投稿者しか削除できません。'));
+//			return $this->redirect(array('action' => 'index'));
+//		}
+
+		
 //		if ($this->Post->deleteall()) {
 		if ($this->Post->delete()) {
 			$this->Flash->success(__('The post has been deleted.'));

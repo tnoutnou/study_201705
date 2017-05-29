@@ -3,12 +3,14 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="categories form">
 <?php echo $this->Form->create('Category'); ?>
+<?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
 	<fieldset>
 		<legend><?php echo __('Add Category'); ?></legend>
 	<?php
-		echo $this->Form->input('categoryname');
+		echo $this->Form->input('categoryname', array('label' => array('text' => 'categoryname')));
 	?>
 	</fieldset>
+<?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 </div>

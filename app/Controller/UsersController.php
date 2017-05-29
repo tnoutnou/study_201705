@@ -13,7 +13,7 @@ class UsersController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator','Flash');
+	public $components = array('Paginator','Flash','Session');
 
 /**
  * index method
@@ -117,7 +117,9 @@ class UsersController extends AppController {
 		
 		if ($this->request->is('post')) {
 			if ($this->Auth->login()) {
+				$this->Session->write('login_user', $this->request->data['User']['username']);
 				return $this->redirect($this->Auth->redirect());
+
 			}
 			$this->Session->setFlash(__('Your username or password was incorrect.'));
 		}

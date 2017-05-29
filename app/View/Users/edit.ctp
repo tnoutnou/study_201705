@@ -3,15 +3,17 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
+<?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
 	<fieldset>
 		<legend><?php echo __('Edit User'); ?></legend>
 	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('username');
-		echo $this->Form->input('password');
-		echo $this->Form->input('group_id');
+		echo $this->Form->input('id', array('label' => array('text' => 'id')));
+		echo $this->Form->input('username', array('label' => array('text' => 'username')));
+		echo $this->Form->input('password', array('label' => array('text' => 'password')));
+		echo $this->Form->input('group_id', array('label' => array('text' => 'group_id')));
 	?>
 	</fieldset>
+<?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 </div>

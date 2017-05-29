@@ -16,7 +16,6 @@
 		echo $this->Form->input('body', array('label' => array('text' => 'body' ,'class' => 'label label-default'), 'class' => 'form-control'));
 		echo $this->Form->input('category_id', array('label' => array('text' => 'category' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
 		echo $this->Form->input('tag_id',array('label' => array('text' => 'tag' ,'class' => 'label label-default'), 'type'=>'select', 'multiple'=>true, 'options'=>$tags, 'class' => 'selectpicker show-menu-arrow form-control'));
-		
 	?>
 <label class="label label-default">ImageAdd</label>
 <div class="input-group"　id="file-input-group1">
@@ -49,7 +48,7 @@
 //		echo $this->Form->input('Image.', array('type' => 'file',                           'label' => false, 'id'=>'inputFile'));	//
 //		echo $this->Form->input('Image.0.model', array('type' => 'hidden', 'value' => 'Post'));
 	?>
-
+	
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 

@@ -3,14 +3,16 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="images form">
 <?php echo $this->Form->create('Image'); ?>
+<?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
 	<fieldset>
 		<legend><?php echo __('Add Image'); ?></legend>
 	<?php
-		echo $this->Form->input('post_id');
-		echo $this->Form->input('filename');
-		echo $this->Form->input('dirname');
+		echo $this->Form->input('post_id', array('label' => array('text' => 'post_id')));
+		echo $this->Form->input('filename', array('label' => array('text' => 'filename')));
+		echo $this->Form->input('dirname', array('label' => array('text' => 'dirname')));
 	?>
 	</fieldset>
+<?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 </div>

@@ -14164,3 +14164,3202 @@ Stack Trace:
 2017-05-26 15:31:30 Error: 
 2017-05-26 15:36:32 Error: webroot
 2017-05-26 16:40:03 Error: webroot
+2017-05-29 11:52:45 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Categories/edit.ctp, line 5]
+2017-05-29 11:52:45 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cakephpc/categories/edit/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 5, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 5, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 12:08:53 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Categories/edit.ctp, line 7]
+2017-05-29 12:08:53 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cakephpc/categories/edit/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 7, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 7, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 12:50:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-29 12:50:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-29 13:06:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-29 13:08:18 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Categories/edit.ctp, line 19]
+2017-05-29 13:08:18 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /cakephpc/categories/edit/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 13:08:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-29 13:09:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-29 13:10:23 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/vagrant/cakephpc/app/View/Categories/edit.ctp, line 18]
+2017-05-29 13:10:23 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephpc/categories/edit/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 18, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 18, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 13:26:33 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/vagrant/cakephpc/app/View/Tags/edit.ctp, line 11]
+2017-05-29 13:26:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephpc/tags/edit/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 11, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 11, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 14:44:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-29 16:10:02 Error: 
+2017-05-29 16:15:56 Error: !!0529!!
+2017-05-29 16:15:56 Error: 
+2017-05-29 16:15:56 Error: !!0529B!!
+2017-05-29 16:18:32 Error: !!0529!!
+2017-05-29 16:18:32 Error: Array
+(
+    [id] => 3
+    [username] => u1
+    [group_id] => 3
+    [created] => 2017-05-08 10:10:21
+    [modified] => 2017-05-08 10:10:21
+    [Group] => Array
+        (
+            [id] => 3
+            [name] => users
+            [created] => 2017-05-08 10:07:06
+            [modified] => 2017-05-08 10:07:06
+        )
+
+)
+
+2017-05-29 16:18:32 Error: !!0529B!!
+2017-05-29 16:20:54 Error: !!0529!!
+2017-05-29 16:20:54 Error: Array
+(
+    [id] => 3
+    [username] => u1
+    [group_id] => 3
+    [created] => 2017-05-08 10:10:21
+    [modified] => 2017-05-08 10:10:21
+    [Group] => Array
+        (
+            [id] => 3
+            [name] => users
+            [created] => 2017-05-08 10:07:06
+            [modified] => 2017-05-08 10:07:06
+        )
+
+)
+
+2017-05-29 16:20:54 Error: Fatal Error (1): Call to undefined function loggedIn() in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 45]
+2017-05-29 16:20:54 Error: [FatalErrorException] Call to undefined function loggedIn()
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/v...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/v...', 45, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/v...', 45, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 16:21:07 Error: !!0529!!
+2017-05-29 16:21:07 Error: Array
+(
+    [id] => 3
+    [username] => u1
+    [group_id] => 3
+    [created] => 2017-05-08 10:10:21
+    [modified] => 2017-05-08 10:10:21
+    [Group] => Array
+        (
+            [id] => 3
+            [name] => users
+            [created] => 2017-05-08 10:07:06
+            [modified] => 2017-05-08 10:07:06
+        )
+
+)
+
+2017-05-29 16:21:07 Error: 1
+2017-05-29 16:21:07 Error: !!0529B!!
+2017-05-29 16:24:28 Error: 
+2017-05-29 16:33:17 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/vagrant/cakephpc/app/Controller/UsersController.php, line 122]
+2017-05-29 16:33:17 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephpc/users/logout
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 122, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 122, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 16:34:21 Error: Array
+(
+    [User] => Array
+        (
+            [username] => u1
+            [password] => u1
+        )
+
+)
+
+2017-05-29 16:34:56 Error: Array
+(
+    [User] => Array
+        (
+            [username] => u1
+            [password] => u1
+        )
+
+)
+
+2017-05-29 16:34:56 Error: 
+2017-05-29 16:35:20 Error: Array
+(
+    [User] => Array
+        (
+            [username] => u1
+            [password] => u1
+        )
+
+)
+
+2017-05-29 16:35:20 Error: 
+2017-05-29 16:35:53 Error: Array
+(
+    [User] => Array
+        (
+            [username] => u1
+            [password] => u1
+        )
+
+)
+
+2017-05-29 16:35:53 Error: u1
+2017-05-29 16:47:32 Error: Fatal Error (4): syntax error, unexpected '!=' (T_IS_NOT_EQUAL) in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 268]
+2017-05-29 16:47:32 Error: [FatalErrorException] syntax error, unexpected '!=' (T_IS_NOT_EQUAL)
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 268)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 268, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 268, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 16:49:59 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 268]
+2017-05-29 16:49:59 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephpc/posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 268)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 268, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 268, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 16:51:59 Error: img/tmp/2017529162426daisies-2271473_640.jpg
+2017-05-29 16:51:59 Error:  !!! exists !!!
+2017-05-29 16:51:59 Error: img/tmp/2017529165154feet-44810_640.png
+2017-05-29 16:51:59 Error:  !!! exists !!!
+2017-05-29 16:51:59 Error: img/tmp/2017529165157pathway-2289978_640.jpg
+2017-05-29 16:51:59 Error:  !!! exists !!!
+2017-05-29 16:53:16 Error: img/tmp/2017529165316jellyfish-154799_640.png
+2017-05-29 16:53:16 Error:  !!! exists !!!
+2017-05-29 17:36:38 Error: !!!
+2017-05-29 17:36:38 Error: 
+2017-05-29 17:36:38 Error: 
+2017-05-29 17:36:38 Error: !!!
+2017-05-29 17:37:23 Error: !!!
+2017-05-29 17:37:23 Error: 
+2017-05-29 17:37:23 Error: Post Object
+(
+    [actsAs] => Array
+        (
+            [0] => Search.Searchable
+        )
+
+    [filterArgs] => Array
+        (
+            [category_id] => Array
+                (
+                    [type] => value
+                )
+
+            [title] => Array
+                (
+                    [type] => like
+                )
+
+            [tag_id] => Array
+                (
+                    [type] => query
+                    [method] => findByTags
+                )
+
+        )
+
+    [validate] => Array
+        (
+            [user_id] => Array
+                (
+                    [numeric] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => numeric
+                                )
+
+                        )
+
+                )
+
+            [title] => Array
+                (
+                    [notBlank] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => notBlank
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [belongsTo] => Array
+        (
+            [User] => Array
+                (
+                    [className] => User
+                    [foreignKey] => user_id
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [counterCache] => 
+                )
+
+            [Category] => Array
+                (
+                    [className] => Category
+                    [foreignKey] => Category_id
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [counterCache] => 
+                )
+
+        )
+
+    [hasMany] => Array
+        (
+            [Image] => Array
+                (
+                    [className] => Image
+                    [foreignKey] => post_id
+                    [dependent] => 1
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [limit] => 
+                    [offset] => 
+                    [exclusive] => 
+                    [finderQuery] => 
+                    [counterQuery] => 
+                )
+
+        )
+
+    [hasAndBelongsToMany] => Array
+        (
+            [Tag] => Array
+                (
+                    [className] => tag
+                    [joinTable] => posts_tags
+                    [foreignKey] => post_id
+                    [associationForeignKey] => tag_id
+                    [unique] => keepExisting
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [limit] => 
+                    [offset] => 
+                    [finderQuery] => 
+                    [with] => PostsTag
+                    [dynamicWith] => 1
+                )
+
+        )
+
+    [useDbConfig] => default
+    [useTable] => posts
+    [id] => 102
+    [data] => Array
+        (
+        )
+
+    [schemaName] => acl_testdb
+    [table] => posts
+    [primaryKey] => id
+    [_schema:protected] => Array
+        (
+            [id] => Array
+                (
+                    [type] => integer
+                    [null] => 
+                    [default] => 
+                    [length] => 11
+                    [unsigned] => 
+                    [key] => primary
+                )
+
+            [user_id] => Array
+                (
+                    [type] => integer
+                    [null] => 
+                    [default] => 
+                    [length] => 11
+                    [unsigned] => 
+                )
+
+            [title] => Array
+                (
+                    [type] => string
+                    [null] => 
+                    [default] => 
+                    [length] => 255
+                    [collate] => utf8_general_ci
+                    [charset] => utf8
+                )
+
+            [body] => Array
+                (
+                    [type] => text
+                    [null] => 1
+                    [default] => 
+                    [length] => 
+                    [collate] => utf8_general_ci
+                    [charset] => utf8
+                )
+
+            [category_id] => Array
+                (
+                    [type] => integer
+                    [null] => 
+                    [default] => 
+                    [length] => 11
+                    [unsigned] => 
+                )
+
+            [created] => Array
+                (
+                    [type] => datetime
+                    [null] => 1
+                    [default] => 
+                    [length] => 
+                )
+
+            [modified] => Array
+                (
+                    [type] => datetime
+                    [null] => 1
+                    [default] => 
+                    [length] => 
+                )
+
+        )
+
+    [validationErrors] => Array
+        (
+        )
+
+    [validationDomain] => 
+    [tablePrefix] => 
+    [plugin] => 
+    [name] => Post
+    [alias] => Post
+    [tableToModel] => Array
+        (
+            [posts] => Post
+        )
+
+    [cacheQueries] => 
+    [hasOne] => Array
+        (
+        )
+
+    [Behaviors] => BehaviorCollection Object
+        (
+            [modelName] => Post
+            [_methods:protected] => Array
+                (
+                    [setupFilterArgs] => Array
+                        (
+                            [0] => Searchable
+                            [1] => setupFilterArgs
+                        )
+
+                    [parseCriteria] => Array
+                        (
+                            [0] => Searchable
+                            [1] => parseCriteria
+                        )
+
+                    [validateSearch] => Array
+                        (
+                            [0] => Searchable
+                            [1] => validateSearch
+                        )
+
+                    [passedArgs] => Array
+                        (
+                            [0] => Searchable
+                            [1] => passedArgs
+                        )
+
+                    [getQuery] => Array
+                        (
+                            [0] => Searchable
+                            [1] => getQuery
+                        )
+
+                    [unbindAllModels] => Array
+                        (
+                            [0] => Searchable
+                            [1] => unbindAllModels
+                        )
+
+                    [condIlike] => Array
+                        (
+                            [0] => Searchable
+                            [1] => condIlike
+                        )
+
+                    [condLike] => Array
+                        (
+                            [0] => Searchable
+                            [1] => condLike
+                        )
+
+                    [formatLike] => Array
+                        (
+                            [0] => Searchable
+                            [1] => formatLike
+                        )
+
+                    [getWildcards] => Array
+                        (
+                            [0] => Searchable
+                            [1] => getWildcards
+                        )
+
+                )
+
+            [_mappedMethods:protected] => Array
+                (
+                )
+
+            [_enabled:protected] => Array
+                (
+                    [Searchable] => Array
+                        (
+                            [0] => 10
+                            [1] => 1
+                        )
+
+                )
+
+            [_loaded:protected] => Array
+                (
+                    [Searchable] => SearchableBehavior Object
+                        (
+                            [_defaults:protected] => Array
+                                (
+                                    [wildcardAny] => *
+                                    [wildcardOne] => ?
+                                    [like] => Array
+                                        (
+                                            [before] => 1
+                                            [after] => 1
+                                        )
+
+                                    [ilike] => Array
+                                        (
+                                            [before] => 1
+                                            [after] => 1
+                                        )
+
+                                    [connectorAnd] => 
+                                    [connectorOr] => 
+                                )
+
+                            [settings] => Array
+                                (
+                                    [priority] => 10
+                                    [Post] => Array
+                                        (
+                                            [wildcardAny] => *
+                                            [wildcardOne] => ?
+                                            [like] => Array
+                                                (
+                                                    [before] => 1
+                                                    [after] => 1
+                                                )
+
+                                            [ilike] => Array
+                                                (
+                                                    [before] => 1
+                                                    [after] => 1
+                                                )
+
+                                            [connectorAnd] => 
+                                            [connectorOr] => 
+                                        )
+
+                                )
+
+                            [mapMethods] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [defaultPriority] => 10
+        )
+
+    [whitelist] => Array
+        (
+        )
+
+    [cacheSources] => 1
+    [findQueryType] => 
+    [recursive] => 1
+    [order] => 
+    [virtualFields] => Array
+        (
+        )
+
+    [_associationKeys:protected] => Array
+        (
+            [belongsTo] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => counterCache
+                )
+
+            [hasOne] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => dependent
+                )
+
+            [hasMany] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => limit
+                    [6] => offset
+                    [7] => dependent
+                    [8] => exclusive
+                    [9] => finderQuery
+                    [10] => counterQuery
+                )
+
+            [hasAndBelongsToMany] => Array
+                (
+                    [0] => className
+                    [1] => joinTable
+                    [2] => with
+                    [3] => foreignKey
+                    [4] => associationForeignKey
+                    [5] => conditions
+                    [6] => fields
+                    [7] => order
+                    [8] => limit
+                    [9] => offset
+                    [10] => unique
+                    [11] => finderQuery
+                )
+
+        )
+
+    [_associations:protected] => Array
+        (
+            [0] => belongsTo
+            [1] => hasOne
+            [2] => hasMany
+            [3] => hasAndBelongsToMany
+        )
+
+    [__backAssociation] => Array
+        (
+        )
+
+    [__backInnerAssociation] => Array
+        (
+        )
+
+    [__backOriginalAssociation] => Array
+        (
+        )
+
+    [__backContainableAssociation] => Array
+        (
+        )
+
+    [__safeUpdateMode] => 
+    [useConsistentAfterFind] => 1
+    [_insertID:protected] => 
+    [_sourceConfigured:protected] => 1
+    [findMethods] => Array
+        (
+            [all] => 1
+            [first] => 1
+            [count] => 1
+            [neighbors] => 1
+            [list] => 1
+            [threaded] => 1
+        )
+
+    [_eventManager:protected] => 
+    [_validator:protected] => 
+)
+
+2017-05-29 17:37:23 Error: User Object
+(
+    [validate] => Array
+        (
+            [username] => Array
+                (
+                    [notBlank] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => notBlank
+                                )
+
+                        )
+
+                )
+
+            [password] => Array
+                (
+                    [notBlank] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => notBlank
+                                )
+
+                        )
+
+                )
+
+            [group_id] => Array
+                (
+                    [numeric] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => numeric
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [belongsTo] => Array
+        (
+            [Group] => Array
+                (
+                    [className] => Group
+                    [foreignKey] => group_id
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [counterCache] => 
+                )
+
+        )
+
+    [hasMany] => Array
+        (
+            [Post] => Array
+                (
+                    [className] => Post
+                    [foreignKey] => user_id
+                    [dependent] => 
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [limit] => 
+                    [offset] => 
+                    [exclusive] => 
+                    [finderQuery] => 
+                    [counterQuery] => 
+                )
+
+        )
+
+    [actsAs] => Array
+        (
+            [Acl] => Array
+                (
+                    [type] => requester
+                )
+
+        )
+
+    [useDbConfig] => default
+    [useTable] => users
+    [id] => 
+    [data] => Array
+        (
+        )
+
+    [schemaName] => 
+    [table] => users
+    [primaryKey] => id
+    [_schema:protected] => 
+    [validationErrors] => Array
+        (
+        )
+
+    [validationDomain] => 
+    [plugin] => 
+    [name] => User
+    [alias] => User
+    [tableToModel] => Array
+        (
+            [users] => User
+        )
+
+    [cacheQueries] => 
+    [hasOne] => Array
+        (
+        )
+
+    [hasAndBelongsToMany] => Array
+        (
+        )
+
+    [Behaviors] => BehaviorCollection Object
+        (
+            [modelName] => User
+            [_methods:protected] => Array
+                (
+                    [node] => Array
+                        (
+                            [0] => Acl
+                            [1] => node
+                        )
+
+                )
+
+            [_mappedMethods:protected] => Array
+                (
+                )
+
+            [_enabled:protected] => Array
+                (
+                    [Acl] => Array
+                        (
+                            [0] => 10
+                            [1] => 1
+                        )
+
+                )
+
+            [_loaded:protected] => Array
+                (
+                    [Acl] => AclBehavior Object
+                        (
+                            [_typeMaps:protected] => Array
+                                (
+                                    [requester] => Aro
+                                    [controlled] => Aco
+                                    [both] => Array
+                                        (
+                                            [0] => Aro
+                                            [1] => Aco
+                                        )
+
+                                )
+
+                            [settings] => Array
+                                (
+                                    [priority] => 10
+                                    [User] => Array
+                                        (
+                                            [type] => requester
+                                        )
+
+                                )
+
+                            [mapMethods] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [defaultPriority] => 10
+        )
+
+    [whitelist] => Array
+        (
+        )
+
+    [cacheSources] => 1
+    [findQueryType] => 
+    [recursive] => 1
+    [order] => 
+    [virtualFields] => Array
+        (
+        )
+
+    [_associationKeys:protected] => Array
+        (
+            [belongsTo] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => counterCache
+                )
+
+            [hasOne] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => dependent
+                )
+
+            [hasMany] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => limit
+                    [6] => offset
+                    [7] => dependent
+                    [8] => exclusive
+                    [9] => finderQuery
+                    [10] => counterQuery
+                )
+
+            [hasAndBelongsToMany] => Array
+                (
+                    [0] => className
+                    [1] => joinTable
+                    [2] => with
+                    [3] => foreignKey
+                    [4] => associationForeignKey
+                    [5] => conditions
+                    [6] => fields
+                    [7] => order
+                    [8] => limit
+                    [9] => offset
+                    [10] => unique
+                    [11] => finderQuery
+                )
+
+        )
+
+    [_associations:protected] => Array
+        (
+            [0] => belongsTo
+            [1] => hasOne
+            [2] => hasMany
+            [3] => hasAndBelongsToMany
+        )
+
+    [__backAssociation] => Array
+        (
+        )
+
+    [__backInnerAssociation] => Array
+        (
+        )
+
+    [__backOriginalAssociation] => Array
+        (
+        )
+
+    [__backContainableAssociation] => Array
+        (
+        )
+
+    [__safeUpdateMode] => 
+    [useConsistentAfterFind] => 1
+    [_insertID:protected] => 
+    [_sourceConfigured:protected] => 
+    [findMethods] => Array
+        (
+            [all] => 1
+            [first] => 1
+            [count] => 1
+            [neighbors] => 1
+            [list] => 1
+            [threaded] => 1
+        )
+
+    [_eventManager:protected] => 
+    [_validator:protected] => 
+    [Aro] => Aro Object
+        (
+            [name] => Aro
+            [hasAndBelongsToMany] => Array
+                (
+                    [Aco] => Array
+                        (
+                            [with] => Permission
+                            [className] => Aco
+                            [joinTable] => acos_aros
+                            [foreignKey] => aro_id
+                            [associationForeignKey] => aco_id
+                            [conditions] => 
+                            [fields] => 
+                            [order] => 
+                            [limit] => 
+                            [offset] => 
+                            [unique] => 1
+                            [finderQuery] => 
+                        )
+
+                )
+
+            [cacheQueries] => 
+            [actsAs] => Array
+                (
+                    [Tree] => Array
+                        (
+                            [type] => nested
+                        )
+
+                )
+
+            [useDbConfig] => default
+            [useTable] => aros
+            [id] => 
+            [data] => Array
+                (
+                )
+
+            [schemaName] => acl_testdb
+            [table] => aros
+            [primaryKey] => id
+            [_schema:protected] => Array
+                (
+                    [id] => Array
+                        (
+                            [type] => integer
+                            [null] => 
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 1
+                            [key] => primary
+                        )
+
+                    [parent_id] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 
+                        )
+
+                    [model] => Array
+                        (
+                            [type] => string
+                            [null] => 1
+                            [default] => 
+                            [length] => 255
+                            [collate] => utf8_general_ci
+                            [charset] => utf8
+                        )
+
+                    [foreign_key] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 1
+                        )
+
+                    [alias] => Array
+                        (
+                            [type] => string
+                            [null] => 1
+                            [default] => 
+                            [length] => 255
+                            [key] => index
+                            [collate] => utf8_general_ci
+                            [charset] => utf8
+                        )
+
+                    [lft] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 
+                            [key] => index
+                        )
+
+                    [rght] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 
+                        )
+
+                )
+
+            [validate] => Array
+                (
+                )
+
+            [validationErrors] => Array
+                (
+                )
+
+            [validationDomain] => 
+            [plugin] => 
+            [alias] => Aro
+            [tableToModel] => Array
+                (
+                    [aros] => Aro
+                    [acos] => Aco
+                )
+
+            [belongsTo] => Array
+                (
+                )
+
+            [hasOne] => Array
+                (
+                )
+
+            [hasMany] => Array
+                (
+                )
+
+            [Behaviors] => BehaviorCollection Object
+                (
+                    [modelName] => Aro
+                    [_methods:protected] => Array
+                        (
+                            [childCount] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => childCount
+                                )
+
+                            [children] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => children
+                                )
+
+                            [generateTreeList] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => generateTreeList
+                                )
+
+                            [formatTreeList] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => formatTreeList
+                                )
+
+                            [getParentNode] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => getParentNode
+                                )
+
+                            [getPath] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => getPath
+                                )
+
+                            [moveDown] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => moveDown
+                                )
+
+                            [moveUp] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => moveUp
+                                )
+
+                            [recover] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => recover
+                                )
+
+                            [reorder] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => reorder
+                                )
+
+                            [removeFromTree] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => removeFromTree
+                                )
+
+                            [verify] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => verify
+                                )
+
+                            [getLevel] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => getLevel
+                                )
+
+                        )
+
+                    [_mappedMethods:protected] => Array
+                        (
+                        )
+
+                    [_enabled:protected] => Array
+                        (
+                            [Tree] => Array
+                                (
+                                    [0] => 10
+                                    [1] => 1
+                                )
+
+                        )
+
+                    [_loaded:protected] => Array
+                        (
+                            [Tree] => TreeBehavior Object
+                                (
+                                    [errors] => Array
+                                        (
+                                        )
+
+                                    [_defaults:protected] => Array
+                                        (
+                                            [parent] => parent_id
+                                            [left] => lft
+                                            [right] => rght
+                                            [level] => 
+                                            [scope] => 1 = 1
+                                            [type] => nested
+                                            [__parentChange] => 
+                                            [recursive] => -1
+                                        )
+
+                                    [_deletedRow:protected] => Array
+                                        (
+                                        )
+
+                                    [settings] => Array
+                                        (
+                                            [priority] => 10
+                                            [Aco] => Array
+                                                (
+                                                    [type] => nested
+                                                    [parent] => parent_id
+                                                    [left] => lft
+                                                    [right] => rght
+                                                    [level] => 
+                                                    [scope] => 1 = 1
+                                                    [__parentChange] => 
+                                                    [recursive] => -1
+                                                )
+
+                                            [Aro] => Array
+                                                (
+                                                    [type] => nested
+                                                    [parent] => parent_id
+                                                    [left] => lft
+                                                    [right] => rght
+                                                    [level] => 
+                                                    [scope] => 1 = 1
+                                                    [__parentChange] => 
+                                                    [recursive] => -1
+                                                )
+
+                                        )
+
+                                    [mapMethods] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [defaultPriority] => 10
+                )
+
+            [whitelist] => Array
+                (
+                )
+
+            [cacheSources] => 1
+            [findQueryType] => 
+            [recursive] => 1
+            [order] => 
+            [virtualFields] => Array
+                (
+                )
+
+            [_associationKeys:protected] => Array
+                (
+                    [belongsTo] => Array
+                        (
+                            [0] => className
+                            [1] => foreignKey
+                            [2] => conditions
+                            [3] => fields
+                            [4] => order
+                            [5] => counterCache
+                        )
+
+                    [hasOne] => Array
+                        (
+                            [0] => className
+                            [1] => foreignKey
+                            [2] => conditions
+                            [3] => fields
+                            [4] => order
+                            [5] => dependent
+                        )
+
+                    [hasMany] => Array
+                        (
+                            [0] => className
+                            [1] => foreignKey
+                            [2] => conditions
+                            [3] => fields
+                            [4] => order
+                            [5] => limit
+                            [6] => offset
+                            [7] => dependent
+                            [8] => exclusive
+                            [9] => finderQuery
+                            [10] => counterQuery
+                        )
+
+                    [hasAndBelongsToMany] => Array
+                        (
+                            [0] => className
+                            [1] => joinTable
+                            [2] => with
+                            [3] => foreignKey
+                            [4] => associationForeignKey
+                            [5] => conditions
+                            [6] => fields
+                            [7] => order
+                            [8] => limit
+                            [9] => offset
+                            [10] => unique
+                            [11] => finderQuery
+                        )
+
+                )
+
+            [_associations:protected] => Array
+                (
+                    [0] => belongsTo
+                    [1] => hasOne
+                    [2] => hasMany
+                    [3] => hasAndBelongsToMany
+                )
+
+            [__backAssociation] => Array
+                (
+                )
+
+            [__backInnerAssociation] => Array
+                (
+                )
+
+            [__backOriginalAssociation] => Array
+                (
+                )
+
+            [__backContainableAssociation] => Array
+                (
+                )
+
+            [__safeUpdateMode] => 
+            [useConsistentAfterFind] => 1
+            [_insertID:protected] => 
+            [_sourceConfigured:protected] => 1
+            [findMethods] => Array
+                (
+                    [all] => 1
+                    [first] => 1
+                    [count] => 1
+                    [neighbors] => 1
+                    [list] => 1
+                    [threaded] => 1
+                )
+
+            [_eventManager:protected] => 
+            [_validator:protected] => 
+            [Aco] => Aco Object
+                (
+                    [name] => Aco
+                    [hasAndBelongsToMany] => Array
+                        (
+                            [Aro] => Array
+                                (
+                                    [with] => Permission
+                                    [className] => Aro
+                                    [joinTable] => acos_aros
+                                    [foreignKey] => aco_id
+                                    [associationForeignKey] => aro_id
+                                    [conditions] => 
+                                    [fields] => 
+                                    [order] => 
+                                    [limit] => 
+                                    [offset] => 
+                                    [unique] => 1
+                                    [finderQuery] => 
+                                )
+
+                        )
+
+                    [cacheQueries] => 
+                    [actsAs] => Array
+                        (
+                            [Tree] => Array
+                                (
+                                    [type] => nested
+                                )
+
+                        )
+
+                    [useDbConfig] => default
+                    [useTable] => acos
+                    [id] => 
+                    [data] => Array
+                        (
+                        )
+
+                    [schemaName] => acl_testdb
+                    [table] => acos
+                    [primaryKey] => id
+                    [_schema:protected] => Array
+                        (
+                            [id] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 1
+                                    [key] => primary
+                                )
+
+                            [parent_id] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 
+                                )
+
+                            [model] => Array
+                                (
+                                    [type] => string
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 255
+                                    [collate] => utf8_general_ci
+                                    [charset] => utf8
+                                )
+
+                            [foreign_key] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 1
+                                )
+
+                            [alias] => Array
+                                (
+                                    [type] => string
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 255
+                                    [key] => index
+                                    [collate] => utf8_general_ci
+                                    [charset] => utf8
+                                )
+
+                            [lft] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 
+                                    [key] => index
+                                )
+
+                            [rght] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 
+                                )
+
+                        )
+
+                    [validate] => Array
+                        (
+                        )
+
+                    [validationErrors] => Array
+                        (
+                        )
+
+                    [validationDomain] => 
+                    [plugin] => 
+                    [alias] => Aco
+                    [tableToModel] => Array
+                        (
+                            [acos] => Aco
+                            [aros] => Aro
+                        )
+
+                    [belongsTo] => Array
+                        (
+                        )
+
+                    [hasOne] => Array
+                        (
+                        )
+
+                    [hasMany] => Array
+                        (
+                        )
+
+                    [Behaviors] => BehaviorCollection Object
+                        (
+                            [modelName] => Aco
+                            [_methods:protected] => Array
+                                (
+                                    [childCount] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => childCount
+                                        )
+
+                                    [children] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => children
+                                        )
+
+                                    [generateTreeList] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => generateTreeList
+                                        )
+
+                                    [formatTreeList] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => formatTreeList
+                                        )
+
+                                    [getParentNode] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => getParentNode
+                                        )
+
+                                    [getPath] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => getPath
+                                        )
+
+                                    [moveDown] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => moveDown
+                                        )
+
+                                    [moveUp] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => moveUp
+                                        )
+
+                                    [recover] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => recover
+                                        )
+
+                                    [reorder] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => reorder
+                                        )
+
+                                    [removeFromTree] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => removeFromTree
+                                        )
+
+                                    [verify] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => verify
+                                        )
+
+                                    [getLevel] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => getLevel
+                                        )
+
+                                )
+
+                            [_mappedMethods:protected] => Array
+                                (
+                                )
+
+                            [_enabled:protected] => Array
+                                (
+                                    [Tree] => Array
+                                        (
+                                            [0] => 10
+                                            [1] => 1
+                                        )
+
+                                )
+
+                            [_loaded:protected] => Array
+                                (
+                                    [Tree] => TreeBehavior Object
+                                        (
+                                            [errors] => Array
+                                                (
+                                                )
+
+                                            [_defaults:protected] => Array
+                                                (
+                                                    [parent] => parent_id
+                                                    [left] => lft
+                                                    [right] => rght
+                                                    [level] => 
+                                                    [scope] => 1 = 1
+                                                    [type] => nested
+                                                    [__parentChange] => 
+                                                    [recursive] => -1
+                                                )
+
+                                            [_deletedRow:protected] => Array
+                                                (
+                                                )
+
+                                            [settings] => Array
+                                                (
+                                                    [priority] => 10
+                                                    [Aco] => Array
+                                                        (
+                                                            [type] => nested
+                                                            [parent] => parent_id
+                                                            [left] => lft
+                                                            [right] => rght
+                                                            [level] => 
+                                                            [scope] => 1 = 1
+                                                            [__parentChange] => 
+                                                            [recursive] => -1
+                                                        )
+
+                                                    [Aro] => Array
+                                                        (
+                                                            [type] => nested
+                                                            [parent] => parent_id
+                                                            [left] => lft
+                                                            [right] => rght
+                                                            [level] => 
+                                                            [scope] => 1 = 1
+                                                            [__parentChange] => 
+                                                            [recursive] => -1
+                                                        )
+
+                                                )
+
+                                            [mapMethods] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                            [defaultPriority] => 10
+                        )
+
+                    [whitelist] => Array
+                        (
+                        )
+
+                    [cacheSources] => 1
+                    [findQueryType] => 
+                    [recursive] => 1
+                    [order] => 
+                    [virtualFields] => Array
+                        (
+                        )
+
+                    [_associationKeys:protected] => Array
+                        (
+                            [belongsTo] => Array
+                                (
+                                    [0] => className
+                                    [1] => foreignKey
+                                    [2] => conditions
+                                    [3] => fields
+                                    [4] => order
+                                    [5] => counterCache
+                                )
+
+                            [hasOne] => Array
+                                (
+                                    [0] => className
+                                    [1] => foreignKey
+                                    [2] => conditions
+                                    [3] => fields
+                                    [4] => order
+                                    [5] => dependent
+                                )
+
+                            [hasMany] => Array
+                                (
+                                    [0] => className
+                                    [1] => foreignKey
+                                    [2] => conditions
+                                    [3] => fields
+                                    [4] => order
+                                    [5] => limit
+                                    [6] => offset
+                                    [7] => dependent
+                                    [8] => exclusive
+                                    [9] => finderQuery
+                                    [10] => counterQuery
+                                )
+
+                            [hasAndBelongsToMany] => Array
+                                (
+                                    [0] => className
+                                    [1] => joinTable
+                                    [2] => with
+                                    [3] => foreignKey
+                                    [4] => associationForeignKey
+                                    [5] => conditions
+                                    [6] => fields
+                                    [7] => order
+                                    [8] => limit
+                                    [9] => offset
+                                    [10] => unique
+                                    [11] => finderQuery
+                                )
+
+                        )
+
+                    [_associations:protected] => Array
+                        (
+                            [0] => belongsTo
+                            [1] => hasOne
+                            [2] => hasMany
+                            [3] => hasAndBelongsToMany
+                        )
+
+                    [__backAssociation] => Array
+                        (
+                        )
+
+                    [__backInnerAssociation] => Array
+                        (
+                        )
+
+                    [__backOriginalAssociation] => Array
+                        (
+                        )
+
+                    [__backContainableAssociation] => Array
+                        (
+                        )
+
+                    [__safeUpdateMode] => 
+                    [useConsistentAfterFind] => 1
+                    [_insertID:protected] => 
+                    [_sourceConfigured:protected] => 1
+                    [findMethods] => Array
+                        (
+                            [all] => 1
+                            [first] => 1
+                            [count] => 1
+                            [neighbors] => 1
+                            [list] => 1
+                            [threaded] => 1
+                        )
+
+                    [_eventManager:protected] => 
+                    [_validator:protected] => 
+                    [Aro] => Aro Object
+ *RECURSION*
+                    [tablePrefix] => 
+                )
+
+            [tablePrefix] => 
+        )
+
+)
+
+2017-05-29 17:37:23 Error: !!!
+2017-05-29 17:39:15 Error: !!!
+2017-05-29 17:39:15 Error: 
+2017-05-29 17:39:15 Error: User Object
+(
+    [validate] => Array
+        (
+            [username] => Array
+                (
+                    [notBlank] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => notBlank
+                                )
+
+                        )
+
+                )
+
+            [password] => Array
+                (
+                    [notBlank] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => notBlank
+                                )
+
+                        )
+
+                )
+
+            [group_id] => Array
+                (
+                    [numeric] => Array
+                        (
+                            [rule] => Array
+                                (
+                                    [0] => numeric
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [belongsTo] => Array
+        (
+            [Group] => Array
+                (
+                    [className] => Group
+                    [foreignKey] => group_id
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [counterCache] => 
+                )
+
+        )
+
+    [hasMany] => Array
+        (
+            [Post] => Array
+                (
+                    [className] => Post
+                    [foreignKey] => user_id
+                    [dependent] => 
+                    [conditions] => 
+                    [fields] => 
+                    [order] => 
+                    [limit] => 
+                    [offset] => 
+                    [exclusive] => 
+                    [finderQuery] => 
+                    [counterQuery] => 
+                )
+
+        )
+
+    [actsAs] => Array
+        (
+            [Acl] => Array
+                (
+                    [type] => requester
+                )
+
+        )
+
+    [useDbConfig] => default
+    [useTable] => users
+    [id] => 
+    [data] => Array
+        (
+        )
+
+    [schemaName] => 
+    [table] => users
+    [primaryKey] => id
+    [_schema:protected] => 
+    [validationErrors] => Array
+        (
+        )
+
+    [validationDomain] => 
+    [plugin] => 
+    [name] => User
+    [alias] => User
+    [tableToModel] => Array
+        (
+            [users] => User
+        )
+
+    [cacheQueries] => 
+    [hasOne] => Array
+        (
+        )
+
+    [hasAndBelongsToMany] => Array
+        (
+        )
+
+    [Behaviors] => BehaviorCollection Object
+        (
+            [modelName] => User
+            [_methods:protected] => Array
+                (
+                    [node] => Array
+                        (
+                            [0] => Acl
+                            [1] => node
+                        )
+
+                )
+
+            [_mappedMethods:protected] => Array
+                (
+                )
+
+            [_enabled:protected] => Array
+                (
+                    [Acl] => Array
+                        (
+                            [0] => 10
+                            [1] => 1
+                        )
+
+                )
+
+            [_loaded:protected] => Array
+                (
+                    [Acl] => AclBehavior Object
+                        (
+                            [_typeMaps:protected] => Array
+                                (
+                                    [requester] => Aro
+                                    [controlled] => Aco
+                                    [both] => Array
+                                        (
+                                            [0] => Aro
+                                            [1] => Aco
+                                        )
+
+                                )
+
+                            [settings] => Array
+                                (
+                                    [priority] => 10
+                                    [User] => Array
+                                        (
+                                            [type] => requester
+                                        )
+
+                                )
+
+                            [mapMethods] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [defaultPriority] => 10
+        )
+
+    [whitelist] => Array
+        (
+        )
+
+    [cacheSources] => 1
+    [findQueryType] => 
+    [recursive] => 1
+    [order] => 
+    [virtualFields] => Array
+        (
+        )
+
+    [_associationKeys:protected] => Array
+        (
+            [belongsTo] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => counterCache
+                )
+
+            [hasOne] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => dependent
+                )
+
+            [hasMany] => Array
+                (
+                    [0] => className
+                    [1] => foreignKey
+                    [2] => conditions
+                    [3] => fields
+                    [4] => order
+                    [5] => limit
+                    [6] => offset
+                    [7] => dependent
+                    [8] => exclusive
+                    [9] => finderQuery
+                    [10] => counterQuery
+                )
+
+            [hasAndBelongsToMany] => Array
+                (
+                    [0] => className
+                    [1] => joinTable
+                    [2] => with
+                    [3] => foreignKey
+                    [4] => associationForeignKey
+                    [5] => conditions
+                    [6] => fields
+                    [7] => order
+                    [8] => limit
+                    [9] => offset
+                    [10] => unique
+                    [11] => finderQuery
+                )
+
+        )
+
+    [_associations:protected] => Array
+        (
+            [0] => belongsTo
+            [1] => hasOne
+            [2] => hasMany
+            [3] => hasAndBelongsToMany
+        )
+
+    [__backAssociation] => Array
+        (
+        )
+
+    [__backInnerAssociation] => Array
+        (
+        )
+
+    [__backOriginalAssociation] => Array
+        (
+        )
+
+    [__backContainableAssociation] => Array
+        (
+        )
+
+    [__safeUpdateMode] => 
+    [useConsistentAfterFind] => 1
+    [_insertID:protected] => 
+    [_sourceConfigured:protected] => 
+    [findMethods] => Array
+        (
+            [all] => 1
+            [first] => 1
+            [count] => 1
+            [neighbors] => 1
+            [list] => 1
+            [threaded] => 1
+        )
+
+    [_eventManager:protected] => 
+    [_validator:protected] => 
+    [Aro] => Aro Object
+        (
+            [name] => Aro
+            [hasAndBelongsToMany] => Array
+                (
+                    [Aco] => Array
+                        (
+                            [with] => Permission
+                            [className] => Aco
+                            [joinTable] => acos_aros
+                            [foreignKey] => aro_id
+                            [associationForeignKey] => aco_id
+                            [conditions] => 
+                            [fields] => 
+                            [order] => 
+                            [limit] => 
+                            [offset] => 
+                            [unique] => 1
+                            [finderQuery] => 
+                        )
+
+                )
+
+            [cacheQueries] => 
+            [actsAs] => Array
+                (
+                    [Tree] => Array
+                        (
+                            [type] => nested
+                        )
+
+                )
+
+            [useDbConfig] => default
+            [useTable] => aros
+            [id] => 
+            [data] => Array
+                (
+                )
+
+            [schemaName] => acl_testdb
+            [table] => aros
+            [primaryKey] => id
+            [_schema:protected] => Array
+                (
+                    [id] => Array
+                        (
+                            [type] => integer
+                            [null] => 
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 1
+                            [key] => primary
+                        )
+
+                    [parent_id] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 
+                        )
+
+                    [model] => Array
+                        (
+                            [type] => string
+                            [null] => 1
+                            [default] => 
+                            [length] => 255
+                            [collate] => utf8_general_ci
+                            [charset] => utf8
+                        )
+
+                    [foreign_key] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 1
+                        )
+
+                    [alias] => Array
+                        (
+                            [type] => string
+                            [null] => 1
+                            [default] => 
+                            [length] => 255
+                            [key] => index
+                            [collate] => utf8_general_ci
+                            [charset] => utf8
+                        )
+
+                    [lft] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 
+                            [key] => index
+                        )
+
+                    [rght] => Array
+                        (
+                            [type] => integer
+                            [null] => 1
+                            [default] => 
+                            [length] => 10
+                            [unsigned] => 
+                        )
+
+                )
+
+            [validate] => Array
+                (
+                )
+
+            [validationErrors] => Array
+                (
+                )
+
+            [validationDomain] => 
+            [plugin] => 
+            [alias] => Aro
+            [tableToModel] => Array
+                (
+                    [aros] => Aro
+                    [acos] => Aco
+                )
+
+            [belongsTo] => Array
+                (
+                )
+
+            [hasOne] => Array
+                (
+                )
+
+            [hasMany] => Array
+                (
+                )
+
+            [Behaviors] => BehaviorCollection Object
+                (
+                    [modelName] => Aro
+                    [_methods:protected] => Array
+                        (
+                            [childCount] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => childCount
+                                )
+
+                            [children] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => children
+                                )
+
+                            [generateTreeList] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => generateTreeList
+                                )
+
+                            [formatTreeList] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => formatTreeList
+                                )
+
+                            [getParentNode] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => getParentNode
+                                )
+
+                            [getPath] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => getPath
+                                )
+
+                            [moveDown] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => moveDown
+                                )
+
+                            [moveUp] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => moveUp
+                                )
+
+                            [recover] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => recover
+                                )
+
+                            [reorder] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => reorder
+                                )
+
+                            [removeFromTree] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => removeFromTree
+                                )
+
+                            [verify] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => verify
+                                )
+
+                            [getLevel] => Array
+                                (
+                                    [0] => Tree
+                                    [1] => getLevel
+                                )
+
+                        )
+
+                    [_mappedMethods:protected] => Array
+                        (
+                        )
+
+                    [_enabled:protected] => Array
+                        (
+                            [Tree] => Array
+                                (
+                                    [0] => 10
+                                    [1] => 1
+                                )
+
+                        )
+
+                    [_loaded:protected] => Array
+                        (
+                            [Tree] => TreeBehavior Object
+                                (
+                                    [errors] => Array
+                                        (
+                                        )
+
+                                    [_defaults:protected] => Array
+                                        (
+                                            [parent] => parent_id
+                                            [left] => lft
+                                            [right] => rght
+                                            [level] => 
+                                            [scope] => 1 = 1
+                                            [type] => nested
+                                            [__parentChange] => 
+                                            [recursive] => -1
+                                        )
+
+                                    [_deletedRow:protected] => Array
+                                        (
+                                        )
+
+                                    [settings] => Array
+                                        (
+                                            [priority] => 10
+                                            [Aco] => Array
+                                                (
+                                                    [type] => nested
+                                                    [parent] => parent_id
+                                                    [left] => lft
+                                                    [right] => rght
+                                                    [level] => 
+                                                    [scope] => 1 = 1
+                                                    [__parentChange] => 
+                                                    [recursive] => -1
+                                                )
+
+                                            [Aro] => Array
+                                                (
+                                                    [type] => nested
+                                                    [parent] => parent_id
+                                                    [left] => lft
+                                                    [right] => rght
+                                                    [level] => 
+                                                    [scope] => 1 = 1
+                                                    [__parentChange] => 
+                                                    [recursive] => -1
+                                                )
+
+                                        )
+
+                                    [mapMethods] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [defaultPriority] => 10
+                )
+
+            [whitelist] => Array
+                (
+                )
+
+            [cacheSources] => 1
+            [findQueryType] => 
+            [recursive] => 1
+            [order] => 
+            [virtualFields] => Array
+                (
+                )
+
+            [_associationKeys:protected] => Array
+                (
+                    [belongsTo] => Array
+                        (
+                            [0] => className
+                            [1] => foreignKey
+                            [2] => conditions
+                            [3] => fields
+                            [4] => order
+                            [5] => counterCache
+                        )
+
+                    [hasOne] => Array
+                        (
+                            [0] => className
+                            [1] => foreignKey
+                            [2] => conditions
+                            [3] => fields
+                            [4] => order
+                            [5] => dependent
+                        )
+
+                    [hasMany] => Array
+                        (
+                            [0] => className
+                            [1] => foreignKey
+                            [2] => conditions
+                            [3] => fields
+                            [4] => order
+                            [5] => limit
+                            [6] => offset
+                            [7] => dependent
+                            [8] => exclusive
+                            [9] => finderQuery
+                            [10] => counterQuery
+                        )
+
+                    [hasAndBelongsToMany] => Array
+                        (
+                            [0] => className
+                            [1] => joinTable
+                            [2] => with
+                            [3] => foreignKey
+                            [4] => associationForeignKey
+                            [5] => conditions
+                            [6] => fields
+                            [7] => order
+                            [8] => limit
+                            [9] => offset
+                            [10] => unique
+                            [11] => finderQuery
+                        )
+
+                )
+
+            [_associations:protected] => Array
+                (
+                    [0] => belongsTo
+                    [1] => hasOne
+                    [2] => hasMany
+                    [3] => hasAndBelongsToMany
+                )
+
+            [__backAssociation] => Array
+                (
+                )
+
+            [__backInnerAssociation] => Array
+                (
+                )
+
+            [__backOriginalAssociation] => Array
+                (
+                )
+
+            [__backContainableAssociation] => Array
+                (
+                )
+
+            [__safeUpdateMode] => 
+            [useConsistentAfterFind] => 1
+            [_insertID:protected] => 
+            [_sourceConfigured:protected] => 1
+            [findMethods] => Array
+                (
+                    [all] => 1
+                    [first] => 1
+                    [count] => 1
+                    [neighbors] => 1
+                    [list] => 1
+                    [threaded] => 1
+                )
+
+            [_eventManager:protected] => 
+            [_validator:protected] => 
+            [Aco] => Aco Object
+                (
+                    [name] => Aco
+                    [hasAndBelongsToMany] => Array
+                        (
+                            [Aro] => Array
+                                (
+                                    [with] => Permission
+                                    [className] => Aro
+                                    [joinTable] => acos_aros
+                                    [foreignKey] => aco_id
+                                    [associationForeignKey] => aro_id
+                                    [conditions] => 
+                                    [fields] => 
+                                    [order] => 
+                                    [limit] => 
+                                    [offset] => 
+                                    [unique] => 1
+                                    [finderQuery] => 
+                                )
+
+                        )
+
+                    [cacheQueries] => 
+                    [actsAs] => Array
+                        (
+                            [Tree] => Array
+                                (
+                                    [type] => nested
+                                )
+
+                        )
+
+                    [useDbConfig] => default
+                    [useTable] => acos
+                    [id] => 
+                    [data] => Array
+                        (
+                        )
+
+                    [schemaName] => acl_testdb
+                    [table] => acos
+                    [primaryKey] => id
+                    [_schema:protected] => Array
+                        (
+                            [id] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 1
+                                    [key] => primary
+                                )
+
+                            [parent_id] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 
+                                )
+
+                            [model] => Array
+                                (
+                                    [type] => string
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 255
+                                    [collate] => utf8_general_ci
+                                    [charset] => utf8
+                                )
+
+                            [foreign_key] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 1
+                                )
+
+                            [alias] => Array
+                                (
+                                    [type] => string
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 255
+                                    [key] => index
+                                    [collate] => utf8_general_ci
+                                    [charset] => utf8
+                                )
+
+                            [lft] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 
+                                    [key] => index
+                                )
+
+                            [rght] => Array
+                                (
+                                    [type] => integer
+                                    [null] => 1
+                                    [default] => 
+                                    [length] => 10
+                                    [unsigned] => 
+                                )
+
+                        )
+
+                    [validate] => Array
+                        (
+                        )
+
+                    [validationErrors] => Array
+                        (
+                        )
+
+                    [validationDomain] => 
+                    [plugin] => 
+                    [alias] => Aco
+                    [tableToModel] => Array
+                        (
+                            [acos] => Aco
+                            [aros] => Aro
+                        )
+
+                    [belongsTo] => Array
+                        (
+                        )
+
+                    [hasOne] => Array
+                        (
+                        )
+
+                    [hasMany] => Array
+                        (
+                        )
+
+                    [Behaviors] => BehaviorCollection Object
+                        (
+                            [modelName] => Aco
+                            [_methods:protected] => Array
+                                (
+                                    [childCount] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => childCount
+                                        )
+
+                                    [children] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => children
+                                        )
+
+                                    [generateTreeList] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => generateTreeList
+                                        )
+
+                                    [formatTreeList] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => formatTreeList
+                                        )
+
+                                    [getParentNode] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => getParentNode
+                                        )
+
+                                    [getPath] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => getPath
+                                        )
+
+                                    [moveDown] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => moveDown
+                                        )
+
+                                    [moveUp] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => moveUp
+                                        )
+
+                                    [recover] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => recover
+                                        )
+
+                                    [reorder] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => reorder
+                                        )
+
+                                    [removeFromTree] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => removeFromTree
+                                        )
+
+                                    [verify] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => verify
+                                        )
+
+                                    [getLevel] => Array
+                                        (
+                                            [0] => Tree
+                                            [1] => getLevel
+                                        )
+
+                                )
+
+                            [_mappedMethods:protected] => Array
+                                (
+                                )
+
+                            [_enabled:protected] => Array
+                                (
+                                    [Tree] => Array
+                                        (
+                                            [0] => 10
+                                            [1] => 1
+                                        )
+
+                                )
+
+                            [_loaded:protected] => Array
+                                (
+                                    [Tree] => TreeBehavior Object
+                                        (
+                                            [errors] => Array
+                                                (
+                                                )
+
+                                            [_defaults:protected] => Array
+                                                (
+                                                    [parent] => parent_id
+                                                    [left] => lft
+                                                    [right] => rght
+                                                    [level] => 
+                                                    [scope] => 1 = 1
+                                                    [type] => nested
+                                                    [__parentChange] => 
+                                                    [recursive] => -1
+                                                )
+
+                                            [_deletedRow:protected] => Array
+                                                (
+                                                )
+
+                                            [settings] => Array
+                                                (
+                                                    [priority] => 10
+                                                    [Aco] => Array
+                                                        (
+                                                            [type] => nested
+                                                            [parent] => parent_id
+                                                            [left] => lft
+                                                            [right] => rght
+                                                            [level] => 
+                                                            [scope] => 1 = 1
+                                                            [__parentChange] => 
+                                                            [recursive] => -1
+                                                        )
+
+                                                    [Aro] => Array
+                                                        (
+                                                            [type] => nested
+                                                            [parent] => parent_id
+                                                            [left] => lft
+                                                            [right] => rght
+                                                            [level] => 
+                                                            [scope] => 1 = 1
+                                                            [__parentChange] => 
+                                                            [recursive] => -1
+                                                        )
+
+                                                )
+
+                                            [mapMethods] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                            [defaultPriority] => 10
+                        )
+
+                    [whitelist] => Array
+                        (
+                        )
+
+                    [cacheSources] => 1
+                    [findQueryType] => 
+                    [recursive] => 1
+                    [order] => 
+                    [virtualFields] => Array
+                        (
+                        )
+
+                    [_associationKeys:protected] => Array
+                        (
+                            [belongsTo] => Array
+                                (
+                                    [0] => className
+                                    [1] => foreignKey
+                                    [2] => conditions
+                                    [3] => fields
+                                    [4] => order
+                                    [5] => counterCache
+                                )
+
+                            [hasOne] => Array
+                                (
+                                    [0] => className
+                                    [1] => foreignKey
+                                    [2] => conditions
+                                    [3] => fields
+                                    [4] => order
+                                    [5] => dependent
+                                )
+
+                            [hasMany] => Array
+                                (
+                                    [0] => className
+                                    [1] => foreignKey
+                                    [2] => conditions
+                                    [3] => fields
+                                    [4] => order
+                                    [5] => limit
+                                    [6] => offset
+                                    [7] => dependent
+                                    [8] => exclusive
+                                    [9] => finderQuery
+                                    [10] => counterQuery
+                                )
+
+                            [hasAndBelongsToMany] => Array
+                                (
+                                    [0] => className
+                                    [1] => joinTable
+                                    [2] => with
+                                    [3] => foreignKey
+                                    [4] => associationForeignKey
+                                    [5] => conditions
+                                    [6] => fields
+                                    [7] => order
+                                    [8] => limit
+                                    [9] => offset
+                                    [10] => unique
+                                    [11] => finderQuery
+                                )
+
+                        )
+
+                    [_associations:protected] => Array
+                        (
+                            [0] => belongsTo
+                            [1] => hasOne
+                            [2] => hasMany
+                            [3] => hasAndBelongsToMany
+                        )
+
+                    [__backAssociation] => Array
+                        (
+                        )
+
+                    [__backInnerAssociation] => Array
+                        (
+                        )
+
+                    [__backOriginalAssociation] => Array
+                        (
+                        )
+
+                    [__backContainableAssociation] => Array
+                        (
+                        )
+
+                    [__safeUpdateMode] => 
+                    [useConsistentAfterFind] => 1
+                    [_insertID:protected] => 
+                    [_sourceConfigured:protected] => 1
+                    [findMethods] => Array
+                        (
+                            [all] => 1
+                            [first] => 1
+                            [count] => 1
+                            [neighbors] => 1
+                            [list] => 1
+                            [threaded] => 1
+                        )
+
+                    [_eventManager:protected] => 
+                    [_validator:protected] => 
+                    [Aro] => Aro Object
+ *RECURSION*
+                    [tablePrefix] => 
+                )
+
+            [tablePrefix] => 
+        )
+
+)
+
+2017-05-29 17:39:15 Error: !!!
+2017-05-29 17:39:49 Error: !!!
+2017-05-29 17:39:49 Error: Fatal Error (1): Cannot use object of type User as array in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 323]
+2017-05-29 17:39:49 Error: [FatalErrorException] Cannot use object of type User as array
+Request URL: /cakephpc/posts/delete/102
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/var/www/html/v...', 323)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/var/www/html/v...', 323, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/var/www/html/v...', 323, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-29 17:41:42 Error: !!!
+2017-05-29 17:41:42 Error: 
+2017-05-29 17:41:42 Error: !!!
+2017-05-29 17:42:45 Error: !!!
+2017-05-29 17:42:45 Error: 
+2017-05-29 17:42:45 Error: !!!
+2017-05-29 17:45:50 Error: !!!A
+2017-05-29 17:45:50 Error: Array
+(
+)
+
+2017-05-29 17:45:50 Error: !!!B
+2017-05-29 17:45:50 Error: Array
+(
+)
+
+2017-05-29 17:45:50 Error: !!!C
+2017-05-29 17:49:17 Error: !!!A
+2017-05-29 17:49:17 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 20
+            [user_id] => 1
+            [title] => title0522D
+            [body] => 本文
+２行目
+３行目
+            [category_id] => 1
+            [created] => 2017-05-22 17:32:10
+            [modified] => 2017-05-22 17:32:10
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-05-08 10:09:55
+        )
+
+    [Category] => Array
+        (
+            [id] => 1
+            [categoryname] => カテゴリ１
+            [created] => 2017-05-08 14:43:31
+            [modified] => 2017-05-08 14:43:31
+        )
+
+    [Image] => Array
+        (
+        )
+
+    [Tag] => Array
+        (
+        )
+
+)
+
+2017-05-29 17:49:17 Error: !!!B
+2017-05-29 17:50:08 Error: !!!A
+2017-05-29 17:50:08 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 20
+            [user_id] => 1
+            [title] => title0522D
+            [body] => 本文
+２行目
+３行目
+            [category_id] => 1
+            [created] => 2017-05-22 17:32:10
+            [modified] => 2017-05-22 17:32:10
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-05-08 10:09:55
+        )
+
+    [Category] => Array
+        (
+            [id] => 1
+            [categoryname] => カテゴリ１
+            [created] => 2017-05-08 14:43:31
+            [modified] => 2017-05-08 14:43:31
+        )
+
+    [Image] => Array
+        (
+        )
+
+    [Tag] => Array
+        (
+        )
+
+)
+
+2017-05-29 17:50:08 Error: !!!B
+2017-05-29 17:50:18 Error: !!!A
+2017-05-29 17:50:18 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 102
+            [user_id] => 3
+            [title] => title0529B
+            [body] => 本文２
+本文
+            [category_id] => 2
+            [created] => 2017-05-29 16:53:16
+            [modified] => 2017-05-29 16:53:16
+        )
+
+    [User] => Array
+        (
+            [id] => 3
+            [username] => u1
+            [password] => 9fc789fb7c661bab37b623d1e97930e354266fbc
+            [group_id] => 3
+            [created] => 2017-05-08 10:10:21
+            [modified] => 2017-05-08 10:10:21
+        )
+
+    [Category] => Array
+        (
+            [id] => 2
+            [categoryname] => カテゴリ２
+            [created] => 2017-05-08 14:45:35
+            [modified] => 2017-05-08 14:45:35
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 221
+                    [post_id] => 102
+                    [filename] => jellyfish-154799_640.png
+                    [dirname] => 221
+                    [created] => 2017-05-29 16:53:16
+                    [modified] => 2017-05-29 16:53:16
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [tagname] => タグ１
+                    [created] => 2017-05-08 14:47:34
+                    [modified] => 2017-05-08 14:47:34
+                    [PostsTag] => Array
+                        (
+                            [id] => 49
+                            [post_id] => 102
+                            [tag_id] => 1
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [tagname] => タグ４
+                    [created] => 2017-05-09 14:42:59
+                    [modified] => 2017-05-09 14:42:59
+                    [PostsTag] => Array
+                        (
+                            [id] => 50
+                            [post_id] => 102
+                            [tag_id] => 4
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-05-29 17:50:18 Error: !!!B

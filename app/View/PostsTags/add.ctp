@@ -3,13 +3,15 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="postsTags form">
 <?php echo $this->Form->create('PostsTag'); ?>
+<?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
 	<fieldset>
 		<legend><?php echo __('Add Posts Tag'); ?></legend>
 	<?php
-		echo $this->Form->input('post_id');
-		echo $this->Form->input('tag_id');
+		echo $this->Form->input('post_id', array('label' => array('text' => 'post_id')));
+		echo $this->Form->input('tag_id', array('label' => array('text' => 'tag_id')));
 	?>
 	</fieldset>
+<?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 </div>
