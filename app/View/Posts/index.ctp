@@ -5,14 +5,14 @@
 <div class="row">
 <!--	<div class="posts index">	-->
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
-	<h2><?php echo __('Posts !!'); ?></h2>
+	<h2><?php echo __('Posts '); ?></h2>
 
 	<p>
 		<input class="btn btn-default btn-sm" id="search-btn" type="button" value="検索非表示">
 	</p>
 
 	<?php echo $this->Form->create('Post', array('url'=>'index')); ?>
-		<legend>検索</legend>
+		<legend>検索条件</legend>
 		<div class="input-group">
 			<span class="input-group-addon">カテゴリ</span>
 			<?php echo $this->Form->input('category_id', array('label'=>false, 'div'=>false ,'empty' => true, 'style' => 'font-size:14px;padding-bottom:5px;padding-top:5px;'));  ?>

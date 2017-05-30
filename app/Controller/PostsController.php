@@ -281,10 +281,14 @@ class PostsController extends AppController {
 		}
 
 		
+		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
 		
 		
 //		$users = $this->Post->User->find('list');
-		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
+//		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
+		$users = $this->Post->User->find('list', $options );
+
+
 		
 		$this->set(compact('users'));
 //		$categories = $this->Post->Category->find('list');
