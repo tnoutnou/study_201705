@@ -50,7 +50,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<p><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></p>
+			<p><?php /* echo $this->Html->link($cakeDescription, 'http://cakephp.org'); */ ?></p>
 		</div>
 		<div id="content">
 
@@ -66,7 +66,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				); */
 			?>
 			<p>
-				<?php echo $cakeVersion; ?>
+				<?php /* echo $cakeVersion; */ ?>
 			</p>
 		</div>
 	</div>
