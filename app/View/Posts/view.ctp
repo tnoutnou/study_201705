@@ -6,24 +6,24 @@
 <?php echo $this->Html->css( 'custom.css'); ?>
 <div class="posts view">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
-<h2><?php echo __('Post'); ?></h2>
+<h2><?php echo __('投稿参照'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __('投稿No'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('User'); ?></dt>
+		<dt><?php echo __('投稿者名'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Title'); ?></dt>
+		<dt><?php echo __('タイトル'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['title']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Body'); ?></dt>
+		<dt><?php echo __('本文'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['body']); ?>
 			&nbsp;
@@ -35,7 +35,7 @@
 			&nbsp;
 		</dd>
 
-		<dt><?php echo __('tag_name'); ?></dt>
+		<dt><?php echo __('タグ名'); ?></dt>
 		<dd>
 			<?php foreach ($post['Tag'] as $taglist) {?>
 			<?php echo h($taglist['tagname']); ?>
@@ -43,7 +43,7 @@
 			&nbsp;
 		</dd>
 
-		<dt><?php echo __('image'); ?></dt>
+		<dt><?php echo __('添付イメージ'); ?></dt>
 		<dd>
 			<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>
 			<?php $base = "/app/webroot/files/image/filename/"; ?>
@@ -63,12 +63,12 @@
 		</dd>
 		
 		
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('投稿日時'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('編集日時'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['modified']); ?>
 			&nbsp;
@@ -78,11 +78,11 @@
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
-		<li><?php echo $this->Html->link(__('Edit Post'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Post'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('投稿編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Form->postLink(__('投稿削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('投稿追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistlist'); ?>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>

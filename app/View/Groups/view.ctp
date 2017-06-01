@@ -2,24 +2,24 @@
 <div class="row">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="groups view">
-<h2><?php echo __('Group'); ?></h2>
+<h2><?php echo __('グループ参照'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __('グループID'); ?></dt>
 		<dd>
 			<?php echo h($group['Group']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Name'); ?></dt>
+		<dt><?php echo __('グループ名'); ?></dt>
 		<dd>
 			<?php echo h($group['Group']['name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('作成日時'); ?></dt>
 		<dd>
 			<?php echo h($group['Group']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('更新日時'); ?></dt>
 		<dd>
 			<?php echo h($group['Group']['modified']); ?>
 			&nbsp;
@@ -28,17 +28,17 @@
 </div>
 
 <div class="related">
-	<h3><?php echo __('Related Users'); ?></h3>
+	<h3><?php echo __('関連ユーザ'); ?></h3>
 	<?php if (!empty($group['User'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Username'); ?></th>
-		<th><?php echo __('Password'); ?></th>
-		<th><?php echo __('Group Id'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
+		<th><?php echo __('ユーザID'); ?></th>
+		<th><?php echo __('ユーザ名'); ?></th>
+		<th><?php echo __('パスワード'); ?></th>
+		<th><?php echo __('グループID'); ?></th>
+		<th><?php echo __('作成日時'); ?></th>
+		<th><?php echo __('更新日時'); ?></th>
+		<th class="actions"><?php echo __('処理'); ?></th>
 	</tr>
 	<?php foreach ($group['User'] as $user): ?>
 		<tr>
@@ -49,9 +49,9 @@
 			<td><?php echo $user['created']; ?></td>
 			<td><?php echo $user['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'users', 'action' => 'view', $user['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'users', 'action' => 'edit', $user['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'users', 'action' => 'delete', $user['id']), array('confirm' => __('Are you sure you want to delete # %s?', $user['id']))); ?>
+				<?php echo $this->Html->link(__('参照'), array('controller' => 'users', 'action' => 'view', $user['id'])); ?>
+				<?php echo $this->Html->link(__('編集'), array('controller' => 'users', 'action' => 'edit', $user['id'])); ?>
+				<?php echo $this->Form->postLink(__('削除'), array('controller' => 'users', 'action' => 'delete', $user['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $user['id']))); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -64,14 +64,14 @@
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('処理'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Group'), array('action' => 'edit', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Group'), array('action' => 'delete', $group['Group']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $group['Group']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Group'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('グループ編集'), array('action' => 'edit', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Form->postLink(__('グループ削除'), array('action' => 'delete', $group['Group']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $group['Group']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('グループ一覧'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('グループ追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('ユーザ一覧'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('ユーザ追加'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>

@@ -4,23 +4,23 @@
 <div class="groups form">
 <?php echo $this->Form->create('Group'); ?>
 <?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>	<fieldset>
-		<legend><?php echo __('Add Group'); ?></legend>
+		<legend><?php echo __('グループ追加'); ?></legend>
 	<?php
-		echo $this->Form->input('name', array('label' => array('text' => 'name')));
+		echo $this->Form->input('name', array('label' => array('text' => 'グループ名')));
 	?>
 	</fieldset>
 <?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('登録')); ?>
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('処理'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('グループ一覧'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Html->link(__('ユーザ一覧'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('ユーザ追加'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>

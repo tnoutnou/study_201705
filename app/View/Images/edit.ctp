@@ -19,7 +19,7 @@
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('処理'); ?></h3>
 	<ul>
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Image.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Image.id')), 'class'=>'btn btn-default btn-sm')); ?></li>

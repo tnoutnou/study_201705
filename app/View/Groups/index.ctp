@@ -6,11 +6,11 @@
 	<table cellpadding="0" cellspacing="0" class="table table-bordered table-condensed">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('name'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th><?php echo $this->Paginator->sort('グループID'); ?></th>
+			<th><?php echo $this->Paginator->sort('グループ名'); ?></th>
+			<th><?php echo $this->Paginator->sort('作成日時'); ?></th>
+			<th><?php echo $this->Paginator->sort('更新日時'); ?></th>
+			<th class="actions"><?php echo __('処理'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -23,9 +23,9 @@
 		<td class="actions">
 			<div class="btn-toolbar">
 			<div class="btn-group">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $group['Group']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $group['Group']['id']), 'class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Html->link(__('参照'), array('action' => 'view', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $group['Group']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $group['Group']['id']), array('confirm' => __('本当に削除していもよろしいでしょうか？ # %s?', $group['Group']['id']), 'class'=>'btn btn-default btn-sm')); ?>
 			</div>
 			</div>
 		</td>
@@ -50,11 +50,11 @@
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('処理'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Group'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('グループ追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Html->link(__('ユーザ一覧'), array('controller' => 'users', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('ユーザ追加'), array('controller' => 'users', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>

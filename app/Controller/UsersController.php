@@ -34,7 +34,8 @@ class UsersController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('Invalid user'));
+//			throw new NotFoundException(__('Invalid user'));
+			throw new NotFoundException(__('無効なユーザです'));
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 		$this->set('user', $this->User->find('first', $options));
@@ -49,10 +50,12 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('The user has been saved.'));
+//				$this->Flash->success(__('The user has been saved.'));
+				$this->Flash->success(__('ユーザ情報が登録されました。'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+//				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+				$this->Flash->error(__('保存できませんでした。再度、追加して下さい。'));
 			}
 		}
 		$groups = $this->User->Group->find('list');
@@ -68,14 +71,17 @@ class UsersController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('Invalid user'));
+//			throw new NotFoundException(__('Invalid user'));
+			throw new NotFoundException(__('無効なユーザです'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('The user has been saved.'));
+//				$this->Flash->success(__('The user has been saved.'));
+				$this->Flash->success(__('ユーザ情報を保存しました。'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+//				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+				$this->Flash->error(__('保存できませんでした。再度、編集して下さい。'));
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
@@ -95,13 +101,16 @@ class UsersController extends AppController {
 	public function delete($id = null) {
 		$this->User->id = $id;
 		if (!$this->User->exists()) {
-			throw new NotFoundException(__('Invalid user'));
+//			throw new NotFoundException(__('Invalid user'));
+			throw new NotFoundException(__('無効なユーザです'));
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Flash->success(__('The user has been deleted.'));
+//			$this->Flash->success(__('The user has been deleted.'));
+			$this->Flash->success(__('該当ユーザを削除しました。'));
 		} else {
-			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+//			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+			$this->Flash->error(__('削除できませんでした。再度、削除して下さい。'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
@@ -111,7 +120,8 @@ class UsersController extends AppController {
 		
 
 		if ($this->Session->read('Auth.User')) {
-			$this->Session->setFlash('You are logged in!');
+//			$this->Session->setFlash('You are logged in!');
+			$this->Session->setFlash('ログイン済みです。');
 			$this->redirect('/posts/index', null, false);
 		}
 		
@@ -121,13 +131,14 @@ class UsersController extends AppController {
 				return $this->redirect($this->Auth->redirect());
 
 			}
-			$this->Session->setFlash(__('Your username or password was incorrect.'));
+//			$this->Session->setFlash(__('Your username or password was incorrect.'));
+			$this->Session->setFlash(__('ユーザ名かパスワードが間違っています。'));
 		}
 	}
 
 	public function logout() {
-		//ここは、今は空にしておいてください
-		$this->Session->setFlash('Good-Bye');
+//		$this->Session->setFlash('Good-Bye');
+		$this->Session->setFlash('ログアウトしました。');
 		$this->redirect($this->Auth->logout());
 	}	
 	

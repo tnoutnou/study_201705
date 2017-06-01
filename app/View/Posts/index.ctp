@@ -5,7 +5,7 @@
 <div class="row">
 <!--	<div class="posts index">	-->
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
-	<h2><?php echo __('Posts '); ?></h2>
+	<h2><?php echo __('投稿一覧 '); ?></h2>
 
 	<p>
 		<input class="btn btn-default btn-sm" id="search-btn" type="button" value="検索非表示">
@@ -60,9 +60,9 @@
 		<p class="actions">		
 			<div class="btn-toolbar">
 			<div class="btn-group">
-					<?php echo $this->Html->link(__('View'), array('action' => 'view', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?>
+					<?php echo $this->Html->link(__('参照'), array('action' => 'view', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+					<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+					<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?>
 			</div>
 			</div>
 		</p>
@@ -87,11 +87,11 @@
 </div>
 <!--	<div class="actions">	-->
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
-		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
-		<li><?php echo $this->Html->link(__('New Category'), array('controller' => 'categories', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tag'), array('controller' => 'tags', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('投稿追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Html->link(__('カテゴリ追加'), array('controller' => 'categories', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('タグ追加'), array('controller' => 'tags', 'action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistlist'); ?>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>

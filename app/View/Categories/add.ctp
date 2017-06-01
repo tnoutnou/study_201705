@@ -5,21 +5,21 @@
 <?php echo $this->Form->create('Category'); ?>
 <?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
 	<fieldset>
-		<legend><?php echo __('Add Category'); ?></legend>
+		<legend><?php echo __('カテゴリ追加'); ?></legend>
 	<?php
-		echo $this->Form->input('categoryname', array('label' => array('text' => 'categoryname')));
+		echo $this->Form->input('categoryname', array('label' => array('text' => 'カテゴリ名')));
 	?>
 	</fieldset>
 <?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('登録')); ?>
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('処理'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Categories'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Html->link(__('カテゴリ一覧'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>

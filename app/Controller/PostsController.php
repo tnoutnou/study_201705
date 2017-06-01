@@ -54,7 +54,8 @@ class PostsController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Post->exists($id)) {
-			throw new NotFoundException(__('Invalid post'));
+//			throw new NotFoundException(__('Invalid post'));
+			throw new NotFoundException(__('無効な投稿です。'));
 		}
 		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 		$this->set('post', $this->Post->find('first', $options));
@@ -124,10 +125,12 @@ class PostsController extends AppController {
 //				$this->Session->delete('add_files');
 				$this->deltmpfile();
 				
-				$this->Flash->success(__('The post has been saved.'));
+//				$this->Flash->success(__('The post has been saved.'));
+				$this->Flash->success(__('投稿を保存しました。'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Flash->error(__('The post could not be saved. Please, try again.'));
+//				$this->Flash->error(__('The post could not be saved. Please, try again.'));
+				$this->Flash->error(__('投稿の保存に失敗しました。再度、投稿追加を行って下さい。'));
 			}
 		}
 //		$users = $this->Post->User->find('list');
@@ -216,7 +219,8 @@ class PostsController extends AppController {
 		unset($this->Post->validate['filename']);
 
 		if (!$this->Post->exists($id)) {
-			throw new NotFoundException(__('Invalid post'));
+//			throw new NotFoundException(__('Invalid post'));
+			throw new NotFoundException(__('無効な投稿です。'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 //			if ($this->Post->save($this->request->data)) {
@@ -254,14 +258,15 @@ class PostsController extends AppController {
 			}
 			
 			$var_end = $this->Post->saveAll($this->request->data);
-
 			
 			if ($var_end) {
-				$this->Flash->success(__('The post has been saved.'));
+//				$this->Flash->success(__('The post has been saved.'));
+				$this->Flash->success(__('投稿を保存しました。'));
 				return $this->redirect(array('action' => 'index'));
 //				return;
 			} else {
-				$this->Flash->error(__('The post could not be saved. Please, try again.'));
+//				$this->Flash->error(__('The post could not be saved. Please, try again.'));
+				$this->Flash->error(__('投稿の保存に失敗しました。再度、投稿編集を行って下さい。'));
 			}
 		} else {
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
@@ -331,9 +336,12 @@ class PostsController extends AppController {
 		
 //		if ($this->Post->deleteall()) {
 		if ($this->Post->delete()) {
-			$this->Flash->success(__('The post has been deleted.'));
+//			$this->Flash->success(__('The post has been deleted.'));
+			$this->Flash->success(__('投稿を削除しました。'));
 		} else {
-			$this->Flash->error(__('The post could not be deleted. Please, try again.'));
+//			$this->Flash->error(__('The post could not be deleted. Please, try again.'));
+			$this->Flash->error(__('投稿の削除に失敗しました。再度、投稿削除を行って下さい。'));
+
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
@@ -344,3 +352,4 @@ class PostsController extends AppController {
 	}
 	
 }
+
