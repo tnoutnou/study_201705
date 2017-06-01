@@ -2,16 +2,16 @@
 <div class="row">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="postsTags index">
-	<h2><?php echo __('Posts Tags'); ?></h2>
+	<h2><?php echo __('投稿タグ一覧'); ?></h2>
 	<table cellpadding="0" cellspacing="0" class="table table-bordered table-condensed">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('post_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('tag_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th><?php echo $this->Paginator->sort('投稿タグID'); ?></th>
+			<th><?php echo $this->Paginator->sort('投稿ID'); ?></th>
+			<th><?php echo $this->Paginator->sort('タグID'); ?></th>
+			<th><?php echo $this->Paginator->sort('作成日時'); ?></th>
+			<th><?php echo $this->Paginator->sort('更新日時'); ?></th>
+			<th class="actions"><?php echo __('処理'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -29,9 +29,9 @@
 		<td class="actions">
 			<div class="btn-toolbar">
 			<div class="btn-group">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $postsTag['PostsTag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $postsTag['PostsTag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $postsTag['PostsTag']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $postsTag['PostsTag']['id']), 'class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Html->link(__('参照'), array('action' => 'view', $postsTag['PostsTag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $postsTag['PostsTag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $postsTag['PostsTag']['id']), array('confirm' => __('本当に削除してもよろしいでしょう # %s?', $postsTag['PostsTag']['id']), 'class'=>'btn btn-default btn-sm')); ?>
 			</div>
 			</div>
 		</td>

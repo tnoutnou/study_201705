@@ -8,7 +8,7 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <h2><?php echo __('投稿参照'); ?></h2>
 	<dl>
-		<dt><?php echo __('投稿No'); ?></dt>
+		<dt><?php echo __('投稿ID'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['id']); ?>
 			&nbsp;
