@@ -2,15 +2,15 @@
 <div class="row">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="tags index">
-	<h2><?php echo __('Tags'); ?></h2>
+	<h2><?php echo __('タグ一覧'); ?></h2>
 	<table cellpadding="0" cellspacing="0" class="table table-bordered table-condensed">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('tagname'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th><?php echo $this->Paginator->sort('タグID'); ?></th>
+			<th><?php echo $this->Paginator->sort('タグ名'); ?></th>
+			<th><?php echo $this->Paginator->sort('作成日時'); ?></th>
+			<th><?php echo $this->Paginator->sort('更新日時'); ?></th>
+			<th class="actions"><?php echo __('処理'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -23,9 +23,9 @@
 		<td class="actions">
 			<div class="btn-toolbar">
 			<div class="btn-group">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $tag['Tag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $tag['Tag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $tag['Tag']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $tag['Tag']['id']), 'class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Html->link(__('参照'), array('action' => 'view', $tag['Tag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $tag['Tag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+			<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $tag['Tag']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $tag['Tag']['id']), 'class'=>'btn btn-default btn-sm')); ?>
 			</div>
 			</div>
 		</td>
@@ -52,8 +52,8 @@
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Tag'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
+		<li><?php echo $this->Html->link(__('タグ追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Html->link(__('投稿一覧'), array('controller' => 'posts', 'action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>

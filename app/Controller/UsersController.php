@@ -23,6 +23,7 @@ class UsersController extends AppController {
 	public function index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
+//		$this->log($this->Paginator->paginate());
 	}
 
 /**
@@ -39,6 +40,7 @@ class UsersController extends AppController {
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 		$this->set('user', $this->User->find('first', $options));
+		$this->log($this->User->find('first', $options));
 	}
 
 /**
@@ -174,5 +176,28 @@ class UsersController extends AppController {
 		exit;
 	}
 	*/
+
+	public function changepw($id = null) {
+		if (!$this->User->exists($id)) {
+//			throw new NotFoundException(__('Invalid user'));
+			throw new NotFoundException(__('無効なユーザです'));
+		}
+		if ($this->request->is(array('post', 'put'))) {
+			if ($this->User->save($this->request->data)) {
+//				$this->Flash->success(__('The user has been saved.'));
+				$this->Flash->success(__('ユーザ情報を保存しました。'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+//				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+				$this->Flash->error(__('保存できませんでした。再度、編集して下さい。'));
+			}
+		} else {
+			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+			$this->request->data = $this->User->find('first', $options);
+		}
+		$groups = $this->User->Group->find('list');
+		$this->set(compact('groups'));
+	}
+
 	
 }

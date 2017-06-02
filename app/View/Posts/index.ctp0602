@@ -43,7 +43,6 @@
 			<label class="control-label">タグ文字検索</label>
 			<?php echo $this->Form->input('tag_str', array('label'=>false, 'div'=>false, 'placeholder' => '部分一致検索', 'class' => 'form-control'));  ?>
 		</div>
-
 		<?php echo $this->Form->end('検索'); ?>
 
 	<?php $i = 1; ?>

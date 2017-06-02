@@ -34,7 +34,8 @@ class TagsController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Tag->exists($id)) {
-			throw new NotFoundException(__('Invalid tag'));
+//			throw new NotFoundException(__('Invalid tag'));
+			throw new NotFoundException(__('無効なタグです。'));
 		}
 		$options = array('conditions' => array('Tag.' . $this->Tag->primaryKey => $id));
 		$this->set('tag', $this->Tag->find('first', $options));
@@ -49,10 +50,12 @@ class TagsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Tag->create();
 			if ($this->Tag->save($this->request->data)) {
-				$this->Flash->success(__('The tag has been saved.'));
+//				$this->Flash->success(__('The tag has been saved.'));
+				$this->Flash->success(__('タグを追加しました。'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Flash->error(__('The tag could not be saved. Please, try again.'));
+//				$this->Flash->error(__('The tag could not be saved. Please, try again.'));
+				$this->Flash->error(__('タグの保存に失敗しました。再度、追加を行って下さい。'));
 			}
 		}
 		$posts = $this->Tag->Post->find('list');
@@ -68,14 +71,17 @@ class TagsController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Tag->exists($id)) {
-			throw new NotFoundException(__('Invalid tag'));
+//				$this->Flash->success(__('The tag has been saved.'));
+				$this->Flash->success(__('タグを追加しました。'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Tag->save($this->request->data)) {
-				$this->Flash->success(__('The tag has been saved.'));
+//				$this->Flash->success(__('The tag has been saved.'));
+				$this->Flash->success(__('タグを保存しました。'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Flash->error(__('The tag could not be saved. Please, try again.'));
+//				$this->Flash->error(__('The tag could not be saved. Please, try again.'));
+				$this->Flash->error(__('タグの保存に失敗しました。再度、編集を行って下さい。'));
 			}
 		} else {
 			$options = array('conditions' => array('Tag.' . $this->Tag->primaryKey => $id));
@@ -95,13 +101,16 @@ class TagsController extends AppController {
 	public function delete($id = null) {
 		$this->Tag->id = $id;
 		if (!$this->Tag->exists()) {
-			throw new NotFoundException(__('Invalid tag'));
+//			throw new NotFoundException(__('Invalid tag'));
+			throw new NotFoundException(__('無効なタグです。'));
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Tag->delete()) {
-			$this->Flash->success(__('The tag has been deleted.'));
+//			$this->Flash->success(__('The tag has been deleted.'));
+			$this->Flash->success(__('タグを削除しました。'));
 		} else {
-			$this->Flash->error(__('The tag could not be deleted. Please, try again.'));
+//			$this->Flash->error(__('The tag could not be deleted. Please, try again.'));
+			$this->Flash->error(__('タグの削除に失敗しました。再度、削除を行って下さい。'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

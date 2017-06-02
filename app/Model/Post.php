@@ -16,8 +16,10 @@ class Post extends AppModel {
 	public $actsAs = array('Search.Searchable');
 	public $filterArgs = array(
 		'category_id' => array('type' => 'value'),
+		'category_str' => array('type' => 'query', 'method' => 'findBycateg'),
 		'title' => array('type' => 'like'),
-		'tag_id' => array('type' => 'query', 'method' => 'findByTags')
+		'tag_id' => array('type' => 'query', 'method' => 'findByTags'),
+		'tag_str' => array('type' => 'query', 'method' => 'findBytagstr'),
 	);
 
 	public $validate = array(
@@ -136,7 +138,6 @@ class Post extends AppModel {
 
 		/*
 		$tmp_arr = [];
-
 		foreach ($tmps as $tmp) {
 			debug($tmp);
 			array_push($tmp_arr, $tmp);			
@@ -148,5 +149,65 @@ class Post extends AppModel {
 		return $condition;
 		
 	}
+
+	
+	//カテゴリの部分一致
+	public function findBycateg($data = array()){
+
+//		debug($data['category_str']);
+//		$condition = array('tag_id' => $data['category_id_str']);
+		
+		$options = array('fields'=>array('id') , 'conditions' => array('categoryname like' => '%' . $data['category_str'] . '%'));
+		
+		$tmps = $this->Category->find('list', $options);
+		
+//		debug($tmps);
+
+		/*
+		$tmp_arr = [];
+		foreach ($tmps as $tmp) {
+			debug($tmp);
+			array_push($tmp_arr, $tmp);			
+		};
+*/
+		
+//		$condition = array('Post.id' => $tmp_arr);
+		$condition = array('Post.category_id' => $tmps);
+		return $condition;
+		
+	}
+
+	//タグの部分一致
+	public function findBytagstr($data = array()){
+
+//		debug($data['tag_str']);
+//		$condition = array('tag_id' => $data['category_id_str']);
+		
+		$options = array('fields'=>array('id') , 'conditions' => array('tagname like' => '%' . $data['tag_str'] . '%'));		
+		$tmps = $this->Tag->find('list', $options);
+
+		debug($tmps);
+
+		$options2 = array('fields'=>array('post_id') , 'conditions' => array('tag_id' => $tmps));		
+		$tmps2 = $this->PostsTag->find('list', $options2);
+
+//		debug($tmps2);
+		
+//		debug($tmps);
+
+		/*
+		$tmp_arr = [];
+		foreach ($tmps as $tmp) {
+			debug($tmp);
+			array_push($tmp_arr, $tmp);			
+		};
+*/
+		
+//		$condition = array('Post.id' => $tmp_arr);
+		$condition = array('Post.id' => $tmps2);
+		return $condition;
+		
+	}
+
 	
 }

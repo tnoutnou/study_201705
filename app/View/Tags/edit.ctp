@@ -6,15 +6,15 @@
 <?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
 
 	<fieldset>
-		<legend><?php echo __('Edit Tag'); ?></legend>
+		<legend><?php echo __('タグ編集'); ?></legend>
 	<?php
-		echo $this->Form->input('id', array('label' => array('text' => 'id')));
-		echo $this->Form->input('tagname', array('label' => array('text' => 'tagname')));
-		echo $this->Form->input('Post', array('label' => array('text' => 'Post')));
+		echo $this->Form->input('id', array('label' => array('text' => 'タグID')));
+		echo $this->Form->input('tagname', array('label' => array('text' => 'タグ名')));
+		echo $this->Form->input('Post', array('label' => array('text' => '投稿')));
 	?>
 	</fieldset>
 <?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('更新')); ?>
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
@@ -22,8 +22,8 @@
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Tag.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Tag.id')), 'class'=>'btn btn-default btn-sm')); ?></li>
-		<li><?php echo $this->Html->link(__('List Tags'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Form->postLink(__('タグ削除'), array('action' => 'delete', $this->Form->value('Tag.id')), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $this->Form->value('Tag.id')), 'class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Html->link(__('タグ一覧'), array('action' => 'index'), array('class'=>'btn btn-default btn-sm')); ?></li>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>

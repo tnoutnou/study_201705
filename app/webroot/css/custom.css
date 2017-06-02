@@ -153,6 +153,27 @@ ul {
 }
 
 
+#zip-sel{
+/*    position:fixed;     /* 位置の固定 */
+/*    top: 30%;           /* 表示位置(真ん中に表示) */
+ /*   left: 30%;          /* 表示位置(真ん中に表示) */
+    margin: 0;          /* 余白の削除 */
+    padding: 0;         /* 余白の削除 */
+        cursor:pointer;
+    z-index:1001;       /* 要素のz座標 */
+}
+
+#popup-sel{
+    position:fixed;     /* 位置の固定 */
+    top: 30%;           /* 表示位置(真ん中に表示) */
+    left: 30%;          /* 表示位置(真ん中に表示) */
+    margin: 0;          /* 余白の削除 */
+    padding: 0;         /* 余白の削除 */
+    z-index:1002;       /* 要素のz座標 */
+        color: black;
+        font-size: 16px;
+}
+
 
 
 
