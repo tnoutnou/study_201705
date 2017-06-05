@@ -183,20 +183,28 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('無効なユーザです'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+			$this->log($this->request->data);
 			if ($this->User->save($this->request->data)) {
 //				$this->Flash->success(__('The user has been saved.'));
-				$this->Flash->success(__('ユーザ情報を保存しました。'));
+				$this->Flash->success(__('パスワードを変更しました。'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 //				$this->Flash->error(__('The user could not be saved. Please, try again.'));
-				$this->Flash->error(__('保存できませんでした。再度、編集して下さい。'));
+				$this->Flash->error(__('パスワードを変更できませんでした。再度、変更して下さい。'));
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-			$this->request->data = $this->User->find('first', $options);
+//			$this->request->data = $this->User->find('first', $options);
+			$users = $this->User->find('first', $options);
+
+			$users['User']['olddbpassword'] = $users['User']['password'];
+
+//			$this->log('2222');
+//			$this->log($users);
+			
+			$this->request->data = $users;
 		}
-		$groups = $this->User->Group->find('list');
-		$this->set(compact('groups'));
+		
 	}
 
 	

@@ -34,6 +34,38 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'same' => array(
+				'rule' => array('checkCompare', 'new_password'),
+				'message' => '上下で同じ内容を入力してください',
+			),
+		),
+		'new_password' => array(
+			'notBlank' => array(
+				'rule' => array('notBlank'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+//			'same' => array(
+//				'rule' => array('checkCompare', 'new_password'),
+//				'message' => '上下で同じ内容を入力してください',
+//			),
+		'old_password' => array(
+			'notBlank' => array(
+				'rule' => array('notBlank'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+			'sameOld' => array(
+				'rule' => array('checkOldPassword'),
+				'message' => '現在のパスワードが正しくありません。',
+			),
 		),
 		'group_id' => array(
 			'numeric' => array(
@@ -109,6 +141,52 @@ class User extends AppModel {
             return array('Group' => array('id' => $groupId));
         }
     }
-	
-	
+
+	public function checkCompare($valid_field1, $valid_field2){
+		// フィールド名とフォームへの入力値の配列から、キーであるフィールド名を取得
+//		$this->log('1');
+//		$this->log($valid_field1);
+//		$this->log('2');
+//		$this->log($valid_field2);
+		$fieldname = key($valid_field1);
+		// 2つのフィールドの入力値を比較
+		if($this->data[$this->name][$fieldname] === $this->data[$this->name][$valid_field2]){
+			return true;
+		}
+		return false;
+	}
+
+	public function checkOldPassword($valid_field1){
+		// フィールド名とフォームへの入力値の配列から、キーであるフィールド名を取得
+		$fieldname = key($valid_field1);
+		$this->log('11');
+		$this->log($valid_field1);
+		$this->log('22');
+		$this->log($fieldname);
+
+		$this->log('33');
+		$this->log($this->data);
+		$this->log('44');
+		$this->log($users);
+
+		$this->log('55');
+		$this->log($this->data[$this->name]['old_password']);
+		$this->log('66');
+		$this->log($this->data[$this->name]['olddbpassword']);
+		$this->log('77');
+		$this->log($this->data[$this->name]['password']);
+
+		
+		// 旧パスワードの一致確認 未完
+//		if($this->data[$this->name]['password'] === $this->data[$this->name]['old_password']){
+//			return true;
+//		}
+//		return false;
+
+		return true;
+
+	}
+		
+		
+		
 }

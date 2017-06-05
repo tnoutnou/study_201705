@@ -24740,3 +24740,1037 @@ Stack Trace:
 #3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2017-06-05 10:13:20 Error: LOG!!!22!!!
+2017-06-05 10:22:24 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'username' doesn't have a default value
+Request URL: /users/changepw/10
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(User), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/UsersController.php(186): Model->save(Array)
+#6 [internal function]: UsersController->changepw('10')
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-06-05 10:25:33 Error: Array
+(
+    [User] => Array
+        (
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 10:25:33 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'username' doesn't have a default value
+Request URL: /users/changepw/10
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(User), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/UsersController.php(187): Model->save(Array)
+#6 [internal function]: UsersController->changepw('10')
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-06-05 10:34:29 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 10:35:50 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 10:36:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-05 10:56:56 Error: Fatal Error (4): syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 38]
+2017-06-05 10:56:56 Error: [InternalErrorException] Internal Server Error
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 10:57:02 Error: Fatal Error (4): syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 38]
+2017-06-05 10:57:02 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/changepw/10
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 10:57:09 Error: Fatal Error (4): syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 38]
+2017-06-05 10:57:09 Error: [InternalErrorException] Internal Server Error
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 10:57:12 Error: Fatal Error (4): syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 38]
+2017-06-05 10:57:12 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 10:58:50 Error: Fatal Error (4): syntax error, unexpected '    function' (T_STRING), expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 117]
+2017-06-05 10:58:50 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 10:58:52 Error: Fatal Error (4): syntax error, unexpected '    function' (T_STRING), expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 117]
+2017-06-05 10:58:52 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 10:58:52 Error: Fatal Error (4): syntax error, unexpected '    function' (T_STRING), expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 117]
+2017-06-05 10:58:52 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 10:58:54 Error: Fatal Error (4): syntax error, unexpected '    function' (T_STRING), expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 117]
+2017-06-05 10:58:54 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 11:00:13 Error: Fatal Error (4): syntax error, unexpected '  ' (T_STRING), expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 117]
+2017-06-05 11:00:13 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 11:01:59 Error: Fatal Error (4): syntax error, unexpected '  ' (T_STRING), expecting function (T_FUNCTION) in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 117]
+2017-06-05 11:01:59 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 117, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 11:04:02 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u8
+        )
+
+)
+
+2017-06-05 11:06:53 Error: Fatal Error (4): syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 38]
+2017-06-05 11:06:53 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 11:06:55 Error: Fatal Error (4): syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 38]
+2017-06-05 11:06:55 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 11:08:01 Warning: SplFileInfo::openFile(//var/www/html/vagrant/cakephpc/app/tmp/cache/persistent/myapp_cake_core_file_map): failed to open stream: Permission denied in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Engine/FileEngine.php, line 356]
+2017-06-05 11:08:01 Warning: _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Cache.php, line 328]
+2017-06-05 11:08:44 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 11:08:44 Error: Array
+(
+    [password] => u6
+)
+
+2017-06-05 11:08:44 Error: new_password
+2017-06-05 11:08:44 Error: u6
+2017-06-05 11:08:44 Error: u6
+2017-06-05 11:09:04 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u66
+            [new_password] => u67
+        )
+
+)
+
+2017-06-05 11:09:04 Error: Array
+(
+    [password] => u66
+)
+
+2017-06-05 11:09:04 Error: new_password
+2017-06-05 11:09:04 Error: u66
+2017-06-05 11:09:04 Error: u67
+2017-06-05 11:10:58 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u6
+            [new_password] => u67
+        )
+
+)
+
+2017-06-05 11:10:58 Error: 1
+2017-06-05 11:10:58 Error: Array
+(
+    [password] => u6
+)
+
+2017-06-05 11:10:58 Error: 2
+2017-06-05 11:10:58 Error: new_password
+2017-06-05 11:10:58 Error: 3
+2017-06-05 11:10:58 Error: 4
+2017-06-05 11:10:58 Error: u6
+2017-06-05 11:10:58 Error: 5
+2017-06-05 11:10:58 Error: u67
+2017-06-05 11:39:15 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u5
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 11:39:27 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u67
+            [new_password] => u66
+        )
+
+)
+
+2017-06-05 11:39:53 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 11:40:09 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u67
+            [new_password] => u677
+        )
+
+)
+
+2017-06-05 11:40:15 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u67
+            [new_password] => 
+        )
+
+)
+
+2017-06-05 15:50:48 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Users/changepw.ctp, line 15]
+2017-06-05 15:50:48 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/changepw/10
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 15, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 15, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 15:51:30 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u67
+            [new_password] => u67
+        )
+
+)
+
+2017-06-05 15:51:42 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u67
+            [password] => u666
+            [new_password] => u777
+        )
+
+)
+
+2017-06-05 16:21:21 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 79]
+2017-06-05 16:21:21 Error: [InternalErrorException] Internal Server Error
+Request URL: /users/changepw/10
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 16:21:24 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 79]
+2017-06-05 16:21:24 Error: [InternalErrorException] Internal Server Error
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 16:23:36 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 79]
+2017-06-05 16:23:36 Error: [InternalErrorException] Internal Server Error
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 16:23:39 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 79]
+2017-06-05 16:23:39 Error: [InternalErrorException] Internal Server Error
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 79, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-05 16:25:16 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 16:25:16 Error: 11
+2017-06-05 16:25:16 Error: Array
+(
+    [old_password] => u6
+)
+
+2017-06-05 16:25:16 Error: 22
+2017-06-05 16:25:16 Error: old_password
+2017-06-05 16:27:50 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 16:27:50 Error: 11
+2017-06-05 16:27:50 Error: Array
+(
+    [old_password] => u6
+)
+
+2017-06-05 16:27:50 Error: 22
+2017-06-05 16:27:50 Error: old_password
+2017-06-05 16:27:50 Error: 33
+2017-06-05 16:27:50 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 16:39:02 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 16:39:02 Error: 11
+2017-06-05 16:39:02 Error: Array
+(
+    [old_password] => u6
+)
+
+2017-06-05 16:39:02 Error: 22
+2017-06-05 16:39:02 Error: old_password
+2017-06-05 16:39:02 Error: 33
+2017-06-05 16:39:02 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 16:40:20 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 16:40:20 Error: 11
+2017-06-05 16:40:20 Error: Array
+(
+    [old_password] => u7
+)
+
+2017-06-05 16:40:20 Error: 22
+2017-06-05 16:40:20 Error: old_password
+2017-06-05 16:40:20 Error: 33
+2017-06-05 16:40:20 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 16:40:20 Error: 44
+2017-06-05 16:40:20 Error: 
+2017-06-05 16:53:14 Error: 1111
+2017-06-05 16:53:14 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 16:40:20
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
+2017-06-05 16:57:28 Error: 1111
+2017-06-05 16:57:28 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 16:40:20
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
+2017-06-05 16:57:28 Error: 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+2017-06-05 16:57:42 Error: 1111
+2017-06-05 16:57:42 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 16:40:20
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
+2017-06-05 16:57:42 Error: 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+2017-06-05 16:58:29 Error: 1111
+2017-06-05 16:58:29 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 16:40:20
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
+2017-06-05 16:58:29 Error: 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+2017-06-05 16:58:29 Error: 2222
+2017-06-05 16:58:29 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 16:40:20
+            [olddbpassword] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
+2017-06-05 16:58:37 Error: 1111
+2017-06-05 16:58:37 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 16:40:20
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
+2017-06-05 16:58:37 Error: 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+2017-06-05 16:58:37 Error: 2222
+2017-06-05 16:58:37 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 16:40:20
+            [olddbpassword] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
+2017-06-05 16:58:57 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 16:58:57 Error: 11
+2017-06-05 16:58:57 Error: Array
+(
+    [old_password] => u6
+)
+
+2017-06-05 16:58:57 Error: 22
+2017-06-05 16:58:57 Error: old_password
+2017-06-05 16:58:57 Error: 33
+2017-06-05 16:58:57 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+        )
+
+)
+
+2017-06-05 16:58:57 Error: 44
+2017-06-05 16:58:57 Error: 
+2017-06-05 17:01:52 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 17:01:52 Error: 11
+2017-06-05 17:01:52 Error: Array
+(
+    [old_password] => u6
+)
+
+2017-06-05 17:01:52 Error: 22
+2017-06-05 17:01:52 Error: old_password
+2017-06-05 17:01:52 Error: 33
+2017-06-05 17:01:52 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 17:01:52 Error: 44
+2017-06-05 17:01:52 Error: 
+2017-06-05 17:01:52 Error: 55
+2017-06-05 17:01:52 Error: u6
+2017-06-05 17:01:52 Error: 66
+2017-06-05 17:01:52 Error: 
+2017-06-05 17:04:04 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 17:04:04 Error: 11
+2017-06-05 17:04:04 Error: Array
+(
+    [old_password] => u6
+)
+
+2017-06-05 17:04:04 Error: 22
+2017-06-05 17:04:04 Error: old_password
+2017-06-05 17:04:04 Error: 33
+2017-06-05 17:04:04 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u7
+            [new_password] => u7
+        )
+
+)
+
+2017-06-05 17:04:04 Error: 44
+2017-06-05 17:04:04 Error: 
+2017-06-05 17:04:04 Error: 55
+2017-06-05 17:04:04 Error: u6
+2017-06-05 17:04:04 Error: 66
+2017-06-05 17:04:04 Error: 
+2017-06-05 17:04:04 Error: 77
+2017-06-05 17:04:04 Error: u7
+2017-06-05 17:08:04 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u7
+            [new_password] => u7
+            [olddbpassword] => d591bdb2fb2f3bb24712fc89146f5b54a35eb5d9
+        )
+
+)
+
+2017-06-05 17:08:04 Error: 11
+2017-06-05 17:08:04 Error: Array
+(
+    [old_password] => u7
+)
+
+2017-06-05 17:08:04 Error: 22
+2017-06-05 17:08:04 Error: old_password
+2017-06-05 17:08:04 Error: 33
+2017-06-05 17:08:04 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u7
+            [new_password] => u7
+            [olddbpassword] => d591bdb2fb2f3bb24712fc89146f5b54a35eb5d9
+        )
+
+)
+
+2017-06-05 17:08:04 Error: 44
+2017-06-05 17:08:04 Error: 
+2017-06-05 17:08:04 Error: 55
+2017-06-05 17:08:04 Error: u7
+2017-06-05 17:08:04 Error: 66
+2017-06-05 17:08:04 Error: d591bdb2fb2f3bb24712fc89146f5b54a35eb5d9
+2017-06-05 17:08:04 Error: 77
+2017-06-05 17:08:04 Error: u7
+2017-06-05 17:11:13 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u7
+            [new_password] => u7
+            [olddbpassword] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+        )
+
+)
+
+2017-06-05 17:11:13 Error: 11
+2017-06-05 17:11:13 Error: Array
+(
+    [old_password] => u7
+)
+
+2017-06-05 17:11:13 Error: 22
+2017-06-05 17:11:13 Error: old_password
+2017-06-05 17:11:13 Error: 33
+2017-06-05 17:11:13 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u7
+            [password] => u7
+            [new_password] => u7
+            [olddbpassword] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+        )
+
+)
+
+2017-06-05 17:11:13 Error: 44
+2017-06-05 17:11:13 Error: 
+2017-06-05 17:11:13 Error: 55
+2017-06-05 17:11:13 Error: u7
+2017-06-05 17:11:13 Error: 66
+2017-06-05 17:11:13 Error: 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+2017-06-05 17:11:13 Error: 77
+2017-06-05 17:11:13 Error: u7
+2017-06-05 17:15:02 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+            [olddbpassword] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+        )
+
+)
+
+2017-06-05 17:15:02 Error: 11
+2017-06-05 17:15:02 Error: Array
+(
+    [old_password] => u6
+)
+
+2017-06-05 17:15:02 Error: 22
+2017-06-05 17:15:02 Error: old_password
+2017-06-05 17:15:02 Error: 33
+2017-06-05 17:15:02 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [old_password] => u6
+            [password] => u6
+            [new_password] => u6
+            [olddbpassword] => 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+        )
+
+)
+
+2017-06-05 17:15:02 Error: 44
+2017-06-05 17:15:02 Error: 
+2017-06-05 17:15:02 Error: 55
+2017-06-05 17:15:02 Error: u6
+2017-06-05 17:15:02 Error: 66
+2017-06-05 17:15:02 Error: 50c0d32a21607e31d5a8b45fe6a29861c0fa1ede
+2017-06-05 17:15:02 Error: 77
+2017-06-05 17:15:02 Error: u6
+2017-06-05 17:29:04 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 10
+            [username] => u6
+            [zip_code] => 2220037
+            [ken_name_kan] => 神奈川県
+            [city_name_kan] => 横浜市港北区
+            [town_name_kan] => 大倉山
+            [detail_name_kan] => 
+            [password] => d591bdb2fb2f3bb24712fc89146f5b54a35eb5d9
+            [group_id] => 1
+            [created] => 2017-06-05 10:13:27
+            [modified] => 2017-06-05 17:15:02
+        )
+
+    [Group] => Array
+        (
+            [id] => 1
+            [name] => administrators
+            [created] => 2017-05-02 19:06:53
+            [modified] => 2017-05-02 19:06:53
+        )
+
+    [Post] => Array
+        (
+        )
+
+)
+
