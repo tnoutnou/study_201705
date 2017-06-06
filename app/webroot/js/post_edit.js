@@ -79,7 +79,8 @@ $("[id^='addinputFile']").change(function() {
 	};
 	
 	$.ajax(
-	 "/cakephpc/posts/addfile", postData
+//	 "/cakephpc/posts/addfile", postData
+	 "/posts/addfile", postData
 	).done(function (text ){
 //		console.log(text);
 

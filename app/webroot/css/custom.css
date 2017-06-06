@@ -175,6 +175,19 @@ ul {
 }
 
 
+.custom-a {
+	color: black;
+}
+
+
+.error-message {
+	color: red;
+	@extend .alert;
+	@extend .alert-warning;
+}
+
+
+
 
 
 

@@ -37,6 +37,7 @@ class User extends AppModel {
 			'same' => array(
 				'rule' => array('checkCompare', 'new_password'),
 				'message' => '上下で同じ内容を入力してください',
+//				'message' => array('label'='上下で同じ内容を入力してください'),
 			),
 		),
 		'new_password' => array(
@@ -159,31 +160,12 @@ class User extends AppModel {
 	public function checkOldPassword($valid_field1){
 		// フィールド名とフォームへの入力値の配列から、キーであるフィールド名を取得
 		$fieldname = key($valid_field1);
-		$this->log('11');
-		$this->log($valid_field1);
-		$this->log('22');
-		$this->log($fieldname);
 
-		$this->log('33');
-		$this->log($this->data);
-		$this->log('44');
-		$this->log($users);
-
-		$this->log('55');
-		$this->log($this->data[$this->name]['old_password']);
-		$this->log('66');
-		$this->log($this->data[$this->name]['olddbpassword']);
-		$this->log('77');
-		$this->log($this->data[$this->name]['password']);
-
-		
 		// 旧パスワードの一致確認 未完
-//		if($this->data[$this->name]['password'] === $this->data[$this->name]['old_password']){
-//			return true;
-//		}
-//		return false;
-
-		return true;
+		if($this->data[$this->name]['olddbpassword'] === AuthComponent::password($this->data[$this->name]['old_password'])){
+			return true;
+		}
+		return false;
 
 	}
 		

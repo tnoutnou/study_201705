@@ -19,6 +19,31 @@
 <!--			<?php echo h($user['User']['password']); ?>	-->
 <!--			&nbsp;	-->
 <!--		</dd>	-->
+		<dt><?php echo __('郵便番号'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['zip_code']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('都道府県'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['ken_name_kan']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('市区'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['city_name_kan']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('町村'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['town_name_kan']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('番地以下'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['detail_name_kan']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('グループ'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($user['Group']['name'], array('controller' => 'groups', 'action' => 'view', $user['Group']['id'])); ?>
@@ -55,7 +80,20 @@
 			<td><?php echo $post['id']; ?></td>
 			<td><?php echo $post['user_id']; ?></td>
 			<td><?php echo $post['title']; ?></td>
-			<td><?php echo $post['body']; ?></td>
+<!--			<td><?php echo $post['body']; ?></td>	-->
+<!--			先頭の１行だけ出力	-->
+				<?php
+					$n_ｃnt = substr_count($post['body'], "\n");
+					if ($n_ｃnt >= 1) {
+//						$n_pos = strpos($post['body'], "\n", strpos($post['body'], "\n", strpos($post['body'], "\n", strpos($post['body'], "\n", strpos($post['body'], "\n") + 1)+1)+1)+1);
+						$n_pos = strpos($post['body'], "\n");
+					}else {
+						$n_pos = strlen($post['body']);
+					}
+				?>
+			<td><?php echo nl2br(h(substr($post['body'],0,$n_pos))); ?></td>
+
+
 			<td><?php echo $post['created']; ?></td>
 			<td><?php echo $post['modified']; ?></td>
 			<td class="actions">

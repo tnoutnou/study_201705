@@ -94,7 +94,7 @@
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Post.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Post.id')), 'class'=>'btn btn-default btn-sm')); ?></li>
+		<li><?php echo $this->Form->postLink(__('投稿削除'), array('action' => 'delete', $this->Form->value('Post.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Post.id')), 'class'=>'btn btn-default btn-sm')); ?></li>
 		<?php echo $this->element('actlistlist'); ?>
 		<?php echo $this->element('actlistall'); ?>
 	</ul>

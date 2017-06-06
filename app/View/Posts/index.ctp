@@ -63,12 +63,25 @@
 
 		<?php $i = 1; ?>
 		<?php foreach ($posts as $post): ?>
-			<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>
+<!--			<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>	-->
+			<h2>
+				<?php echo $this->Html->link(h($post['Post']['title']), array('action' => 'view', $post['Post']['id'])); ?>
+			</h2>
+
 			<p>
 				<?php echo h(substr($post['Post']['created'],0,10)  . " By " . $post['User']['username']); ?>
 			</p>
 			<p>
-				<?php echo nl2br(h($post['Post']['body'])); ?>
+<!--			先頭の５行だけ出力	-->
+				<?php
+					$n_ｃnt = substr_count($post['Post']['body'], "\n");
+					if ($n_ｃnt >= 5) {
+						$n_pos = strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n") + 1)+1)+1)+1);
+					}else {
+						$n_pos = strlen($post['Post']['body']);
+					}
+				?>
+				<?php echo $this->Html->link(nl2br(h(substr($post['Post']['body'],0,$n_pos))), array('action' => 'view', $post['Post']['id']) , array('escape'=> false, 'class'=>'custom-a')); ?>
 			</p>
 			<p>
 				<?php echo h("カテゴリ：　" . $post['Category']['categoryname']); ?>
@@ -94,7 +107,7 @@
 			<p class="actions">		
 				<div class="btn-toolbar">
 				<div class="btn-group">
-						<?php echo $this->Html->link(__('参照'), array('action' => 'view', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
+<!--						<?php echo $this->Html->link(__('参照'), array('action' => 'view', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>	-->
 						<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
 						<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?>
 				</div>

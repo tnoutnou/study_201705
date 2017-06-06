@@ -7,73 +7,115 @@
 <div class="posts view">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <h2><?php echo __('投稿参照'); ?></h2>
-	<dl>
-		<dt><?php echo __('投稿ID'); ?></dt>
-		<dd>
-			<?php echo h($post['Post']['id']); ?>
 			&nbsp;
-		</dd>
-		<dt><?php echo __('投稿者名'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('タイトル'); ?></dt>
-		<dd>
-			<?php echo h($post['Post']['title']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('本文'); ?></dt>
-		<dd>
-			<?php echo h($post['Post']['body']); ?>
-			&nbsp;
-		</dd>
+	<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>
+	<p>
+		<?php echo h(substr($post['Post']['created'],0,10)  . " By " . $post['User']['username']); ?>
+	</p>
+	<p>
+		<?php echo nl2br(h($post['Post']['body'])); ?>
+	</p>
+	<p>
+		<?php echo h("カテゴリ：　" . $post['Category']['categoryname']); ?>
+	</p>
+	<p>
+		<?php echo h("タグ：　"); ?>
+		<?php foreach ($post['Tag'] as $taglist) {?>
+		<?php echo h($taglist['tagname']); ?>
+		<?php } ?>
+	</p>
 
-		<dt><?php echo __('カテゴリ'); ?></dt>
-		<dd>
-			<?php echo h($post['Category']['categoryname']); ?>
-			&nbsp;
-		</dd>
+	<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>
+	<?php $base = "/app/webroot/files/image/filename/"; ?>
 
-		<dt><?php echo __('タグ名'); ?></dt>
-		<dd>
-			<?php foreach ($post['Tag'] as $taglist) {?>
-			<?php echo h($taglist['tagname']); ?>
-			<?php } ?>
-			&nbsp;
-		</dd>
+	<?php $i = 1; ?>
+	<?php foreach ($post['Image'] as $image) {?>
 
-		<dt><?php echo __('添付イメージ'); ?></dt>
-		<dd>
-			<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>
-			<?php $base = "/app/webroot/files/image/filename/"; ?>
+	<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100','class'=>'popupimg')); */ ?>
 
-			<?php $i = 1; ?>
-			<?php foreach ($post['Image'] as $image) {?>
+	<?php $str_i = "popupimg" . $i; ?>
+		<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg', 'id'=>$str_i)); ?>
+	<?php $i = $i + 1; ?>
 
-			<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100','class'=>'popupimg')); */ ?>
+	<?php } ?>
+	&nbsp;
+	<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>
 
-			<?php $str_i = "popupimg" . $i; ?>
-				<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg', 'id'=>$str_i)); ?>
-			<?php $i = $i + 1; ?>
+	<p>
+		<?php echo h("投稿日時：" . $post['Category']['created']); ?>
+	</p>
+	<p>
+		<?php echo h("編集日時：" . $post['Category']['modified']); ?>
+	</p>
+	
+<!--	<dl>	-->
+<!--		<dt><?php echo __('投稿ID'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php echo h($post['Post']['id']); ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
+<!--		<dt><?php echo __('投稿者名'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
+<!--		<dt><?php echo __('タイトル'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php echo h($post['Post']['title']); ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
+<!--		<dt><?php echo __('本文'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php echo h($post['Post']['body']); ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
 
-			<?php } ?>
-			&nbsp;
-			<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>
-		</dd>
+<!--		<dt><?php echo __('カテゴリ'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php echo h($post['Category']['categoryname']); ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
+
+<!--		<dt><?php echo __('タグ名'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php foreach ($post['Tag'] as $taglist) {?>	-->
+<!--			<?php echo h($taglist['tagname']); ?>	-->
+<!--			<?php } ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
+
+<!--		<dt><?php echo __('添付イメージ'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>	-->
+<!--			<?php $base = "/app/webroot/files/image/filename/"; ?>	-->
+
+<!--			<?php $i = 1; ?>	-->
+<!--			<?php foreach ($post['Image'] as $image) {?>	-->
+
+<!--			<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100','class'=>'popupimg')); */ ?>	-->
+
+<!--			<?php $str_i = "popupimg" . $i; ?>	-->
+<!--				<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg', 'id'=>$str_i)); ?>	-->
+<!--			<?php $i = $i + 1; ?>	-->
+
+<!--			<?php } ?>	-->
+<!--			&nbsp;	-->
+<!--			<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>	-->
+<!--		</dd>	-->
 		
 		
-		<dt><?php echo __('投稿日時'); ?></dt>
-		<dd>
-			<?php echo h($post['Post']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('編集日時'); ?></dt>
-		<dd>
-			<?php echo h($post['Post']['modified']); ?>
-			&nbsp;
-		</dd>
-	</dl>
+<!--		<dt><?php echo __('投稿日時'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php echo h($post['Post']['created']); ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
+<!--		<dt><?php echo __('編集日時'); ?></dt>	-->
+<!--		<dd>	-->
+<!--			<?php echo h($post['Post']['modified']); ?>	-->
+<!--			&nbsp;	-->
+<!--		</dd>	-->
+<!--	</dl>	-->
+
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
