@@ -101,7 +101,8 @@ class CategoriesController extends AppController {
 			throw new NotFoundException(__('無効なカテゴリです。'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->Category->delete()) {
+		$this->Category->delete();
+		if (!$this->Category->exists()) {
 //			$this->Flash->success(__('The category has been deleted.'));
 			$this->Flash->success(__('カテゴリを削除しました。'));
 		} else {

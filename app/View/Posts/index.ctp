@@ -120,19 +120,20 @@
 			<p>
 			<?php
 			echo $this->Paginator->counter(array(
-				'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+				'format' => __(' {:page}ページ目表示（全{:pages}ページ） {:current}件表示（全{:count}件）, {:start}件目～{:end}件目 を表示')
 			));
 			?>
 			</p>
 
 			<div class="paging">
-				<?php	echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled')); ?>
+				<?php	echo $this->Paginator->prev('< ' . __('前へ'), array(), null, array('class' => 'prev disabled')); ?>
 				<?php	echo $this->Paginator->numbers(array('separator' => '')); ?>
-				<?php	echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled')); ?>
+				<?php	echo $this->Paginator->next(__('次へ') . ' >', array(), null, array('class' => 'next disabled')); ?>
 			</div>
 		</div>
 <!--	<div class="actions">	-->
 		<div class="blogaction actions col-xs-2 col-sm-2 col-md-2">
+			<?php echo $this->element('login_user'); ?>
 			<h3><?php echo __('処理'); ?></h3>
 			<ul style="list-style:none;">
 				<li><?php echo $this->Html->link(__('投稿追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
@@ -141,6 +142,14 @@
 				<?php echo $this->element('actlistlist'); ?>
 				<?php echo $this->element('actlistall'); ?>
 			</ul>
+
+			<h4><?php echo __('最近の投稿'); ?></h3>
+			<?php foreach ($recent_posts as $recent_key => $recent_post): ?>
+				<p>
+					<?php echo $this->Html->link($recent_post, array('action' => 'view', $recent_key)); ?>			
+				</p>
+			<?php endforeach; ?>
+			
 		</div>
 	</div>
 </div>

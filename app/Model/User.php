@@ -107,7 +107,7 @@ class User extends AppModel {
 			'className' => 'Post',
 			'foreignKey' => 'user_id',
 			'dependent' => false,
-			'conditions' => '',
+			'conditions' => array('deleted' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
@@ -125,7 +125,8 @@ class User extends AppModel {
         return true;
     }
 	
-	public $actsAs = array('Acl' => array('type' => 'requester'));
+//	public $actsAs = array('Acl' => array('type' => 'requester'));
+	public $actsAs = array('Acl' => array('type' => 'requester'), 'SoftDelete');
 
 	public function parentNode() {
         if (!$this->id && empty($this->data)) {

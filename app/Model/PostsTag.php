@@ -59,4 +59,7 @@ class PostsTag extends AppModel {
 			'order' => ''
 		)
 	);
+	
+	public $actsAs = array('SoftDelete');
+
 }

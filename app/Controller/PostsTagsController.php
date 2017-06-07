@@ -116,7 +116,8 @@ class PostsTagsController extends AppController {
 			throw new NotFoundException(__('無効な投稿タグです'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->PostsTag->delete()) {
+		$this->PostsTag->delete();
+		if (!$this->PostsTag->exists()) {
 //			$this->Flash->success(__('The posts tag has been deleted.'));
 			$this->Flash->success(__('投稿タグを削除しました。'));
 		} else {

@@ -27,6 +27,7 @@ class Image extends AppModel {
 				),
 			),
 		),
+		'SoftDelete',
 	);
  
  
@@ -76,7 +77,7 @@ class Image extends AppModel {
 		'Post' => array(
 			'className' => 'Post',
 			'foreignKey' => 'post_id',
-			'conditions' => '',
+			'conditions' => array('Post.deleted' => '0'),
 			'fields' => '',
 			'order' => ''
 		)

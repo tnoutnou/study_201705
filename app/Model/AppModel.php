@@ -30,4 +30,17 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+
+    // 以下のコードを追加
+    public function exists($id = null) {
+        if ($this->Behaviors->loaded('SoftDelete')) {
+            return $this->existsAndNotDeleted($id);
+        } else {
+            return parent::exists($id);
+        }
+    }
+
 }
+
+
+	

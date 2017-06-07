@@ -39,6 +39,7 @@
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
+	<?php echo $this->element('login_user'); ?>
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>

@@ -37,7 +37,7 @@ class Group extends AppModel {
 			'className' => 'User',
 			'foreignKey' => 'group_id',
 			'dependent' => false,
-			'conditions' => '',
+			'conditions' => array('deleted' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
@@ -48,7 +48,7 @@ class Group extends AppModel {
 		)
 	);
 
-	public $actsAs = array('Acl' => array('type' => 'requester'));
+	public $actsAs = array('Acl' => array('type' => 'requester'), 'SoftDelete');
 
     public function parentNode() {
         return null;

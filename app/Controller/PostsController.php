@@ -37,10 +37,14 @@ class PostsController extends AppController {
 //		debug($this->Paginator->paginate());
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
+		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0')));
 		$this->set(compact('tags'));
+
 		
 //		$this->log($this->Auth->user());
+//	最近の投稿
+		$recent_posts = $this->Post->find('list',array('fields'=>array('id','title'),'limit'=>'5','order'=>'created DESC'));
+		$this->set(compact('recent_posts'));
 
 	}
 
@@ -68,7 +72,7 @@ class PostsController extends AppController {
 //		var_dump($poststags); 
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
+		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0') ));
 		$this->set(compact('tags'));
 //$this->log(WEBROOT_DIR);
 	}
@@ -147,7 +151,7 @@ class PostsController extends AppController {
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
 
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
+		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0')));
 		$this->set(compact('tags'));			
 	
 //		$selected = $this->Post->PostsTag->find('list',array('fields'=>array('tag_id'),'conditions' => array('PostsTag.' . 'post_id' => $id )));
@@ -195,9 +199,9 @@ class PostsController extends AppController {
 //		$this->log($add_files);
 		
 		foreach ($add_files　 as $afl) {
-			$this->log($afl);
+//			$this->log($afl);
 			if(file_exists($afl)) {
-				$this->log(' !!! exists !!!');
+//				$this->log(' !!! exists !!!');
 				unlink($afl);
 			}
 		}
@@ -281,13 +285,15 @@ class PostsController extends AppController {
 				$this->Flash->success(__('投稿者しか編集できません。'));
 				return $this->redirect(array('action' => 'index'));
 			}
-			
 
+			
 		}
 
 		
-		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
+
 		
+		
+		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
 		
 //		$users = $this->Post->User->find('list');
 //		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
@@ -302,7 +308,7 @@ class PostsController extends AppController {
 //		$tags = $this->Post->Tag->find('list');
 //		$options = array('conditions' => array('Tag.' . 'post_id' => $id));
 
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
+		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0') ));
 		$this->set(compact('tags'));			
 	
 		$selected = $this->Post->PostsTag->find('list',array('fields'=>array('tag_id'),'conditions' => array('PostsTag.' . 'post_id' => $id )));
@@ -333,9 +339,47 @@ class PostsController extends AppController {
 //			return $this->redirect(array('action' => 'index'));
 //		}
 
-		
+		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
+//		$this->set('post', $this->Post->find('first', $options));
+		$posts = $this->Post->find('first', $options);
+		$images = $posts['Image'];
+		$tags = $posts['Tag'];
+//		$this->log('!! 22 !!');
+//		$this->log('!! images !!');
+//		$this->log($images);
+//		$this->log('!! images detail !!');
+
+//		foreach ($images as $image) {
+//			$this->log($image['id']);			
+//		}		
+
+//		$this->log('!! tags !!');
+//		$this->log($tags);
+//		$this->log('!! tags detail !!');
+
+//		foreach ($tags as $tag) {
+//			$this->log($tag['PostsTag']['id']);			
+//		}		
+
+//		$this->log('!! 55 !!');
 //		if ($this->Post->deleteall()) {
-		if ($this->Post->delete()) {
+		$this->Post->delete();
+		
+		if (!$this->Post->exists()) {
+			// 子データの削除処理（論理削除対応）
+			
+//			foreach ($images as $image) {
+//				$this->log($image['id']);
+//				$this->Image->delete($image['id']);
+//			}		
+
+
+//			foreach ($tags as $tag) {
+//				$this->log($tag['PostsTag']['id']);
+//				$this->PostTag->delete($tag['PostsTag']['id']);
+//			}		
+
+
 //			$this->Flash->success(__('The post has been deleted.'));
 			$this->Flash->success(__('投稿を削除しました。'));
 		} else {

@@ -52,19 +52,20 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-		'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+		'format' => __(' {:page}ページ目表示（全{:pages}ページ） {:current}件表示（全{:count}件）, {:start}件目～{:end}件目 を表示')
 	));
 	?>	</p>
 	<div class="paging">
 	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->prev('< ' . __('前へ'), array(), null, array('class' => 'prev disabled'));
 		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+		echo $this->Paginator->next(__('次へ') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
+	<?php echo $this->element('login_user'); ?>
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>

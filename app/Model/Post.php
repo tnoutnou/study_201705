@@ -13,7 +13,7 @@ class Post extends AppModel {
  * @var array
  */
  // サーチフィルタ
-	public $actsAs = array('Search.Searchable');
+	public $actsAs = array('Search.Searchable', 'SoftDelete');
 	public $filterArgs = array(
 		'category_id' => array('type' => 'value'),
 		'category_str' => array('type' => 'query', 'method' => 'findBycateg'),
@@ -75,7 +75,7 @@ class Post extends AppModel {
 			'foreignKey' => 'post_id',
 //			'dependent' => false,
 			'dependent' => true,
-			'conditions' => '',
+			'conditions' => array('Image.deleted' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
@@ -115,7 +115,7 @@ class Post extends AppModel {
 			'foreignKey' => 'post_id',
 			'associationForeignKey' => 'tag_id',
 			'unique' => 'keepExisting',
-			'conditions' => '',
+			'conditions' => array('PostsTag.deleted' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
@@ -186,7 +186,7 @@ class Post extends AppModel {
 		$options = array('fields'=>array('id') , 'conditions' => array('tagname like' => '%' . $data['tag_str'] . '%'));		
 		$tmps = $this->Tag->find('list', $options);
 
-		debug($tmps);
+//		debug($tmps);
 
 		$options2 = array('fields'=>array('post_id') , 'conditions' => array('tag_id' => $tmps));		
 		$tmps2 = $this->PostsTag->find('list', $options2);

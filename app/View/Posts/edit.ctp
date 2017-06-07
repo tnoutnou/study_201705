@@ -91,6 +91,7 @@
 <!--	<div class="actions col-sm-4 col-sm-offset-1">	-->
 <!--	<div class="col-xs-6 col-sm-6 col-md-2">	-->
 <div class="actions col-xs-6 col-sm-3 col-md-2">
+	<?php echo $this->element('login_user'); ?>
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
 

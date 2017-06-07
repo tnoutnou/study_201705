@@ -105,7 +105,8 @@ class ImagesController extends AppController {
 			throw new NotFoundException(__('無効なイメージです'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->Image->delete()) {
+		$this->Image->delete();
+		if (!$this->Image->exists()) {
 //			$this->Flash->success(__('The image has been deleted.'));
 			$this->Flash->success(__('イメージを削除しました。'));
 		} else {

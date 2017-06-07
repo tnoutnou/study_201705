@@ -39,7 +39,7 @@ class Tag extends AppModel {
 			'foreignKey' => 'tag_id',
 			'associationForeignKey' => 'post_id',
 			'unique' => 'keepExisting',
-			'conditions' => '',
+			'conditions' => array('PostsTag.deleted' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
@@ -48,6 +48,7 @@ class Tag extends AppModel {
 		)
 	);
 
+	public $actsAs = array('SoftDelete');
 	
 	
 	

@@ -47,6 +47,9 @@
 	<p>
 		<?php echo h("編集日時：" . $post['Category']['modified']); ?>
 	</p>
+	<p>
+		<?php echo h("投稿ID：" . $post['Post']['id']); ?>
+	</p>
 	
 <!--	<dl>	-->
 <!--		<dt><?php echo __('投稿ID'); ?></dt>	-->
@@ -119,6 +122,7 @@
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
+	<?php echo $this->element('login_user'); ?>
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">

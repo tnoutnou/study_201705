@@ -28,10 +28,13 @@ class Category extends AppModel {
 		'Post' => array(
 			'className' => 'Post',
 //			'conditions' => array('' => '1'),
+// 下記条件はいらないかも？
+			'conditions' =>array('deleted' => '0'),
 			'order' => 'Post.id ASC'
 		)
 	);
 	
+	public $actsAs = array('SoftDelete');
 	
 	
 	

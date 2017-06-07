@@ -107,7 +107,9 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('無効なユーザです'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->User->delete()) {
+
+		$this->User->delete();
+		if (!$this->User->exists()) {
 //			$this->Flash->success(__('The user has been deleted.'));
 			$this->Flash->success(__('該当ユーザを削除しました。'));
 		} else {
@@ -123,7 +125,8 @@ class UsersController extends AppController {
 
 		if ($this->Session->read('Auth.User')) {
 //			$this->Session->setFlash('You are logged in!');
-			$this->Session->setFlash('ログイン済みです。');
+//			$this->Session->setFlash('ログイン済みです。', 'error');
+			$this->Flash->default('ログイン済みです。');
 			$this->redirect('/posts/index', null, false);
 		}
 		
@@ -134,7 +137,7 @@ class UsersController extends AppController {
 
 			}
 //			$this->Session->setFlash(__('Your username or password was incorrect.'));
-			$this->Session->setFlash(__('ユーザ名かパスワードが間違っています。'));
+			$this->Session->setFlash(__('ユーザ名かパスワードが間違っています。', 'error'));
 		}
 	}
 

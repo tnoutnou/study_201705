@@ -101,7 +101,8 @@ class GroupsController extends AppController {
 			throw new NotFoundException(__('無効なグループです。'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->Group->delete()) {
+		$this->Group->delete();
+		if (!$this->Group->exists()) {
 //			$this->Flash->success(__('The group has been deleted.'));
 			$this->Flash->success(__('グループを削除しました。'));
 		} else {

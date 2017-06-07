@@ -105,7 +105,8 @@ class TagsController extends AppController {
 			throw new NotFoundException(__('無効なタグです。'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->Tag->delete()) {
+		$this->Tag->delete();
+		if (!$this->Tag->exists()) {
 //			$this->Flash->success(__('The tag has been deleted.'));
 			$this->Flash->success(__('タグを削除しました。'));
 		} else {
