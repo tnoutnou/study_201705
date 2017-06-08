@@ -281,16 +281,18 @@ class PostsController extends AppController {
 			// 投稿者で無い場合は、編集画面を起動しない。
 //			debug($this->request->data['User']['username']);
 //			debug($this->Session->read('login_user'));
-			if (!(($this->request->data['User']['username']) === $this->Session->read('login_user')) ) {
-				$this->Flash->success(__('投稿者しか編集できません。'));
+
+			// 
+			if (!((($this->request->data['User']['username']) === $this->Session->read('login_user')) or ($this->Session->read('admin_flg') === '1')) ) {
+				$this->Flash->success(__('投稿の登録者か、管理者しか編集できません。'));
 				return $this->redirect(array('action' => 'index'));
 			}
 			
 		}
 
-		
-		
-		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
+		// 投稿したユーザに固定
+//		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
+		$options = array('conditions' => array('id' => $this->request->data['User']['id']), 'fields'=>array('id','username') );
 		
 //		$users = $this->Post->User->find('list');
 //		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
