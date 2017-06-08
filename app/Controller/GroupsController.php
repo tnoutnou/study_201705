@@ -15,6 +15,8 @@ class GroupsController extends AppController {
  */
 	public $components = array('Paginator','Flash');
 
+//	public $uses = array('User');
+
 /**
  * index method
  *
@@ -101,9 +103,26 @@ class GroupsController extends AppController {
 			throw new NotFoundException(__('無効なグループです。'));
 		}
 		$this->request->allowMethod('post', 'delete');
+
+		$options = array('conditions' => array('Group.' . $this->Group->primaryKey => $id));
+		$groups = $this->Group->find('first', $options);
+		$users = $groups['User'];
+
+		$this->log('!!!!');
+		$this->log($groups);
+		$this->log($users);
+		
 		$this->Group->delete();
 		if (!$this->Group->exists()) {
 //			$this->Flash->success(__('The group has been deleted.'));
+			// Users の削除
+			$this->loadModel('User');
+			
+			foreach ($users as $user) {
+				$this->User->delete($user);
+			}
+
+
 			$this->Flash->success(__('グループを削除しました。'));
 		} else {
 //			$this->Flash->error(__('The group could not be deleted. Please, try again.'));

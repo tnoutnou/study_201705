@@ -8,6 +8,8 @@ App::uses('AppModel', 'Model');
  */
 class PostsTag extends AppModel {
 
+	public $actsAs = array('SoftDelete');
+
 /**
  * Validation rules
  *
@@ -60,6 +62,5 @@ class PostsTag extends AppModel {
 		)
 	);
 	
-	public $actsAs = array('SoftDelete');
 
 }

@@ -108,8 +108,13 @@
 				<div class="btn-toolbar">
 				<div class="btn-group">
 <!--						<?php echo $this->Html->link(__('参照'), array('action' => 'view', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>	-->
-						<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-						<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?>
+<!--管理者 or 投稿者＝ログインユーザなら「編集」「削除」ボタンを表示する。	-->
+						<?php
+							if (($this->Session->read('admin_flg') == '1') or ($this->Session->read('login_user') == $post['User']['username'] )) {
+								echo $this->Html->link(__('編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm'));
+								echo $this->Form->postLink(__('削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm'));
+							}
+						?>
 				</div>
 				</div>
 			</p>
@@ -163,6 +168,12 @@
 	<div id="hoge1">
 	</div>
 
+	<!-- 上へ用 -->
+    <div id="back-to-top" style="position:fixed;right:75px;bottom:75px;background:skyblue;Opacity:0.5;color:pink"><a href="#"><p style="padding-top:15px">上に戻る</p></a></div>
 
 	
-
+	
+	
+	
+	
+	

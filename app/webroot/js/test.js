@@ -205,5 +205,27 @@ $(function(){
 //        $('#hoge1').data('test' , $('#popup-item').data('test'));
 	});
 
+	// #back-to-topを消す
+	$('#back-to-top').hide();
+
+	// スクロールが十分されたら#back-to-topを表示、スクロールが戻ったら非表示
+	$(window).scroll(function() {
+//		$('#pos').text($(this).scrollTop());
+		if ($(this).scrollTop() > 500) {
+			$('#back-to-top').fadeIn();
+		} else {
+			$('#back-to-top').fadeOut();
+		}
+	});
+
+	// #back-to-topがクリックされたら上に戻る
+	$('#back-to-top a').click(function() {
+		$('body').animate({
+			scrollTop:0
+		}, 150);
+		return false;
+	});
+	
+	
 	
 });

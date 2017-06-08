@@ -119,9 +119,17 @@ class User extends AppModel {
 	);
 
 	public function beforeSave($options = array()) {
-        $this->data['User']['password'] = AuthComponent::password(
-          $this->data['User']['password']
-        );
+		
+		$this->log('!!! 777 !!!');
+		$this->log($this->data['User']);
+		$this->log($this->data);
+		$search_array = $this->data['User'];
+		if (array_key_exists('password', $search_array)) {
+		$this->log('!!! 888 !!!');
+			$this->data['User']['password'] = AuthComponent::password(
+			$this->data['User']['password']
+			);
+		}
         return true;
     }
 	

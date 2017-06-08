@@ -15,7 +15,7 @@ class PostsController extends AppController {
  */
 	public $components = array('Paginator','Flash','Search.Prg' , 'Session');
 	
-	public $uses = array('Post', 'Category', 'Tag','PostsTag');
+	public $uses = array('Post', 'Category', 'Tag', 'PostsTag', 'Image');
 
 /**
  * index method
@@ -285,11 +285,8 @@ class PostsController extends AppController {
 				$this->Flash->success(__('投稿者しか編集できません。'));
 				return $this->redirect(array('action' => 'index'));
 			}
-
 			
 		}
-
-		
 
 		
 		
@@ -344,41 +341,23 @@ class PostsController extends AppController {
 		$posts = $this->Post->find('first', $options);
 		$images = $posts['Image'];
 		$tags = $posts['Tag'];
-//		$this->log('!! 22 !!');
-//		$this->log('!! images !!');
-//		$this->log($images);
-//		$this->log('!! images detail !!');
 
-//		foreach ($images as $image) {
-//			$this->log($image['id']);			
-//		}		
 
-//		$this->log('!! tags !!');
-//		$this->log($tags);
-//		$this->log('!! tags detail !!');
-
-//		foreach ($tags as $tag) {
-//			$this->log($tag['PostsTag']['id']);			
-//		}		
-
-//		$this->log('!! 55 !!');
-//		if ($this->Post->deleteall()) {
 		$this->Post->delete();
 		
 		if (!$this->Post->exists()) {
 			// 子データの削除処理（論理削除対応）
 			
-//			foreach ($images as $image) {
-//				$this->log($image['id']);
-//				$this->Image->delete($image['id']);
-//			}		
+		foreach ($images as $image) {
+//			$this->log($image['id']);
+			$this->Image->delete($image['id']);
+		}		
 
 
-//			foreach ($tags as $tag) {
-//				$this->log($tag['PostsTag']['id']);
-//				$this->PostTag->delete($tag['PostsTag']['id']);
-//			}		
-
+		foreach ($tags as $tag) {
+//			$this->log($tag['PostsTag']['id']);
+			$this->PostsTag->delete($tag['PostsTag']['id']);
+		}
 
 //			$this->Flash->success(__('The post has been deleted.'));
 			$this->Flash->success(__('投稿を削除しました。'));

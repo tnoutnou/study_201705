@@ -40,7 +40,7 @@ class UsersController extends AppController {
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 		$this->set('user', $this->User->find('first', $options));
-		$this->log($this->User->find('first', $options));
+//		$this->log($this->User->find('first', $options));
 	}
 
 /**
@@ -133,6 +133,13 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			if ($this->Auth->login()) {
 				$this->Session->write('login_user', $this->request->data['User']['username']);
+				//管理者の判断
+				if ($this->checkAdmin($this->request->data['User']['username'])){
+					$this->Session->write('admin_flg', '1');
+				} else {
+					$this->Session->write('admin_flg', '2');
+				}
+				
 				return $this->redirect($this->Auth->redirect());
 
 			}
@@ -186,7 +193,7 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('無効なユーザです'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			$this->log($this->request->data);
+//			$this->log($this->request->data);
 			if ($this->User->save($this->request->data)) {
 //				$this->Flash->success(__('The user has been saved.'));
 				$this->Flash->success(__('パスワードを変更しました。'));
@@ -207,6 +214,24 @@ class UsersController extends AppController {
 			
 			$this->request->data = $users;
 		}
+		
+	}
+
+	// 管理者かを確認する
+	public function checkAdmin($username = null) {
+		$options = array('conditions' => array('User.username' => $username, 'User.deleted' => '0'));
+		$users = $this->User->find('first', $options);
+//		$this->log($users);
+//		$this->log($users['Group']['name']);
+		
+		// グループ名が「administrators」なら管理者と判断する
+		if($users['Group']['name'] == 'administrators') {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
 		
 	}
 

@@ -42,10 +42,10 @@
 	<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>
 
 	<p>
-		<?php echo h("投稿日時：" . $post['Category']['created']); ?>
+		<?php echo h("投稿日時：" . $post['Post']['created']); ?>
 	</p>
 	<p>
-		<?php echo h("編集日時：" . $post['Category']['modified']); ?>
+		<?php echo h("編集日時：" . $post['Post']['modified']); ?>
 	</p>
 	<p>
 		<?php echo h("投稿ID：" . $post['Post']['id']); ?>
@@ -126,8 +126,10 @@
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
-		<li><?php echo $this->Html->link(__('投稿編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
-		<li><?php echo $this->Form->postLink(__('投稿削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
+		<?php if (($this->Session->read('admin_flg') == '1') or ($this->Session->read('login_user') == $post['User']['username'] )) {	?>
+			<li><?php echo $this->Html->link(__('投稿編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
+			<li><?php echo $this->Form->postLink(__('投稿削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
+		<?php }	?>
 		<li><?php echo $this->Html->link(__('投稿追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php echo $this->element('actlistlist'); ?>
 		<?php echo $this->element('actlistall'); ?>
