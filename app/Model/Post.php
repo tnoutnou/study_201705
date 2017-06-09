@@ -12,6 +12,9 @@ class Post extends AppModel {
  *
  * @var array
  */
+
+// 	public $components = array('Session');
+ 
  // サーチフィルタ
 	public $actsAs = array('Search.Searchable', 'SoftDelete');
 	public $filterArgs = array(
@@ -19,7 +22,7 @@ class Post extends AppModel {
 		'category_str' => array('type' => 'query', 'method' => 'findBycateg'),
 		'title' => array('type' => 'like'),
 		'tag_id' => array('type' => 'query', 'method' => 'findByTags'),
-		'tag_str' => array('type' => 'query', 'method' => 'findBytagstr'),
+		'tag_str' => array('type' => 'query', 'method' => 'findByTagstr'),
 	);
 
 	public $validate = array(
@@ -124,6 +127,16 @@ class Post extends AppModel {
 		)
 	);
 
+// ヴァーチャルフィールド
+	public $virtualFields = array(
+		'old_modified' => 'Post.modified'
+	);
+
+	
+	
+	
+	
+	
 	//タグの検索
 	public function findByTags($data = array()){
 
@@ -178,7 +191,7 @@ class Post extends AppModel {
 	}
 
 	//タグの部分一致
-	public function findBytagstr($data = array()){
+	public function findByTagstr($data = array()){
 
 //		debug($data['tag_str']);
 //		$condition = array('tag_id' => $data['category_id_str']);
@@ -192,8 +205,6 @@ class Post extends AppModel {
 		$tmps2 = $this->PostsTag->find('list', $options2);
 
 //		debug($tmps2);
-		
-//		debug($tmps);
 
 		/*
 		$tmp_arr = [];
@@ -206,6 +217,49 @@ class Post extends AppModel {
 //		$condition = array('Post.id' => $tmp_arr);
 		$condition = array('Post.id' => $tmps2);
 		return $condition;
+		
+	}
+
+	// トランザクション内で更新する。
+	public function saveAllTrans($data = array()){
+		$datasource = $this->getDataSource();
+		try{
+			$datasource->begin();			
+			//
+
+//			$this->log('!!! 1111 !!!');
+//			$this->log($data);
+			$this->query('set innodb_lock_wait_timeout = 1;');			
+			$now_postedit = $this->query('SELECT id, modified FROM posts AS Post WHERE id = ' . $data['Post']['id'] . ' FOR UPDATE;');
+
+//			$this->log($now_postedit);
+			
+//			$this->log($data['Post']);
+//			$old_postedit = array($data['Post']['id'] , $data['Post']['modified']);
+			$old_postedit = array($data['Post']['id'] , $data['Post']['old_modified']);
+
+//			$this->log($old_postedit);
+			
+			if (($now_postedit[0]['Post']['id'] === $data['Post']['id']) and ($now_postedit[0]['Post']['modified'] === $data['Post']['old_modified'])) {
+				if (!$this->saveAll($data)) {
+					throw new Exception();
+				}
+			} else {
+				$datasource->rollback();
+//				return false;
+				return -1;		//他者が更新済みだった			
+			}
+			
+			$datasource->commit();
+//			return true;
+			return 1;
+
+		} catch(Exception $e) {
+			$datasource->rollback();
+//			return false;
+			return -2;		//予期せねエラー
+		}
+
 		
 	}
 

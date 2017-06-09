@@ -17,6 +17,10 @@
 		echo $this->Form->input('body', array('label' => array('text' => '本文' ,'class' => 'label label-default'), 'class' => 'form-control'));
 		echo $this->Form->input('category_id', array('label' => array('text' => 'カテゴリ' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
 		echo $this->Form->input('tag_id',array('label' => array('text' => 'タグ' ,'class' => 'label label-default'), 'type'=>'select', 'multiple'=>true, 'options'=>$tags, 'selected'=>$selected, 'class' => 'selectpicker show-menu-arrow form-control'));
+//		echo $this->Form->input('modified',array('label' => false,'style'=>'display:none'));
+//		echo $this->Form->input('old_modified',array('label' => false,'style'=>'display:none'));
+//		echo $this->Form->hidden('modified');
+		echo $this->Form->hidden('old_modified');
 	?>
 <label class="label label-default">イメージ追加</label>
 <div class="input-group"　id="file-input-group1">

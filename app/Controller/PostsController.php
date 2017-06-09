@@ -261,16 +261,23 @@ class PostsController extends AppController {
 				}
 			}
 			
-			$var_end = $this->Post->saveAll($this->request->data);
-			
-			if ($var_end) {
+			// トランザクション対応（中）
+//			$var_end = $this->Post->saveAll($this->request->data);
+			$var_end = $this->Post->saveAllTrans($this->request->data);
+
+
+			switch ($var_end) {
+			case 1:
 //				$this->Flash->success(__('The post has been saved.'));
 				$this->Flash->success(__('投稿を保存しました。'));
 				return $this->redirect(array('action' => 'index'));
-//				return;
-			} else {
-//				$this->Flash->error(__('The post could not be saved. Please, try again.'));
+				break;
+			case -1:
+				$this->Flash->error(__('投稿の保存に失敗しました。他のユーザが更新済みです。再度、投稿一覧から開き直してから編集を行って下さい。'));
+				break;
+			case -2:
 				$this->Flash->error(__('投稿の保存に失敗しました。再度、投稿編集を行って下さい。'));
+				break;
 			}
 		} else {
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
@@ -281,6 +288,15 @@ class PostsController extends AppController {
 			// 投稿者で無い場合は、編集画面を起動しない。
 //			debug($this->request->data['User']['username']);
 //			debug($this->Session->read('login_user'));
+
+			//更新日時を取得
+//			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id) , 'fields'=>array('id','modified') );
+//			$postedit_tmp = $this->Post->find('first', $options);
+//			$postedit = $postedit_tmp['Post'];
+			
+//			$this->log($this->request->data);
+			
+//			$this->Session->write('post_edit', $postedit);
 
 			// 
 			if (!((($this->request->data['User']['username']) === $this->Session->read('login_user')) or ($this->Session->read('admin_flg') === '1')) ) {

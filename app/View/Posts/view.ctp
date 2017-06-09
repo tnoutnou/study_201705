@@ -126,7 +126,7 @@
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
-		<?php if (($this->Session->read('admin_flg') == '1') or ($this->Session->read('login_user') == $post['User']['username'] )) {	?>
+		<?php if (($this->Session->read('admin_flg') === '1') or ($this->Session->read('login_user') === $post['User']['username'] )) {	?>
 			<li><?php echo $this->Html->link(__('投稿編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); ?> </li>
 			<li><?php echo $this->Form->postLink(__('投稿削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $post['Post']['id']), 'class'=>'btn btn-default btn-sm')); ?> </li>
 		<?php }	?>

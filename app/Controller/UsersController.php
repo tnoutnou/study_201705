@@ -151,6 +151,8 @@ class UsersController extends AppController {
 	public function logout() {
 //		$this->Session->setFlash('Good-Bye');
 		$this->Session->setFlash('ログアウトしました。');
+		// セッション情報を全削除
+		$this->Session->destroy();
 		$this->redirect($this->Auth->logout());
 	}	
 	
