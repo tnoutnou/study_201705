@@ -120,12 +120,12 @@ class User extends AppModel {
 
 	public function beforeSave($options = array()) {
 		
-		$this->log('!!! 777 !!!');
-		$this->log($this->data['User']);
-		$this->log($this->data);
+//		$this->log('!!! 777 !!!');
+//		$this->log($this->data['User']);
+//		$this->log($this->data);
 		$search_array = $this->data['User'];
 		if (array_key_exists('password', $search_array)) {
-		$this->log('!!! 888 !!!');
+//		$this->log('!!! 888 !!!');
 			$this->data['User']['password'] = AuthComponent::password(
 			$this->data['User']['password']
 			);
@@ -171,7 +171,9 @@ class User extends AppModel {
 		$fieldname = key($valid_field1);
 
 		// 旧パスワードの一致確認 未完
-		if($this->data[$this->name]['olddbpassword'] === AuthComponent::password($this->data[$this->name]['old_password'])){
+		if($this->data[$this->name]['olddbpassword']
+			=== AuthComponent::password($this->data[$this->name]['old_password']))
+		{
 			return true;
 		}
 		return false;

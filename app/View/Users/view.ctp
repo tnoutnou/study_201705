@@ -1,3 +1,20 @@
+<?php $actionLists = array(
+		array(
+			'label' => 'ユーザ編集',
+			'controller' => 'users',
+			'action' => 'edit'),
+		array(
+			'label' => 'ユーザ削除',
+			'controller' => 'users',
+			'action' => 'delete'),
+		array(
+			'label' => 'ユーザ追加',
+			'controller' => 'users',
+			'action' => 'add'),
+		);
+?>
+<?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
+
 <div class="container">
 <div class="row">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
@@ -113,7 +130,7 @@
 
 
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php echo $this->element('login_user'); ?>
+	<?php /* echo $this->element('login_user'); */	?>
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>

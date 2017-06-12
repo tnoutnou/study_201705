@@ -3,6 +3,11 @@
 <div id="global-cont" data-filemax=<?php echo $filemaxcnt ?> >
 <?php echo $this->Html->script( 'post_edit.js'); ?>
 
+<?php $actionLists = array(
+		);
+?>
+<?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
+
 <div class="container">
 <div class="row">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
@@ -21,9 +26,9 @@
 <label class="label label-default">イメージ追加</label>
 <div class="input-group"　id="file-input-group1">
 <input type="text" class="form-control" id="selectedFile1" readonly>
- <?php
+<?php
 		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'addinputFile1'));
-	?>
+?>
 <span class="input-group-btn">
 <button id="addselectFile1" class="btn btn-default" type="button">新規ファイル追加</button>
 <button id="delFilebtn" class="btn btn-default" type="button">新規ファイル全削除</button>
@@ -35,7 +40,7 @@
 
 <?php echo '<div class="input-group"　id="file-input-group' . $i .'" style="display:none">';   ?>
 <?php echo '<input type="text" class="form-control" id="selectedFile'. $i .'" readonly>'   ?>
- <?php echo $this->Form->input('Image.' . "$j" . '.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'addinputFile' . $i)); ?>
+<?php echo $this->Form->input('Image.' . "$j" . '.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'addinputFile' . $i)); ?>
 <?php echo '</div>'   ?>
 
 <?php }   ?>
@@ -61,7 +66,7 @@
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php echo $this->element('login_user'); ?>
+	<?php /* echo $this->element('login_user'); */	?>
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">

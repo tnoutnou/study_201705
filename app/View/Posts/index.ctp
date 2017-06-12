@@ -1,6 +1,14 @@
 <?php echo $this->Html->script( 'jquery-git.js'); ?>
 <?php echo $this->Html->script( 'test.js'); ?>
 <?php echo $this->Html->css( 'custom.css'); ?>
+<?php $actionLists = array(
+		array(
+			'label' => '投稿追加',
+			'controller' => 'posts',
+			'action' => 'add')
+		);
+?>
+<?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
 <div class="container">
 	<div class="row">
 <!--	<div class="posts index">	-->
@@ -94,6 +102,7 @@
 				</p>
 			</div>
 
+
 			<div class="col-sm-2">
 <!--		添付イメージの表示	-->
 				<?php $base = "/app/webroot/files/image/filename/"; ?>
@@ -140,7 +149,6 @@
 				</div>
 				</div>
 			</p>
-
 			
 		<?php endforeach; ?>
 		
@@ -160,7 +168,7 @@
 		</div>
 <!--	<div class="actions">	-->
 		<div class="blogaction actions col-xs-2 col-sm-2 col-md-2">
-			<?php echo $this->element('login_user'); ?>
+<!--		<?php /* echo $this->element('login_user'); */ ?>		-->
 			<h3><?php echo __('処理'); ?></h3>
 			<ul style="list-style:none;">
 				<li><?php echo $this->Html->link(__('投稿追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>

@@ -108,9 +108,9 @@ class GroupsController extends AppController {
 		$groups = $this->Group->find('first', $options);
 		$users = $groups['User'];
 
-		$this->log('!!!!');
-		$this->log($groups);
-		$this->log($users);
+//		$this->log('!!!!');
+//		$this->log($groups);
+//		$this->log($users);
 		
 		$this->Group->delete();
 		if (!$this->Group->exists()) {

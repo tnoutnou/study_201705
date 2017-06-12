@@ -3,6 +3,15 @@
 <div id="global-cont" data-filemax=<?php echo $filemaxcnt ?> >
 <?php echo $this->Html->script( 'post_edit.js'); ?>
 
+<?php $actionLists = array(
+		array(
+			'label' => '投稿削除',
+			'controller' => 'posts',
+			'action' => 'delete'),
+		);
+?>
+<?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
+
 <div class="container">
 <div class="row">
 <!--	<div class="posts form col-xs-12 col-sm-12 col-md-10">	-->
@@ -95,7 +104,7 @@
 <!--	<div class="actions col-sm-4 col-sm-offset-1">	-->
 <!--	<div class="col-xs-6 col-sm-6 col-md-2">	-->
 <div class="actions col-xs-6 col-sm-3 col-md-2">
-	<?php echo $this->element('login_user'); ?>
+	<?php /* echo $this->element('login_user'); */	?>
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
 

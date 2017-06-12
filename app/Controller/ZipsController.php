@@ -106,7 +106,7 @@ class ZipsController extends AppController {
 	//
 //	public function ziplist($zipcode = null) {
 	public function zipList() {
-		$this->log('LOG!!!22!!!');
+//		$this->log('LOG!!!22!!!');
 		// CakePHP 2.1以上
 		$this->Auth->allow();
 

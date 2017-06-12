@@ -1,6 +1,16 @@
 <?php echo $this->Html->script( 'jquery-git.js'); ?>
 <?php echo $this->Html->script( 'zip.js'); ?>
 <?php echo $this->Html->css( 'custom.css'); ?>
+
+<?php $actionLists = array(
+		array(
+			'label' => 'ユーザ削除',
+			'controller' => 'users',
+			'action' => 'delete'),
+		);
+?>
+<?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
+
 <div class="container">
 <div class="row">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
@@ -24,12 +34,12 @@
 	</fieldset>
 <?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
 <?php echo $this->Form->end(__('更新')); ?>
-<?php echo $this->Html->link(__('パスワード変更'), array('action' => 'changepw', $this->Form->value('User.id')), array('class'=>'btn btn-default btn-sm')); ?>
+<?php echo $this->Html->link(__('パスワード変更'), array('action' => 'changePassword', $this->Form->value('User.id')), array('class'=>'btn btn-default btn-sm')); ?>
 
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php echo $this->element('login_user'); ?>
+	<?php /* echo $this->element('login_user'); */	?>
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">

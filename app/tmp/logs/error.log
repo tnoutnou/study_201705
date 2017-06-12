@@ -47635,3 +47635,2770 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
 [main] - APP/webroot/index.php, line 111
 
+2017-06-09 18:27:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 11:08:01 Warning: SplFileInfo::openFile(//var/www/html/vagrant/cakephpc/app/tmp/cache/persistent/myapp_cake_core_file_map): failed to open stream: Permission denied in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Engine/FileEngine.php, line 356]
+2017-06-12 11:08:01 Warning: _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Cache.php, line 328]
+2017-06-12 11:23:23 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:24:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 11:40:29 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:40:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:40:54 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:41:00 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:41:07 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:41:12 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/posts/delTmpFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 11:41:18 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/posts/delTmpFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 11:41:24 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:41:39 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:45:23 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 201]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+PostsController::delTmpFile() - APP/Controller/PostsController.php, line 201
+PostsController::add() - APP/Controller/PostsController.php, line 130
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:46:08 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 201]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+PostsController::delTmpFile() - APP/Controller/PostsController.php, line 201
+PostsController::add() - APP/Controller/PostsController.php, line 130
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:46:48 Error: [PrivateActionException] Private Action PostsController::_addFile() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_addFile',
+)
+Request URL: /posts/_addFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-12 11:46:55 Error: [PrivateActionException] Private Action PostsController::_addFile() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_addFile',
+)
+Request URL: /posts/_addFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-12 11:47:01 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 201]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+PostsController::delTmpFile() - APP/Controller/PostsController.php, line 201
+PostsController::add() - APP/Controller/PostsController.php, line 130
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:47:24 Error: [PrivateActionException] Private Action PostsController::_addFile() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_addFile',
+)
+Request URL: /posts/_addFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-12 11:47:27 Error: [PrivateActionException] Private Action PostsController::_addFile() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_addFile',
+)
+Request URL: /posts/_addFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-12 11:47:32 Error: [PrivateActionException] Private Action PostsController::_addFile() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_addFile',
+)
+Request URL: /posts/_addFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-12 11:47:48 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 201]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+PostsController::delTmpFile() - APP/Controller/PostsController.php, line 201
+PostsController::add() - APP/Controller/PostsController.php, line 130
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 11:59:19 Error: [MissingViewException] View file "Users/change_password.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/change_password.ctp',
+)
+Request URL: /users/changePassword/10
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-12 12:01:13 Error: !!! 777 !!!
+2017-06-12 12:01:13 Error: Array
+(
+    [deleted] => 0
+    [username] => u88
+    [zip_code] => 
+    [ken_name_kan] => 
+    [city_name_kan] => 
+    [town_name_kan] => 
+    [detail_name_kan] => 
+    [password] => u88
+    [new_password] => u88
+    [group_id] => 3
+    [modified] => 2017-06-12 12:01:13
+    [created] => 2017-06-12 12:01:13
+)
+
+2017-06-12 12:01:13 Error: Array
+(
+    [User] => Array
+        (
+            [deleted] => 0
+            [username] => u88
+            [zip_code] => 
+            [ken_name_kan] => 
+            [city_name_kan] => 
+            [town_name_kan] => 
+            [detail_name_kan] => 
+            [password] => u88
+            [new_password] => u88
+            [group_id] => 3
+            [modified] => 2017-06-12 12:01:13
+            [created] => 2017-06-12 12:01:13
+        )
+
+)
+
+2017-06-12 12:01:13 Error: !!! 888 !!!
+2017-06-12 12:01:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'u88' for key 'username'
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(User), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/UsersController.php(54): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-06-12 12:01:44 Error: !!! 777 !!!
+2017-06-12 12:01:44 Error: Array
+(
+    [deleted] => 0
+    [username] => u99
+    [zip_code] => 
+    [ken_name_kan] => 
+    [city_name_kan] => 
+    [town_name_kan] => 
+    [detail_name_kan] => 
+    [password] => u99
+    [new_password] => u99
+    [group_id] => 3
+    [modified] => 2017-06-12 12:01:44
+    [created] => 2017-06-12 12:01:44
+)
+
+2017-06-12 12:01:44 Error: Array
+(
+    [User] => Array
+        (
+            [deleted] => 0
+            [username] => u99
+            [zip_code] => 
+            [ken_name_kan] => 
+            [city_name_kan] => 
+            [town_name_kan] => 
+            [detail_name_kan] => 
+            [password] => u99
+            [new_password] => u99
+            [group_id] => 3
+            [modified] => 2017-06-12 12:01:44
+            [created] => 2017-06-12 12:01:44
+        )
+
+)
+
+2017-06-12 12:01:44 Error: !!! 888 !!!
+2017-06-12 12:01:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'u99' for key 'username'
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(User), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/UsersController.php(54): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-06-12 12:02:06 Error: !!! 777 !!!
+2017-06-12 12:02:06 Error: Array
+(
+    [deleted] => 0
+    [username] => uu99
+    [zip_code] => 
+    [ken_name_kan] => 
+    [city_name_kan] => 
+    [town_name_kan] => 
+    [detail_name_kan] => 
+    [password] => uu99
+    [new_password] => uu99
+    [group_id] => 3
+    [modified] => 2017-06-12 12:02:06
+    [created] => 2017-06-12 12:02:06
+)
+
+2017-06-12 12:02:06 Error: Array
+(
+    [User] => Array
+        (
+            [deleted] => 0
+            [username] => uu99
+            [zip_code] => 
+            [ken_name_kan] => 
+            [city_name_kan] => 
+            [town_name_kan] => 
+            [detail_name_kan] => 
+            [password] => uu99
+            [new_password] => uu99
+            [group_id] => 3
+            [modified] => 2017-06-12 12:02:06
+            [created] => 2017-06-12 12:02:06
+        )
+
+)
+
+2017-06-12 12:02:06 Error: !!! 888 !!!
+2017-06-12 12:02:57 Error: !!! 777 !!!
+2017-06-12 12:02:57 Error: Array
+(
+    [id] => 20
+    [old_password] => uu99
+    [password] => uu99
+    [new_password] => uu99
+    [olddbpassword] => 7edfa67f843064168ac0936c8d795765d913263b
+    [modified] => 2017-06-12 12:02:57
+)
+
+2017-06-12 12:02:57 Error: Array
+(
+    [User] => Array
+        (
+            [id] => 20
+            [old_password] => uu99
+            [password] => uu99
+            [new_password] => uu99
+            [olddbpassword] => 7edfa67f843064168ac0936c8d795765d913263b
+            [modified] => 2017-06-12 12:02:57
+        )
+
+)
+
+2017-06-12 12:02:57 Error: !!! 888 !!!
+2017-06-12 13:21:20 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 13:21:26 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 13:21:49 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 13:21:54 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 13:53:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 14:23:17 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 21]
+2017-06-12 14:23:17 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 14:23:42 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ',' or ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 21]
+2017-06-12 14:23:42 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 14:23:43 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ',' or ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 21]
+2017-06-12 14:23:43 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 14:23:47 Error: Fatal Error (4): syntax error, unexpected '　' (T_STRING), expecting ',' or ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 21]
+2017-06-12 14:23:47 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 21, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 15:46:11 Error: 11 !!! 11
+2017-06-12 15:46:11 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 15:46:13 Error: 11 !!! 11
+2017-06-12 15:46:13 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 15:46:21 Error: 11 !!! 11
+2017-06-12 15:46:21 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 15:48:48 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 19]
+2017-06-12 15:48:48 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 15:49:18 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 19]
+2017-06-12 15:49:18 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 15:49:25 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 19]
+2017-06-12 15:49:25 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 19, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 15:58:00 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 24]
+2017-06-12 15:58:00 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 24, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 24, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 15:59:21 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 15:59:21 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 15:59:35 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 15:59:35 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 15:59:38 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 15:59:38 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:00:10 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:00:10 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:00:13 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:00:13 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:01:00 Error: 11!!11!!11
+2017-06-12 16:01:00 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 16:01:00 Error: 11!!11!!11
+2017-06-12 16:01:00 Error: Array
+(
+    [label] => カテゴリ追加
+    [controller] => categories
+    [action] => add
+)
+
+2017-06-12 16:01:00 Error: 11!!11!!11
+2017-06-12 16:01:00 Error: Array
+(
+    [label] => タグ追加
+    [controller] => tags
+    [action] => add
+)
+
+2017-06-12 16:01:35 Error: 11!!11!!11
+2017-06-12 16:01:35 Error: Fatal Error (1): Function name must be a string in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 25]
+2017-06-12 16:01:35 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/v...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/v...', 25, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/v...', 25, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:01:45 Error: 11!!11!!11
+2017-06-12 16:01:45 Error: 投稿追加
+2017-06-12 16:01:45 Error: 11!!11!!11
+2017-06-12 16:01:45 Error: カテゴリ追加
+2017-06-12 16:01:45 Error: 11!!11!!11
+2017-06-12 16:01:45 Error: タグ追加
+2017-06-12 16:02:22 Error: 11!!11!!11
+2017-06-12 16:02:22 Error: 投稿追加
+2017-06-12 16:02:22 Error: 11!!11!!11
+2017-06-12 16:02:22 Error: カテゴリ追加
+2017-06-12 16:02:22 Error: 11!!11!!11
+2017-06-12 16:02:22 Error: タグ追加
+2017-06-12 16:02:25 Error: 11!!11!!11
+2017-06-12 16:02:25 Error: 投稿追加
+2017-06-12 16:02:25 Error: 11!!11!!11
+2017-06-12 16:02:25 Error: カテゴリ追加
+2017-06-12 16:02:25 Error: 11!!11!!11
+2017-06-12 16:02:25 Error: タグ追加
+2017-06-12 16:03:15 Error: 11!!11!!11
+2017-06-12 16:03:15 Error: 投稿追加
+2017-06-12 16:03:15 Error: 11!!11!!11
+2017-06-12 16:03:15 Error: カテゴリ追加
+2017-06-12 16:03:15 Error: 11!!11!!11
+2017-06-12 16:03:15 Error: タグ追加
+2017-06-12 16:04:15 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:04:15 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:05:04 Error: Fatal Error (1): Function name must be a string in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:05:04 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:05:41 Error: Fatal Error (1): Function name must be a string in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:05:41 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:05:44 Error: Fatal Error (1): Function name must be a string in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:05:44 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:06:00 Error: Fatal Error (1): Function name must be a string in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:06:00 Error: [InternalErrorException] Internal Server Error
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:06:36 Error: Fatal Error (1): Function name must be a string in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:06:36 Error: [InternalErrorException] Internal Server Error
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:06:40 Error: Fatal Error (1): Function name must be a string in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:06:40 Error: [InternalErrorException] Internal Server Error
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:07:42 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:07:42 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:07:43 Error: Fatal Error (4): syntax error, unexpected 'label' (T_STRING) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:07:43 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:08:09 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:08:09 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:08:11 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:08:11 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:09:20 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:09:20 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:09:22 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 26]
+2017-06-12 16:09:22 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 26, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:42:16 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 230]
+2017-06-12 16:42:16 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 230)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 230, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 230, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:42:46 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 0]
+2017-06-12 16:42:46 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 0)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:43:38 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 0]
+2017-06-12 16:43:38 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 0)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:44:16 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 235]
+2017-06-12 16:44:16 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 235)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 235, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 235, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:44:16 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 304]
+2017-06-12 16:44:16 Error: [InternalErrorException] Internal Server Error
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 304)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 304, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 304, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:45:34 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 230]
+2017-06-12 16:45:34 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 230)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 230, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 230, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:46:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 232]
+2017-06-12 16:46:15 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 232, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 232, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:47:05 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 291]
+2017-06-12 16:47:05 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 291)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:48:55 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 357]
+2017-06-12 16:48:55 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 357)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 357, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 357, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 16:49:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 16:50:45 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 232]
+2017-06-12 16:50:45 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 232, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 232, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:09:30 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/vagrant/cakephpc/app/View/Posts/view.ctp, line 11]
+2017-06-12 17:09:30 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts/view/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 11, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 11, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:10:27 Error: Fatal Error (1): Allowed memory size of 373293056 bytes exhausted (tried to allocate 3840 bytes) in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 40]
+2017-06-12 17:10:27 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts/view/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/var/www/html/v...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/var/www/html/v...', 40, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/var/www/html/v...', 40, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:14:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 17:14:42 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 291]
+2017-06-12 17:14:42 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 291)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:15:12 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 235]
+2017-06-12 17:15:12 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 235)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 235, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 235, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:16:32 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/CakeText.php, line 229]
+2017-06-12 17:16:32 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 229)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 229, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 229, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:24:51 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 291]
+2017-06-12 17:24:51 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 291)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:36:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 291]
+2017-06-12 17:36:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 291)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:39:41 Error: !!!! 12345 !!!!!A
+2017-06-12 17:39:41 Error: !!!! 12345 !!!!!B
+2017-06-12 17:39:41 Error: !!!! 12345 !!!!!C
+2017-06-12 17:39:41 Error: !!!! 12345 !!!!!D
+2017-06-12 17:39:41 Error: !!!! 12345 !!!!!E
+2017-06-12 17:40:12 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 0]
+2017-06-12 17:40:12 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 0)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:41:47 Error: !!!! 12345 !!!!!E
+2017-06-12 17:41:47 Error: !!!! あ !!!! A
+2017-06-12 17:41:47 Error: !!!! あ !!!! B
+2017-06-12 17:41:47 Error: !!!! あ !!!! C
+2017-06-12 17:42:17 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 291]
+2017-06-12 17:42:17 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 291)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:43:54 Error: !!!! 12345 !!!!!E
+2017-06-12 17:43:54 Error: !!!! あ !!!! C
+2017-06-12 17:43:54 Error: !!!! あ !!!! D
+2017-06-12 17:43:54 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 1
+                    [user_id] => 1
+                    [title] => test1_u1
+                    [body] => 1あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+2あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+3あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+4あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+5あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+6あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+7あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+8あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+
+以上です。
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:39:10
+                    [created] => 2017-05-08 12:49:59
+                    [modified] => 2017-06-08 17:39:10
+                    [old_modified] => 2017-06-08 17:39:10
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 21
+                            [post_id] => 1
+                            [filename] => tulips-2289976_640.jpg
+                            [dirname] => 21
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 13:59:50
+                            [modified] => 2017-05-16 13:59:50
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 36
+                            [post_id] => 1
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 36
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 16:48:18
+                            [modified] => 2017-05-22 16:48:18
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 225
+                            [post_id] => 1
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 225
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-06-06 16:10:35
+                            [modified] => 2017-06-06 16:10:35
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 1
+                                    [post_id] => 1
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 17
+                                    [post_id] => 1
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-17 15:54:22
+                                    [modified] => 2017-05-17 15:54:22
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 3
+                    [user_id] => 4
+                    [title] => test2_U1
+                    [body] => ああああああああああああああああああああああああああああああああああああああああああああああああああ
+
+11
+body test2
+あああ　　１１１１１
+
+２２２
+
+以上
+
+PSPS
+
+！！！
+１１１
+２２２
+
+２２２２
+３３３
+３３３
+４４
+５５５５
+4444
+
+ああああ
+
+いいいいいい
+                    [category_id] => 4
+                    [deleted] => 
+                    [deleted_date] => 2017-06-12 06:21:28
+                    [created] => 2017-05-08 16:18:46
+                    [modified] => 2017-06-12 13:21:28
+                    [old_modified] => 2017-06-12 13:21:28
+                )
+
+            [User] => Array
+                (
+                    [id] => 4
+                    [username] => u2
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fde9d4d9a0e42312201f35372d0b01b9b21e001
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 12:51:45
+                    [modified] => 2017-05-08 12:51:45
+                )
+
+            [Category] => Array
+                (
+                    [id] => 4
+                    [categoryname] => 日記
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-06-02 16:41:11
+                    [modified] => 2017-06-02 16:41:11
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 261
+                            [post_id] => 3
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 261
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:23:31
+                            [created] => 2017-06-12 11:23:31
+                            [modified] => 2017-06-12 11:23:31
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 264
+                            [post_id] => 3
+                            [filename] => feet-44810_640.png
+                            [dirname] => 264
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:22
+                            [created] => 2017-06-12 11:41:22
+                            [modified] => 2017-06-12 11:41:22
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 265
+                            [post_id] => 3
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 265
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:33
+                            [created] => 2017-06-12 11:41:33
+                            [modified] => 2017-06-12 11:41:33
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 13
+                                    [post_id] => 3
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-09 18:10:45
+                                    [modified] => 2017-05-09 18:10:45
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 109
+                                    [post_id] => 3
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-09 10:37:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 4
+                    [user_id] => 4
+                    [title] => test3
+                    [body] => ああああ
+test3 body
+2 あああafdafdsfafasdfdsfあ
+
+
+
+以上
+
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-12 06:21:56
+                    [created] => 2017-05-08 16:35:32
+                    [modified] => 2017-06-12 13:21:56
+                    [old_modified] => 2017-06-12 13:21:56
+                )
+
+            [User] => Array
+                (
+                    [id] => 4
+                    [username] => u2
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fde9d4d9a0e42312201f35372d0b01b9b21e001
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 12:51:45
+                    [modified] => 2017-05-08 12:51:45
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 11
+                            [post_id] => 4
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 11
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 11:24:20
+                            [modified] => 2017-05-12 11:24:20
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 17
+                            [post_id] => 4
+                            [filename] => rakugaki.png
+                            [dirname] => 17
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 13:49:48
+                            [modified] => 2017-05-12 13:49:48
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 22
+                            [post_id] => 4
+                            [filename] => pathway-2289978_640.jpg
+                            [dirname] => 22
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 16:49:46
+                            [modified] => 2017-05-16 16:49:46
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 14
+                                    [post_id] => 4
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:26
+                                    [modified] => 2017-05-11 16:36:26
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 15
+                                    [post_id] => 4
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:35
+                                    [modified] => 2017-05-11 16:36:35
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 5
+                    [user_id] => 1
+                    [title] => title4
+                    [body] => body 4
+１
+２
+                    [category_id] => 4
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:44:57
+                    [created] => 2017-05-09 10:15:07
+                    [modified] => 2017-06-08 17:44:57
+                    [old_modified] => 2017-06-08 17:44:57
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 4
+                    [categoryname] => 日記
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-06-02 16:41:11
+                    [modified] => 2017-06-02 16:41:11
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 229
+                            [post_id] => 5
+                            [filename] => feet-44810_640.png
+                            [dirname] => 229
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 09:06:49
+                            [created] => 2017-06-07 16:06:49
+                            [modified] => 2017-06-07 16:06:49
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 68
+                                    [post_id] => 5
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 69
+                                    [post_id] => 5
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 70
+                                    [post_id] => 5
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 11
+                    [user_id] => 1
+                    [title] => title0516A
+                    [body] => 本文本文
+ss
+ddd
+4444444
+55555555555
+6
+
+以上です。
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 11:10:28
+                    [created] => 2017-05-16 10:04:31
+                    [modified] => 2017-06-08 18:10:28
+                    [old_modified] => 2017-06-08 18:10:28
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 35
+                            [post_id] => 11
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 35
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-18 18:40:06
+                            [modified] => 2017-05-18 18:40:06
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 26
+                                    [post_id] => 11
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 27
+                                    [post_id] => 11
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 28
+                                    [post_id] => 11
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [5] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 13
+                    [user_id] => 1
+                    [title] => title0516
+                    [body] => 本文2121ggggggggggggg
+２ ff
+３gg
+４４４
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-16 10:04:59
+                    [modified] => 2017-05-29 15:53:44
+                    [old_modified] => 2017-05-29 15:53:44
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 198
+                            [post_id] => 13
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 198
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-24 18:52:28
+                            [modified] => 2017-05-24 18:52:28
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 38
+                                    [post_id] => 13
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 39
+                                    [post_id] => 13
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 46
+                                    [post_id] => 13
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [6] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 14
+                    [user_id] => 1
+                    [title] => title0516C
+                    [body] => ddddd
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-16 10:05:17
+                    [modified] => 2017-05-16 10:05:17
+                    [old_modified] => 2017-05-16 10:05:17
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 15
+                    [user_id] => 1
+                    [title] => title0516D
+                    [body] => 本文本文
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-16 10:05:36
+                    [modified] => 2017-05-16 10:05:36
+                    [old_modified] => 2017-05-16 10:05:36
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 16
+                    [user_id] => 3
+                    [title] => title0517A
+                    [body] => 本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+
+以上
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:45:22
+                    [created] => 2017-05-17 15:42:45
+                    [modified] => 2017-06-08 17:45:22
+                    [old_modified] => 2017-06-08 17:45:22
+                )
+
+            [User] => Array
+                (
+                    [id] => 3
+                    [username] => u1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fc789fb7c661bab37b623d1e97930e354266fbc
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:10:21
+                    [modified] => 2017-05-08 10:10:21
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 257
+                            [post_id] => 16
+                            [filename] => africa-2026052_640.png
+                            [dirname] => 257
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 258
+                            [post_id] => 16
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 258
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 259
+                            [post_id] => 16
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 259
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [9] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 17
+                    [user_id] => 3
+                    [title] => title0522A
+                    [body] => 本文
+２
+３
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 17:15:58
+                    [modified] => 2017-05-22 18:09:19
+                    [old_modified] => 2017-05-22 18:09:19
+                )
+
+            [User] => Array
+                (
+                    [id] => 3
+                    [username] => u1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fc789fb7c661bab37b623d1e97930e354266fbc
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:10:21
+                    [modified] => 2017-05-08 10:10:21
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 41
+                            [post_id] => 17
+                            [filename] => rakugaki.png
+                            [dirname] => 41
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:09:19
+                            [modified] => 2017-05-22 18:09:19
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+)
+
+2017-06-12 17:44:24 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 291]
+2017-06-12 17:44:24 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 291)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 291, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:46:03 Error: !!!! 12345 !!!!!E
+2017-06-12 17:46:03 Error: !!!! あ !!!! C
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! E
+2017-06-12 17:46:03 Error: !!!! あ !!!! F
+2017-06-12 17:46:03 Error: !!!! あ !!!! G
+2017-06-12 17:46:03 Error: !!!! あ !!!! H
+2017-06-12 17:46:33 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 0]
+2017-06-12 17:46:33 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 0)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 0, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:47:04 Error: !!!! 12345 !!!!!E
+2017-06-12 17:47:04 Error: !!!! あ !!!! C
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! E
+2017-06-12 17:47:04 Error: !!!! あ !!!! F
+2017-06-12 17:47:04 Error: !!!! あ !!!! G
+2017-06-12 17:47:04 Error: !!!! あ !!!! H
+2017-06-12 17:47:04 Error: !!!! あ !!!! I
+2017-06-12 17:47:04 Error: !!!! あ !!!! J
+2017-06-12 17:47:34 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/html/vagrant/cakephpc/lib/Cake/Utility/Debugger.php, line 307]
+2017-06-12 17:47:34 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/html/v...', 307)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/html/v...', 307, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/html/v...', 307, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 17:48:03 Error: !!!! 12345 !!!!!E
+2017-06-12 17:48:03 Error: !!!! あ !!!! C
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! E
+2017-06-12 17:48:03 Error: !!!! あ !!!! F
+2017-06-12 17:48:03 Error: !!!! あ !!!! G
+2017-06-12 17:48:03 Error: !!!! あ !!!! H
+2017-06-12 17:48:03 Error: !!!! あ !!!! I
+2017-06-12 17:48:03 Error: !!!! あ !!!! J
+2017-06-12 17:48:03 Error: !!!! あ !!!! K
+2017-06-12 17:48:03 Error: !!!! あ !!!! L
+2017-06-12 17:48:03 Error: !!!! あ !!!! X
+2017-06-12 17:53:17 Error: !!!! 12345 !!!!!E
+2017-06-12 17:55:53 Error: !!!! 12345 !!!!!E
+2017-06-12 17:57:10 Error: !!!! 12345 !!!!!E
+2017-06-12 17:57:21 Error: !!!! 12345 !!!!!E
+2017-06-12 17:59:32 Error: !!!! 12345 !!!!!E
+2017-06-12 18:00:33 Error: !!!!! !!!!!
+2017-06-12 18:00:33 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿編集
+            [controller] => posts
+            [action] => edit
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿削除
+            [controller] => posts
+            [action] => delete
+        )
+
+    [2] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:01:45 Error: AAAAAAAAAAAA
+2017-06-12 18:01:45 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:01:45 Error: AAAAAAAAAAAA
+2017-06-12 18:01:45 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:01:48 Error: !!!!! !!!!!
+2017-06-12 18:01:48 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿編集
+            [controller] => posts
+            [action] => edit
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿削除
+            [controller] => posts
+            [action] => delete
+        )
+
+    [2] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:01:48 Error: AAAAAAAAAAAA
+2017-06-12 18:01:48 Error: Array
+(
+    [label] => 投稿編集
+    [controller] => posts
+    [action] => edit
+)
+
+2017-06-12 18:01:48 Error: AAAAAAAAAAAA
+2017-06-12 18:01:48 Error: Array
+(
+    [label] => 投稿削除
+    [controller] => posts
+    [action] => delete
+)
+
+2017-06-12 18:01:48 Error: AAAAAAAAAAAA
+2017-06-12 18:01:48 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:01:48 Error: AAAAAAAAAAAA
+2017-06-12 18:01:48 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:03:44 Error: BBBBBBBBBBBB
+2017-06-12 18:03:44 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:03:44 Error: AAAAAAAAAAAA
+2017-06-12 18:03:44 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:03:44 Error: BBBBBBBBBBBB
+2017-06-12 18:03:44 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:03:44 Error: AAAAAAAAAAAA
+2017-06-12 18:03:44 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:03:46 Error: !!!!! !!!!!
+2017-06-12 18:03:46 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿編集
+            [controller] => posts
+            [action] => edit
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿削除
+            [controller] => posts
+            [action] => delete
+        )
+
+    [2] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:03:46 Error: BBBBBBBBBBBB
+2017-06-12 18:03:46 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿編集
+            [controller] => posts
+            [action] => edit
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿削除
+            [controller] => posts
+            [action] => delete
+        )
+
+    [2] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:03:46 Error: AAAAAAAAAAAA
+2017-06-12 18:03:46 Error: Array
+(
+    [label] => 投稿編集
+    [controller] => posts
+    [action] => edit
+)
+
+2017-06-12 18:03:46 Error: AAAAAAAAAAAA
+2017-06-12 18:03:46 Error: Array
+(
+    [label] => 投稿削除
+    [controller] => posts
+    [action] => delete
+)
+
+2017-06-12 18:03:46 Error: AAAAAAAAAAAA
+2017-06-12 18:03:46 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:03:46 Error: BBBBBBBBBBBB
+2017-06-12 18:03:46 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:03:46 Error: AAAAAAAAAAAA
+2017-06-12 18:03:46 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:08:32 Error: BBBBBBBBBBBB
+2017-06-12 18:08:32 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:08:32 Error: AAAAAAAAAAAA
+2017-06-12 18:08:32 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:08:35 Error: !!!!! !!!!!
+2017-06-12 18:08:35 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿編集
+            [controller] => posts
+            [action] => edit
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿削除
+            [controller] => posts
+            [action] => delete
+        )
+
+    [2] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:08:35 Error: BBBBBBBBBBBB
+2017-06-12 18:08:35 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿編集
+            [controller] => posts
+            [action] => edit
+        )
+
+    [1] => Array
+        (
+            [label] => 投稿削除
+            [controller] => posts
+            [action] => delete
+        )
+
+    [2] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:08:35 Error: AAAAAAAAAAAA
+2017-06-12 18:08:35 Error: Array
+(
+    [label] => 投稿編集
+    [controller] => posts
+    [action] => edit
+)
+
+2017-06-12 18:08:35 Error: AAAAAAAAAAAA
+2017-06-12 18:08:35 Error: Array
+(
+    [label] => 投稿削除
+    [controller] => posts
+    [action] => delete
+)
+
+2017-06-12 18:08:35 Error: AAAAAAAAAAAA
+2017-06-12 18:08:35 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:12:58 Error: BBBBBBBBBBBB
+2017-06-12 18:12:58 Error: Array
+(
+    [0] => Array
+        (
+            [label] => 投稿追加
+            [controller] => posts
+            [action] => add
+        )
+
+)
+
+2017-06-12 18:12:58 Error: AAAAAAAAAAAA
+2017-06-12 18:12:58 Error: Array
+(
+    [label] => 投稿追加
+    [controller] => posts
+    [action] => add
+)
+
+2017-06-12 18:12:59 Error: BBBBBBBBBBBB
+2017-06-12 18:12:59 Error: Array
+(
+)
+
+2017-06-12 18:20:20 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 74]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 74
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 18:20:49 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 83]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 83
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 18:31:27 Error: [NotFoundException] 無効なグループです。
+Request URL: /groups/edit
+Stack Trace:
+#0 [internal function]: GroupsController->edit()
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-12 18:39:42 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 83]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 83
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-12 18:41:55 Error: [MissingControllerException] Controller class PoststagsController could not be found.
+Exception Attributes: array (
+  'class' => 'PoststagsController',
+  'plugin' => NULL,
+)
+Request URL: /poststags/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-12 18:48:30 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Tags/add.ctp, line 2]
+2017-06-12 18:48:30 Error: [InternalErrorException] Internal Server Error
+Request URL: /tags/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 18:48:38 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Tags/add.ctp, line 2]
+2017-06-12 18:48:38 Error: [InternalErrorException] Internal Server Error
+Request URL: /tags/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 18:48:45 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Tags/add.ctp, line 2]
+2017-06-12 18:48:45 Error: [InternalErrorException] Internal Server Error
+Request URL: /tags/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-12 18:49:16 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Tags/add.ctp, line 2]
+2017-06-12 18:49:16 Error: [InternalErrorException] Internal Server Error
+Request URL: /tags/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 2, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

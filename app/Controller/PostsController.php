@@ -37,13 +37,25 @@ class PostsController extends AppController {
 //		debug($this->Paginator->paginate());
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0')));
+		$tags = $this->Post->Tag->find(
+				'list',
+				array(
+						'fields'=>array('id','tagname'),
+						'conditions' =>array('deleted' => '0')
+				)
+		);
 		$this->set(compact('tags'));
-
 		
 //		$this->log($this->Auth->user());
 //	最近の投稿
-		$recent_posts = $this->Post->find('list',array('fields'=>array('id','title'),'limit'=>'5','order'=>'created DESC'));
+		$recent_posts = $this->Post->find(
+			'list',
+			array(
+				'fields'=>array('id','title'),
+				'limit'=>'5',
+				'order'=>'created DESC'
+			)
+		);
 		$this->set(compact('recent_posts'));
 
 	}
@@ -72,7 +84,13 @@ class PostsController extends AppController {
 //		var_dump($poststags); 
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0') ));
+		$tags = $this->Post->Tag->find(
+			'list',
+			array(
+				'fields'=>array('id','tagname'),
+				'conditions' =>array('deleted' => '0')
+			)
+		);
 		$this->set(compact('tags'));
 //$this->log(WEBROOT_DIR);
 	}
@@ -127,7 +145,7 @@ class PostsController extends AppController {
 //					}
 //				}
 //				$this->Session->delete('add_files');
-				$this->deltmpfile();
+				$this->delTmpFile();
 				
 //				$this->Flash->success(__('The post has been saved.'));
 				$this->Flash->success(__('投稿を保存しました。'));
@@ -139,7 +157,10 @@ class PostsController extends AppController {
 		}
 //		$users = $this->Post->User->find('list');
 
-		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
+		$options = array(
+			'conditions' => array('username' => $this->Session->read('login_user')),
+			'fields'=>array('id','username')
+		);
 
 //		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
 //		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
@@ -151,7 +172,13 @@ class PostsController extends AppController {
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
 
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0')));
+		$tags = $this->Post->Tag->find(
+			'list',
+			array(
+				'fields'=>array('id','tagname'),
+				'conditions' =>array('deleted' => '0')
+			)
+		);
 		$this->set(compact('tags'));			
 	
 //		$selected = $this->Post->PostsTag->find('list',array('fields'=>array('tag_id'),'conditions' => array('PostsTag.' . 'post_id' => $id )));
@@ -160,7 +187,7 @@ class PostsController extends AppController {
 	}
 
 
-	public function addfile() {
+	public function addFile() {
 		// ビューの使用無を設定
 		$this->autoRender = false;
 		
@@ -191,7 +218,7 @@ class PostsController extends AppController {
 		
 	}
 
-	public function deltmpfile() {
+	public function delTmpFile() {
 		// ビューの使用無を設定
 		$this->autoRender = false;
 		// 一時ファイルの削除
@@ -255,7 +282,13 @@ class PostsController extends AppController {
 
 			// タグが全解除の場合に登録されていたタグを削除する
 			if (empty($this->request->data['Tag'])) {
-				$poststags = $this->Post->PostsTag->find('list',array('fields'=>array('id'),'conditions' => array('PostsTag.' . 'post_id' => $id )));
+				$poststags = $this->Post->PostsTag->find(
+					'list',
+					array(
+						'fields'=>array('id'),
+						'conditions' => array('PostsTag.' . 'post_id' => $id )
+					)
+				);
 				foreach ($poststags as $poststag) {
 					$this->PostsTag->delete($poststag);
 				}
@@ -299,7 +332,10 @@ class PostsController extends AppController {
 //			$this->Session->write('post_edit', $postedit);
 
 			// 
-			if (!((($this->request->data['User']['username']) === $this->Session->read('login_user')) or ($this->Session->read('admin_flg') === '1')) ) {
+			if (!((($this->request->data['User']['username']) === $this->Session->read('login_user'))
+					or ($this->Session->read('admin_flg') === '1')
+				))
+			{
 				$this->Flash->success(__('投稿の登録者か、管理者しか編集できません。'));
 				return $this->redirect(array('action' => 'index'));
 			}
@@ -308,7 +344,10 @@ class PostsController extends AppController {
 
 		// 投稿したユーザに固定
 //		$options = array('conditions' => array('username' => $this->Session->read('login_user')), 'fields'=>array('id','username') );
-		$options = array('conditions' => array('id' => $this->request->data['User']['id']), 'fields'=>array('id','username') );
+		$options = array(
+			'conditions' => array('id' => $this->request->data['User']['id']),
+			'fields'=>array('id','username')
+		);
 		
 //		$users = $this->Post->User->find('list');
 //		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
@@ -323,10 +362,22 @@ class PostsController extends AppController {
 //		$tags = $this->Post->Tag->find('list');
 //		$options = array('conditions' => array('Tag.' . 'post_id' => $id));
 
-		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname'), 'conditions' =>array('deleted' => '0') ));
+		$tags = $this->Post->Tag->find(
+			'list',
+			array(
+				'fields'=>array('id','tagname')
+				, 'conditions' =>array('deleted' => '0')
+			)
+		);
 		$this->set(compact('tags'));			
 	
-		$selected = $this->Post->PostsTag->find('list',array('fields'=>array('tag_id'),'conditions' => array('PostsTag.' . 'post_id' => $id )));
+		$selected = $this->Post->PostsTag->find(
+			'list',
+			array(
+				'fields'=>array('tag_id'),
+				'conditions' => array('PostsTag.' . 'post_id' => $id )
+			)
+		);
 		$this->set(compact('selected'));
 
 	}
@@ -386,10 +437,10 @@ class PostsController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
-	
+
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view', 'addfile', 'deltmpfile');
+		$this->Auth->allow('index', 'view', 'addFile', 'delTmpFile');
 	}
 	
 }

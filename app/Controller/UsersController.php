@@ -189,7 +189,7 @@ class UsersController extends AppController {
 	}
 	*/
 
-	public function changepw($id = null) {
+	public function changePassword($id = null) {
 		if (!$this->User->exists($id)) {
 //			throw new NotFoundException(__('Invalid user'));
 			throw new NotFoundException(__('無効なユーザです'));

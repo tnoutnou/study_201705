@@ -19,7 +19,7 @@ class Post extends AppModel {
 	public $actsAs = array('Search.Searchable', 'SoftDelete');
 	public $filterArgs = array(
 		'category_id' => array('type' => 'value'),
-		'category_str' => array('type' => 'query', 'method' => 'findBycateg'),
+		'category_str' => array('type' => 'query', 'method' => 'findByCateg'),
 		'title' => array('type' => 'like'),
 		'tag_id' => array('type' => 'query', 'method' => 'findByTags'),
 		'tag_str' => array('type' => 'query', 'method' => 'findByTagstr'),
@@ -143,7 +143,10 @@ class Post extends AppModel {
 //		debug($data['tag_id']);
 //		$condition = array('tag_id' => $data['tag_id']);
 		
-		$options = array('fields'=>array('post_id') , 'conditions' => array('tag_id' => $data['tag_id']));
+		$options = array(
+			'fields'=>array('post_id'),
+			'conditions' => array('tag_id' => $data['tag_id'])
+		);
 		
 		$tmps = $this->PostsTag->find('list', $options);
 		
@@ -165,12 +168,16 @@ class Post extends AppModel {
 
 	
 	//カテゴリの部分一致
-	public function findBycateg($data = array()){
+	public function findByCateg($data = array()){
 
 //		debug($data['category_str']);
 //		$condition = array('tag_id' => $data['category_id_str']);
 		
-		$options = array('fields'=>array('id') , 'conditions' => array('categoryname like' => '%' . $data['category_str'] . '%'));
+		$options = array(
+			'fields'=>array('id'),
+			'conditions' => array('categoryname like' => '%' . $data['category_str'] . '%'
+			)
+		);
 		
 		$tmps = $this->Category->find('list', $options);
 		
@@ -196,7 +203,11 @@ class Post extends AppModel {
 //		debug($data['tag_str']);
 //		$condition = array('tag_id' => $data['category_id_str']);
 		
-		$options = array('fields'=>array('id') , 'conditions' => array('tagname like' => '%' . $data['tag_str'] . '%'));		
+		$options = array(
+			'fields'=>array('id'),
+			'conditions' => array('tagname like' => '%' . $data['tag_str'] . '%'
+			)
+		);		
 		$tmps = $this->Tag->find('list', $options);
 
 //		debug($tmps);
@@ -240,7 +251,9 @@ class Post extends AppModel {
 
 //			$this->log($old_postedit);
 			
-			if (($now_postedit[0]['Post']['id'] === $data['Post']['id']) and ($now_postedit[0]['Post']['modified'] === $data['Post']['old_modified'])) {
+			if (($now_postedit[0]['Post']['id'] === $data['Post']['id'])
+				and ($now_postedit[0]['Post']['modified'] === $data['Post']['old_modified']))
+			{
 				if (!$this->saveAll($data)) {
 					throw new Exception();
 				}

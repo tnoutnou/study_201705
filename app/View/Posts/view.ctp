@@ -1,6 +1,22 @@
 <?php echo $this->Html->script( 'jquery-git.js'); ?>
 <?php echo $this->Html->script( 'test.js'); ?>
 <?php echo $this->Html->css( 'custom.css'); ?>
+<?php $actionLists = array(
+		array(
+			'label' => '投稿編集',
+			'controller' => 'posts',
+			'action' => 'edit'),
+		array(
+			'label' => '投稿削除',
+			'controller' => 'posts',
+			'action' => 'delete'),
+		array(
+			'label' => '投稿追加',
+			'controller' => 'posts',
+			'action' => 'add'),
+		);
+?>
+<?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
 <div class="container">
 <div class="row">
 <?php echo $this->Html->css( 'custom.css'); ?>
@@ -122,7 +138,7 @@
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php echo $this->element('login_user'); ?>
+	<?php /* echo $this->element('login_user'); */	?>
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
