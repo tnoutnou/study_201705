@@ -5,16 +5,19 @@
 		array(
 			'label' => '投稿編集',
 			'controller' => 'posts',
-			'action' => 'edit'),
+			'action' => 'edit',
+			'id' => $post['Post']['id']),
 		array(
 			'label' => '投稿削除',
 			'controller' => 'posts',
-			'action' => 'delete'),
+			'action' => 'delete',
+			'id' => $post['Post']['id']),
 		array(
 			'label' => '投稿追加',
 			'controller' => 'posts',
-			'action' => 'add'),
-		);
+			'action' => 'add',
+			'id' => null),
+);
 ?>
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
 <div class="container">
@@ -32,12 +35,17 @@
 		<?php echo nl2br(h($post['Post']['body'])); ?>
 	</p>
 	<p>
-		<?php echo h("カテゴリ：　" . $post['Category']['categoryname']); ?>
+		<?php echo h("カテゴリ：　"); ?>
+		<span class="label label-info">
+			<?php echo h($post['Category']['categoryname']); ?>
+		</span>
 	</p>
 	<p>
 		<?php echo h("タグ：　"); ?>
 		<?php foreach ($post['Tag'] as $taglist) {?>
-		<?php echo h($taglist['tagname']); ?>
+		<span class="label label-warning" style="margin-left:3px;">
+			<?php echo h($taglist['tagname']); ?>
+		</span>
 		<?php } ?>
 	</p>
 
@@ -57,14 +65,10 @@
 	&nbsp;
 	<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>
 
-	<p>
-		<?php echo h("投稿日時：" . $post['Post']['created']); ?>
-	</p>
-	<p>
-		<?php echo h("編集日時：" . $post['Post']['modified']); ?>
-	</p>
-	<p>
-		<?php echo h("投稿ID：" . $post['Post']['id']); ?>
+	<p style="margin-top:20px;">
+		<span style="margin-left:20px;"><?php echo h("投稿日時：" . $post['Post']['created']); ?></span>
+		<span style="margin-left:20px;"><?php echo h("編集日時：" . $post['Post']['modified']); ?></span>
+		<span style="margin-left:20px;"><?php echo h("投稿ID：" . $post['Post']['id']); ?></span>
 	</p>
 	
 <!--	<dl>	-->
@@ -138,7 +142,7 @@
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php /* echo $this->element('login_user'); */	?>
+	<?php /* echo $this->element('login_user'); 
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul style="list-style:none;">
@@ -151,6 +155,7 @@
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
+*/	?>
 </div>
 </div>
 </div>

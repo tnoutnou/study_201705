@@ -24,7 +24,7 @@
 		echo $this->Form->input('town_name_kan', array('label' => array('text' => '町村')));
 		echo $this->Form->input('detail_name_kan', array('label' => array('text' => '番地以下')));
 		echo $this->Form->input('password', array('label' => array('text' => 'パスワード')));
-		echo $this->Form->input('new_password', array('type'=>'password', 'label' => array('text' => '新パスワード【確認】'), 'value'=> ''));
+		echo $this->Form->input('new_password', array('type'=>'password', 'label' => array('text' => 'パスワード【確認】'), 'value'=> ''));
 		echo $this->Form->input('group_id', array('label' => array('text' => 'グループID')));
 	?>
 	</fieldset>
@@ -33,7 +33,7 @@
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php /* echo $this->element('login_user'); */	?>
+	<?php /* echo $this->element('login_user'); 
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>
@@ -44,6 +44,7 @@
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
+*/	?>
 </div>
 </div>
 

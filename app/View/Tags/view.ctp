@@ -2,15 +2,18 @@
 		array(
 			'label' => 'タグ編集',
 			'controller' => 'tags',
-			'action' => 'edit'),
+			'action' => 'edit',
+			'id' => $tag['Tag']['id']),
 		array(
 			'label' => 'タグ削除',
 			'controller' => 'tags',
-			'action' => 'delete'),
+			'action' => 'delete',
+			'id' => $tag['Tag']['id']),
 		array(
 			'label' => 'タグ追加',
 			'controller' => 'tags',
-			'action' => 'add'),
+			'action' => 'add',
+			'id' => null),
 		);
 ?>
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
@@ -52,7 +55,6 @@
 		<th><?php echo __('ユーザID'); ?></th>
 		<th><?php echo __('タイトル'); ?></th>
 		<th><?php echo __('本文'); ?></th>
-		<th><?php echo __('カテゴリID'); ?></th>
 		<th><?php echo __('作成日時'); ?></th>
 		<th><?php echo __('更新日時'); ?></th>
 		<th class="actions"><?php echo __('処理'); ?></th>
@@ -62,8 +64,19 @@
 			<td><?php echo $post['id']; ?></td>
 			<td><?php echo $post['user_id']; ?></td>
 			<td><?php echo $post['title']; ?></td>
-			<td><?php echo $post['body']; ?></td>
-			<td><?php echo $post['category_id']; ?></td>
+<!--			<td><?php echo $post['body']; ?></td>	-->
+<!--			先頭の１行だけ出力	-->
+				<?php
+					$n_ｃnt = substr_count($post['body'], "\n");
+					if ($n_ｃnt >= 1) {
+//						$n_pos = strpos($post['body'], "\n", strpos($post['body'], "\n", strpos($post['body'], "\n", strpos($post['body'], "\n", strpos($post['body'], "\n") + 1)+1)+1)+1);
+						$n_pos = strpos($post['body'], "\n");
+					}else {
+						$n_pos = strlen($post['body']);
+					}
+				?>
+			<td><?php echo nl2br(h(substr($post['body'],0,$n_pos))); ?></td>
+
 			<td><?php echo $post['created']; ?></td>
 			<td><?php echo $post['modified']; ?></td>
 			<td class="actions">
@@ -81,7 +94,7 @@
 
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php /* echo $this->element('login_user'); */	?>
+	<?php /* echo $this->element('login_user'); 
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>
@@ -92,6 +105,6 @@
 		<?php echo $this->element('actlistall'); ?>
 	</ul>
 </div>
-
+*/	?>
 
 </div>

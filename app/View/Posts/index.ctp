@@ -5,7 +5,8 @@
 		array(
 			'label' => '投稿追加',
 			'controller' => 'posts',
-			'action' => 'add')
+			'action' => 'add',
+			'id' => null),
 		);
 ?>
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
@@ -65,11 +66,15 @@
 							<?php echo $this->Form->input('tag_str', array('label'=>false, 'div'=>false, 'placeholder' => '部分一致検索', 'class' => 'form-control'));  ?>
 						</div>
 					</div>
+
+	<!--			アーカイブ用		-->
+					<?php echo $this->Form->input('created_ym', array('label'=>false, 'div'=>false, 'type' => 'hidden' ,'class' => 'form-control'));  ?>
+					
 				<div class="col-sm-10"></div>
-<!--				<div class="col-sm-8　col-sm-offset-3">	-->
+<!--				<div class="col-sm-8 col-sm-offset-3">	-->
 				<div class="col-sm-2">
 <!--					<?php echo $this->Form->end(array('label'=> '検索', 'div' => array('class'=>'search-btn'))); ?>	-->
-					<?php echo $this->Form->end(array('label'=> '検索', 'div' => false)); ?>
+					<?php echo $this->Form->end(array('label'=> '検索', 'div' => false, 'id' => 'src_btn')); ?>
 				</div>
 
 
@@ -123,18 +128,24 @@
 			
 			<div class="col-sm-12">
 				<p>
-					<?php echo h("カテゴリ：　" . $post['Category']['categoryname']); ?>
+					<?php echo h("カテゴリ：　"); ?>
+					<span class="label label-info">
+						<?php echo h($post['Category']['categoryname']); ?>
+					</span>
 				</p>
 				<p>
 					<?php echo h("タグ：　"); ?>
 					<?php foreach ($post['Tag'] as $taglist) {?>
-					<?php echo h($taglist['tagname']); ?>
+					<span class="label label-warning" style="margin-left:3px;">
+						<?php echo h($taglist['tagname']); ?>
+					</span>
 					<?php } ?>
 				</p>
 			</div>
 
 			
-			
+			<div class="col-sm-10"></div>
+			<div class="col-sm-2">			
 			<p class="actions">		
 				<div class="btn-toolbar">
 				<div class="btn-group">
@@ -149,7 +160,10 @@
 				</div>
 				</div>
 			</p>
-			
+			</div>
+		
+			<legend></legend>
+
 		<?php endforeach; ?>
 		
 			<p>
@@ -161,14 +175,16 @@
 			</p>
 
 			<div class="paging">
-				<?php	echo $this->Paginator->prev('< ' . __('前へ'), array(), null, array('class' => 'prev disabled')); ?>
-				<?php	echo $this->Paginator->numbers(array('separator' => '')); ?>
-				<?php	echo $this->Paginator->next(__('次へ') . ' >', array(), null, array('class' => 'next disabled')); ?>
+				<?php
+					echo $this->Paginator->prev('< ' . __('前へ'), array(), null, array('class' => 'prev disabled'));
+					echo $this->Paginator->numbers(array('separator' => ''));
+					echo $this->Paginator->next(__('次へ') . ' >', array(), null, array('class' => 'next disabled'));
+				?>
 			</div>
 		</div>
 <!--	<div class="actions">	-->
 		<div class="blogaction actions col-xs-2 col-sm-2 col-md-2">
-<!--		<?php /* echo $this->element('login_user'); */ ?>		-->
+		<?php /* echo $this->element('login_user'); 
 			<h3><?php echo __('処理'); ?></h3>
 			<ul style="list-style:none;">
 				<li><?php echo $this->Html->link(__('投稿追加'), array('action' => 'add'), array('class'=>'btn btn-default btn-sm')); ?></li>
@@ -177,14 +193,21 @@
 				<?php echo $this->element('actlistlist'); ?>
 				<?php echo $this->element('actlistall'); ?>
 			</ul>
+*/ ?>			
 
-			<h4><?php echo __('最近の投稿'); ?></h3>
+			<h3><?php echo __('最近の投稿'); ?></h3>
 			<?php foreach ($recent_posts as $recent_key => $recent_post): ?>
 				<p>
 					<?php echo $this->Html->link($recent_post, array('action' => 'view', $recent_key), array('escape'=> false, 'class'=>'custom-a')); ?>			
 				</p>
 			<?php endforeach; ?>
-			
+
+			<h3><?php echo __('アーカイブ'); ?></h3>
+			<?php foreach ($arcive_posts as $arcive_post): ?>
+				<p class="arcive_ym" data-arc-ym="<?php echo $arcive_post['Post']['CreatedYM'] ?>" >
+					<?php echo $arcive_post['Post']['CreatedYM'] . '(' .$arcive_post['Post']['cnt'] . ')';	?>			
+				</p>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </div>

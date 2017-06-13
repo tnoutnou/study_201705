@@ -2,15 +2,18 @@
 		array(
 			'label' => 'イメージ編集',
 			'controller' => 'images',
-			'action' => 'edit'),
+			'action' => 'edit',
+			'id' => $image['Image']['id']),			
 		array(
 			'label' => 'イメージ削除',
 			'controller' => 'images',
-			'action' => 'delete'),
+			'action' => 'delete',
+			'id' => $image['Image']['id']),			
 		array(
 			'label' => 'イメージ追加',
 			'controller' => 'images',
-			'action' => 'add'),
+			'action' => 'add',
+			'id' => null),			
 		);
 ?>
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
@@ -55,7 +58,7 @@
 </div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
-	<?php /* echo $this->element('login_user'); */	?>
+	<?php /* echo $this->element('login_user'); 
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>
 	<ul>
@@ -67,6 +70,7 @@
 
 	</ul>
 </div>
+*/	?>
 </div>
 </div>
 

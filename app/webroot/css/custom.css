@@ -199,6 +199,20 @@ ul {
 	background-color:#FFFFF0;
 }
 
+.blogbody a {
+	display:block;
+	width: 100%; /* 横幅 */
+/* background-color:#FFFFF0; */
+/* border:2px solid #00171F; */
+/* padding:10px; /* a要素内の余白 */
+}
+
+ /* 以下マウスを載せたときのスタイル */
+.blogbody a:hover {
+	background-color: #FFFFF0;
+}
+
+
 
 .error-message {
 	color: red;
@@ -214,9 +228,16 @@ ul {
 
 
 body {
-	padding-top: 70px;	/* メニューのため余白を	*/
+	padding-top: 50px;	/* メニューのため余白を	*/
 }
 
+
+
+.arcive_ym:hover {
+	background-color: #FFFFF0;
+	cursor : pointer;
+
+}
 
 
 

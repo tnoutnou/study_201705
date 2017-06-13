@@ -50402,3 +50402,2161 @@ Stack Trace:
 #3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2017-06-13 10:14:09 Error: [NotFoundException] Invalid post
+Request URL: /posts/delete
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-13 10:14:17 Error: [NotFoundException] 無効な投稿です。
+Request URL: /posts/edit
+Stack Trace:
+#0 [internal function]: PostsController->edit()
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-13 10:18:58 Error: Fatal Error (4): syntax error, unexpected ''id'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Posts/view.ctp, line 9]
+2017-06-13 10:18:58 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts/view/3
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 9, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 9, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 10:21:20 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 83]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 83
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:21:30 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /posts/delete/133
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(398): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: PostsController->delete('133')
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-06-13 10:26:31 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 30]
+2017-06-13 10:26:31 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts/view/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 30, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 30, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 10:27:35 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 30]
+2017-06-13 10:27:35 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 30, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 30, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 10:29:21 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 32]
+2017-06-13 10:29:21 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 32, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 32, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 10:31:30 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1883
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:31:30 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::_lastAction() - CORE/Cake/View/Helper/FormHelper.php, line 3113
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1896
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:31:41 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1883
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:31:41 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::_lastAction() - CORE/Cake/View/Helper/FormHelper.php, line 3113
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1896
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:31:44 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1883
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/edit.ctp, line 13
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:31:44 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::_lastAction() - CORE/Cake/View/Helper/FormHelper.php, line 3113
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1896
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/edit.ctp, line 13
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:31:44 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 83]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 83
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:32:20 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1883
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:32:20 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::_lastAction() - CORE/Cake/View/Helper/FormHelper.php, line 3113
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1896
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:35:54 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1883
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:35:54 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [/var/www/html/vagrant/cakephpc/lib/Cake/Routing/Route/CakeRoute.php, line 500]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE/Cake/Routing/Route/CakeRoute.php, line 500
+CakeRoute::match() - CORE/Cake/Routing/Route/CakeRoute.php, line 478
+Router::url() - CORE/Cake/Routing/Router.php, line 911
+Helper::url() - CORE/Cake/View/Helper.php, line 298
+FormHelper::_lastAction() - CORE/Cake/View/Helper/FormHelper.php, line 3113
+FormHelper::postLink() - CORE/Cake/View/Helper/FormHelper.php, line 1896
+include - APP/View/Elements/blog_nav.ctp, line 32
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Posts/view.ctp, line 22
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 10:48:37 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/View/Categories/edit.ctp, line 7]
+2017-06-13 10:48:37 Error: [InternalErrorException] Internal Server Error
+Request URL: /categories/edit/11
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 7, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 7, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 11:01:05 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 11:02:45 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 11:04:01 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 11:08:01 Warning: SplFileInfo::openFile(//var/www/html/vagrant/cakephpc/app/tmp/cache/persistent/myapp_cake_core_file_map): failed to open stream: Permission denied in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Engine/FileEngine.php, line 356]
+2017-06-13 11:08:01 Warning: _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Cache.php, line 328]
+2017-06-13 11:16:40 Error: [NotFoundException] 無効なイメージです
+Request URL: /images/edit/280
+Stack Trace:
+#0 [internal function]: ImagesController->edit('280')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-13 11:17:29 Error: [NotFoundException] 無効なイメージです
+Request URL: /images/view/278
+Stack Trace:
+#0 [internal function]: ImagesController->view('278')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-13 11:21:14 Error: [NotFoundException] 無効なイメージです
+Request URL: /images/view/281
+Stack Trace:
+#0 [internal function]: ImagesController->view('281')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-13 11:32:26 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 11:33:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '139-15' for key 'post_id'
+Request URL: /PostsTags/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(PostsTag), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/PostsTagsController.php(53): Model->save(Array)
+#6 [internal function]: PostsTagsController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsTagsController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsTagsController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-06-13 11:51:36 Error: [NotFoundException] 無効なユーザです
+Request URL: /users/delete
+Stack Trace:
+#0 [internal function]: UsersController->delete()
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-13 12:12:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 13:16:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 13:39:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 13:49:16 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 13:50:07 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 13:52:07 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 14:50:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 14:52:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 15:56:54 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 16:03:22 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/vagrant/cakephpc/app/View/Posts/view.ctp, line 38]
+2017-06-13 16:03:22 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts/view/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 38, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:12:19 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 84]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 84
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 16:15:39 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 87]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 87
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 16:16:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 16:20:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 16:20:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 87]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 87
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-13 16:39:34 Error: Fatal Error (4): syntax error, unexpected ''%Y年%m月'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 66]
+2017-06-13 16:39:34 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 66, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 66, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:41:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as CreatedYM' at line 1
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT DATE_FOR...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT DATE_FOR...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT DATE_FOR...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(70): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-13 16:41:48 Error: Fatal Error (4): syntax error, unexpected 'order' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 68]
+2017-06-13 16:41:48 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 68, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 68, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:43:16 Error: Fatal Error (4): syntax error, unexpected 'order' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 68]
+2017-06-13 16:43:16 Error: [FatalErrorException] syntax error, unexpected 'order' (T_STRING), expecting ')'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 68, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 68, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:44:09 Error: Fatal Error (4): syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 73]
+2017-06-13 16:44:09 Error: [FatalErrorException] syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:44:35 Error: Fatal Error (4): syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 73]
+2017-06-13 16:44:35 Error: [FatalErrorException] syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:44:38 Error: Fatal Error (4): syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 73]
+2017-06-13 16:44:38 Error: [FatalErrorException] syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:50:48 Error: Fatal Error (4): syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 73]
+2017-06-13 16:50:48 Error: [FatalErrorException] syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:50:51 Error: Fatal Error (4): syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 73]
+2017-06-13 16:50:51 Error: [FatalErrorException] syntax error, unexpected 'arcive_posts' (T_STRING), expecting ')'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 73, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 16:51:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acl_testdb.Post.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT DATE_FOR...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT DATE_FOR...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT DATE_FOR...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(69): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-13 16:52:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acl_testdb.Post.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT DATE_FOR...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT DATE_FOR...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT DATE_FOR...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(69): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-13 16:52:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acl_testdb.Post.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT DATE_FOR...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT DATE_FOR...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT DATE_FOR...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(69): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-13 16:53:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1370 execute command denied to user 'bloguser'@'%' for routine 'Post.count'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT DATE_FOR...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT DATE_FOR...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT DATE_FOR...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(69): Model->find('list', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-13 16:54:52 Error: Array
+(
+)
+
+2017-06-13 16:56:03 Error: Array
+(
+)
+
+2017-06-13 16:57:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acl_testdb.Post.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT DATE_FOR...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT DATE_FOR...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT DATE_FOR...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(69): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-13 17:01:15 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:03:30 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:08:16 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:10:45 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:12:05 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:12:09 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:12:15 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:12:28 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:20:20 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:20:20 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 202]
+2017-06-13 17:20:20 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 202)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 202, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 202, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 17:20:37 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [Model__cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [Model__cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:20:37 Error: 0
+2017-06-13 17:20:37 Error: Array
+(
+    [0] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [Model__cnt] => 58
+        )
+
+)
+
+2017-06-13 17:20:37 Error: 1
+2017-06-13 17:20:37 Error: Array
+(
+    [0] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [Model__cnt] => 17
+        )
+
+)
+
+2017-06-13 17:24:12 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                )
+
+            [Post] => Array
+                (
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                )
+
+            [Post] => Array
+                (
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:24:12 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 204]
+2017-06-13 17:24:12 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 204)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 204, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 204, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 17:24:33 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                )
+
+            [Post] => Array
+                (
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                )
+
+            [Post] => Array
+                (
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:24:33 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 204]
+2017-06-13 17:24:33 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 204)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 204, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 204, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 17:24:49 Error: Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                )
+
+            [Post] => Array
+                (
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [0] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                )
+
+            [Post] => Array
+                (
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:24:49 Error: Array
+(
+    [0] => Array
+        (
+            [CreatedYM] => 2017年05月
+        )
+
+    [Post] => Array
+        (
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:24:49 Error: Array
+(
+    [0] => Array
+        (
+            [CreatedYM] => 2017年06月
+        )
+
+    [Post] => Array
+        (
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:26:50 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:26:50 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:26:50 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:27:18 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:27:18 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:27:18 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:27:35 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:27:35 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:27:35 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:28:01 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:28:01 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:28:01 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:28:31 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:28:31 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:28:31 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:29:46 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:29:46 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:29:46 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:30:16 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:30:16 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:30:16 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:35:33 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:35:33 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:35:33 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:38:56 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:38:57 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:38:57 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:39:52 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:39:52 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:39:52 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:41:00 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+)
+
+2017-06-13 17:41:00 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:41:00 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:41:11 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年06月
+                    [cnt] => 17
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [CreatedYM] => 2017年05月
+                    [cnt] => 58
+                )
+
+        )
+
+)
+
+2017-06-13 17:41:11 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:41:11 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:47:20 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:47:20 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:48:28 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 72]
+2017-06-13 17:48:28 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 72)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 72, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 72, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 17:48:37 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 72]
+2017-06-13 17:48:37 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 72)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 72, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 72, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-13 17:48:49 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:48:49 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:49:01 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:49:01 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:49:27 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:49:27 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:50:29 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:50:29 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:51:31 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:51:31 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:51:35 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:51:35 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:51:41 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:51:41 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:51:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 17:54:14 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:54:14 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 17:54:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 17:54:36 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 17:54:36 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 18:06:59 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 18:06:59 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 18:07:07 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年06月
+            [cnt] => 17
+        )
+
+)
+
+2017-06-13 18:07:07 Error: Array
+(
+    [Post] => Array
+        (
+            [CreatedYM] => 2017年05月
+            [cnt] => 58
+        )
+
+)
+
+2017-06-13 18:08:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:17:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:17:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:17:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:19:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:35:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:37:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:41:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:42:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:43:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:44:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:45:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:47:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:47:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:49:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-13 18:50:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

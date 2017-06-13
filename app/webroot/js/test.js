@@ -226,6 +226,16 @@ $(function(){
 		return false;
 	});
 	
+	// アーカイブが押されたら
+	$('.arcive_ym').on('click', function() {
+		$('#PostCreatedYm').val('2017年06月');
+		$('#src_btn').trigger('click');
+	});
+
+
+	
+	
+
 	
 	
 });

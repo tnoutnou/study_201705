@@ -19,7 +19,26 @@
 					</button>
 					<ul class="dropdown-menu" role="menu">
 						<?php foreach ($actionLists as $actionList): ?>
-							<li><?php echo $this->Html->link(__($actionList['label']), array('controller' => $actionList['controller'], 'action' => $actionList['action'])); ?></li>
+							<li>
+								<?php 
+									if ($actionList['action'] == 'delete') {
+										echo $this->Form->postLink(
+											__($actionList['label']),
+											array('controller' => $actionList['controller'],
+												'action' => $actionList['action'],
+												$actionList['id']),
+											array('confirm' => __('本当に削除してもよろしいでしょうか？ '))
+										);					
+									} else {
+										echo $this->Html->link(
+											__($actionList['label']),
+											array('controller' => $actionList['controller'],
+												'action' => $actionList['action'],
+												$actionList['id'])
+										);
+									}
+								?>
+							</li>
 						<?php endforeach; ?>
 					</ul>
 				</div>
@@ -68,7 +87,7 @@
 				<p class="navbar-text navbar-right">
 					ようこそ
 					<a href="#" class="navbar-link">
-					<?php echo $this->Session->read('login_user');　?>
+					<?php echo $this->Session->read('login_user'); ?>
 					</a>
 					さん
 				</p>

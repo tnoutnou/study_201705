@@ -58,6 +58,22 @@ class PostsController extends AppController {
 		);
 		$this->set(compact('recent_posts'));
 
+//	アーカイブ（月ごとの件数）
+		$this->Post->virtualFields['CreatedYM'] = 0;			// バーチャルフィールドを動的に追加？
+		$this->Post->virtualFields['cnt'] = 0;			// バーチャルフィールドを動的に追加？
+		$arcive_posts = $this->Post->find(
+			'all',
+			array(
+				'fields'=>array("DATE_FORMAT(Post.created,'%Y年%m月') as Post__CreatedYM", "count(Post.id) as Post__cnt"),
+				'group'=>array("DATE_FORMAT(Post.created,'%Y年%m月')"),
+				'order'=>array("DATE_FORMAT(Post.created,'%Y年%m月') DESC"),
+				'recursive'=>-1,
+			)
+		);
+//		$this->log($arcive_posts);
+		$this->set(compact('arcive_posts'));
+
+		
 	}
 
 	
@@ -134,10 +150,10 @@ class PostsController extends AppController {
 //				$this->Post->Image->save($img_lst2);
 				
 				// 一時ファイルの削除
-//				$add_files　= $this->Session->read('add_files');
+//				$add_files = $this->Session->read('add_files');
 //				$this->log($add_files);
 			
-//				foreach ($add_files　 as $afl) {
+//				foreach ($add_files  as $afl) {
 //					$this->log($afl);
 //					if(file_exists($afl)) {
 //						$this->log(' !!! exists !!!');
@@ -222,10 +238,10 @@ class PostsController extends AppController {
 		// ビューの使用無を設定
 		$this->autoRender = false;
 		// 一時ファイルの削除
-		$add_files　= $this->Session->read('add_files');
+		$add_files = $this->Session->read('add_files');
 //		$this->log($add_files);
 		
-		foreach ($add_files　 as $afl) {
+		foreach ($add_files  as $afl) {
 //			$this->log($afl);
 			if(file_exists($afl)) {
 //				$this->log(' !!! exists !!!');

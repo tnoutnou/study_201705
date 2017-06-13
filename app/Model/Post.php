@@ -23,6 +23,7 @@ class Post extends AppModel {
 		'title' => array('type' => 'like'),
 		'tag_id' => array('type' => 'query', 'method' => 'findByTags'),
 		'tag_str' => array('type' => 'query', 'method' => 'findByTagstr'),
+		'created_ym' => array('type' => 'query', 'method' => 'findByCreatedYm'),
 	);
 
 	public $validate = array(
@@ -197,6 +198,24 @@ class Post extends AppModel {
 		
 	}
 
+	//アーカイブ（年月）指定の検索
+	public function findByCreatedYm($data = array()){
+
+//		debug($data['created_ym']);
+//		$condition = array('tag_id' => $data['category_id_str']);
+		$this-log('!!!  12  !!!');
+		$this-log($data['created_ym']);
+				
+//		$condition = array('Post.id' => $tmp_arr);
+		$condition = array("DATE_FORMAT(Post.created,'%Y年%m月')"  => $data['created_ym']);
+		return $condition;
+		
+	}
+
+	
+	
+	
+	
 	//タグの部分一致
 	public function findByTagstr($data = array()){
 
