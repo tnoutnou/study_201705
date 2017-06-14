@@ -1,6 +1,6 @@
-<?php echo $this->Html->script('jquery-git.js'); ?>
-<?php echo $this->Html->script('test.js'); ?>
-<?php echo $this->Html->css('custom.css'); ?>
+<?php echo $this->Html->script( 'jquery-git.js'); ?>
+<?php echo $this->Html->script( 'test.js'); ?>
+<?php echo $this->Html->css( 'custom.css'); ?>
 <?php $actionLists = array(
 		array(
 			'label' => '投稿追加',
@@ -12,8 +12,10 @@
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
 <div class="container">
 	<div class="row">
-		<div class="blogposts posts index col-xs-12 col-sm-9 col-md-9">
+		<div class="blogposts posts index col-xs-12 col-sm-10 col-md-10"">
 			<h2><?php echo __('投稿一覧'); ?></h2>
+
+
 
 		<?php $i = 1; ?>
 		<?php foreach ($posts as $post): ?>
@@ -45,38 +47,18 @@
 
 			<div class="col-sm-2">
 <!--		添付イメージの表示	-->
-				<?php $this->log(count($post['Image'])); ?>
-
-				<?php
-					$base = "/app/webroot/files/image/filename/";
-					foreach ($post['Image'] as $image) {
-						$str_i = "popupimg" . $i;
-/*				echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false, 'class'=>'popupimg_ind', 'id'=>$str_i)); ?>	*/
-/*				echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg_ind', 'id'=>$str_i), array('action'=>'view', $post['Post']['id']), array('escape'=> false) ); ?>	*/
-/*				echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100') , array('url'=>array('action'=>'view', $post['Post']['id']))) ; ?>	*/
-						echo $this->Html->image(
-							$base . $image["dirname"] . "/" . $image["filename"],
-								array(
-									'width'=>'100','height'=>'100',
-									'url'=>array('action'=>'view', $post['Post']['id'])
-								)
-							);
-						$i = $i + 1;
-/*	イメージは１つのみ表示するように修正（１回でループを抜ける）		*/
-						break;
-					}
-					
-					/*	添付イメージが１つも無い場合の処理 */
-					if (count($post['Image']) == 0) {
-						echo $this->Html->image(
-							"/app/webroot/img/m_e_others_501_noimg.png",
-							array(
-								'width'=>'100','height'=>'100',
-								'url'=>array('action'=>'view', $post['Post']['id'])
-							)
-						);						
-					}					
-				?>
+				<?php $base = "/app/webroot/files/image/filename/"; ?>
+				<?php foreach ($post['Image'] as $image) {?>
+	<!--				<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'80','height'=>'80','class'=>'popupimg')); */ ?>	-->				
+				<?php $str_i = "popupimg" . $i; ?>
+<!--					<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false, 'class'=>'popupimg_ind', 'id'=>$str_i)); ?>	-->
+<!--					<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg_ind', 'id'=>$str_i), array('action'=>'view', $post['Post']['id']), array('escape'=> false) ); ?>	-->
+<!--					<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100') , array('url'=>array('action'=>'view', $post['Post']['id']))) ; ?>	-->
+					<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100' , 'url'=>array('action'=>'view', $post['Post']['id']))) ; ?>
+				<?php $i = $i + 1; ?>
+<!--	イメージは１つのみ表示するように修正（１回でループを抜ける）		-->
+				<?php break; ?>
+				<?php } ?>
 			</div>
 			&nbsp;
 			<div class="col-sm-12"></div>
@@ -138,12 +120,12 @@
 			</div>
 		</div>
 <!--	<div class="actions">	-->
-<!--	★★★★★★★★★★★★★★★★★★★★★★★★	右側	開始　★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★	-->
-		<div class="blogaction actions col-xs-12 col-sm-3 col-md-3">
+<!--	★★★★★★★★★★★★★★★★★★★★★★★★	右側	★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★	-->
+<!--	★★★★★★★★★★★★★★★★★★★★★★★★	検査機能開始	★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★	-->
+		<div class="blogaction actions col-xs-12 col-sm-2 col-md-2">
 
 			<div style="padding-top:10px;"></div>
 
-<!--	★★★★★★★★★★★★★★★★★★★★★★★★	検査機能開始	★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★	-->
 			<p>
 				<input class="btn btn-info btn-sm" id="search-btn" type="button" value="検索非表示">
 			</p>
@@ -168,15 +150,13 @@
 										'type'=>'select',
 										'multiple'=>true,
 										'class' => 'selectpicker show-menu-arrow form-control',
-										'style'=>'=padding-bottom:3px!important;padding-top:0px!important;margin-top:0px!important;'
+										' style'=>'=padding-bottom:3px!important;padding-top:3px!important;'
 									)
 								);
 							?>
 						</div>
 					</div>
 
-					<div class="col-sm-12" style="padding-top:15px"></div>
-					
 					<div class="form-group">
 						<label class="control-label col-sm-12">カテゴリ文字検索</label>
 						<div class="col-sm-12">
@@ -194,8 +174,6 @@
 						</div>
 					</div>
 
-					<div class="col-sm-12" style="padding-top:15px"></div>
-					
 					<div class="form-group">
 						<label class="control-label col-sm-12">タイトル</label>
 						<div class="col-sm-12">
@@ -213,8 +191,6 @@
 						</div>
 					</div>
 
-					<div class="col-sm-12" style="padding-top:15px"></div>
-					
 					<div class="form-group">
 						<label class="control-label col-sm-12">タグ</label>
 						<div class="col-sm-12">
@@ -228,15 +204,13 @@
 										'type'=>'select',
 										'multiple'=>true,
 										'class' => 'selectpicker show-menu-arrow form-control',
-										'style' => 'font-size:34px;padding-bottom:35px;padding-top:35px;margin-top:0px!important;'
+										'style' => 'font-size:34px;padding-bottom:35px;padding-top:35px;'
 									)
 								);
 							?>
 						</div>
 					</div>
 
-					<div class="col-sm-12" style="padding-top:15px"></div>
-					
 					<div class="form-group">
 						<label class="control-label col-sm-12">タグ文字検索</label>
 						<div class="col-sm-12">
@@ -323,8 +297,6 @@
 			</div>
 			
 		</div>
-<!--	★★★★★★★★★★★★★★★★★★★★★★★★	右側	終了　★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★	-->
-
 	</div>
 </div>
 	<!-- ポップアップ用の背景とimg -->

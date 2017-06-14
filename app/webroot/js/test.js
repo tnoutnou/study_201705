@@ -208,6 +208,7 @@ $(function(){
 	// #back-to-topを消す
 	$('#back-to-top').hide();
 
+	
 	// スクロールが十分されたら#back-to-topを表示、スクロールが戻ったら非表示
 	$(window).scroll(function() {
 //		$('#pos').text($(this).scrollTop());
@@ -218,23 +219,27 @@ $(function(){
 		}
 	});
 
+	
 	// #back-to-topがクリックされたら上に戻る
-	$('#back-to-top a').click(function() {
+	$('#back-to-top').click(function() {
 		$('body').animate({
 			scrollTop:0
 		}, 150);
 		return false;
 	});
+
+	
 	
 	// アーカイブが押されたら
 	$('.arcive_ym').on('click', function() {
-		$('#PostCreatedYm').val('2017年06月');
+//		$('#PostCreatedYm').val('2017年06月');
+//		$('#PostCreatedYm').val($('.arcive_ym').data('arc-ym'));
+		$('#PostCreatedYm').val($(this).data('arc-ym'));
 		$('#src_btn').trigger('click');
 	});
 
 
-	
-	
+		
 
 	
 	

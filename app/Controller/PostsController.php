@@ -144,7 +144,7 @@ class PostsController extends AppController {
 				}		
 			}
 			
-			$this->request->data['Tag'] = $this->request->data['Post'][tag_id];
+			$this->request->data['Tag'] = $this->request->data['Post']['tag_id'];
 
 			if($this->Post->saveall($this->request->data)) {
 //				$this->Post->Image->save($img_lst2);

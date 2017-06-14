@@ -139,6 +139,7 @@ ul {
 
 .control-label {
 	@extend .label;
+	margin-bottom: 0px;
 }
 
 
@@ -147,8 +148,12 @@ ul {
 }
 
 
+/* .show-menu-arrow {	*/
+/*	margin-top: 0px;	*/
+/*}	*/
+
 .btn-group {
-	margin-top: 6px;
+/*	margin-top: 6px;	*/
 	margin-bottom: 4px;	
 }
 
@@ -177,6 +182,8 @@ ul {
 
 .custom-a {
 	color: black;
+/*	text-size-adjust: 50%	*/
+	width: 90%;
 	
 }
 
@@ -239,6 +246,10 @@ body {
 
 }
 
+#back-to-top:hover {
+	cursor : pointer;
+
+}
 
 
 

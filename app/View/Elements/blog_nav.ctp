@@ -54,7 +54,7 @@
 							<li><?php echo $this->Html->link(__('カテゴリ追加'), array('controller' => 'categories', 'action' => 'add')); ?></li>
 							<li><?php echo $this->Html->link(__('タグ追加'), array('controller' => 'tags', 'action' => 'add')); ?></li>
 
-							<li><?php echo $this->Html->link(__('投稿一覧'), array('controller' => 'posts', 'action' => 'index')); ?></li>
+<!--							<li><?php /*echo $this->Html->link(__('投稿一覧'), array('controller' => 'posts', 'action' => 'index')); */?></li>	-->
 							<li><?php echo $this->Html->link(__('カテゴリ一覧'), array('controller' => 'categories', 'action' => 'index')); ?></li>
 							<li><?php echo $this->Html->link(__('タグ一覧'), array('controller' => 'tags', 'action' => 'index')); ?></li>
 							<li><?php echo $this->Html->link(__('投稿タグ一覧'), array('controller' => 'PostsTags', 'action' => 'index')); ?></li>
@@ -67,6 +67,13 @@
 			<?php }	?>
 			
 			<?php
+				echo $this->Html->link(
+					__('投稿一覧'),
+					array('controller' => 'posts',
+						'action' => 'index'),
+					array('class'=>'btn btn-default navbar-btn')
+				);
+
 				if ($this->Session->read('Auth.User')) {
 					echo $this->Html->link(
 						__('ログアウト'),
@@ -80,6 +87,7 @@
 						array('class'=>'btn btn-default navbar-btn')
 					);
 				}
+				
 			?>			
 			
 			

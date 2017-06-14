@@ -52560,3 +52560,1618 @@ Request URL: /css/bootstrap-select.css.map
 Stack Trace:
 #0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-06-14 10:00:42 Error: !!!!!!
+2017-06-14 10:00:42 Error: 2017年06月
+2017-06-14 10:00:47 Error: !!!!!!
+2017-06-14 10:00:47 Error: 2017年06月
+2017-06-14 10:06:38 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/posts/delTmpFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 10:09:30 Error: !!!!!!
+2017-06-14 10:09:30 Error: 2017年06月
+2017-06-14 10:09:40 Error: !!!!!!
+2017-06-14 10:09:40 Error: 2017年06月
+2017-06-14 10:18:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 10:18:59 Error: !!!!!!
+2017-06-14 10:18:59 Error: 2017年06月
+2017-06-14 10:19:02 Error: !!!!!!
+2017-06-14 10:19:02 Error: 2017年06月
+2017-06-14 10:19:34 Error: !!!!!!
+2017-06-14 10:19:34 Error: 2017年06月
+2017-06-14 10:19:55 Error: !!!!!!
+2017-06-14 10:19:55 Error: 2017年06月
+2017-06-14 10:20:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 10:20:43 Error: !!!!!!
+2017-06-14 10:20:43 Error: 2017年06月
+2017-06-14 10:20:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 10:21:42 Error: !!!!!!
+2017-06-14 10:21:42 Error: 2017年06月
+2017-06-14 10:21:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 10:26:49 Error: !!!!!!
+2017-06-14 10:26:49 Error: 2017年06月
+2017-06-14 10:27:19 Error: !!!!!!
+2017-06-14 10:27:19 Error: 2017年05月
+2017-06-14 10:27:26 Error: !!!!!!
+2017-06-14 10:27:26 Error: 2017年06月
+2017-06-14 11:01:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 11:29:59 Error: !!!!!!
+2017-06-14 11:29:59 Error: 2017年06月
+2017-06-14 11:30:07 Error: !!!!!!
+2017-06-14 11:30:07 Error: 2017年05月
+2017-06-14 11:39:30 Error: !!!!!!
+2017-06-14 11:39:30 Error: 2017年05月
+2017-06-14 11:39:49 Error: !!!!!!
+2017-06-14 11:39:49 Error: 2017年05月
+2017-06-14 11:42:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 11:42:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:26:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:31:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:32:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:33:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:34:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:35:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:37:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:37:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:41:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:43:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:44:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:46:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:46:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:47:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 13:58:08 Error: !!!!!!
+2017-06-14 13:58:08 Error: 2017年06月
+2017-06-14 14:03:13 Error: !!!!!!
+2017-06-14 14:03:13 Error: 2017年06月
+2017-06-14 14:03:22 Error: !!!!!!
+2017-06-14 14:03:22 Error: 2017年06月
+2017-06-14 14:03:44 Error: !!!!!!
+2017-06-14 14:03:44 Error: 2017年06月
+2017-06-14 14:07:33 Error: !!!!!!
+2017-06-14 14:07:33 Error: 2017年06月
+2017-06-14 14:33:49 Error: !!!!!!
+2017-06-14 14:33:49 Error: 2017年06月
+2017-06-14 14:34:00 Error: !!!!!!
+2017-06-14 14:34:00 Error: 2017年06月
+2017-06-14 14:39:03 Error: !!!!!!
+2017-06-14 14:39:03 Error: 2017年05月
+2017-06-14 14:39:10 Error: !!!!!!
+2017-06-14 14:39:10 Error: 2017年06月
+2017-06-14 14:42:24 Error: !!!!!!
+2017-06-14 14:42:24 Error: 2017年06月
+2017-06-14 14:43:04 Error: !!!!!!
+2017-06-14 14:43:04 Error: 2017年06月
+2017-06-14 14:43:30 Error: !!!!!!
+2017-06-14 14:43:30 Error: 2017年06月
+2017-06-14 14:44:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 14:46:09 Error: !!!!!!
+2017-06-14 14:46:09 Error: 2017年06月
+2017-06-14 14:46:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 14:56:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 15:24:19 Error: Fatal Error (4): syntax error, unexpected '?>' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 91]
+2017-06-14 15:24:19 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 91, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 91, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 15:24:28 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 89]
+2017-06-14 15:24:28 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 89)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 89, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 89, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 15:24:38 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/vagrant/cakephpc/app/View/Elements/blog_nav.ctp, line 89]
+2017-06-14 15:24:38 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 89)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 89, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 89, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 15:53:05 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 87]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 87
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-14 16:39:23 Error: !!!!!!
+2017-06-14 16:39:23 Error: 2017年06月
+2017-06-14 16:39:31 Error: !!!!!!
+2017-06-14 16:39:31 Error: 2017年05月
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 21
+            [post_id] => 1
+            [filename] => tulips-2289976_640.jpg
+            [dirname] => 21
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-16 13:59:50
+            [modified] => 2017-05-16 13:59:50
+        )
+
+    [1] => Array
+        (
+            [id] => 36
+            [post_id] => 1
+            [filename] => fruit-2287298_640.png
+            [dirname] => 36
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-22 16:48:18
+            [modified] => 2017-05-22 16:48:18
+        )
+
+    [2] => Array
+        (
+            [id] => 225
+            [post_id] => 1
+            [filename] => jellyfish-154799_640.png
+            [dirname] => 225
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-06-06 16:10:35
+            [modified] => 2017-06-06 16:10:35
+        )
+
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 261
+            [post_id] => 3
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 261
+            [deleted] => 
+            [deleted_date] => 2017-06-12 04:23:31
+            [created] => 2017-06-12 11:23:31
+            [modified] => 2017-06-12 11:23:31
+        )
+
+    [1] => Array
+        (
+            [id] => 264
+            [post_id] => 3
+            [filename] => feet-44810_640.png
+            [dirname] => 264
+            [deleted] => 
+            [deleted_date] => 2017-06-12 04:41:22
+            [created] => 2017-06-12 11:41:22
+            [modified] => 2017-06-12 11:41:22
+        )
+
+    [2] => Array
+        (
+            [id] => 265
+            [post_id] => 3
+            [filename] => fruit-2287298_640.png
+            [dirname] => 265
+            [deleted] => 
+            [deleted_date] => 2017-06-12 04:41:33
+            [created] => 2017-06-12 11:41:33
+            [modified] => 2017-06-12 11:41:33
+        )
+
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 11
+            [post_id] => 4
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 11
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-12 11:24:20
+            [modified] => 2017-05-12 11:24:20
+        )
+
+    [1] => Array
+        (
+            [id] => 17
+            [post_id] => 4
+            [filename] => rakugaki.png
+            [dirname] => 17
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-12 13:49:48
+            [modified] => 2017-05-12 13:49:48
+        )
+
+    [2] => Array
+        (
+            [id] => 22
+            [post_id] => 4
+            [filename] => pathway-2289978_640.jpg
+            [dirname] => 22
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-16 16:49:46
+            [modified] => 2017-05-16 16:49:46
+        )
+
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 229
+            [post_id] => 5
+            [filename] => feet-44810_640.png
+            [dirname] => 229
+            [deleted] => 
+            [deleted_date] => 2017-06-07 09:06:49
+            [created] => 2017-06-07 16:06:49
+            [modified] => 2017-06-07 16:06:49
+        )
+
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 35
+            [post_id] => 11
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 35
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-18 18:40:06
+            [modified] => 2017-05-18 18:40:06
+        )
+
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 257
+            [post_id] => 16
+            [filename] => africa-2026052_640.png
+            [dirname] => 257
+            [deleted] => 
+            [deleted_date] => 2017-06-09 10:09:36
+            [created] => 2017-06-09 17:09:36
+            [modified] => 2017-06-09 17:09:36
+        )
+
+    [1] => Array
+        (
+            [id] => 258
+            [post_id] => 16
+            [filename] => jellyfish-154799_640.png
+            [dirname] => 258
+            [deleted] => 
+            [deleted_date] => 2017-06-09 10:09:36
+            [created] => 2017-06-09 17:09:36
+            [modified] => 2017-06-09 17:09:36
+        )
+
+    [2] => Array
+        (
+            [id] => 259
+            [post_id] => 16
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 259
+            [deleted] => 
+            [deleted_date] => 2017-06-09 10:09:36
+            [created] => 2017-06-09 17:09:36
+            [modified] => 2017-06-09 17:09:36
+        )
+
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 41
+            [post_id] => 17
+            [filename] => rakugaki.png
+            [dirname] => 41
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-22 18:09:19
+            [modified] => 2017-05-22 18:09:19
+        )
+
+    [1] => Array
+        (
+            [id] => 291
+            [post_id] => 17
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 291
+            [deleted] => 
+            [deleted_date] => 2017-06-14 07:37:13
+            [created] => 2017-06-14 14:37:13
+            [modified] => 2017-06-14 14:37:13
+        )
+
+)
+
+2017-06-14 16:51:13 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 223
+            [post_id] => 22
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 223
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-06-01 12:02:00
+            [modified] => 2017-06-01 12:02:00
+        )
+
+)
+
+2017-06-14 16:53:05 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 21
+            [post_id] => 1
+            [filename] => tulips-2289976_640.jpg
+            [dirname] => 21
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-16 13:59:50
+            [modified] => 2017-05-16 13:59:50
+        )
+
+    [1] => Array
+        (
+            [id] => 36
+            [post_id] => 1
+            [filename] => fruit-2287298_640.png
+            [dirname] => 36
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-22 16:48:18
+            [modified] => 2017-05-22 16:48:18
+        )
+
+    [2] => Array
+        (
+            [id] => 225
+            [post_id] => 1
+            [filename] => jellyfish-154799_640.png
+            [dirname] => 225
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-06-06 16:10:35
+            [modified] => 2017-06-06 16:10:35
+        )
+
+)
+
+2017-06-14 16:53:05 Error: Fatal Error (1): Call to undefined function cont() in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 50]
+2017-06-14 16:53:05 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/v...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/v...', 50, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/v...', 50, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 21
+            [post_id] => 1
+            [filename] => tulips-2289976_640.jpg
+            [dirname] => 21
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-16 13:59:50
+            [modified] => 2017-05-16 13:59:50
+        )
+
+    [1] => Array
+        (
+            [id] => 36
+            [post_id] => 1
+            [filename] => fruit-2287298_640.png
+            [dirname] => 36
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-22 16:48:18
+            [modified] => 2017-05-22 16:48:18
+        )
+
+    [2] => Array
+        (
+            [id] => 225
+            [post_id] => 1
+            [filename] => jellyfish-154799_640.png
+            [dirname] => 225
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-06-06 16:10:35
+            [modified] => 2017-06-06 16:10:35
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 3
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 261
+            [post_id] => 3
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 261
+            [deleted] => 
+            [deleted_date] => 2017-06-12 04:23:31
+            [created] => 2017-06-12 11:23:31
+            [modified] => 2017-06-12 11:23:31
+        )
+
+    [1] => Array
+        (
+            [id] => 264
+            [post_id] => 3
+            [filename] => feet-44810_640.png
+            [dirname] => 264
+            [deleted] => 
+            [deleted_date] => 2017-06-12 04:41:22
+            [created] => 2017-06-12 11:41:22
+            [modified] => 2017-06-12 11:41:22
+        )
+
+    [2] => Array
+        (
+            [id] => 265
+            [post_id] => 3
+            [filename] => fruit-2287298_640.png
+            [dirname] => 265
+            [deleted] => 
+            [deleted_date] => 2017-06-12 04:41:33
+            [created] => 2017-06-12 11:41:33
+            [modified] => 2017-06-12 11:41:33
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 3
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 11
+            [post_id] => 4
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 11
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-12 11:24:20
+            [modified] => 2017-05-12 11:24:20
+        )
+
+    [1] => Array
+        (
+            [id] => 17
+            [post_id] => 4
+            [filename] => rakugaki.png
+            [dirname] => 17
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-12 13:49:48
+            [modified] => 2017-05-12 13:49:48
+        )
+
+    [2] => Array
+        (
+            [id] => 22
+            [post_id] => 4
+            [filename] => pathway-2289978_640.jpg
+            [dirname] => 22
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-16 16:49:46
+            [modified] => 2017-05-16 16:49:46
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 3
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 229
+            [post_id] => 5
+            [filename] => feet-44810_640.png
+            [dirname] => 229
+            [deleted] => 
+            [deleted_date] => 2017-06-07 09:06:49
+            [created] => 2017-06-07 16:06:49
+            [modified] => 2017-06-07 16:06:49
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 1
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 35
+            [post_id] => 11
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 35
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-18 18:40:06
+            [modified] => 2017-05-18 18:40:06
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 1
+2017-06-14 16:53:22 Error: Array
+(
+)
+
+2017-06-14 16:53:22 Error: 0
+2017-06-14 16:53:22 Error: Array
+(
+)
+
+2017-06-14 16:53:22 Error: 0
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 257
+            [post_id] => 16
+            [filename] => africa-2026052_640.png
+            [dirname] => 257
+            [deleted] => 
+            [deleted_date] => 2017-06-09 10:09:36
+            [created] => 2017-06-09 17:09:36
+            [modified] => 2017-06-09 17:09:36
+        )
+
+    [1] => Array
+        (
+            [id] => 258
+            [post_id] => 16
+            [filename] => jellyfish-154799_640.png
+            [dirname] => 258
+            [deleted] => 
+            [deleted_date] => 2017-06-09 10:09:36
+            [created] => 2017-06-09 17:09:36
+            [modified] => 2017-06-09 17:09:36
+        )
+
+    [2] => Array
+        (
+            [id] => 259
+            [post_id] => 16
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 259
+            [deleted] => 
+            [deleted_date] => 2017-06-09 10:09:36
+            [created] => 2017-06-09 17:09:36
+            [modified] => 2017-06-09 17:09:36
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 3
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 41
+            [post_id] => 17
+            [filename] => rakugaki.png
+            [dirname] => 41
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-05-22 18:09:19
+            [modified] => 2017-05-22 18:09:19
+        )
+
+    [1] => Array
+        (
+            [id] => 291
+            [post_id] => 17
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 291
+            [deleted] => 
+            [deleted_date] => 2017-06-14 07:37:13
+            [created] => 2017-06-14 14:37:13
+            [modified] => 2017-06-14 14:37:13
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 2
+2017-06-14 16:53:22 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 223
+            [post_id] => 22
+            [filename] => daisies-2271473_640.jpg
+            [dirname] => 223
+            [deleted] => 
+            [deleted_date] => 2017-06-07 08:21:23
+            [created] => 2017-06-01 12:02:00
+            [modified] => 2017-06-01 12:02:00
+        )
+
+)
+
+2017-06-14 16:53:22 Error: 1
+2017-06-14 16:56:50 Error: 3
+2017-06-14 16:56:50 Error: 3
+2017-06-14 16:56:50 Error: 3
+2017-06-14 16:56:50 Error: 1
+2017-06-14 16:56:50 Error: 1
+2017-06-14 16:56:50 Error: 0
+2017-06-14 16:56:50 Error: 0
+2017-06-14 16:56:50 Error: 3
+2017-06-14 16:56:50 Error: 2
+2017-06-14 16:56:50 Error: 1
+2017-06-14 16:56:51 Error: 3
+2017-06-14 16:56:51 Error: 3
+2017-06-14 16:56:51 Error: 3
+2017-06-14 16:56:51 Error: 1
+2017-06-14 16:56:51 Error: 1
+2017-06-14 16:56:51 Error: 0
+2017-06-14 16:56:51 Error: 0
+2017-06-14 16:56:51 Error: 3
+2017-06-14 16:56:51 Error: 2
+2017-06-14 16:56:51 Error: 1
+2017-06-14 16:56:55 Error: 3
+2017-06-14 16:56:55 Error: 3
+2017-06-14 16:56:55 Error: 3
+2017-06-14 16:56:55 Error: 1
+2017-06-14 16:56:55 Error: 1
+2017-06-14 16:56:55 Error: 0
+2017-06-14 16:56:55 Error: 0
+2017-06-14 16:56:55 Error: 3
+2017-06-14 16:56:55 Error: 2
+2017-06-14 16:56:55 Error: 1
+2017-06-14 17:00:30 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 70]
+2017-06-14 17:00:30 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 70)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 70, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 70, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 17:00:48 Error: Fatal Error (64): Can't use function return value in write context in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 70]
+2017-06-14 17:00:48 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/var/www/html/v...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 17:00:48 Error: Fatal Error (64): Can't use function return value in write context in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 70]
+2017-06-14 17:00:48 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/var/www/html/v...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 17:00:48 Error: Fatal Error (64): Can't use function return value in write context in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 70]
+2017-06-14 17:00:48 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/var/www/html/v...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 17:00:53 Error: Fatal Error (64): Can't use function return value in write context in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 70]
+2017-06-14 17:00:53 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/var/www/html/v...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 17:01:23 Error: Fatal Error (64): Can't use function return value in write context in [/var/www/html/vagrant/cakephpc/app/View/Posts/index.ctp, line 70]
+2017-06-14 17:01:23 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/var/www/html/v...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/var/www/html/v...', 70, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-14 17:02:01 Error: 3
+2017-06-14 17:02:01 Error: 3
+2017-06-14 17:02:01 Error: 3
+2017-06-14 17:02:01 Error: 1
+2017-06-14 17:02:01 Error: 1
+2017-06-14 17:02:01 Error: 0
+2017-06-14 17:02:01 Error: 0
+2017-06-14 17:02:01 Error: 3
+2017-06-14 17:02:01 Error: 2
+2017-06-14 17:02:01 Error: 1
+2017-06-14 17:02:10 Error: 3
+2017-06-14 17:02:10 Error: 3
+2017-06-14 17:02:10 Error: 3
+2017-06-14 17:02:10 Error: 1
+2017-06-14 17:02:10 Error: 1
+2017-06-14 17:02:10 Error: 0
+2017-06-14 17:02:10 Error: 0
+2017-06-14 17:02:10 Error: 3
+2017-06-14 17:02:10 Error: 2
+2017-06-14 17:02:10 Error: 1
+2017-06-14 17:02:53 Error: 3
+2017-06-14 17:02:53 Error: 3
+2017-06-14 17:02:53 Error: 3
+2017-06-14 17:02:53 Error: 1
+2017-06-14 17:02:53 Error: 1
+2017-06-14 17:02:53 Error: 0
+2017-06-14 17:02:53 Error: 0
+2017-06-14 17:02:53 Error: 3
+2017-06-14 17:02:53 Error: 2
+2017-06-14 17:02:53 Error: 1
+2017-06-14 17:05:26 Error: 3
+2017-06-14 17:05:26 Error: 3
+2017-06-14 17:05:26 Error: 3
+2017-06-14 17:05:26 Error: 1
+2017-06-14 17:05:26 Error: 1
+2017-06-14 17:05:26 Error: 0
+2017-06-14 17:05:26 Error: 0
+2017-06-14 17:05:26 Error: 3
+2017-06-14 17:05:26 Error: 2
+2017-06-14 17:05:26 Error: 1
+2017-06-14 17:09:10 Error: 3
+2017-06-14 17:09:10 Error: 3
+2017-06-14 17:09:10 Error: 3
+2017-06-14 17:09:10 Error: 1
+2017-06-14 17:09:10 Error: 1
+2017-06-14 17:09:10 Error: 0
+2017-06-14 17:09:10 Error: 0
+2017-06-14 17:09:10 Error: 3
+2017-06-14 17:09:10 Error: 2
+2017-06-14 17:09:10 Error: 1
+2017-06-14 17:09:29 Error: 3
+2017-06-14 17:09:29 Error: 3
+2017-06-14 17:09:29 Error: 3
+2017-06-14 17:09:29 Error: 1
+2017-06-14 17:09:29 Error: 1
+2017-06-14 17:09:29 Error: 0
+2017-06-14 17:09:29 Error: 0
+2017-06-14 17:09:29 Error: 3
+2017-06-14 17:09:29 Error: 2
+2017-06-14 17:09:29 Error: 1
+2017-06-14 17:12:02 Error: 3
+2017-06-14 17:12:02 Error: 3
+2017-06-14 17:12:02 Error: 3
+2017-06-14 17:12:02 Error: 1
+2017-06-14 17:12:02 Error: 1
+2017-06-14 17:12:02 Error: 0
+2017-06-14 17:12:02 Error: 0
+2017-06-14 17:12:02 Error: 3
+2017-06-14 17:12:02 Error: 2
+2017-06-14 17:12:02 Error: 1
+2017-06-14 17:12:04 Error: 3
+2017-06-14 17:12:04 Error: 3
+2017-06-14 17:12:04 Error: 3
+2017-06-14 17:12:04 Error: 1
+2017-06-14 17:12:04 Error: 1
+2017-06-14 17:12:04 Error: 0
+2017-06-14 17:12:04 Error: 0
+2017-06-14 17:12:04 Error: 3
+2017-06-14 17:12:04 Error: 2
+2017-06-14 17:12:04 Error: 1
+2017-06-14 17:17:27 Error: 3
+2017-06-14 17:17:27 Error: 3
+2017-06-14 17:17:27 Error: 3
+2017-06-14 17:17:27 Error: 1
+2017-06-14 17:17:27 Error: 1
+2017-06-14 17:17:27 Error: 0
+2017-06-14 17:17:27 Error: 0
+2017-06-14 17:17:27 Error: 3
+2017-06-14 17:17:27 Error: 2
+2017-06-14 17:17:27 Error: 1
+2017-06-14 17:17:45 Error: 3
+2017-06-14 17:17:45 Error: 3
+2017-06-14 17:17:45 Error: 3
+2017-06-14 17:17:45 Error: 1
+2017-06-14 17:17:45 Error: 1
+2017-06-14 17:17:45 Error: 0
+2017-06-14 17:17:45 Error: 0
+2017-06-14 17:17:45 Error: 3
+2017-06-14 17:17:45 Error: 2
+2017-06-14 17:17:45 Error: 1
+2017-06-14 17:17:54 Error: 3
+2017-06-14 17:17:54 Error: 3
+2017-06-14 17:17:54 Error: 3
+2017-06-14 17:17:54 Error: 1
+2017-06-14 17:17:54 Error: 1
+2017-06-14 17:17:54 Error: 0
+2017-06-14 17:17:54 Error: 0
+2017-06-14 17:17:54 Error: 3
+2017-06-14 17:17:54 Error: 2
+2017-06-14 17:17:54 Error: 1
+2017-06-14 17:18:14 Error: 0
+2017-06-14 17:18:14 Error: 1
+2017-06-14 17:18:14 Error: 1
+2017-06-14 17:18:14 Error: 1
+2017-06-14 17:18:14 Error: 0
+2017-06-14 17:18:14 Error: 1
+2017-06-14 17:18:14 Error: 1
+2017-06-14 17:21:31 Error: 3
+2017-06-14 17:21:31 Error: 3
+2017-06-14 17:21:31 Error: 3
+2017-06-14 17:21:31 Error: 1
+2017-06-14 17:21:31 Error: 1
+2017-06-14 17:21:31 Error: 0
+2017-06-14 17:21:31 Error: 0
+2017-06-14 17:21:31 Error: 3
+2017-06-14 17:21:31 Error: 2
+2017-06-14 17:21:31 Error: 1
+2017-06-14 17:22:10 Error: 0
+2017-06-14 17:22:10 Error: 0
+2017-06-14 17:22:10 Error: 2
+2017-06-14 17:22:10 Error: 2
+2017-06-14 17:22:10 Error: 2
+2017-06-14 17:22:10 Error: 2
+2017-06-14 17:22:10 Error: 0
+2017-06-14 17:22:10 Error: 3
+2017-06-14 17:22:10 Error: 3
+2017-06-14 17:22:10 Error: 3
+2017-06-14 17:22:35 Error: 3
+2017-06-14 17:22:35 Error: 3
+2017-06-14 17:22:35 Error: 3
+2017-06-14 17:22:35 Error: 1
+2017-06-14 17:22:35 Error: 1
+2017-06-14 17:22:35 Error: 0
+2017-06-14 17:22:35 Error: 0
+2017-06-14 17:22:35 Error: 3
+2017-06-14 17:22:35 Error: 2
+2017-06-14 17:22:35 Error: 1
+2017-06-14 17:22:43 Error: 2
+2017-06-14 17:22:43 Error: 2
+2017-06-14 17:22:43 Error: 2
+2017-06-14 17:22:43 Error: 2
+2017-06-14 17:22:43 Error: 2
+2017-06-14 17:22:43 Error: 2
+2017-06-14 17:22:43 Error: 1
+2017-06-14 17:22:43 Error: 0
+2017-06-14 17:22:43 Error: 1
+2017-06-14 17:22:43 Error: 0
+2017-06-14 17:30:18 Error: 3
+2017-06-14 17:30:18 Error: 3
+2017-06-14 17:30:18 Error: 3
+2017-06-14 17:30:18 Error: 1
+2017-06-14 17:30:18 Error: 1
+2017-06-14 17:30:18 Error: 0
+2017-06-14 17:30:18 Error: 0
+2017-06-14 17:30:18 Error: 3
+2017-06-14 17:30:18 Error: 2
+2017-06-14 17:30:18 Error: 1
+2017-06-14 17:30:29 Error: 2
+2017-06-14 17:30:29 Error: 2
+2017-06-14 17:30:29 Error: 2
+2017-06-14 17:30:29 Error: 2
+2017-06-14 17:30:29 Error: 2
+2017-06-14 17:30:29 Error: 2
+2017-06-14 17:30:29 Error: 1
+2017-06-14 17:30:29 Error: 0
+2017-06-14 17:30:29 Error: 1
+2017-06-14 17:30:29 Error: 0
+2017-06-14 17:31:52 Error: 0
+2017-06-14 17:31:52 Error: 1
+2017-06-14 17:31:52 Error: 1
+2017-06-14 17:31:52 Error: 1
+2017-06-14 17:31:52 Error: 0
+2017-06-14 17:31:52 Error: 1
+2017-06-14 17:31:52 Error: 1
+2017-06-14 17:32:12 Error: 3
+2017-06-14 17:32:12 Error: 3
+2017-06-14 17:32:12 Error: 3
+2017-06-14 17:32:12 Error: 1
+2017-06-14 17:32:12 Error: 1
+2017-06-14 17:32:12 Error: 0
+2017-06-14 17:32:12 Error: 0
+2017-06-14 17:32:12 Error: 3
+2017-06-14 17:32:12 Error: 2
+2017-06-14 17:32:12 Error: 1
+2017-06-14 17:32:43 Error: 0
+2017-06-14 17:32:43 Error: 0
+2017-06-14 17:32:43 Error: 0
+2017-06-14 17:32:43 Error: 1
+2017-06-14 17:32:43 Error: 1
+2017-06-14 17:32:43 Error: 1
+2017-06-14 17:32:43 Error: 1
+2017-06-14 17:32:43 Error: 0
+2017-06-14 17:32:43 Error: 0
+2017-06-14 17:32:43 Error: 0
+2017-06-14 17:33:50 Error: !!!!!!
+2017-06-14 17:33:50 Error: 2017年06月
+2017-06-14 17:33:50 Error: 0
+2017-06-14 17:33:50 Error: 1
+2017-06-14 17:33:50 Error: 0
+2017-06-14 17:33:50 Error: 0
+2017-06-14 17:33:50 Error: 1
+2017-06-14 17:33:50 Error: 0
+2017-06-14 17:33:50 Error: 1
+2017-06-14 17:33:50 Error: 1
+2017-06-14 17:33:50 Error: 1
+2017-06-14 17:33:50 Error: 2
+2017-06-14 17:34:18 Error: 3
+2017-06-14 17:34:18 Error: 3
+2017-06-14 17:34:18 Error: 3
+2017-06-14 17:34:18 Error: 1
+2017-06-14 17:34:18 Error: 1
+2017-06-14 17:34:18 Error: 0
+2017-06-14 17:34:18 Error: 0
+2017-06-14 17:34:18 Error: 3
+2017-06-14 17:34:18 Error: 2
+2017-06-14 17:34:18 Error: 1
+2017-06-14 17:36:51 Error: 3
+2017-06-14 17:36:51 Error: 3
+2017-06-14 17:36:51 Error: 3
+2017-06-14 17:36:51 Error: 1
+2017-06-14 17:36:51 Error: 1
+2017-06-14 17:36:51 Error: 0
+2017-06-14 17:36:51 Error: 0
+2017-06-14 17:36:51 Error: 3
+2017-06-14 17:36:51 Error: 2
+2017-06-14 17:36:51 Error: 1
+2017-06-14 17:45:15 Error: 3
+2017-06-14 17:45:15 Error: 3
+2017-06-14 17:45:15 Error: 3
+2017-06-14 17:45:15 Error: 1
+2017-06-14 17:45:15 Error: 1
+2017-06-14 17:45:15 Error: 0
+2017-06-14 17:45:15 Error: 0
+2017-06-14 17:45:15 Error: 3
+2017-06-14 17:45:15 Error: 2
+2017-06-14 17:45:15 Error: 1
+2017-06-14 17:45:52 Error: 3
+2017-06-14 17:45:52 Error: 3
+2017-06-14 17:45:52 Error: 3
+2017-06-14 17:45:52 Error: 1
+2017-06-14 17:45:52 Error: 1
+2017-06-14 17:45:52 Error: 0
+2017-06-14 17:45:52 Error: 0
+2017-06-14 17:45:52 Error: 3
+2017-06-14 17:45:52 Error: 2
+2017-06-14 17:45:52 Error: 1
+2017-06-14 17:47:23 Error: 3
+2017-06-14 17:47:23 Error: 3
+2017-06-14 17:47:23 Error: 3
+2017-06-14 17:47:23 Error: 1
+2017-06-14 17:47:23 Error: 1
+2017-06-14 17:47:23 Error: 0
+2017-06-14 17:47:23 Error: 0
+2017-06-14 17:47:23 Error: 3
+2017-06-14 17:47:23 Error: 2
+2017-06-14 17:47:23 Error: 1
+2017-06-14 18:07:30 Error: 3
+2017-06-14 18:07:30 Error: 3
+2017-06-14 18:07:30 Error: 3
+2017-06-14 18:07:30 Error: 1
+2017-06-14 18:07:30 Error: 1
+2017-06-14 18:07:30 Error: 0
+2017-06-14 18:07:30 Error: 0
+2017-06-14 18:07:30 Error: 3
+2017-06-14 18:07:30 Error: 2
+2017-06-14 18:07:30 Error: 1
+2017-06-14 18:07:45 Error: 3
+2017-06-14 18:07:45 Error: 3
+2017-06-14 18:07:45 Error: 3
+2017-06-14 18:07:45 Error: 1
+2017-06-14 18:07:45 Error: 1
+2017-06-14 18:07:45 Error: 0
+2017-06-14 18:07:45 Error: 0
+2017-06-14 18:07:45 Error: 3
+2017-06-14 18:07:45 Error: 2
+2017-06-14 18:07:45 Error: 1
+2017-06-14 18:08:58 Error: 3
+2017-06-14 18:08:58 Error: 3
+2017-06-14 18:08:58 Error: 3
+2017-06-14 18:08:58 Error: 1
+2017-06-14 18:08:58 Error: 1
+2017-06-14 18:08:58 Error: 0
+2017-06-14 18:08:58 Error: 0
+2017-06-14 18:08:58 Error: 3
+2017-06-14 18:08:58 Error: 2
+2017-06-14 18:08:58 Error: 1
+2017-06-14 18:11:43 Error: 3
+2017-06-14 18:11:43 Error: 3
+2017-06-14 18:11:43 Error: 3
+2017-06-14 18:11:43 Error: 1
+2017-06-14 18:11:43 Error: 1
+2017-06-14 18:11:43 Error: 0
+2017-06-14 18:11:43 Error: 0
+2017-06-14 18:11:43 Error: 3
+2017-06-14 18:11:43 Error: 2
+2017-06-14 18:11:43 Error: 1
+2017-06-14 18:21:25 Error: 3
+2017-06-14 18:21:25 Error: 3
+2017-06-14 18:21:25 Error: 3
+2017-06-14 18:21:25 Error: 1
+2017-06-14 18:21:25 Error: 1
+2017-06-14 18:21:25 Error: 0
+2017-06-14 18:21:25 Error: 0
+2017-06-14 18:21:25 Error: 3
+2017-06-14 18:21:25 Error: 2
+2017-06-14 18:21:25 Error: 1
+2017-06-14 18:21:57 Error: 3
+2017-06-14 18:21:57 Error: 3
+2017-06-14 18:21:57 Error: 3
+2017-06-14 18:21:57 Error: 1
+2017-06-14 18:21:57 Error: 1
+2017-06-14 18:21:57 Error: 0
+2017-06-14 18:21:57 Error: 0
+2017-06-14 18:21:57 Error: 3
+2017-06-14 18:21:57 Error: 2
+2017-06-14 18:21:57 Error: 1
+2017-06-14 18:22:07 Error: 3
+2017-06-14 18:22:07 Error: 3
+2017-06-14 18:22:07 Error: 3
+2017-06-14 18:22:07 Error: 1
+2017-06-14 18:22:07 Error: 1
+2017-06-14 18:22:07 Error: 0
+2017-06-14 18:22:07 Error: 0
+2017-06-14 18:22:07 Error: 3
+2017-06-14 18:22:07 Error: 2
+2017-06-14 18:22:07 Error: 1
+2017-06-14 18:22:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:35:14 Error: 3
+2017-06-14 18:35:14 Error: 3
+2017-06-14 18:35:14 Error: 3
+2017-06-14 18:35:14 Error: 1
+2017-06-14 18:35:14 Error: 1
+2017-06-14 18:35:14 Error: 0
+2017-06-14 18:35:14 Error: 0
+2017-06-14 18:35:14 Error: 3
+2017-06-14 18:35:14 Error: 2
+2017-06-14 18:35:14 Error: 1
+2017-06-14 18:35:30 Error: 3
+2017-06-14 18:35:30 Error: 3
+2017-06-14 18:35:30 Error: 3
+2017-06-14 18:35:30 Error: 1
+2017-06-14 18:35:30 Error: 1
+2017-06-14 18:35:30 Error: 0
+2017-06-14 18:35:30 Error: 0
+2017-06-14 18:35:30 Error: 3
+2017-06-14 18:35:30 Error: 2
+2017-06-14 18:35:30 Error: 1
+2017-06-14 18:35:35 Error: 3
+2017-06-14 18:35:35 Error: 3
+2017-06-14 18:35:35 Error: 3
+2017-06-14 18:35:35 Error: 1
+2017-06-14 18:35:35 Error: 1
+2017-06-14 18:35:35 Error: 0
+2017-06-14 18:35:35 Error: 0
+2017-06-14 18:35:35 Error: 3
+2017-06-14 18:35:35 Error: 2
+2017-06-14 18:35:35 Error: 1
+2017-06-14 18:36:08 Error: 3
+2017-06-14 18:36:08 Error: 3
+2017-06-14 18:36:08 Error: 3
+2017-06-14 18:36:08 Error: 1
+2017-06-14 18:36:08 Error: 1
+2017-06-14 18:36:08 Error: 0
+2017-06-14 18:36:08 Error: 0
+2017-06-14 18:36:08 Error: 3
+2017-06-14 18:36:08 Error: 2
+2017-06-14 18:36:08 Error: 1
+2017-06-14 18:36:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:41:08 Error: 3
+2017-06-14 18:41:08 Error: 3
+2017-06-14 18:41:08 Error: 3
+2017-06-14 18:41:08 Error: 1
+2017-06-14 18:41:08 Error: 1
+2017-06-14 18:41:08 Error: 0
+2017-06-14 18:41:08 Error: 0
+2017-06-14 18:41:08 Error: 3
+2017-06-14 18:41:08 Error: 2
+2017-06-14 18:41:08 Error: 1
+2017-06-14 18:41:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:41:13 Error: 3
+2017-06-14 18:41:13 Error: 3
+2017-06-14 18:41:13 Error: 3
+2017-06-14 18:41:13 Error: 1
+2017-06-14 18:41:13 Error: 1
+2017-06-14 18:41:13 Error: 0
+2017-06-14 18:41:13 Error: 0
+2017-06-14 18:41:13 Error: 3
+2017-06-14 18:41:13 Error: 2
+2017-06-14 18:41:13 Error: 1
+2017-06-14 18:41:27 Error: 3
+2017-06-14 18:41:27 Error: 3
+2017-06-14 18:41:27 Error: 3
+2017-06-14 18:41:27 Error: 1
+2017-06-14 18:41:27 Error: 1
+2017-06-14 18:41:27 Error: 0
+2017-06-14 18:41:27 Error: 0
+2017-06-14 18:41:27 Error: 3
+2017-06-14 18:41:27 Error: 2
+2017-06-14 18:41:27 Error: 1
+2017-06-14 18:41:50 Error: 3
+2017-06-14 18:41:50 Error: 3
+2017-06-14 18:41:50 Error: 3
+2017-06-14 18:41:50 Error: 1
+2017-06-14 18:41:50 Error: 1
+2017-06-14 18:41:50 Error: 0
+2017-06-14 18:41:50 Error: 0
+2017-06-14 18:41:50 Error: 3
+2017-06-14 18:41:50 Error: 2
+2017-06-14 18:41:50 Error: 1
+2017-06-14 18:41:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:43:28 Error: 3
+2017-06-14 18:43:28 Error: 3
+2017-06-14 18:43:28 Error: 3
+2017-06-14 18:43:28 Error: 1
+2017-06-14 18:43:28 Error: 1
+2017-06-14 18:43:28 Error: 0
+2017-06-14 18:43:28 Error: 0
+2017-06-14 18:43:28 Error: 3
+2017-06-14 18:43:28 Error: 2
+2017-06-14 18:43:28 Error: 1
+2017-06-14 18:43:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:44:23 Error: 3
+2017-06-14 18:44:23 Error: 3
+2017-06-14 18:44:23 Error: 3
+2017-06-14 18:44:23 Error: 1
+2017-06-14 18:44:23 Error: 1
+2017-06-14 18:44:23 Error: 0
+2017-06-14 18:44:23 Error: 0
+2017-06-14 18:44:23 Error: 3
+2017-06-14 18:44:23 Error: 2
+2017-06-14 18:44:23 Error: 1
+2017-06-14 18:44:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:44:38 Error: 3
+2017-06-14 18:44:38 Error: 3
+2017-06-14 18:44:38 Error: 3
+2017-06-14 18:44:38 Error: 1
+2017-06-14 18:44:38 Error: 1
+2017-06-14 18:44:38 Error: 0
+2017-06-14 18:44:38 Error: 0
+2017-06-14 18:44:38 Error: 3
+2017-06-14 18:44:38 Error: 2
+2017-06-14 18:44:38 Error: 1
+2017-06-14 18:44:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:47:35 Error: 3
+2017-06-14 18:47:35 Error: 3
+2017-06-14 18:47:35 Error: 3
+2017-06-14 18:47:35 Error: 1
+2017-06-14 18:47:35 Error: 1
+2017-06-14 18:47:35 Error: 0
+2017-06-14 18:47:35 Error: 0
+2017-06-14 18:47:35 Error: 3
+2017-06-14 18:47:35 Error: 2
+2017-06-14 18:47:35 Error: 1
+2017-06-14 18:47:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:48:26 Error: 3
+2017-06-14 18:48:26 Error: 3
+2017-06-14 18:48:26 Error: 3
+2017-06-14 18:48:26 Error: 1
+2017-06-14 18:48:26 Error: 1
+2017-06-14 18:48:26 Error: 0
+2017-06-14 18:48:26 Error: 0
+2017-06-14 18:48:26 Error: 3
+2017-06-14 18:48:26 Error: 2
+2017-06-14 18:48:26 Error: 1
+2017-06-14 18:48:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:49:10 Error: 3
+2017-06-14 18:49:10 Error: 3
+2017-06-14 18:49:10 Error: 3
+2017-06-14 18:49:10 Error: 1
+2017-06-14 18:49:10 Error: 1
+2017-06-14 18:49:10 Error: 0
+2017-06-14 18:49:10 Error: 0
+2017-06-14 18:49:10 Error: 3
+2017-06-14 18:49:10 Error: 2
+2017-06-14 18:49:10 Error: 1
+2017-06-14 18:49:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-14 18:49:16 Error: 3
+2017-06-14 18:49:16 Error: 3
+2017-06-14 18:49:16 Error: 3
+2017-06-14 18:49:16 Error: 1
+2017-06-14 18:49:16 Error: 1
+2017-06-14 18:49:16 Error: 0
+2017-06-14 18:49:16 Error: 0
+2017-06-14 18:49:16 Error: 3
+2017-06-14 18:49:16 Error: 2
+2017-06-14 18:49:16 Error: 1
+2017-06-14 18:49:27 Error: 3
+2017-06-14 18:49:27 Error: 3
+2017-06-14 18:49:27 Error: 3
+2017-06-14 18:49:27 Error: 1
+2017-06-14 18:49:27 Error: 1
+2017-06-14 18:49:27 Error: 0
+2017-06-14 18:49:27 Error: 0
+2017-06-14 18:49:27 Error: 3
+2017-06-14 18:49:27 Error: 2
+2017-06-14 18:49:27 Error: 1
+2017-06-14 18:49:35 Error: 3
+2017-06-14 18:49:35 Error: 3
+2017-06-14 18:49:35 Error: 3
+2017-06-14 18:49:35 Error: 1
+2017-06-14 18:49:35 Error: 1
+2017-06-14 18:49:35 Error: 0
+2017-06-14 18:49:35 Error: 0
+2017-06-14 18:49:35 Error: 3
+2017-06-14 18:49:35 Error: 2
+2017-06-14 18:49:35 Error: 1
+2017-06-14 18:52:14 Error: 3
+2017-06-14 18:52:14 Error: 3
+2017-06-14 18:52:14 Error: 3
+2017-06-14 18:52:14 Error: 1
+2017-06-14 18:52:14 Error: 1
+2017-06-14 18:52:14 Error: 0
+2017-06-14 18:52:14 Error: 0
+2017-06-14 18:52:14 Error: 3
+2017-06-14 18:52:14 Error: 2
+2017-06-14 18:52:14 Error: 1
+2017-06-14 18:52:20 Error: 3
+2017-06-14 18:52:20 Error: 3
+2017-06-14 18:52:20 Error: 3
+2017-06-14 18:52:20 Error: 1
+2017-06-14 18:52:20 Error: 1
+2017-06-14 18:52:20 Error: 0
+2017-06-14 18:52:20 Error: 0
+2017-06-14 18:52:20 Error: 3
+2017-06-14 18:52:20 Error: 2
+2017-06-14 18:52:20 Error: 1
+2017-06-14 18:52:28 Error: 3
+2017-06-14 18:52:28 Error: 3
+2017-06-14 18:52:28 Error: 3
+2017-06-14 18:52:28 Error: 1
+2017-06-14 18:52:28 Error: 1
+2017-06-14 18:52:28 Error: 0
+2017-06-14 18:52:28 Error: 0
+2017-06-14 18:52:28 Error: 3
+2017-06-14 18:52:28 Error: 2
+2017-06-14 18:52:28 Error: 1
+2017-06-14 18:52:36 Error: 3
+2017-06-14 18:52:36 Error: 3
+2017-06-14 18:52:36 Error: 3
+2017-06-14 18:52:36 Error: 1
+2017-06-14 18:52:36 Error: 1
+2017-06-14 18:52:36 Error: 0
+2017-06-14 18:52:36 Error: 0
+2017-06-14 18:52:36 Error: 3
+2017-06-14 18:52:36 Error: 2
+2017-06-14 18:52:36 Error: 1
+2017-06-14 18:53:13 Error: 3
+2017-06-14 18:53:13 Error: 3
+2017-06-14 18:53:13 Error: 3
+2017-06-14 18:53:13 Error: 1
+2017-06-14 18:53:13 Error: 1
+2017-06-14 18:53:13 Error: 0
+2017-06-14 18:53:13 Error: 0
+2017-06-14 18:53:14 Error: 3
+2017-06-14 18:53:14 Error: 2
+2017-06-14 18:53:14 Error: 1

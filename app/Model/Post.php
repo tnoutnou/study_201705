@@ -203,8 +203,8 @@ class Post extends AppModel {
 
 //		debug($data['created_ym']);
 //		$condition = array('tag_id' => $data['category_id_str']);
-		$this-log('!!!  12  !!!');
-		$this-log($data['created_ym']);
+		$this->log('!!!!!!');
+		$this->log($data['created_ym']);
 				
 //		$condition = array('Post.id' => $tmp_arr);
 		$condition = array("DATE_FORMAT(Post.created,'%Y年%m月')"  => $data['created_ym']);
