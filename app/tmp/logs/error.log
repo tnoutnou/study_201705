@@ -63046,3 +63046,34 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
 2017-06-15 18:40:31 Error: 3
 2017-06-15 18:40:31 Error: !!!!
 2017-06-15 18:40:31 Error: 
+2017-06-15 18:46:44 Error: !!
+2017-06-15 18:46:44 Error: 16
+2017-06-15 18:46:44 Error: 7
+2017-06-15 18:46:44 Error: !!!!
+2017-06-15 18:46:44 Error: 
+2017-06-15 18:47:19 Error: !!
+2017-06-15 18:47:19 Error: 5
+2017-06-15 18:47:19 Error: 3
+2017-06-15 18:47:19 Error: !!!!
+2017-06-15 18:47:19 Error: 
+2017-06-15 18:47:21 Error: [MissingActionException] Action PostsController::工事中() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '工事中',
+)
+Request URL: /posts/%E5%B7%A5%E4%BA%8B%E4%B8%AD
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-15 18:53:03 Error: !!
+2017-06-15 18:53:03 Error: 11
+2017-06-15 18:53:03 Error: 4
+2017-06-15 18:53:03 Error: !!!!
+2017-06-15 18:53:03 Error: http://www.noublogcakephp.com/posts
+2017-06-15 18:53:21 Error: !!
+2017-06-15 18:53:21 Error: 38
+2017-06-15 18:53:21 Error: 5
+2017-06-15 18:53:21 Error: !!!!
+2017-06-15 18:53:21 Error: http://www.noublogcakephp.com/posts?category_id%5B0%5D=2&category_id%5B1%5D=6&category_str=&title=&tag_id=&tag_str=&created_ym=

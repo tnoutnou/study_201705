@@ -108,7 +108,7 @@ class PostsController extends AppController {
 
 		$preurl = $this->referer();
 		// 第２引数が設定されていない場合に前のURLを記録
-		if (!($opt == null)) {
+		if ($opt == null) {
 			$this->set(compact('preurl'));
 		}
 
