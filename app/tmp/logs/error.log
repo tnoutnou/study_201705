@@ -58412,3 +58412,4637 @@ Stack Trace:
 
 2017-06-15 17:11:42 Error: !!!! ★B !!!!
 2017-06-15 17:11:42 Error: !!!! ★C !!!!
+2017-06-15 17:44:26 Error: http://www.noublogcakephp.com/posts?category_id%5B0%5D=2&category_str=&title=&tag_id%5B0%5D=2&tag_str=&created_ym=
+2017-06-15 17:47:20 Error: !!!! ★A !!!!
+2017-06-15 17:47:20 Error: Array
+(
+)
+
+2017-06-15 17:47:20 Error: !!!! ★B !!!!
+2017-06-15 17:47:20 Error: !!!! ★C !!!!
+2017-06-15 17:47:21 Error: http://www.noublogcakephp.com/posts
+2017-06-15 17:47:23 Error: !!!! ★A !!!!
+2017-06-15 17:47:23 Error: Array
+(
+)
+
+2017-06-15 17:47:23 Error: !!!! ★B !!!!
+2017-06-15 17:47:23 Error: !!!! ★C !!!!
+2017-06-15 17:52:03 Error: !!!! ★D !!!!
+2017-06-15 17:52:03 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 1
+                    [user_id] => 1
+                    [title] => test1_u1
+                    [body] => 1あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+2あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+3あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+4あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+5あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+6あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+7あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+8あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+
+以上です。
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:39:10
+                    [created] => 2017-05-08 12:49:59
+                    [modified] => 2017-06-08 17:39:10
+                    [old_modified] => 2017-06-08 17:39:10
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 21
+                            [post_id] => 1
+                            [filename] => tulips-2289976_640.jpg
+                            [dirname] => 21
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 13:59:50
+                            [modified] => 2017-05-16 13:59:50
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 36
+                            [post_id] => 1
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 36
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 16:48:18
+                            [modified] => 2017-05-22 16:48:18
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 225
+                            [post_id] => 1
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 225
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-06-06 16:10:35
+                            [modified] => 2017-06-06 16:10:35
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 1
+                                    [post_id] => 1
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 17
+                                    [post_id] => 1
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-17 15:54:22
+                                    [modified] => 2017-05-17 15:54:22
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 3
+                    [user_id] => 4
+                    [title] => test2_U1
+                    [body] => ああああああああああああああああああああああああああああああああああああああああああああああああああ
+
+11
+body test2
+あああ　　１１１１１
+dd
+２２２
+
+以上
+
+PSPS
+
+！！！
+１１１
+２２２
+
+２２２２
+３３３
+３３３
+４４
+５５５５
+4444
+
+ああああ
+
+いいいいいい
+                    [category_id] => 4
+                    [deleted] => 
+                    [deleted_date] => 2017-06-15 04:15:49
+                    [created] => 2017-05-08 16:18:46
+                    [modified] => 2017-06-15 11:15:49
+                    [old_modified] => 2017-06-15 11:15:49
+                )
+
+            [User] => Array
+                (
+                    [id] => 4
+                    [username] => u2
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fde9d4d9a0e42312201f35372d0b01b9b21e001
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 12:51:45
+                    [modified] => 2017-05-08 12:51:45
+                )
+
+            [Category] => Array
+                (
+                    [id] => 4
+                    [categoryname] => 日記
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-06-02 16:41:11
+                    [modified] => 2017-06-02 16:41:11
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 261
+                            [post_id] => 3
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 261
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:23:31
+                            [created] => 2017-06-12 11:23:31
+                            [modified] => 2017-06-12 11:23:31
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 264
+                            [post_id] => 3
+                            [filename] => feet-44810_640.png
+                            [dirname] => 264
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:22
+                            [created] => 2017-06-12 11:41:22
+                            [modified] => 2017-06-12 11:41:22
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 265
+                            [post_id] => 3
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 265
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:33
+                            [created] => 2017-06-12 11:41:33
+                            [modified] => 2017-06-12 11:41:33
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 13
+                                    [post_id] => 3
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-09 18:10:45
+                                    [modified] => 2017-05-09 18:10:45
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 109
+                                    [post_id] => 3
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-09 10:37:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 4
+                    [user_id] => 4
+                    [title] => test3
+                    [body] => ああああ
+test3 body
+2 あああafdafdsfafasdfdsfあ
+
+
+
+以上
+
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-12 06:21:56
+                    [created] => 2017-05-08 16:35:32
+                    [modified] => 2017-06-12 13:21:56
+                    [old_modified] => 2017-06-12 13:21:56
+                )
+
+            [User] => Array
+                (
+                    [id] => 4
+                    [username] => u2
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fde9d4d9a0e42312201f35372d0b01b9b21e001
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 12:51:45
+                    [modified] => 2017-05-08 12:51:45
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 11
+                            [post_id] => 4
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 11
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 11:24:20
+                            [modified] => 2017-05-12 11:24:20
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 17
+                            [post_id] => 4
+                            [filename] => rakugaki.png
+                            [dirname] => 17
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 13:49:48
+                            [modified] => 2017-05-12 13:49:48
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 22
+                            [post_id] => 4
+                            [filename] => pathway-2289978_640.jpg
+                            [dirname] => 22
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 16:49:46
+                            [modified] => 2017-05-16 16:49:46
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 14
+                                    [post_id] => 4
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:26
+                                    [modified] => 2017-05-11 16:36:26
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 15
+                                    [post_id] => 4
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:35
+                                    [modified] => 2017-05-11 16:36:35
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 5
+                    [user_id] => 1
+                    [title] => title4
+                    [body] => body 4
+１
+２
+                    [category_id] => 4
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:44:57
+                    [created] => 2017-05-09 10:15:07
+                    [modified] => 2017-06-08 17:44:57
+                    [old_modified] => 2017-06-08 17:44:57
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 4
+                    [categoryname] => 日記
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-06-02 16:41:11
+                    [modified] => 2017-06-02 16:41:11
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 229
+                            [post_id] => 5
+                            [filename] => feet-44810_640.png
+                            [dirname] => 229
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 09:06:49
+                            [created] => 2017-06-07 16:06:49
+                            [modified] => 2017-06-07 16:06:49
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 68
+                                    [post_id] => 5
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 69
+                                    [post_id] => 5
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 70
+                                    [post_id] => 5
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 11
+                    [user_id] => 1
+                    [title] => title0516A
+                    [body] => 本文本文
+ss
+ddd
+4444444
+55555555555
+6
+
+以上です。
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 11:10:28
+                    [created] => 2017-05-16 10:04:31
+                    [modified] => 2017-06-08 18:10:28
+                    [old_modified] => 2017-06-08 18:10:28
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 35
+                            [post_id] => 11
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 35
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-18 18:40:06
+                            [modified] => 2017-05-18 18:40:06
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 26
+                                    [post_id] => 11
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 27
+                                    [post_id] => 11
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 28
+                                    [post_id] => 11
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [5] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 14
+                    [user_id] => 1
+                    [title] => title0516C
+                    [body] => ddddd
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-16 10:05:17
+                    [modified] => 2017-05-16 10:05:17
+                    [old_modified] => 2017-05-16 10:05:17
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [6] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 15
+                    [user_id] => 1
+                    [title] => title0516D
+                    [body] => 本文本文
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-16 10:05:36
+                    [modified] => 2017-05-16 10:05:36
+                    [old_modified] => 2017-05-16 10:05:36
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 16
+                    [user_id] => 3
+                    [title] => title0517A
+                    [body] => 本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+
+以上
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:45:22
+                    [created] => 2017-05-17 15:42:45
+                    [modified] => 2017-06-08 17:45:22
+                    [old_modified] => 2017-06-08 17:45:22
+                )
+
+            [User] => Array
+                (
+                    [id] => 3
+                    [username] => u1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fc789fb7c661bab37b623d1e97930e354266fbc
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:10:21
+                    [modified] => 2017-05-08 10:10:21
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 257
+                            [post_id] => 16
+                            [filename] => africa-2026052_640.png
+                            [dirname] => 257
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 258
+                            [post_id] => 16
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 258
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 259
+                            [post_id] => 16
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 259
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 17
+                    [user_id] => 3
+                    [title] => title0522A
+                    [body] => 本文
+２
+３
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-14 07:37:13
+                    [created] => 2017-05-22 17:15:58
+                    [modified] => 2017-06-14 14:37:13
+                    [old_modified] => 2017-06-14 14:37:13
+                )
+
+            [User] => Array
+                (
+                    [id] => 3
+                    [username] => u1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fc789fb7c661bab37b623d1e97930e354266fbc
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:10:21
+                    [modified] => 2017-05-08 10:10:21
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 41
+                            [post_id] => 17
+                            [filename] => rakugaki.png
+                            [dirname] => 41
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:09:19
+                            [modified] => 2017-05-22 18:09:19
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 291
+                            [post_id] => 17
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 291
+                            [deleted] => 
+                            [deleted_date] => 2017-06-14 07:37:13
+                            [created] => 2017-06-14 14:37:13
+                            [modified] => 2017-06-14 14:37:13
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 147
+                                    [post_id] => 17
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-14 07:37:13
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 148
+                                    [post_id] => 17
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-14 07:37:13
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [9] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 22
+                    [user_id] => 1
+                    [title] => title0522F
+                    [body] => h
+2
+3
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 17:49:19
+                    [modified] => 2017-06-01 12:02:00
+                    [old_modified] => 2017-06-01 12:02:00
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 223
+                            [post_id] => 22
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 223
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-06-01 12:02:00
+                            [modified] => 2017-06-01 12:02:00
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [10] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 23
+                    [user_id] => 1
+                    [title] => title0522I
+                    [body] => 1
+2
+3
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 17:50:18
+                    [modified] => 2017-05-22 17:50:18
+                    [old_modified] => 2017-05-22 17:50:18
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [11] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 24
+                    [user_id] => 1
+                    [title] => title0522G
+                    [body] => 1
+2
+3
+
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 17:51:52
+                    [modified] => 2017-05-22 17:51:52
+                    [old_modified] => 2017-05-22 17:51:52
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [12] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 28
+                    [user_id] => 1
+                    [title] => title0522N
+                    [body] => N
+1
+22
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:07:49
+                    [modified] => 2017-05-22 18:07:49
+                    [old_modified] => 2017-05-22 18:07:49
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [13] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 31
+                    [user_id] => 1
+                    [title] => title0522Q
+                    [body] => Q
+11
+22
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:32:05
+                    [modified] => 2017-05-22 18:32:05
+                    [old_modified] => 2017-05-22 18:32:05
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 44
+                            [post_id] => 31
+                            [filename] => rakugaki.png
+                            [dirname] => 44
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:32:05
+                            [modified] => 2017-05-22 18:32:05
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [14] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 32
+                    [user_id] => 1
+                    [title] => title0522R
+                    [body] => R
+11
+22
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:33:12
+                    [modified] => 2017-05-22 18:33:12
+                    [old_modified] => 2017-05-22 18:33:12
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 45
+                            [post_id] => 32
+                            [filename] => rakugaki.png
+                            [dirname] => 45
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:33:12
+                            [modified] => 2017-05-22 18:33:12
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [15] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 33
+                    [user_id] => 1
+                    [title] => title0522S
+                    [body] => S
+1111
+222
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:33:58
+                    [modified] => 2017-05-22 18:33:58
+                    [old_modified] => 2017-05-22 18:33:58
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 46
+                            [post_id] => 33
+                            [filename] => rakugaki.png
+                            [dirname] => 46
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:33:58
+                            [modified] => 2017-05-22 18:33:58
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [16] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 34
+                    [user_id] => 1
+                    [title] => title0522T
+                    [body] => TT
+22
+33
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:35:42
+                    [modified] => 2017-05-22 18:35:42
+                    [old_modified] => 2017-05-22 18:35:42
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 47
+                            [post_id] => 34
+                            [filename] => tulips-2289976_640.jpg
+                            [dirname] => 47
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:35:42
+                            [modified] => 2017-05-22 18:35:42
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [17] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 35
+                    [user_id] => 1
+                    [title] => title0522V
+                    [body] => V
+11
+22
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:49:52
+                    [modified] => 2017-05-22 18:49:52
+                    [old_modified] => 2017-05-22 18:49:52
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [18] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 36
+                    [user_id] => 1
+                    [title] => t0523A
+                    [body] => 本文１１１
+２２
+３３３
+４４
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-23 10:02:15
+                    [modified] => 2017-05-23 10:02:15
+                    [old_modified] => 2017-05-23 10:02:15
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [19] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 37
+                    [user_id] => 1
+                    [title] => t0523B
+                    [body] => 本文
+１１
+２２
+３３
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-23 10:02:52
+                    [modified] => 2017-05-23 10:02:52
+                    [old_modified] => 2017-05-23 10:02:52
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+)
+
+2017-06-15 17:52:14 Error: !!!! ★D !!!!
+2017-06-15 17:52:14 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 1
+                    [user_id] => 1
+                    [title] => test1_u1
+                    [body] => 1あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+2あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+3あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+4あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+5あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+6あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+7あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+8あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+
+以上です。
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:39:10
+                    [created] => 2017-05-08 12:49:59
+                    [modified] => 2017-06-08 17:39:10
+                    [old_modified] => 2017-06-08 17:39:10
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 21
+                            [post_id] => 1
+                            [filename] => tulips-2289976_640.jpg
+                            [dirname] => 21
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 13:59:50
+                            [modified] => 2017-05-16 13:59:50
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 36
+                            [post_id] => 1
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 36
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 16:48:18
+                            [modified] => 2017-05-22 16:48:18
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 225
+                            [post_id] => 1
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 225
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-06-06 16:10:35
+                            [modified] => 2017-06-06 16:10:35
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 1
+                                    [post_id] => 1
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 17
+                                    [post_id] => 1
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-17 15:54:22
+                                    [modified] => 2017-05-17 15:54:22
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 3
+                    [user_id] => 4
+                    [title] => test2_U1
+                    [body] => ああああああああああああああああああああああああああああああああああああああああああああああああああ
+
+11
+body test2
+あああ　　１１１１１
+dd
+２２２
+
+以上
+
+PSPS
+
+！！！
+１１１
+２２２
+
+２２２２
+３３３
+３３３
+４４
+５５５５
+4444
+
+ああああ
+
+いいいいいい
+                    [category_id] => 4
+                    [deleted] => 
+                    [deleted_date] => 2017-06-15 04:15:49
+                    [created] => 2017-05-08 16:18:46
+                    [modified] => 2017-06-15 11:15:49
+                    [old_modified] => 2017-06-15 11:15:49
+                )
+
+            [User] => Array
+                (
+                    [id] => 4
+                    [username] => u2
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fde9d4d9a0e42312201f35372d0b01b9b21e001
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 12:51:45
+                    [modified] => 2017-05-08 12:51:45
+                )
+
+            [Category] => Array
+                (
+                    [id] => 4
+                    [categoryname] => 日記
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-06-02 16:41:11
+                    [modified] => 2017-06-02 16:41:11
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 261
+                            [post_id] => 3
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 261
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:23:31
+                            [created] => 2017-06-12 11:23:31
+                            [modified] => 2017-06-12 11:23:31
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 264
+                            [post_id] => 3
+                            [filename] => feet-44810_640.png
+                            [dirname] => 264
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:22
+                            [created] => 2017-06-12 11:41:22
+                            [modified] => 2017-06-12 11:41:22
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 265
+                            [post_id] => 3
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 265
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:33
+                            [created] => 2017-06-12 11:41:33
+                            [modified] => 2017-06-12 11:41:33
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 13
+                                    [post_id] => 3
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-09 18:10:45
+                                    [modified] => 2017-05-09 18:10:45
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 109
+                                    [post_id] => 3
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-09 10:37:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 4
+                    [user_id] => 4
+                    [title] => test3
+                    [body] => ああああ
+test3 body
+2 あああafdafdsfafasdfdsfあ
+
+
+
+以上
+
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-12 06:21:56
+                    [created] => 2017-05-08 16:35:32
+                    [modified] => 2017-06-12 13:21:56
+                    [old_modified] => 2017-06-12 13:21:56
+                )
+
+            [User] => Array
+                (
+                    [id] => 4
+                    [username] => u2
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fde9d4d9a0e42312201f35372d0b01b9b21e001
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 12:51:45
+                    [modified] => 2017-05-08 12:51:45
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 11
+                            [post_id] => 4
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 11
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 11:24:20
+                            [modified] => 2017-05-12 11:24:20
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 17
+                            [post_id] => 4
+                            [filename] => rakugaki.png
+                            [dirname] => 17
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 13:49:48
+                            [modified] => 2017-05-12 13:49:48
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 22
+                            [post_id] => 4
+                            [filename] => pathway-2289978_640.jpg
+                            [dirname] => 22
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 16:49:46
+                            [modified] => 2017-05-16 16:49:46
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 14
+                                    [post_id] => 4
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:26
+                                    [modified] => 2017-05-11 16:36:26
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 15
+                                    [post_id] => 4
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:35
+                                    [modified] => 2017-05-11 16:36:35
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 5
+                    [user_id] => 1
+                    [title] => title4
+                    [body] => body 4
+１
+２
+                    [category_id] => 4
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:44:57
+                    [created] => 2017-05-09 10:15:07
+                    [modified] => 2017-06-08 17:44:57
+                    [old_modified] => 2017-06-08 17:44:57
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 4
+                    [categoryname] => 日記
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-06-02 16:41:11
+                    [modified] => 2017-06-02 16:41:11
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 229
+                            [post_id] => 5
+                            [filename] => feet-44810_640.png
+                            [dirname] => 229
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 09:06:49
+                            [created] => 2017-06-07 16:06:49
+                            [modified] => 2017-06-07 16:06:49
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 68
+                                    [post_id] => 5
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 69
+                                    [post_id] => 5
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 70
+                                    [post_id] => 5
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 11
+                    [user_id] => 1
+                    [title] => title0516A
+                    [body] => 本文本文
+ss
+ddd
+4444444
+55555555555
+6
+
+以上です。
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 11:10:28
+                    [created] => 2017-05-16 10:04:31
+                    [modified] => 2017-06-08 18:10:28
+                    [old_modified] => 2017-06-08 18:10:28
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 35
+                            [post_id] => 11
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 35
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-18 18:40:06
+                            [modified] => 2017-05-18 18:40:06
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 26
+                                    [post_id] => 11
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 27
+                                    [post_id] => 11
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 28
+                                    [post_id] => 11
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [5] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 14
+                    [user_id] => 1
+                    [title] => title0516C
+                    [body] => ddddd
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-16 10:05:17
+                    [modified] => 2017-05-16 10:05:17
+                    [old_modified] => 2017-05-16 10:05:17
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [6] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 15
+                    [user_id] => 1
+                    [title] => title0516D
+                    [body] => 本文本文
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-16 10:05:36
+                    [modified] => 2017-05-16 10:05:36
+                    [old_modified] => 2017-05-16 10:05:36
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 16
+                    [user_id] => 3
+                    [title] => title0517A
+                    [body] => 本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+本文本文0517本文本文0517本文本文0517本文本文0517本文本文0517
+
+以上
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-08 10:45:22
+                    [created] => 2017-05-17 15:42:45
+                    [modified] => 2017-06-08 17:45:22
+                    [old_modified] => 2017-06-08 17:45:22
+                )
+
+            [User] => Array
+                (
+                    [id] => 3
+                    [username] => u1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fc789fb7c661bab37b623d1e97930e354266fbc
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:10:21
+                    [modified] => 2017-05-08 10:10:21
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 257
+                            [post_id] => 16
+                            [filename] => africa-2026052_640.png
+                            [dirname] => 257
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 258
+                            [post_id] => 16
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 258
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 259
+                            [post_id] => 16
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 259
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 17
+                    [user_id] => 3
+                    [title] => title0522A
+                    [body] => 本文
+２
+３
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-14 07:37:13
+                    [created] => 2017-05-22 17:15:58
+                    [modified] => 2017-06-14 14:37:13
+                    [old_modified] => 2017-06-14 14:37:13
+                )
+
+            [User] => Array
+                (
+                    [id] => 3
+                    [username] => u1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 9fc789fb7c661bab37b623d1e97930e354266fbc
+                    [group_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:10:21
+                    [modified] => 2017-05-08 10:10:21
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 41
+                            [post_id] => 17
+                            [filename] => rakugaki.png
+                            [dirname] => 41
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:09:19
+                            [modified] => 2017-05-22 18:09:19
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 291
+                            [post_id] => 17
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 291
+                            [deleted] => 
+                            [deleted_date] => 2017-06-14 07:37:13
+                            [created] => 2017-06-14 14:37:13
+                            [modified] => 2017-06-14 14:37:13
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 147
+                                    [post_id] => 17
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-14 07:37:13
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 148
+                                    [post_id] => 17
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-14 07:37:13
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [9] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 22
+                    [user_id] => 1
+                    [title] => title0522F
+                    [body] => h
+2
+3
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 17:49:19
+                    [modified] => 2017-06-01 12:02:00
+                    [old_modified] => 2017-06-01 12:02:00
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 223
+                            [post_id] => 22
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 223
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-06-01 12:02:00
+                            [modified] => 2017-06-01 12:02:00
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [10] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 23
+                    [user_id] => 1
+                    [title] => title0522I
+                    [body] => 1
+2
+3
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 17:50:18
+                    [modified] => 2017-05-22 17:50:18
+                    [old_modified] => 2017-05-22 17:50:18
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [11] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 24
+                    [user_id] => 1
+                    [title] => title0522G
+                    [body] => 1
+2
+3
+
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 17:51:52
+                    [modified] => 2017-05-22 17:51:52
+                    [old_modified] => 2017-05-22 17:51:52
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [12] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 28
+                    [user_id] => 1
+                    [title] => title0522N
+                    [body] => N
+1
+22
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:07:49
+                    [modified] => 2017-05-22 18:07:49
+                    [old_modified] => 2017-05-22 18:07:49
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [13] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 31
+                    [user_id] => 1
+                    [title] => title0522Q
+                    [body] => Q
+11
+22
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:32:05
+                    [modified] => 2017-05-22 18:32:05
+                    [old_modified] => 2017-05-22 18:32:05
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 44
+                            [post_id] => 31
+                            [filename] => rakugaki.png
+                            [dirname] => 44
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:32:05
+                            [modified] => 2017-05-22 18:32:05
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [14] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 32
+                    [user_id] => 1
+                    [title] => title0522R
+                    [body] => R
+11
+22
+                    [category_id] => 3
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:33:12
+                    [modified] => 2017-05-22 18:33:12
+                    [old_modified] => 2017-05-22 18:33:12
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 3
+                    [categoryname] => カテゴリ３
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:41
+                    [modified] => 2017-05-08 14:45:41
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 45
+                            [post_id] => 32
+                            [filename] => rakugaki.png
+                            [dirname] => 45
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:33:12
+                            [modified] => 2017-05-22 18:33:12
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [15] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 33
+                    [user_id] => 1
+                    [title] => title0522S
+                    [body] => S
+1111
+222
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:33:58
+                    [modified] => 2017-05-22 18:33:58
+                    [old_modified] => 2017-05-22 18:33:58
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 46
+                            [post_id] => 33
+                            [filename] => rakugaki.png
+                            [dirname] => 46
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:33:58
+                            [modified] => 2017-05-22 18:33:58
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [16] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 34
+                    [user_id] => 1
+                    [title] => title0522T
+                    [body] => TT
+22
+33
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:35:42
+                    [modified] => 2017-05-22 18:35:42
+                    [old_modified] => 2017-05-22 18:35:42
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 47
+                            [post_id] => 34
+                            [filename] => tulips-2289976_640.jpg
+                            [dirname] => 47
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:35:42
+                            [modified] => 2017-05-22 18:35:42
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [17] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 35
+                    [user_id] => 1
+                    [title] => title0522V
+                    [body] => V
+11
+22
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-22 18:49:52
+                    [modified] => 2017-05-22 18:49:52
+                    [old_modified] => 2017-05-22 18:49:52
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [18] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 36
+                    [user_id] => 1
+                    [title] => t0523A
+                    [body] => 本文１１１
+２２
+３３３
+４４
+                    [category_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-23 10:02:15
+                    [modified] => 2017-05-23 10:02:15
+                    [old_modified] => 2017-05-23 10:02:15
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 1
+                    [categoryname] => カテゴリ１
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:43:31
+                    [modified] => 2017-05-08 14:43:31
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [19] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 37
+                    [user_id] => 1
+                    [title] => t0523B
+                    [body] => 本文
+１１
+２２
+３３
+                    [category_id] => 2
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:29:06
+                    [created] => 2017-05-23 10:02:52
+                    [modified] => 2017-05-23 10:02:52
+                    [old_modified] => 2017-05-23 10:02:52
+                )
+
+            [User] => Array
+                (
+                    [id] => 1
+                    [username] => admin1
+                    [zip_code] => 
+                    [ken_name_kan] => 
+                    [city_name_kan] => 
+                    [town_name_kan] => 
+                    [detail_name_kan] => 
+                    [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+                    [group_id] => 1
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 07:17:21
+                    [created] => 2017-05-08 10:09:55
+                    [modified] => 2017-06-02 14:25:00
+                )
+
+            [Category] => Array
+                (
+                    [id] => 2
+                    [categoryname] => カテゴリ２
+                    [deleted] => 
+                    [deleted_date] => 2017-06-07 08:13:49
+                    [created] => 2017-05-08 14:45:35
+                    [modified] => 2017-05-08 14:45:35
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+)
+
+2017-06-15 17:54:09 Error: !!!! ★D !!!!
+2017-06-15 17:54:09 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 1
+                    [title] => test1_u1
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 21
+                            [post_id] => 1
+                            [filename] => tulips-2289976_640.jpg
+                            [dirname] => 21
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 13:59:50
+                            [modified] => 2017-05-16 13:59:50
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 36
+                            [post_id] => 1
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 36
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 16:48:18
+                            [modified] => 2017-05-22 16:48:18
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 225
+                            [post_id] => 1
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 225
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-06-06 16:10:35
+                            [modified] => 2017-06-06 16:10:35
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 1
+                                    [post_id] => 1
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 17
+                                    [post_id] => 1
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-17 15:54:22
+                                    [modified] => 2017-05-17 15:54:22
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 3
+                    [title] => test2_U1
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 261
+                            [post_id] => 3
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 261
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:23:31
+                            [created] => 2017-06-12 11:23:31
+                            [modified] => 2017-06-12 11:23:31
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 264
+                            [post_id] => 3
+                            [filename] => feet-44810_640.png
+                            [dirname] => 264
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:22
+                            [created] => 2017-06-12 11:41:22
+                            [modified] => 2017-06-12 11:41:22
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 265
+                            [post_id] => 3
+                            [filename] => fruit-2287298_640.png
+                            [dirname] => 265
+                            [deleted] => 
+                            [deleted_date] => 2017-06-12 04:41:33
+                            [created] => 2017-06-12 11:41:33
+                            [modified] => 2017-06-12 11:41:33
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 13
+                                    [post_id] => 3
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-09 18:10:45
+                                    [modified] => 2017-05-09 18:10:45
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 109
+                                    [post_id] => 3
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-09 10:37:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 4
+                    [title] => test3
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 11
+                            [post_id] => 4
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 11
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 11:24:20
+                            [modified] => 2017-05-12 11:24:20
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 17
+                            [post_id] => 4
+                            [filename] => rakugaki.png
+                            [dirname] => 17
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-12 13:49:48
+                            [modified] => 2017-05-12 13:49:48
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 22
+                            [post_id] => 4
+                            [filename] => pathway-2289978_640.jpg
+                            [dirname] => 22
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-16 16:49:46
+                            [modified] => 2017-05-16 16:49:46
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 14
+                                    [post_id] => 4
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:26
+                                    [modified] => 2017-05-11 16:36:26
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 15
+                                    [post_id] => 4
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 2017-05-11 16:36:35
+                                    [modified] => 2017-05-11 16:36:35
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 5
+                    [title] => title4
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 229
+                            [post_id] => 5
+                            [filename] => feet-44810_640.png
+                            [dirname] => 229
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 09:06:49
+                            [created] => 2017-06-07 16:06:49
+                            [modified] => 2017-06-07 16:06:49
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 68
+                                    [post_id] => 5
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 69
+                                    [post_id] => 5
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 70
+                                    [post_id] => 5
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 09:18:06
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 11
+                    [title] => title0516A
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 35
+                            [post_id] => 11
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 35
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-18 18:40:06
+                            [modified] => 2017-05-18 18:40:06
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [tagname] => タグ１
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 14:47:34
+                            [modified] => 2017-05-08 14:47:34
+                            [PostsTag] => Array
+                                (
+                                    [id] => 26
+                                    [post_id] => 11
+                                    [tag_id] => 1
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 2
+                            [tagname] => タグ２
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-08 16:34:45
+                            [modified] => 2017-05-08 16:34:45
+                            [PostsTag] => Array
+                                (
+                                    [id] => 27
+                                    [post_id] => 11
+                                    [tag_id] => 2
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 4
+                            [tagname] => タグ４
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 14:42:59
+                            [modified] => 2017-05-09 14:42:59
+                            [PostsTag] => Array
+                                (
+                                    [id] => 28
+                                    [post_id] => 11
+                                    [tag_id] => 4
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-07 08:39:38
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [5] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 14
+                    [title] => title0516C
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [6] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 15
+                    [title] => title0516D
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 16
+                    [title] => title0517A
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 257
+                            [post_id] => 16
+                            [filename] => africa-2026052_640.png
+                            [dirname] => 257
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 258
+                            [post_id] => 16
+                            [filename] => jellyfish-154799_640.png
+                            [dirname] => 258
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 259
+                            [post_id] => 16
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 259
+                            [deleted] => 
+                            [deleted_date] => 2017-06-09 10:09:36
+                            [created] => 2017-06-09 17:09:36
+                            [modified] => 2017-06-09 17:09:36
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 17
+                    [title] => title0522A
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 41
+                            [post_id] => 17
+                            [filename] => rakugaki.png
+                            [dirname] => 41
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:09:19
+                            [modified] => 2017-05-22 18:09:19
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 291
+                            [post_id] => 17
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 291
+                            [deleted] => 
+                            [deleted_date] => 2017-06-14 07:37:13
+                            [created] => 2017-06-14 14:37:13
+                            [modified] => 2017-06-14 14:37:13
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 3
+                            [tagname] => タグ３
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-05-09 11:55:12
+                            [modified] => 2017-05-09 11:55:12
+                            [PostsTag] => Array
+                                (
+                                    [id] => 147
+                                    [post_id] => 17
+                                    [tag_id] => 3
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-14 07:37:13
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 14
+                            [tagname] => 朝会
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 07:33:28
+                            [created] => 2017-06-02 16:45:04
+                            [modified] => 2017-06-02 16:45:04
+                            [PostsTag] => Array
+                                (
+                                    [id] => 148
+                                    [post_id] => 17
+                                    [tag_id] => 14
+                                    [deleted] => 
+                                    [deleted_date] => 2017-06-14 07:37:13
+                                    [created] => 
+                                    [modified] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [9] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 22
+                    [title] => title0522F
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 223
+                            [post_id] => 22
+                            [filename] => daisies-2271473_640.jpg
+                            [dirname] => 223
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-06-01 12:02:00
+                            [modified] => 2017-06-01 12:02:00
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [10] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 23
+                    [title] => title0522I
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [11] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 24
+                    [title] => title0522G
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [12] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 28
+                    [title] => title0522N
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [13] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 31
+                    [title] => title0522Q
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 44
+                            [post_id] => 31
+                            [filename] => rakugaki.png
+                            [dirname] => 44
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:32:05
+                            [modified] => 2017-05-22 18:32:05
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [14] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 32
+                    [title] => title0522R
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 45
+                            [post_id] => 32
+                            [filename] => rakugaki.png
+                            [dirname] => 45
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:33:12
+                            [modified] => 2017-05-22 18:33:12
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [15] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 33
+                    [title] => title0522S
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 46
+                            [post_id] => 33
+                            [filename] => rakugaki.png
+                            [dirname] => 46
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:33:58
+                            [modified] => 2017-05-22 18:33:58
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [16] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 34
+                    [title] => title0522T
+                )
+
+            [Image] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 47
+                            [post_id] => 34
+                            [filename] => tulips-2289976_640.jpg
+                            [dirname] => 47
+                            [deleted] => 
+                            [deleted_date] => 2017-06-07 08:21:23
+                            [created] => 2017-05-22 18:35:42
+                            [modified] => 2017-05-22 18:35:42
+                        )
+
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [17] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 35
+                    [title] => title0522V
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [18] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 36
+                    [title] => t0523A
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+    [19] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 37
+                    [title] => t0523B
+                )
+
+            [Image] => Array
+                (
+                )
+
+            [Tag] => Array
+                (
+                )
+
+        )
+
+)
+
+2017-06-15 17:55:20 Error: !!!! ★D !!!!
+2017-06-15 17:55:20 Error: Array
+(
+    [0] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 1
+                    [title] => test1_u1
+                )
+
+        )
+
+    [1] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 3
+                    [title] => test2_U1
+                )
+
+        )
+
+    [2] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 4
+                    [title] => test3
+                )
+
+        )
+
+    [3] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 5
+                    [title] => title4
+                )
+
+        )
+
+    [4] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 11
+                    [title] => title0516A
+                )
+
+        )
+
+    [5] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 14
+                    [title] => title0516C
+                )
+
+        )
+
+    [6] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 15
+                    [title] => title0516D
+                )
+
+        )
+
+    [7] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 16
+                    [title] => title0517A
+                )
+
+        )
+
+    [8] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 17
+                    [title] => title0522A
+                )
+
+        )
+
+    [9] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 22
+                    [title] => title0522F
+                )
+
+        )
+
+    [10] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 23
+                    [title] => title0522I
+                )
+
+        )
+
+    [11] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 24
+                    [title] => title0522G
+                )
+
+        )
+
+    [12] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 28
+                    [title] => title0522N
+                )
+
+        )
+
+    [13] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 31
+                    [title] => title0522Q
+                )
+
+        )
+
+    [14] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 32
+                    [title] => title0522R
+                )
+
+        )
+
+    [15] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 33
+                    [title] => title0522S
+                )
+
+        )
+
+    [16] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 34
+                    [title] => title0522T
+                )
+
+        )
+
+    [17] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 35
+                    [title] => title0522V
+                )
+
+        )
+
+    [18] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 36
+                    [title] => t0523A
+                )
+
+        )
+
+    [19] => Array
+        (
+            [Post] => Array
+                (
+                    [id] => 37
+                    [title] => t0523B
+                )
+
+        )
+
+)
+
+2017-06-15 18:23:59 Error: Fatal Error (4): syntax error, unexpected '!', expecting '(' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 111]
+2017-06-15 18:23:59 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 111, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 111, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-15 18:24:01 Error: Fatal Error (4): syntax error, unexpected '!', expecting '(' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 111]
+2017-06-15 18:24:01 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 111, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 111, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-15 18:24:42 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 122]
+2017-06-15 18:24:42 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 122, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 122, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-15 18:24:44 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 122]
+2017-06-15 18:24:44 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 122, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 122, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-15 18:29:28 Error: !!
+2017-06-15 18:29:28 Error: 1
+2017-06-15 18:29:28 Error: 
+2017-06-15 18:29:28 Error: 
+2017-06-15 18:30:01 Error: !!
+2017-06-15 18:30:01 Error: 3
+2017-06-15 18:30:01 Error: 
+2017-06-15 18:30:01 Error: !!!!
+2017-06-15 18:30:01 Error: 
+2017-06-15 18:30:39 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 117]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+PostsController::view() - APP/Controller/PostsController.php, line 117
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-15 18:30:39 Error: !!
+2017-06-15 18:30:39 Error: 1
+2017-06-15 18:30:39 Error: 
+2017-06-15 18:30:39 Error: !!!!
+2017-06-15 18:30:39 Error: 
+2017-06-15 18:34:21 Error: !!
+2017-06-15 18:34:21 Error: 1
+2017-06-15 18:34:21 Error: 0
+2017-06-15 18:34:21 Error: !!!!
+2017-06-15 18:34:21 Error: 
+2017-06-15 18:34:40 Error: !!
+2017-06-15 18:34:40 Error: 1
+2017-06-15 18:34:40 Error: 0
+2017-06-15 18:34:40 Error: !!!!
+2017-06-15 18:34:40 Error: 
+2017-06-15 18:35:19 Error: !!
+2017-06-15 18:35:19 Error: 1
+2017-06-15 18:35:19 Error: 0
+2017-06-15 18:35:19 Error: !!!!
+2017-06-15 18:35:19 Error: 
+2017-06-15 18:36:10 Error: !!
+2017-06-15 18:36:10 Error: 4
+2017-06-15 18:36:10 Error: 2
+2017-06-15 18:36:10 Error: !!!!
+2017-06-15 18:36:10 Error: 
+2017-06-15 18:36:34 Error: !!
+2017-06-15 18:36:34 Error: 1
+2017-06-15 18:36:34 Error: 0
+2017-06-15 18:36:34 Error: !!!!
+2017-06-15 18:36:34 Error: 
+2017-06-15 18:36:40 Error: !!
+2017-06-15 18:36:40 Error: 1
+2017-06-15 18:36:40 Error: 0
+2017-06-15 18:36:40 Error: !!!!
+2017-06-15 18:36:40 Error: 
+2017-06-15 18:40:15 Error: !!
+2017-06-15 18:40:15 Error: 3
+2017-06-15 18:40:15 Error: 1
+2017-06-15 18:40:15 Error: !!!!
+2017-06-15 18:40:15 Error: 
+2017-06-15 18:40:31 Error: !!
+2017-06-15 18:40:31 Error: 5
+2017-06-15 18:40:31 Error: 3
+2017-06-15 18:40:31 Error: !!!!
+2017-06-15 18:40:31 Error: 

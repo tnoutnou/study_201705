@@ -241,7 +241,8 @@ $(function(){
 
 	// 投稿がクリックされたら、aタグのイベントをキック
 	$('.one_post').on('click', function(e) {
-		$('.one_post a')[0].click();
+		$('a',this)[0].click();
+//		$('.one_post a')[0].click();
 //		$('.one_post a').trigger('click');		// これだとさらに、親のイベントを呼んで無限ループする？
 	});
 

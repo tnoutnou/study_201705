@@ -29,11 +29,20 @@ class PostsController extends AppController {
 		$this->Prg->commonProcess();
 //		$this->set('posts', $this->Paginator->paginate());
 
-		$this->log('!!!! ★A !!!!');
-		$this->log($this->passedArgs);
-		$this->log('!!!! ★B !!!!');
-		$this->Post->parseCriteria($this->passedArgs);
-		$this->log('!!!! ★C !!!!');
+//		$this->log('!!!! ★A !!!!');
+//		$this->log($this->passedArgs);
+//		$this->log('!!!! ★B !!!!');
+
+		$this->paginate = array(
+			'fields'	=>	array('Post.id','Post.title'),
+			'conditions' => $this->Post->parseCriteria($this->passedArgs),
+			'recursive' => 0
+		);
+		
+//		$this->log('!!!! ★D !!!!');
+//		$this->log($this->paginate());
+		$this->Session->write('all_posts', $this->paginate());
+
 
 		$this->paginate = array(
 			'conditions' => $this->Post->parseCriteria($this->passedArgs),
@@ -91,15 +100,41 @@ class PostsController extends AppController {
  * @param string $id
  * @return void
  */
-	public function view($id = null) {
+	public function view($id = null,$opt = null) {
 		if (!$this->Post->exists($id)) {
 //			throw new NotFoundException(__('Invalid post'));
 			throw new NotFoundException(__('無効な投稿です。'));
 		}
 
 		$preurl = $this->referer();
-		$this->set(compact('preurl'));
+		// 第２引数が設定されていない場合に前のURLを記録
+		if (!($opt == null)) {
+			$this->set(compact('preurl'));
+		}
 
+		
+		//　
+		$all_posts = $this->Session->read('all_posts');
+		if ($opt == null) {			
+			foreach ($all_posts as $key => $one_post) {
+				if ($one_post['Post']['id'] == $id) {
+					$post_key = $key;
+				}
+			}
+		} else {
+			$post_key = $opt;
+		}
+		
+		// 前の投稿　のタイトルとIDとKEYを　設定？
+		$this->log('!!');
+		$this->log($id);
+		$this->log($post_key);
+		$this->log('!!!!');
+		
+		
+		// 次の投稿　のタイトルとIDとKEYを　設定？
+
+		
 		
 		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 
