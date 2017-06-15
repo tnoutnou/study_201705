@@ -17,6 +17,11 @@
 
 		<?php $i = 1; ?>
 		<?php foreach ($posts as $post): ?>
+		
+			<div class="one_post clearfix">
+			
+<!--				<legend></legend>	-->
+
 <!--			<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>	-->
 			<h2>
 				<?php echo $this->Html->link(h($post['Post']['title']), array('action' => 'view', $post['Post']['id']), array('class'=>'custom-a') ); ?>
@@ -27,25 +32,9 @@
 				<?php echo h(substr($post['Post']['created'],0,10)  . " By " . $post['User']['username']); ?>
 			</p>
 
-			<div class="col-sm-10">
-				<p class="blogbody">
-		<!--			先頭の５行だけ出力	-->
-						<?php
-							$n_ｃnt = substr_count($post['Post']['body'], "\n");
-							if ($n_ｃnt >= 5) {
-								$n_pos = strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n") + 1)+1)+1)+1);
-							}else {
-								$n_pos = strlen($post['Post']['body']);
-							}
-						?>
-						<?php echo $this->Html->link(nl2br(h(substr($post['Post']['body'],0,$n_pos))), array('action' => 'view', $post['Post']['id']) , array('escape'=> false, 'class'=>'custom-a')); ?>
-				</p>
-			</div>
 
-
-			<div class="col-sm-2">
+			<div class="col-sm-3 col-md-2">
 <!--		添付イメージの表示	-->
-				<?php $this->log(count($post['Image'])); ?>
 
 				<?php
 					$base = "/app/webroot/files/image/filename/";
@@ -78,46 +67,98 @@
 					}					
 				?>
 			</div>
+			
+			
+			
+<!--		本文	-->
+			<div class="col-sm-9 col-md-10">
+				<p class="blogbody">
+		<!--			先頭の５行だけ出力	-->
+						<?php
+							$n_ｃnt = substr_count($post['Post']['body'], "\n");
+							if ($n_ｃnt >= 5) {
+								$n_pos = strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n", strpos($post['Post']['body'], "\n") + 1)+1)+1)+1);
+							}else {
+								$n_pos = strlen($post['Post']['body']);
+							}
+						?>
+						<?php echo $this->Html->link(nl2br(h(substr($post['Post']['body'],0,$n_pos))), array('action' => 'view', $post['Post']['id']) , array('escape'=> false, 'class'=>'custom-a')); ?>
+				</p>
+			</div>
+
+			
 			&nbsp;
+			
 			<div class="col-sm-12"></div>
 			
 			<div class="col-sm-10">
+			<div class="row">
 				<p>
-					<?php echo h("カテゴリ：　"); ?>
-					<span class="label label-info">
+					<div class="col-sm-2">
+						<?php echo "カテゴリ"; ?>
+					</div>
+					<div class="col-sm-10">
+<!--					<span class="label label-info category-label"　data-category-id="<?php echo h($post['Category']['id']); ?>">	-->
+					<div class="btn btn-xs btn-info category-label" data-category-id="<?php echo h($post['Category']['id']); ?>">
 						<?php echo h($post['Category']['categoryname']); ?>
-					</span>
+					</div>
+					</div>
 				</p>
+
+				<div class="col-sm-12" style="padding-top:5px;"></div>
+
 				<p>
-					<?php echo h("タグ：　"); ?>
-					<?php foreach ($post['Tag'] as $taglist) {?>
-					<span class="label label-warning" style="margin-left:3px;">
-						<?php echo h($taglist['tagname']); ?>
-					</span>
-					<?php } ?>
+					<div class="col-sm-2">
+						<?php echo "タグ"; ?>
+					</div>
+					<div class="col-sm-10">
+						<?php foreach ($post['Tag'] as $taglist) {?>
+							<div class="btn btn-xs btn-warning tag-label" data-tag-id="<?php echo h($taglist['id']); ?>" style="margin-right:3px;">
+								<?php echo h($taglist['tagname']); ?>
+							</div>
+						<?php } ?>
+					</div>
 				</p>
+			</div>
 			</div>
 
 			
 <!--			<div class="col-sm-10"></div>	-->
 			<div class="col-sm-2">			
-			<p class="actions">		
+<!--			<p class="actions">			-->
 <!--				<div class="btn-toolbar">	-->
-				<div class="btn-group btn-group-sm">
+<!--				<div class="btn-group btn-group-sm">	-->
 <!--						<?php /* echo $this->Html->link(__('参照'), array('action' => 'view', $post['Post']['id']), array('class'=>'btn btn-default btn-sm')); */ ?>	-->
 <!--管理者 or 投稿者＝ログインユーザなら「編集」「削除」ボタンを表示する。	-->
 						<?php
 							if (($this->Session->read('admin_flg') == '1') or ($this->Session->read('login_user') == $post['User']['username'] )) {
-								echo $this->Html->link(__('編集'), array('action' => 'edit', $post['Post']['id']), array('class'=>'btn btn-success'));
-								echo $this->Form->postLink(__('削除'), array('action' => 'delete', $post['Post']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか # %s?', $post['Post']['id']), 'class'=>'btn btn-warning'));
+								echo $this->Html->link(
+									__('編集'),
+									array(
+										'action' => 'edit',
+										$post['Post']['id']),
+									array(
+										'class'=>'btn btn-success btn-sm',
+										'style'=>'margin-right:3px;margin-bottom:3px;')
+								);
+								echo $this->Form->postLink(
+									__('削除'),
+									array(
+										'action' => 'delete',
+										$post['Post']['id']),
+									array(
+										'confirm' => __('本当に削除してもよろしいでしょうか # %s?', $post['Post']['id']),
+										'class'=>'btn btn-warning btn-sm',
+										'style'=>'margin-right:3px;margin-bottom:3px;')
+								);
 							}
 						?>
-				</div>
 <!--				</div>	-->
-			</p>
+<!--			</p>	-->
 			</div>
-		
-			<legend></legend>
+
+			
+			</div>
 
 		<?php endforeach; ?>
 		

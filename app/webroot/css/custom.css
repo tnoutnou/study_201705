@@ -191,7 +191,7 @@ ul {
 .custom-a:hover {
     color: black;
     text-decoration: none;
-	background-color:#FFFFF0;
+	background-color:#f0e68c;
 	
 }
 
@@ -220,7 +220,6 @@ ul {
 }
 
 
-
 .error-message {
 	color: red;
 	@extend .alert;
@@ -239,9 +238,15 @@ body {
 }
 
 
+/*
+.arcive_ym {
+	width : 90%;
+	word-wrap:break-word;
+}
+*/
 
 .arcive_ym:hover {
-	background-color: #FFFFF0;
+	background-color: #f0e68c;
 	cursor : pointer;
 
 }
@@ -251,8 +256,25 @@ body {
 
 }
 
+.one_post {
+	border: solid 1px #FFFFFF;
+	overflow: hidden;
+}
 
 
+.one_post:hover{
+	background-color:#FFFFF0;
+	cursor : pointer;
+	border: solid 1px #FAFAF0;
+}
+
+
+// 親要素から子要素がはみ出るのを防止するテクニック？
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
 
 
 

@@ -22,11 +22,50 @@
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
 <div class="container">
 <div class="row">
-<?php echo $this->Html->css( 'custom.css'); ?>
+<?php echo $this->Html->css('custom.css'); ?>
 <div class="posts view">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <h2><?php echo __('投稿参照'); ?></h2>
 			&nbsp;
+	<div class="row">
+
+		<div class="col-sm-4">
+			<a>A</a>
+		</div>
+		<div class="col-sm-4">
+		<?php $this->log($preurl); ?>
+		<?php
+			echo $this->Html->Link(
+				__('工事中'),
+				$preurl,
+				array(
+					'class'=>'btn btn-success btn-sm',
+					'style'=>'margin-right:3px;margin-bottom:3px;',
+					'full_base' => true
+				)
+			);
+/*
+			echo $this->Html->link(
+				__('工事中'),
+				array(
+					'action' => 'backIndex',
+					),
+				array(
+					'class'=>'btn btn-success btn-sm',
+					'style'=>'margin-right:3px;margin-bottom:3px;')
+			);
+*/
+		?>
+		</div>
+
+
+		<div class="col-sm-4">
+			<a>C</a>
+		</div>
+
+	</div>
+
+			
 	<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>
 	<p>
 		<?php echo h(substr($post['Post']['created'],0,10)  . " By " . $post['User']['username']); ?>
@@ -34,21 +73,37 @@
 	<p>
 		<?php echo nl2br(h($post['Post']['body'])); ?>
 	</p>
-	<p>
-		<?php echo h("カテゴリ：　"); ?>
-		<span class="label label-info">
-			<?php echo h($post['Category']['categoryname']); ?>
-		</span>
-	</p>
-	<p>
-		<?php echo h("タグ：　"); ?>
-		<?php foreach ($post['Tag'] as $taglist) {?>
-		<span class="label label-warning" style="margin-left:3px;">
-			<?php echo h($taglist['tagname']); ?>
-		</span>
-		<?php } ?>
-	</p>
 
+	<div class="row">
+		<div class="row">
+		<p>
+			<div class="col-sm-3">
+				<?php echo h("カテゴリ"); ?>
+			</div>
+			<div class="col-sm-9">
+				<span class="label label-info">
+					<?php echo h($post['Category']['categoryname']); ?>
+				</span>
+			</div>
+			
+		</p>
+		<p>
+			<div class="col-sm-3">
+				<?php echo h("タグ"); ?>
+			</div>
+			<div class="col-sm-9">
+			<?php foreach ($post['Tag'] as $taglist) {?>
+			<span class="label label-warning" style="margin-right:3px;">
+				<?php echo h($taglist['tagname']); ?>
+			</span>
+			<?php } ?>
+			</div>
+		</p>
+		</div>
+
+	<div class="col-sm-12" style="margin-top:20px;"></div>
+
+	
 	<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>
 	<?php $base = "/app/webroot/files/image/filename/"; ?>
 
@@ -71,75 +126,9 @@
 		<span style="margin-left:20px;"><?php echo h("投稿ID：" . $post['Post']['id']); ?></span>
 	</p>
 	
-<!--	<dl>	-->
-<!--		<dt><?php echo __('投稿ID'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php echo h($post['Post']['id']); ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
-<!--		<dt><?php echo __('投稿者名'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
-<!--		<dt><?php echo __('タイトル'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php echo h($post['Post']['title']); ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
-<!--		<dt><?php echo __('本文'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php echo h($post['Post']['body']); ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
 
-<!--		<dt><?php echo __('カテゴリ'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php echo h($post['Category']['categoryname']); ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
 
-<!--		<dt><?php echo __('タグ名'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php foreach ($post['Tag'] as $taglist) {?>	-->
-<!--			<?php echo h($taglist['tagname']); ?>	-->
-<!--			<?php } ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
-
-<!--		<dt><?php echo __('添付イメージ'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php /* $base = $this->Html->url( "/app/webroot/files/image/filename/" ); */ ?>	-->
-<!--			<?php $base = "/app/webroot/files/image/filename/"; ?>	-->
-
-<!--			<?php $i = 1; ?>	-->
-<!--			<?php foreach ($post['Image'] as $image) {?>	-->
-
-<!--			<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100','class'=>'popupimg')); */ ?>	-->
-
-<!--			<?php $str_i = "popupimg" . $i; ?>	-->
-<!--				<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg', 'id'=>$str_i)); ?>	-->
-<!--			<?php $i = $i + 1; ?>	-->
-
-<!--			<?php } ?>	-->
-<!--			&nbsp;	-->
-<!--			<?php /* echo $this->Html->image( "/app/webroot/files/image/filename/3/rakugaki.png" ); */ ?>	-->
-<!--		</dd>	-->
-		
-		
-<!--		<dt><?php echo __('投稿日時'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php echo h($post['Post']['created']); ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
-<!--		<dt><?php echo __('編集日時'); ?></dt>	-->
-<!--		<dd>	-->
-<!--			<?php echo h($post['Post']['modified']); ?>	-->
-<!--			&nbsp;	-->
-<!--		</dd>	-->
-<!--	</dl>	-->
-
-</div>
+	</div>
 </div>
 <div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
 	<?php /* echo $this->element('login_user'); 

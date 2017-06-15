@@ -28,6 +28,13 @@ class PostsController extends AppController {
 		unset($this->Post->validate['title']);
 		$this->Prg->commonProcess();
 //		$this->set('posts', $this->Paginator->paginate());
+
+		$this->log('!!!! ★A !!!!');
+		$this->log($this->passedArgs);
+		$this->log('!!!! ★B !!!!');
+		$this->Post->parseCriteria($this->passedArgs);
+		$this->log('!!!! ★C !!!!');
+
 		$this->paginate = array(
 			'conditions' => $this->Post->parseCriteria($this->passedArgs),
 			'limit' => 10,
@@ -89,7 +96,13 @@ class PostsController extends AppController {
 //			throw new NotFoundException(__('Invalid post'));
 			throw new NotFoundException(__('無効な投稿です。'));
 		}
+
+		$preurl = $this->referer();
+		$this->set(compact('preurl'));
+
+		
 		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
+
 		$this->set('post', $this->Post->find('first', $options));
 //		
 //		$poststags = $this->Post->Tag->find('list');
@@ -454,9 +467,17 @@ class PostsController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
 
+	public function backIndex() {
+		// ビューの使用無を設定
+		$this->autoRender = false;
+/*		return $this->redirect($this->referer());	*/
+		return $this->redirect($this->Auth->redirect());
+	}
+
+	
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view', 'addFile', 'delTmpFile');
+		$this->Auth->allow('index', 'view', 'addFile', 'delTmpFile','backIndex');
 	}
 	
 }

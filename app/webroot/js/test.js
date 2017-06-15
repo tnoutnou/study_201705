@@ -239,8 +239,51 @@ $(function(){
 	});
 
 
-		
+	// 投稿がクリックされたら、aタグのイベントをキック
+	$('.one_post').on('click', function(e) {
+		$('.one_post a')[0].click();
+//		$('.one_post a').trigger('click');		// これだとさらに、親のイベントを呼んで無限ループする？
+	});
 
+	$('.one_post a').on('click', function(e) {
+		e.stopPropagation();
+	});
+
+
+	// 一覧中のカテゴリが押されたら
+	$('.category-label').on('click', function(e) {
+		$('#PostCategoryId').val($(this).data('category-id'));
+		$('#src_btn')[0].click();
+		e.stopPropagation();
+	});
 	
 	
+	// 一覧中のタグが押されたら
+	$('.tag-label').on('click', function(e) {
+//		$('#PostTagId').val([]);
+
+//		var value = $('#PostTagId select'+':checked').val();
+//		$('#PostTagId select').removeAttr('checked');
+
+//		$('#PostTagId select' + '[value="'+value+'"]').attr('checked','checked');
+
+//		$('#PostTagId select > option:selected').remove();
+
+		// 選択されたチェックを外す
+		$('select#PostTagId option:selected').attr("selected",false);
+		
+//		$('#PostTagId select').val(0);
+
+//		$('#PostTagId select').each(function() {
+//			this.selectedIndex = 0;
+//		});
+
+//		$('.filter-option.pull-left').val(null);
+		$('#PostTagId').val($(this).data('tag-id'));
+		var debug1 = $('#PostTagId').val(); 
+		$('#src_btn')[0].click();
+		e.stopPropagation();
+	});
+
+
 });
