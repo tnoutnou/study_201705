@@ -33,15 +33,19 @@ class PostsController extends AppController {
 //		$this->log($this->passedArgs);
 //		$this->log('!!!! ★B !!!!');
 
-		$this->paginate = array(
-			'fields'	=>	array('Post.id','Post.title'),
-			'conditions' => $this->Post->parseCriteria($this->passedArgs),
-			'recursive' => 0
+		$all_posts = $this->Post->find(
+			'all',
+			array(
+				'fields'	=>	array('Post.id','Post.title'),
+				'conditions' => $this->Post->parseCriteria($this->passedArgs),
+				'recursive' => 0,
+				)
 		);
 		
 //		$this->log('!!!! ★D !!!!');
 //		$this->log($this->paginate());
-		$this->Session->write('all_posts', $this->paginate());
+//		$this->Session->write('all_posts', $this->paginate());
+		$this->Session->write('all_posts', $all_posts);
 
 
 		$this->paginate = array(
@@ -106,15 +110,19 @@ class PostsController extends AppController {
 			throw new NotFoundException(__('無効な投稿です。'));
 		}
 
-		$preurl = $this->referer();
-		// 第２引数が設定されていない場合に前のURLを記録
+		// 第２引数が設定されていない場合に前のURLを記録 
 		if ($opt == null) {
+			$preurl = $this->referer();
+			$this->set(compact('preurl'));
+			$this->Session->write('preurl',$preurl);
+		} else {
+			$preurl = $this->Session->read('preurl');			
 			$this->set(compact('preurl'));
 		}
 
 		
-		//　
-		$all_posts = $this->Session->read('all_posts');
+		//　該当POSTの配列の位置を特定
+		$all_posts = $this->Session->read('all_posts');		// POSTSのIDとTITLEを格納した配列
 		if ($opt == null) {			
 			foreach ($all_posts as $key => $one_post) {
 				if ($one_post['Post']['id'] == $id) {
@@ -124,15 +132,51 @@ class PostsController extends AppController {
 		} else {
 			$post_key = $opt;
 		}
-		
+
+//		$this->log('!!');
+//		$this->log($id);
+//		$this->log($post_key);
+//		$this->log('!!!!');
+				
 		// 前の投稿　のタイトルとIDとKEYを　設定？
-		$this->log('!!');
-		$this->log($id);
-		$this->log($post_key);
-		$this->log('!!!!');
+		if ($post_key > 0) {
+			$pre_post_key = $post_key - 1;
+			$pre_post_id = $all_posts[$post_key - 1]['Post']['id'];
+			$pre_post_title = $all_posts[$post_key - 1]['Post']['title'];
+		} else {
+			$pre_post_key = null;
+			$pre_post_id = null;
+			$pre_post_title = null;
+		}
 		
+		$pre_post = array(
+			'pkey' => $pre_post_key,
+			'id' => $pre_post_id,
+			'title'=> $pre_post_title
+		);
+
+//		$this->log($pre_post);
 		
 		// 次の投稿　のタイトルとIDとKEYを　設定？
+		if (!($post_key == (count($all_posts) - 1))) {
+			$nxt_post_key = $post_key + 1;
+			$nxt_post_id = $all_posts[$post_key + 1]['Post']['id'];
+			$nxt_post_title = $all_posts[$post_key + 1]['Post']['title'];
+		} else {
+			$nxt_post_key = null;
+			$nxt_post_id = null;
+			$nxt_post_title = null;
+		}
+
+		$nxt_post = array(
+			'pkey' => $nxt_post_key,
+			'id' => $nxt_post_id,
+			'title'=> $nxt_post_title
+		);
+		
+		$this->set('pre_post', $pre_post);
+		$this->set('nxt_post', $nxt_post);
+		$this->set('all_posts', $all_posts);
 
 		
 		

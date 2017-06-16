@@ -30,17 +30,27 @@
 	<div class="row">
 
 		<div class="col-sm-4">
-			<a>A</a>
+			<?php
+				if (!($pre_post['title'] == NULL)) {
+					echo $this->Html->link(
+						'< 前 ' . h($pre_post['title']),
+						array(
+							'action' => 'view',
+							$pre_post['id'],
+							$pre_post['pkey']),					
+						array('class'=>'btn btn-link','style'=>'width:100%;align:left;text-align:left;')
+					);
+				}
+			?>
 		</div>
 		<div class="col-sm-4">
-		<?php $this->log($preurl); ?>
 		<?php
 			echo $this->Html->Link(
-				__('工事中'),
+				__('一覧の戻る'),
 				$preurl,
 				array(
 					'class'=>'btn btn-success btn-sm',
-					'style'=>'margin-right:3px;margin-bottom:3px;',
+					'style'=>'width:100%;align:center;text-align:center;',
 					'full_base' => true
 				)
 			);
@@ -58,9 +68,19 @@
 		?>
 		</div>
 
-
 		<div class="col-sm-4">
-			<a>C</a>
+			<?php
+				if (!($nxt_post['title'] == NULL)) {
+					echo $this->Html->link(
+						h($nxt_post['title']) . ' 次 ＞',
+						array(
+							'action' => 'view',
+							$nxt_post['id'],
+							$nxt_post['pkey']),					
+						array('class'=>'btn btn-link','style'=>'width:100%;align:right;text-align:right;')
+					);
+				}
+			?>
 		</div>
 
 	</div>
