@@ -16,18 +16,55 @@
 	<fieldset>
 		<legend><?php echo __('投稿 追加'); ?></legend>
 	<?php
-		echo $this->Form->input('user_id', array('label' => array('text' => 'ユーザ名' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
-		echo $this->Form->input('title', array('label' => array('text' => 'タイトル' ,'class' => 'label label-default'), 'class' => 'form-control'));
-		echo $this->Form->input('body', array('rows' => 10,'label' => array('text' => '本文' ,'class' => 'label label-default'), 'class' => 'form-control'));
-		echo $this->Form->input('category_id', array('label' => array('text' => 'カテゴリ' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
-		echo $this->Form->input('tag_id',array('label' => array('text' => 'タグ' ,'class' => 'label label-default'), 'type'=>'select', 'multiple'=>true, 'options'=>$tags, 'class' => 'selectpicker show-menu-arrow form-control'));
+		echo $this->Form->input(
+				'user_id',
+				array(
+					'label' => array('text' => 'ユーザ名' ,'class' => 'label label-default'),
+					'class' => 'selectpicker show-tick form-control')
+			);
+		echo $this->Form->input(
+				'title',
+				array(
+					'label' => array('text' => 'タイトル' ,'class' => 'label label-default'),
+					'class' => 'form-control')
+			);
+		echo $this->Form->input(
+				'body',
+				array(
+					'rows' => 10,
+					'label' => array('text' => '本文' ,'class' => 'label label-default'),
+					'class' => 'form-control')
+			);
+		echo $this->Form->input(
+				'category_id',
+				array(
+					'label' => array('text' => 'カテゴリ' ,'class' => 'label label-default'),
+					'class' => 'selectpicker show-tick form-control')
+			);
+		echo $this->Form->input(
+				'tag_id',
+				array(
+					'label' => array('text' => 'タグ' ,'class' => 'label label-default'),
+					'type'=>'select',
+					'multiple'=>true,
+					'options'=>$tags,
+					'class' => 'selectpicker show-menu-arrow form-control')
+			);
 		
 	?>
 <label class="label label-default">イメージ追加</label>
 <div class="input-group" id="file-input-group1">
 <input type="text" class="form-control" id="selectedFile1" readonly>
 <?php
-		echo $this->Form->input('Image.0.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'addinputFile1'));
+		echo $this->Form->input(
+				'Image.0.filename',
+				array(
+					'type' => 'file',
+					'label' => false,
+					'style'=>'display:none',
+					'class'=>'cls-inputfile',
+					'id'=>'addinputFile1')
+			);
 ?>
 <span class="input-group-btn">
 <button id="addselectFile1" class="btn btn-default" type="button">新規ファイル追加</button>
@@ -40,7 +77,15 @@
 
 <?php echo '<div class="input-group" id="file-input-group' . $i .'" style="display:none">';   ?>
 <?php echo '<input type="text" class="form-control" id="selectedFile'. $i .'" readonly>'   ?>
-<?php echo $this->Form->input('Image.' . "$j" . '.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'addinputFile' . $i)); ?>
+<?php echo $this->Form->input(
+				'Image.' . "$j" . '.filename',
+				array(
+					'type' => 'file',
+					'label' => false,
+					'style'=>'display:none',
+					'class'=>'cls-inputfile',
+					'id'=>'addinputFile' . $i)
+			); ?>
 <?php echo '</div>'   ?>
 
 <?php }   ?>

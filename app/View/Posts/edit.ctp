@@ -17,19 +17,50 @@
 <div class="row">
 <!--	<div class="posts form col-xs-12 col-sm-12 col-md-10">	-->
 <div class="posts form col-xs-12 col-sm-8 col-md-9">
-<?php echo $this->Form->create('Post', array('type' => 'file', 'class' => 'form-horizontal')); ?>
+<?php echo $this->Form->create(
+			'Post',
+			array('type' => 'file', 'class' => 'form-horizontal'));
+?>
+
 	<fieldset>
 		<legend><?php echo __('投稿　編集'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('user_id', array('label' => array('text' => 'ユーザ名' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
-		echo $this->Form->input('title', array('label' => array('text' => 'タイトル' ,'class' => 'label label-default'), 'class' => 'form-control'));
-		echo $this->Form->input('body', array('rows' => 10,'label' => array('text' => '本文' ,'class' => 'label label-default'), 'class' => 'form-control'));
-		echo $this->Form->input('category_id', array('label' => array('text' => 'カテゴリ' ,'class' => 'label label-default'), 'class' => 'selectpicker show-tick form-control'));
-		echo $this->Form->input('tag_id',array('label' => array('text' => 'タグ' ,'class' => 'label label-default'), 'type'=>'select', 'multiple'=>true, 'options'=>$tags, 'selected'=>$selected, 'class' => 'selectpicker show-menu-arrow form-control'));
-//		echo $this->Form->input('modified',array('label' => false,'style'=>'display:none'));
-//		echo $this->Form->input('old_modified',array('label' => false,'style'=>'display:none'));
-//		echo $this->Form->hidden('modified');
+		echo $this->Form->input(
+				'user_id',
+				array(
+					'label' => array('text' => 'ユーザ名' ,'class' => 'label label-default'),
+					'class' => 'selectpicker show-tick form-control')
+			);
+		echo $this->Form->input(
+				'title',
+				array(
+					'label' => array('text' => 'タイトル' ,'class' => 'label label-default'),
+					'class' => 'form-control')
+			);
+		echo $this->Form->input(
+				'body',
+				array(
+					'rows' => 10,
+					'label' => array('text' => '本文' ,'class' => 'label label-default'),
+					'class' => 'form-control')
+			);
+		echo $this->Form->input(
+				'category_id',
+				array(
+					'label' => array('text' => 'カテゴリ' ,'class' => 'label label-default'),
+					'class' => 'selectpicker show-tick form-control')
+			);
+		echo $this->Form->input(
+				'tag_id',
+				array(
+					'label' => array('text' => 'タグ' ,'class' => 'label label-default'),
+					'type'=>'select',
+					'multiple'=>true,
+					'options'=>$tags,
+					'selected'=>$selected,
+					'class' => 'selectpicker show-menu-arrow form-control')
+			);
 		echo $this->Form->hidden('old_modified');
 	?>
 <label class="label label-default">イメージ追加</label>
@@ -53,7 +84,16 @@
 
 <?php echo '<div class="input-group" id="file-input-group' . $i .'" style="display:none">';   ?>
 <?php echo '<input type="text" class="form-control" id="selectedFile'. $i .'" readonly>'   ?>
-<?php echo $this->Form->input('Image.' . "$j" . '.filename', array('type' => 'file', 'label' => false, 'style'=>'display:none', 'class'=>'cls-inputfile', 'id'=>'inputFile' . $i)); ?>
+<?php
+	echo $this->Form->input(
+			'Image.' . "$j" . '.filename',
+			array(
+				'type' => 'file',
+				'label' => false,
+				'style'=>'display:none',
+				'class'=>'cls-inputfile',
+				'id'=>'inputFile' . $i)
+		); ?>
 <?php echo '</div>'   ?>
 
 <?php }   ?>
@@ -71,17 +111,29 @@
 	<?php $base = "/app/webroot/files/image/filename/"; ?>
 	<?php foreach ($post['Image'] as $image) {?>
 	<li>
-		<?php echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'80','height'=>'80')); ?>
+		<?php echo $this->Html->image(
+					$base . $image["dirname"] . "/" . $image["filename"],
+					array('width'=>'80','height'=>'80')
+				);
+		?>
 		<td class="actions">
 			<?php /* echo $this->Html->link(__('イメージ削除'), array('controller' => 'Images', 'action' => 'delete', $image['id'])); */ ?>
-			<?php echo $this->Form->postLink(__('イメージ削除'), array('controller' => 'Images','action' => 'delete', $image['id']), array('confirm' => __('本当に削除してもよろしいでしょうか ?'))); ?>
+			<?php
+				echo $this->Form->postLink(
+						__('イメージ削除'),
+						array(
+							'controller' => 'Images',
+							'action' => 'delete',
+							$image['id']),
+						array('confirm' => __('本当に削除してもよろしいでしょうか ?'))
+				);
+			?>
 		</td>		
 	</li>
 	<?php } ?>
 
 	&nbsp;
 </ul>
-
 
 		
 <!--	<?php foreach ($data['Tag'] as $taglist) {?>	-->

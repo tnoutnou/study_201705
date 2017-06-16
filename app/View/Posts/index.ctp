@@ -89,7 +89,14 @@
 								$n_pos = strlen($post['Post']['body']);
 							}
 						?>
-						<?php echo $this->Html->link(nl2br(h(substr($post['Post']['body'],0,$n_pos))), array('action' => 'view', $post['Post']['id']) , array('escape'=> false, 'class'=>'custom-a')); ?>
+						<?php
+							echo $this->Html->link(
+								nl2br(h(substr($post['Post']['body'],0,$n_pos))),
+								array('action' => 'view', $post['Post']['id']),
+								array('escape'=> false,
+								'class'=>'custom-a')
+							);
+						?>
 				</p>
 			</div>
 
@@ -321,7 +328,15 @@
 				<div class="col-sm-12">
 <!--				<div class="col-sm-12" style="margin-left:auto;margin-right:10px;">	-->
 <!--					<?php /*echo $this->Form->end(array('label'=> '検索', 'div' => false, 'id' => 'src_btn', 'class'=>'btn btn-primary pull-right', 'style'=>'margin-left:auto;margin-right:10px;')); */ ?>	-->
-					<?php echo $this->Form->end(array('label'=> '検索', 'div' => false, 'id' => 'src_btn', 'class'=>'btn btn-primary pull-right')); ?>
+					<?php
+						echo $this->Form->end(
+								array(
+									'label'=> '検索',
+									'div' => false,
+									'id' => 'src_btn',
+									'class'=>'btn btn-primary pull-right')
+						);
+					?>
 				</div>
 <!--				<div class="col-sm-3"></div>	-->
 
@@ -351,7 +366,13 @@
 				<div class="panel-body">
 					<?php foreach ($recent_posts as $recent_key => $recent_post): ?>
 						<p>
-							<?php echo $this->Html->link($recent_post, array('action' => 'view', $recent_key), array('escape'=> false, 'class'=>'custom-a','style'=>'word-wrap:break-word;')); ?>			
+							<?php
+								echo $this->Html->link(
+									$recent_post,
+									array('action' => 'view', $recent_key),
+									array('escape'=> false, 'class'=>'custom-a','style'=>'word-wrap:break-word;')
+								);
+							?>			
 						</p>
 					<?php endforeach; ?>
 				</div>
