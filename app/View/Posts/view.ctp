@@ -24,16 +24,16 @@
 <div class="row">
 <?php echo $this->Html->css('custom.css'); ?>
 <div class="posts view">
-<div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
-<h2><?php echo __('投稿参照'); ?></h2>
+<div class="blogposts posts index col-xs-12 col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-1">
+<!--<h2><?php echo __('投稿参照'); ?></h2>	-->
 			&nbsp;
 	<div class="row">
 
-		<div class="col-sm-4">
+		<div class="col-xs-4">
 			<?php
 				if (!($pre_post['title'] == NULL)) {
 					echo $this->Html->link(
-						'< 前 ' . h($pre_post['title']),
+						'< 前 「' . h($pre_post['title']) . '」',
 						array(
 							'action' => 'view',
 							$pre_post['id'],
@@ -43,14 +43,14 @@
 				}
 			?>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-xs-4">
 		<?php
 			echo $this->Html->Link(
 				__('一覧の戻る'),
 				$preurl,
 				array(
 					'class'=>'btn btn-success btn-sm',
-					'style'=>'width:100%;align:center;text-align:center;',
+					'style'=>'width:100%;align:center;text-align:center;margin-bottom:5px;',
 					'full_base' => true
 				)
 			);
@@ -68,11 +68,11 @@
 		?>
 		</div>
 
-		<div class="col-sm-4">
+		<div class="col-xs-4">
 			<?php
 				if (!($nxt_post['title'] == NULL)) {
 					echo $this->Html->link(
-						h($nxt_post['title']) . ' 次 ＞',
+						'「' . h($nxt_post['title']) . '」 次 ＞',
 						array(
 							'action' => 'view',
 							$nxt_post['id'],
@@ -85,22 +85,34 @@
 
 	</div>
 
-			
-	<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>
-	<p>
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>
+		</div>
+
+		<div class="panel-body">
+	<p id="writen_date">
 		<?php echo h(substr($post['Post']['created'],0,10)  . " By " . $post['User']['username']); ?>
 	</p>
+	
+	<legend></legend>
+
+	
 	<p>
 		<?php echo nl2br(h($post['Post']['body'])); ?>
 	</p>
 
+	<legend></legend>
+		
 	<div class="row">
 		<div class="row">
 		<p>
 			<div class="col-sm-3">
-				<?php echo h("カテゴリ"); ?>
+				<span class="view_other">
+					<?php echo h("カテゴリ"); ?>
+				</span>
 			</div>
-			<div class="col-sm-9">
+			<div class="col-sm-8">
 				<span class="label label-info">
 					<?php echo h($post['Category']['categoryname']); ?>
 				</span>
@@ -109,9 +121,11 @@
 		</p>
 		<p>
 			<div class="col-sm-3">
-				<?php echo h("タグ"); ?>
+				<span class="view_other">
+					<?php echo h("タグ"); ?>
+				</span>
 			</div>
-			<div class="col-sm-9">
+			<div class="col-sm-8">
 			<?php foreach ($post['Tag'] as $taglist) {?>
 			<span class="label label-warning" style="margin-right:3px;">
 				<?php echo h($taglist['tagname']); ?>
@@ -133,7 +147,7 @@
 	<?php /* echo $this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100','class'=>'popupimg')); */ ?>
 
 	<?php $str_i = "popupimg" . $i; ?>
-		<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'100','height'=>'100')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg', 'id'=>$str_i)); ?>
+		<?php echo $this->Html->link($this->Html->image( $base . $image["dirname"] . "/" . $image["filename"] , array('width'=>'120','height'=>'120')) , $base . $image["dirname"] . "/" . $image["filename"], array('escape'=> false,'class'=>'popupimg view_img', 'id'=>$str_i)); ?>
 	<?php $i = $i + 1; ?>
 
 	<?php } ?>
@@ -146,11 +160,13 @@
 		<span style="margin-left:20px;"><?php echo h("投稿ID：" . $post['Post']['id']); ?></span>
 	</p>
 	
+	</div>
 
+		</div>
 
 	</div>
 </div>
-<div class="blogaction actions col-xs-6 col-sm-3 col-md-2">
+<div class="blogaction actions col-xs-6 col-sm-2 col-md-1">
 	<?php /* echo $this->element('login_user'); 
 <div class="actions">
 	<h3><?php echo __('処理'); ?></h3>

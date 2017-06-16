@@ -277,6 +277,24 @@ body {
 }
 
 
+#writen_date {
+	width:		100%;
+	align:		right;
+	text-align:	right;
+
+}
+
+
+.view_other {
+	padding-left:	10px;
+}
+
+.view_img {
+	padding-left:	10px;
+}
+ 
+
+
 
 
 

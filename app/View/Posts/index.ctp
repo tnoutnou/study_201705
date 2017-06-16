@@ -6,7 +6,7 @@
 			'label' => '投稿追加',
 			'controller' => 'posts',
 			'action' => 'add',
-			'id' => null),
+			'id' => null),		
 		);
 ?>
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
@@ -24,7 +24,14 @@
 
 <!--			<h2><?php echo h($post['Post']['title']); ?>&nbsp;</h2>	-->
 			<h2>
-				<?php echo $this->Html->link(h($post['Post']['title']), array('action' => 'view', $post['Post']['id']), array('class'=>'custom-a') ); ?>
+				<?php echo $this->Html->link(
+					h($post['Post']['title']),
+					array(
+						'action' => 'view',
+						$post['Post']['id']),
+					array('class'=>'custom-a')
+					);
+				?>
 			</h2>
 
 
