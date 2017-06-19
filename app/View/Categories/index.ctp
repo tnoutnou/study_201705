@@ -27,7 +27,7 @@
 	<?php foreach ($categories as $category): ?>
 	<tr>
 		<td><?php echo h($category['Category']['id']); ?>&nbsp;</td>
-		<td><?php echo h($category['Category']['categoryname']); ?>&nbsp;</td>
+		<td><?php echo h($category['Category']['name']); ?>&nbsp;</td>
 		<td><?php echo h($category['Category']['created']); ?>&nbsp;</td>
 		<td><?php echo h($category['Category']['modified']); ?>&nbsp;</td>
 		<td class="actions">

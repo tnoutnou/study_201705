@@ -30,7 +30,7 @@
 		</dd>
 		<dt><?php echo __('タグ名'); ?></dt>
 		<dd>
-			<?php echo h($tag['Tag']['tagname']); ?>
+			<?php echo h($tag['Tag']['name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('作成日時'); ?></dt>

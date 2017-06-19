@@ -176,7 +176,7 @@ class Post extends AppModel {
 		
 		$options = array(
 			'fields'=>array('id'),
-			'conditions' => array('categoryname like' => '%' . $data['category_str'] . '%'
+			'conditions' => array('name like' => '%' . $data['category_str'] . '%'
 			)
 		);
 		
@@ -224,7 +224,7 @@ class Post extends AppModel {
 		
 		$options = array(
 			'fields'=>array('id'),
-			'conditions' => array('tagname like' => '%' . $data['tag_str'] . '%'
+			'conditions' => array('name like' => '%' . $data['tag_str'] . '%'
 			)
 		);		
 		$tmps = $this->Tag->find('list', $options);

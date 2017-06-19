@@ -11,7 +11,7 @@
 	<fieldset>
 		<legend><?php echo __('タグ追加'); ?></legend>
 	<?php
-		echo $this->Form->input('tagname', array('label' => array('text' => 'タグ名')));
+		echo $this->Form->input('name', array('label' => array('text' => 'タグ名')));
 		echo $this->Form->input('Post', array('label' => array('text' => '投稿')));
 	?>
 	</fieldset>

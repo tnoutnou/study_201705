@@ -12,7 +12,7 @@ class Zip extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'ken_name_kana' => array(
+		'prefecture_name_kana' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
@@ -33,4 +33,18 @@ class Zip extends AppModel {
 			),
 		),
 	);
+	
+	
+		
+	public $hasMany = array(
+		'User' => array(
+			'className' => 'User',
+//			'conditions' => array('' => '1'),
+			'conditions' => '',
+			'order' => ''
+		)
+	);			
+	
+	
+	
 }

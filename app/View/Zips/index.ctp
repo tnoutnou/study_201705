@@ -5,10 +5,10 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('zip_code'); ?></th>
-			<th><?php echo $this->Paginator->sort('ken_name_kana'); ?></th>
+			<th><?php echo $this->Paginator->sort('prefecture_name_kana'); ?></th>
 			<th><?php echo $this->Paginator->sort('city_name_kana'); ?></th>
 			<th><?php echo $this->Paginator->sort('town_name_kana'); ?></th>
-			<th><?php echo $this->Paginator->sort('ken_name_kan'); ?></th>
+			<th><?php echo $this->Paginator->sort('prefecture_name_kan'); ?></th>
 			<th><?php echo $this->Paginator->sort('city_name_kan'); ?></th>
 			<th><?php echo $this->Paginator->sort('town_name_kan'); ?></th>
 			<th><?php echo $this->Paginator->sort('flg1'); ?></th>
@@ -27,10 +27,10 @@
 	<tr>
 		<td><?php echo h($zip['Zip']['id']); ?>&nbsp;</td>
 		<td><?php echo h($zip['Zip']['zip_code']); ?>&nbsp;</td>
-		<td><?php echo h($zip['Zip']['ken_name_kana']); ?>&nbsp;</td>
+		<td><?php echo h($zip['Zip']['prefecture_name_kana']); ?>&nbsp;</td>
 		<td><?php echo h($zip['Zip']['city_name_kana']); ?>&nbsp;</td>
 		<td><?php echo h($zip['Zip']['town_name_kana']); ?>&nbsp;</td>
-		<td><?php echo h($zip['Zip']['ken_name_kan']); ?>&nbsp;</td>
+		<td><?php echo h($zip['Zip']['prefecture_name_kan']); ?>&nbsp;</td>
 		<td><?php echo h($zip['Zip']['city_name_kan']); ?>&nbsp;</td>
 		<td><?php echo h($zip['Zip']['town_name_kan']); ?>&nbsp;</td>
 		<td><?php echo h($zip['Zip']['flg1']); ?>&nbsp;</td>

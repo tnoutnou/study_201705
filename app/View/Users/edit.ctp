@@ -23,12 +23,17 @@
 	<?php
 		echo $this->Form->input('id', array('label' => array('text' => 'ユーザID')));
 		echo $this->Form->input('username', array('label' => array('text' => 'ユーザ名')));
+		echo $this->Form->input('zip_id', array('type'=>'text','label' => false , 'style'=>'display:none' ));
 		echo $this->Form->input('zip_code', array('label' => array('text' => '郵便番号')));
 		echo $this->Form->button('郵便番号から住所', array('type' => 'button','id' => 'tran-btn'));
-		echo $this->Form->input('ken_name_kan', array('label' => array('text' => '都道府県')));
-		echo $this->Form->input('city_name_kan', array('label' => array('text' => '市区')));
-		echo $this->Form->input('town_name_kan', array('label' => array('text' => '町村')));
-		echo $this->Form->input('detail_name_kan', array('label' => array('text' => '番地以下')));
+/*
+		echo $this->Form->input('prefecture_name', array('label' => array('text' => '都道府県'), 'disabled'=>'disabled'));
+		echo $this->Form->input('city_name', array('label' => array('text' => '市区'), 'disabled'=>'disabled'));
+*/
+		echo $this->Form->input('prefecture_name', array('label' => array('text' => '都道府県'), 'disabled'=>'disabled' , 'value' => $this->Form->value('Zip.prefecture_name_kan') ));
+		echo $this->Form->input('city_name', array('label' => array('text' => '市区'), 'disabled'=>'disabled', 'value' => $this->Form->value('Zip.city_name_kan') ));
+		echo $this->Form->input('town_name', array('label' => array('text' => '町村')));
+		echo $this->Form->input('detail_name', array('label' => array('text' => '番地以下')));
 //		echo $this->Form->input('password', array('label' => array('text' => 'パスワード')));
 		echo $this->Form->input('group_id', array('label' => array('text' => 'グループID')));
 	?>

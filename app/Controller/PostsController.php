@@ -55,12 +55,12 @@ class PostsController extends AppController {
 		$this->set('posts', $this->paginate());
 
 //		debug($this->Paginator->paginate());
-		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','name')));
 		$this->set(compact('categories'));
 		$tags = $this->Post->Tag->find(
 				'list',
 				array(
-						'fields'=>array('id','tagname'),
+						'fields'=>array('id','name'),
 						'conditions' =>array('deleted' => '0')
 				)
 		);
@@ -190,12 +190,12 @@ class PostsController extends AppController {
 //		$this->set('poststags', $this->Post->Tag->find('list', $options1));
 
 //		var_dump($poststags); 
-		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','name')));
 		$this->set(compact('categories'));
 		$tags = $this->Post->Tag->find(
 			'list',
 			array(
-				'fields'=>array('id','tagname'),
+				'fields'=>array('id','name'),
 				'conditions' =>array('deleted' => '0')
 			)
 		);
@@ -277,13 +277,13 @@ class PostsController extends AppController {
 		
 		$this->set(compact('users'));
 //		$categories = $this->Post->Category->find('list');
-		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','name')));
 		$this->set(compact('categories'));
 
 		$tags = $this->Post->Tag->find(
 			'list',
 			array(
-				'fields'=>array('id','tagname'),
+				'fields'=>array('id','name'),
 				'conditions' =>array('deleted' => '0')
 			)
 		);
@@ -465,7 +465,7 @@ class PostsController extends AppController {
 		
 		$this->set(compact('users'));
 //		$categories = $this->Post->Category->find('list');
-		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','name')));
 		$this->set(compact('categories'));
 //		$tags = $this->Post->Tag->find('list');
 //		$options = array('conditions' => array('Tag.' . 'post_id' => $id));
@@ -473,7 +473,7 @@ class PostsController extends AppController {
 		$tags = $this->Post->Tag->find(
 			'list',
 			array(
-				'fields'=>array('id','tagname')
+				'fields'=>array('id','name')
 				, 'conditions' =>array('deleted' => '0')
 			)
 		);

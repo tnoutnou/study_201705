@@ -11,7 +11,7 @@
 	<fieldset>
 		<legend><?php echo __('カテゴリ追加'); ?></legend>
 	<?php
-		echo $this->Form->input('categoryname', array('label' => array('text' => 'カテゴリ名')));
+		echo $this->Form->input('name', array('label' => array('text' => 'カテゴリ名')));
 	?>
 	</fieldset>
 <?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>

@@ -26,7 +26,7 @@
 	<?php foreach ($tags as $tag): ?>
 	<tr>
 		<td><?php echo h($tag['Tag']['id']); ?>&nbsp;</td>
-		<td><?php echo h($tag['Tag']['tagname']); ?>&nbsp;</td>
+		<td><?php echo h($tag['Tag']['name']); ?>&nbsp;</td>
 		<td><?php echo h($tag['Tag']['created']); ?>&nbsp;</td>
 		<td><?php echo h($tag['Tag']['modified']); ?>&nbsp;</td>
 		<td class="actions">

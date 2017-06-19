@@ -20,7 +20,7 @@
 		<legend><?php echo __('カテゴリ編集'); ?></legend>
 	<?php
 		echo $this->Form->input('id', array('label' => array('text' => 'id')));
-		echo $this->Form->input('categoryname', array('label' => array('text' => 'カテゴリ名')));
+		echo $this->Form->input('name', array('label' => array('text' => 'カテゴリ名')));
 	?>
 	</fieldset>
 

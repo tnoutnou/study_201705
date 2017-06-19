@@ -46,22 +46,24 @@
 		</dd>
 		<dt><?php echo __('都道府県'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['ken_name_kan']); ?>
+<!--			<?php echo h($user['User']['prefecture_name']); ?>	-->
+			<?php echo h($user['Zip']['prefecture_name_kan']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('市区'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['city_name_kan']); ?>
+<!--			<?php echo h($user['User']['city_name']); ?>	-->
+			<?php echo h($user['Zip']['city_name_kan']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('町村'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['town_name_kan']); ?>
+			<?php echo h($user['User']['town_name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('番地以下'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['detail_name_kan']); ?>
+			<?php echo h($user['User']['detail_name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('グループ'); ?></dt>

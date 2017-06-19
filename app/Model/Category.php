@@ -12,7 +12,7 @@ class Category extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'categoryname' => array(
+			'name' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',

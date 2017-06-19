@@ -13,7 +13,7 @@
 		</dd>
 		<dt><?php echo __('Ken Name Kana'); ?></dt>
 		<dd>
-			<?php echo h($zip['Zip']['ken_name_kana']); ?>
+			<?php echo h($zip['Zip']['prefecture_name_kana']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('City Name Kana'); ?></dt>
@@ -28,7 +28,7 @@
 		</dd>
 		<dt><?php echo __('Ken Name Kan'); ?></dt>
 		<dd>
-			<?php echo h($zip['Zip']['ken_name_kan']); ?>
+			<?php echo h($zip['Zip']['prefecture_name_kan']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('City Name Kan'); ?></dt>

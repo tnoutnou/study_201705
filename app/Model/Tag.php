@@ -13,7 +13,7 @@ class Tag extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'tagname' => array(
+		'name' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',

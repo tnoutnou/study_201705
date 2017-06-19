@@ -157,6 +157,7 @@ $(function(){
     // ポップアップ表示用関数
     function imgload(imgsource){
         // ポップアップの背景部分を表示する
+		$('#popup-background').css('opacity','0.60');
         $('#popup-background').fadeIn(function(){
             // 画像を中心に表示させるため、画像の半分のサイズを取得
             /* 

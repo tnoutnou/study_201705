@@ -21,24 +21,26 @@ $(function() {
 		}, function(data) {
 
 			if (data.length == 1) {
-				$('#UserKenNameKan').val(data[0].ken_name_kan);
-				$('#UserCityNameKan').val(data[0].city_name_kan);
-				$('#UserTownNameKan').val(data[0].town_name_kan);
+				$('#UserZipId').val(data[0].zip_id);
+				$('#UserPrefectureName').val(data[0].prefecture_name_kan);
+				$('#UserCityName').val(data[0].city_name_kan);
+				$('#UserTownName').val(data[0].town_name_kan);
 			} else if (data.length > 1) {
 			
 				for(var value of data) {
 					$('#zip-sel').append($('<option>')
-					.val(value.zip_code + ',' + value.ken_name_kan + ',' + value.city_name_kan + ',' +value.town_name_kan)
-					.text(value.zip_code + ':' + value.ken_name_kan + value.city_name_kan + value.town_name_kan));
+					.val(value.zip_id + ',' + value.zip_code + ',' + value.prefecture_name_kan + ',' + value.city_name_kan + ',' +value.town_name_kan)
+					.text(value.zip_code + ':' + value.prefecture_name_kan + value.city_name_kan + value.town_name_kan));
 				}
 
 				$('#zip-sel').fadeIn(100);
 				$('#popup-sel').fadeIn(100);
 				$('#popup-background').fadeIn(100);
 			} else {
-				$('#UserKenNameKan').val("");
-				$('#UserCityNameKan').val("");
-				$('#UserTownNameKan').val("");
+				$('#UserZipId').val("");
+				$('#UserPrefectureName').val("");
+				$('#UserCityName').val("");
+				$('#UserTownName').val("");
 			}
 			
 		});
@@ -51,10 +53,11 @@ $(function() {
 	$('#zip-sel').bind('change',function(e){
 		var selectVal = $("#zip-sel").val();
 		var sVal=selectVal.split(','); 
-		$('#UserZipCode').val(sVal[0]);
-		$('#UserKenNameKan').val(sVal[1]);
-		$('#UserCityNameKan').val(sVal[2]);
-		$('#UserTownNameKan').val(sVal[3]);
+		$('#UserZipId').val(sVal[0]);
+		$('#UserZipCode').val(sVal[1]);
+		$('#UserPrefectureName').val(sVal[2]);
+		$('#UserCityName').val(sVal[3]);
+		$('#UserTownName').val(sVal[4]);
 		
 		$('#popup-background').fadeOut();
         $('#zip-sel').fadeOut();

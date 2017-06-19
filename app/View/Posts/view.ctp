@@ -1,23 +1,35 @@
 <?php echo $this->Html->script( 'jquery-git.js'); ?>
 <?php echo $this->Html->script( 'test.js'); ?>
 <?php echo $this->Html->css( 'custom.css'); ?>
-<?php $actionLists = array(
-		array(
-			'label' => '投稿編集',
-			'controller' => 'posts',
-			'action' => 'edit',
-			'id' => $post['Post']['id']),
-		array(
-			'label' => '投稿削除',
-			'controller' => 'posts',
-			'action' => 'delete',
-			'id' => $post['Post']['id']),
-		array(
-			'label' => '投稿追加',
-			'controller' => 'posts',
-			'action' => 'add',
-			'id' => null),
-);
+<?php
+
+	if (($this->Session->read('admin_flg') == '1') or ($this->Session->read('login_user') == $post['User']['username'] )) {
+		$actionLists = array(
+			array(
+				'label' => '投稿編集',
+				'controller' => 'posts',
+				'action' => 'edit',
+				'id' => $post['Post']['id']),
+			array(
+				'label' => '投稿削除',
+				'controller' => 'posts',
+				'action' => 'delete',
+				'id' => $post['Post']['id']),
+			array(
+				'label' => '投稿追加',
+				'controller' => 'posts',
+				'action' => 'add',
+				'id' => null),
+			);
+	} else {
+		$actionLists = array(
+			array(
+				'label' => '投稿追加',
+				'controller' => 'posts',
+				'action' => 'add',
+				'id' => null),
+			);
+	} 
 ?>
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
 <div class="container">
@@ -43,13 +55,29 @@
 				}
 			?>
 		</div>
-		<div class="col-xs-4">
+
+		<div class="col-xs-4 col-xs-push-4">
+			<?php
+				if (!($nxt_post['title'] == NULL)) {
+					echo $this->Html->link(
+						'「' . h($nxt_post['title']) . '」 次 ＞',
+						array(
+							'action' => 'view',
+							$nxt_post['id'],
+							$nxt_post['pkey']),					
+						array('class'=>'btn btn-link','style'=>'width:100%;align:right;text-align:right;')
+					);
+				}
+			?>
+		</div>
+
+		<div class="col-xs-12 col-sm-4 col-sm-pull-4">
 		<?php
 			echo $this->Html->Link(
-				__('一覧の戻る'),
+				__('一覧へ戻る'),
 				$preurl,
 				array(
-					'class'=>'btn btn-success btn-sm',
+					'class'=>'btn btn-info btn-sm',
 					'style'=>'width:100%;align:center;text-align:center;margin-bottom:5px;',
 					'full_base' => true
 				)
@@ -67,22 +95,7 @@
 */
 		?>
 		</div>
-
-		<div class="col-xs-4">
-			<?php
-				if (!($nxt_post['title'] == NULL)) {
-					echo $this->Html->link(
-						'「' . h($nxt_post['title']) . '」 次 ＞',
-						array(
-							'action' => 'view',
-							$nxt_post['id'],
-							$nxt_post['pkey']),					
-						array('class'=>'btn btn-link','style'=>'width:100%;align:right;text-align:right;')
-					);
-				}
-			?>
-		</div>
-
+		
 	</div>
 
 	<div class="panel panel-success">
@@ -114,7 +127,7 @@
 			</div>
 			<div class="col-sm-8">
 				<span class="label label-info">
-					<?php echo h($post['Category']['categoryname']); ?>
+					<?php echo h($post['Category']['name']); ?>
 				</span>
 			</div>
 			
@@ -128,7 +141,7 @@
 			<div class="col-sm-8">
 			<?php foreach ($post['Tag'] as $taglist) {?>
 			<span class="label label-warning" style="margin-right:3px;">
-				<?php echo h($taglist['tagname']); ?>
+				<?php echo h($taglist['name']); ?>
 			</span>
 			<?php } ?>
 			</div>

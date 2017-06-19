@@ -67,7 +67,7 @@ class PostsTagsController extends AppController {
 			$posts = $this->PostsTag->Post->find('list', $options);
 		}
 //		$tags = $this->PostsTag->Tag->find('list');
-		$tags = $this->PostsTag->Tag->find('list',array('fields'=>array('id','tagname')));
+		$tags = $this->PostsTag->Tag->find('list',array('fields'=>array('id','name')));
 		$this->set(compact('posts', 'tags'));
 	}
 
@@ -98,7 +98,7 @@ class PostsTagsController extends AppController {
 		}
 		$posts = $this->PostsTag->Post->find('list');
 //		$tags = $this->PostsTag->Tag->find('list');
-		$tags = $this->PostsTag->Tag->find('list',array('fields'=>array('id','tagname')));
+		$tags = $this->PostsTag->Tag->find('list',array('fields'=>array('id','name')));
 		$this->set(compact('posts', 'tags'));
 	}
 

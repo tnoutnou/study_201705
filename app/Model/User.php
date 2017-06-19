@@ -94,6 +94,13 @@ class User extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'Zip' => array(
+			'className' => 'Zip',
+			'foreignKey' => 'Zip_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 

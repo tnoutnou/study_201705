@@ -23,7 +23,6 @@ class UsersController extends AppController {
 	public function index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
-//		$this->log($this->Paginator->paginate());
 	}
 
 /**
@@ -88,6 +87,7 @@ class UsersController extends AppController {
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 			$this->request->data = $this->User->find('first', $options);
+//			$this->log($this->request->data);
 		}
 		$groups = $this->User->Group->find('list');
 		$this->set(compact('groups'));
@@ -154,7 +154,7 @@ class UsersController extends AppController {
 		// セッション情報を全削除
 		$this->Session->destroy();
 		$this->redirect($this->Auth->logout());
-	}	
+	 }	
 	
 	public function beforeFilter() {
 		parent::beforeFilter();

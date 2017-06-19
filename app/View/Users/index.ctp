@@ -36,10 +36,12 @@
 		<td><?php echo h($user['User']['username']); ?>&nbsp;</td>
 <!--		<td><?php echo h($user['User']['password']); ?>&nbsp;</td>	-->
 		<td><?php echo h($user['User']['zip_code']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['ken_name_kan']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['city_name_kan']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['town_name_kan']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['detail_name_kan']); ?>&nbsp;</td>
+<!--		<td><?php echo h($user['User']['prefecture_name']); ?>&nbsp;</td>	-->
+<!--		<td><?php echo h($user['User']['city_name']); ?>&nbsp;</td>	-->
+		<td><?php echo h($user['Zip']['prefecture_name_kan']); ?>&nbsp;</td>
+		<td><?php echo h($user['Zip']['city_name_kan']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['town_name']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['detail_name']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($user['Group']['name'], array('controller' => 'groups', 'action' => 'view', $user['Group']['id'])); ?>
 		</td>

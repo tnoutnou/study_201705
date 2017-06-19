@@ -4,10 +4,10 @@
 		<legend><?php echo __('Add Zip'); ?></legend>
 	<?php
 		echo $this->Form->input('zip_code');
-		echo $this->Form->input('ken_name_kana');
+		echo $this->Form->input('prefecture_name_kana');
 		echo $this->Form->input('city_name_kana');
 		echo $this->Form->input('town_name_kana');
-		echo $this->Form->input('ken_name_kan');
+		echo $this->Form->input('prefecture_name_kan');
 		echo $this->Form->input('city_name_kan');
 		echo $this->Form->input('town_name_kan');
 		echo $this->Form->input('flg1');

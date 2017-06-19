@@ -13,7 +13,7 @@ class ZipsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('Paginator','Flash');
 
 /**
  * index method
@@ -123,7 +123,11 @@ class ZipsController extends AppController {
 		}
 		
 		// zipcode を受け取る 
-		$options = array('conditions' => array('Zip.zip_code like' => str_replace('-','', $_GET['zipcode']) . '%'));
+		$options = array(
+			'conditions' => array(
+				'Zip.zip_code like' => str_replace('-','', $_GET['zipcode']) . '%'
+			)
+		);
 //		$result = $this->Zip->find('first', $options);
 		$result = $this->Zip->find('all',$options);
 		
@@ -139,28 +143,31 @@ class ZipsController extends AppController {
 //			$this->log($rs);
 	
 //			$rst[] = 
-//				$rs['Zip']['ken_name_kan'] . $rs['Zip']['city_name_kan'] . $rs['Zip']['town_name_kan']
+//				$rs['Zip']['prefecture_name_kan'] . $rs['Zip']['city_name_kan'] . $rs['Zip']['town_name_kan']
 //				;
 
+//		$this->log($rs);
+
 			$rst[] = array(
+				"zip_id"  => $rs['Zip']['id'],
 				"zip_code"  => $rs['Zip']['zip_code'],
-				"ken_name_kan"  => $rs['Zip']['ken_name_kan'],
+				"prefecture_name_kan"  => $rs['Zip']['prefecture_name_kan'],
 				"city_name_kan" => $rs['Zip']['city_name_kan'],
 				"town_name_kan" => $rs['Zip']['town_name_kan']
 				);
 	
 //			$rst = $rst + array(
-//				"ken_name_kan"  => $rs['ken_name_kan'],
+//				"prefecture_name_kan"  => $rs['prefecture_name_kan'],
 //				"city_name_kan" => $rs['city_name_kan'],
 //				"town_name_kan" => $rs['town_name_kan']
 //			);
 				
 //			$rst = array(
-//				$rs['Zip']['ken_name_kan'] . $rs['Zip']['city_name_kan'] . $rs['Zip']['town_name_kan']
+//				$rs['Zip']['prefecture_name_kan'] . $rs['Zip']['city_name_kan'] . $rs['Zip']['town_name_kan']
 //				);
 
 //			$rst = array(
-//				"ken_name_kan"  => $result['Zip']['ken_name_kan'],
+//				"prefecture_name_kan"  => $result['Zip']['prefecture_name_kan'],
 //				"city_name_kan" => $result['Zip']['city_name_kan'],
 //				"town_name_kan" => $result['Zip']['town_name_kan']
 //			);

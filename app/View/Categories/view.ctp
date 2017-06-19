@@ -31,7 +31,7 @@
 		</dd>
 		<dt><?php echo __('カテゴリ名'); ?></dt>
 		<dd>
-			<?php echo h($category['Category']['categoryname']); ?>
+			<?php echo h($category['Category']['name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('登録日時'); ?></dt>
