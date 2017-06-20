@@ -39,7 +39,7 @@ class Tag extends AppModel {
 			'foreignKey' => 'tag_id',
 			'associationForeignKey' => 'post_id',
 			'unique' => 'keepExisting',
-			'conditions' => array('PostsTag.deleted' => '0'),
+			'conditions' => array('PostsTag.delete_flg' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',

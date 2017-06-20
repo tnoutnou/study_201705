@@ -21,21 +21,40 @@
 						<?php foreach ($actionLists as $actionList): ?>
 							<li>
 								<?php 
-									if ($actionList['action'] == 'delete') {
+								if (count($actionList) == 4) {
+									$act_array = array(
+													'controller' => $actionList['controller'],
+													'action' => $actionList['action'],
+													$actionList['id'],
+												);
+								} else if (count($actionList) == 5) {
+									$act_array = array(
+													'controller' => $actionList['controller'],
+													'action' => $actionList['action'],
+													$actionList['id'],
+													$actionList['id2'],
+												);									
+								}
+
+								if ($actionList['action'] == 'delete') {
 										echo $this->Form->postLink(
 											__($actionList['label']),
-											array('controller' => $actionList['controller'],
+											$act_array,
+/*											array('controller' => $actionList['controller'],
 												'action' => $actionList['action'],
 												$actionList['id']),
+*/
 											array('confirm' => __('本当に削除してもよろしいでしょうか？ '))
 										);					
 									} else {
 										echo $this->Html->link(
 											__($actionList['label']),
-											array('controller' => $actionList['controller'],
+											$act_array
+/*											array('controller' => $actionList['controller'],
 												'action' => $actionList['action'],
 												$actionList['id'])
-										);
+*/
+											);
 									}
 								?>
 							</li>

@@ -3,7 +3,8 @@
 			'label' => '投稿タグ削除',
 			'controller' => 'PostsTags',
 			'action' => 'delete',
-			'id' => $this->Form->value('PostsTag.id')),
+			'id' => $this->Form->value('PostsTag.post_id'),
+			'id2' => $this->Form->value('PostsTag.tag_id')),
 		);
 ?>
 <?php echo $this->element('blog_nav', ["actionLists" => $actionLists]); ?>
@@ -12,7 +13,12 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="postsTags form">
 <?php echo $this->Form->create('PostsTag'); ?>
-<?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
+<?php
+	$this->Form->inputDefaults(
+		array(
+			'label' => array('text' => '' ,'class' => 'label label-default'),
+			'class' => 'form-control'));
+?>
 	<fieldset>
 		<legend><?php echo __('投稿タグ編集'); ?></legend>
 	<?php
@@ -21,7 +27,7 @@
 		echo $this->Form->input('tag_id', array('label' => array('text' => 'タグID')));
 	?>
 	</fieldset>
-<?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn')); ?>
+<?php $this->Form->inputDefaults(array('label' => false, 'class' => 'btn', 'disabled'=>'disabled')); ?>
 <?php echo $this->Form->end(__('更新')); ?>
 </div>
 </div>
@@ -41,3 +47,10 @@
 */	?>
 </div>
 </div>
+
+	<!-- ポップアップ用の背景とimg -->
+	<div style='font-size:100px;color:red;position:fixed;top:80px;left:240px;'>
+		利用中止
+	</div>
+
+	

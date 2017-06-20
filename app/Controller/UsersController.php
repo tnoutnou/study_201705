@@ -221,7 +221,7 @@ class UsersController extends AppController {
 
 	// 管理者かを確認する
 	public function checkAdmin($username = null) {
-		$options = array('conditions' => array('User.username' => $username, 'User.deleted' => '0'));
+		$options = array('conditions' => array('User.username' => $username, 'User.delete_flg' => '0'));
 		$users = $this->User->find('first', $options);
 //		$this->log($users);
 //		$this->log($users['Group']['name']);

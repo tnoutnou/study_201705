@@ -10,6 +10,8 @@ class PostsTag extends AppModel {
 
 	public $actsAs = array('SoftDelete');
 
+	public $primaryKeyArray = array('post_id', 'tag_id');
+	
 /**
  * Validation rules
  *
@@ -62,5 +64,31 @@ class PostsTag extends AppModel {
 		)
 	);
 	
+	public function existsPkey($post_id = null, $tag_id = null) {
+/*
+		if ($id === null) {
+			$id = $this->getID();
+		}
 
+		if ($id === false) {
+			return false;
+		}
+*/
+
+		if ($this->useTable === false) {
+			return false;
+		}
+
+		return (bool)$this->find('count', array(
+			'conditions' => array(
+				$this->alias . '.post_id' => $post_id,
+				$this->alias . '.tag_id'  => $tag_id,			
+			),
+			'recursive' => -1,
+			'callbacks' => false
+		));
+	}
+	
+	
+	
 }

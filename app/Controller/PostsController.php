@@ -55,13 +55,16 @@ class PostsController extends AppController {
 		$this->set('posts', $this->paginate());
 
 //		debug($this->Paginator->paginate());
-		$categories = $this->Post->Category->find('list',array('fields'=>array('id','name')));
+		$categories = $this->Post->Category->find(
+			'list',
+			array('fields'=>array('id','name'))
+		);
 		$this->set(compact('categories'));
 		$tags = $this->Post->Tag->find(
 				'list',
 				array(
 						'fields'=>array('id','name'),
-						'conditions' =>array('deleted' => '0')
+						'conditions' =>array('delete_flg' => '0')
 				)
 		);
 		$this->set(compact('tags'));
@@ -196,7 +199,7 @@ class PostsController extends AppController {
 			'list',
 			array(
 				'fields'=>array('id','name'),
-				'conditions' =>array('deleted' => '0')
+				'conditions' =>array('delete_flg' => '0')
 			)
 		);
 		$this->set(compact('tags'));
@@ -284,7 +287,7 @@ class PostsController extends AppController {
 			'list',
 			array(
 				'fields'=>array('id','name'),
-				'conditions' =>array('deleted' => '0')
+				'conditions' =>array('delete_flg' => '0')
 			)
 		);
 		$this->set(compact('tags'));			
@@ -474,7 +477,7 @@ class PostsController extends AppController {
 			'list',
 			array(
 				'fields'=>array('id','name')
-				, 'conditions' =>array('deleted' => '0')
+				, 'conditions' =>array('delete_flg' => '0')
 			)
 		);
 		$this->set(compact('tags'));			

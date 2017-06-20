@@ -30,19 +30,61 @@
 	<tr>
 		<td><?php echo h($postsTag['PostsTag']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($postsTag['Post']['title'], array('controller' => 'posts', 'action' => 'view', $postsTag['Post']['id'])); ?>
+			<?php
+				echo $this->Html->link(
+					$postsTag['Post']['title'],
+					array(
+						'controller' => 'posts',
+						'action' => 'view',
+						$postsTag['Post']['id'])
+				);
+			?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($postsTag['Tag']['id'], array('controller' => 'tags', 'action' => 'view', $postsTag['Tag']['id'])); ?>
+			<?php
+				echo $this->Html->link(
+					$postsTag['Tag']['id'],
+					array(
+						'controller' => 'tags',
+						'action' => 'view',
+						$postsTag['Tag']['id'])
+				);
+			?>
 		</td>
 		<td><?php echo h($postsTag['PostsTag']['created']); ?>&nbsp;</td>
 		<td><?php echo h($postsTag['PostsTag']['modified']); ?>&nbsp;</td>
 		<td class="actions">
 			<div class="btn-toolbar">
 			<div class="btn-group">
-			<?php echo $this->Html->link(__('参照'), array('action' => 'view', $postsTag['PostsTag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $postsTag['PostsTag']['id']), array('class'=>'btn btn-default btn-sm')); ?>
-			<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $postsTag['PostsTag']['id']), array('confirm' => __('本当に削除してもよろしいでしょう # %s?', $postsTag['PostsTag']['id']), 'class'=>'btn btn-default btn-sm')); ?>
+			<?php
+				echo $this->Html->link(
+					__('参照'),
+					array(
+						'action' => 'view',
+						$postsTag['PostsTag']['post_id'],
+						$postsTag['PostsTag']['tag_id']),
+					array('class'=>'btn btn-default btn-sm'));
+			?>
+			<?php
+				echo $this->Html->link(
+					__('編集'),
+					array(
+						'action' => 'edit',
+						$postsTag['PostsTag']['post_id'],
+						$postsTag['PostsTag']['tag_id']),
+					array('class'=>'btn btn-default btn-sm'));
+			?>
+			<?php
+				echo $this->Form->postLink(
+					__('削除'),
+					array(
+						'action' => 'delete',
+						$postsTag['PostsTag']['post_id'],
+						$postsTag['PostsTag']['tag_id']),
+					array('confirm' => __('本当に削除してもよろしいでしょう # %s?', $postsTag['PostsTag']['id']),
+					'class'=>'btn btn-default btn-sm')
+				);
+			?>
 			</div>
 			</div>
 		</td>

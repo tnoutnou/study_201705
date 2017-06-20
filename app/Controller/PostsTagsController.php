@@ -32,12 +32,19 @@ class PostsTagsController extends AppController {
  * @param string $id
  * @return void
  */
-	public function view($id = null) {
-		if (!$this->PostsTag->exists($id)) {
+
+/*	public function view($id = null) {	*/
+	public function view($post_id = null, $tag_id = null) {
+		if (!$this->PostsTag->existsPkey($post_id, $tag_id)) {
 //			throw new NotFoundException(__('Invalid posts tag'));
 			throw new NotFoundException(__('無効な投稿タグです'));
 		}
-		$options = array('conditions' => array('PostsTag.' . $this->PostsTag->primaryKey => $id));
+		$options = array(
+/*			'conditions' => array('PostsTag.' . $this->PostsTag->primaryKey => $id));	*/
+			'conditions' => array(
+								'PostsTag.post_id' => $post_id,
+								'PostsTag.tag_id' => $tag_id)
+		);
 		$this->set('postsTag', $this->PostsTag->find('first', $options));
 	}
 
@@ -78,8 +85,8 @@ class PostsTagsController extends AppController {
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
-		if (!$this->PostsTag->exists($id)) {
+	public function edit($post_id = null, $tag_id = null) {
+		if (!$this->PostsTag->existsPkey($post_id, $tag_id)) {
 //			throw new NotFoundException(__('Invalid posts tag'));
 			throw new NotFoundException(__('無効な投稿タグです'));
 		}
@@ -93,7 +100,10 @@ class PostsTagsController extends AppController {
 				$this->Flash->error(__('投稿タグの保存に失敗しました。再度、編集して下さい。'));
 			}
 		} else {
-			$options = array('conditions' => array('PostsTag.' . $this->PostsTag->primaryKey => $id));
+			$options = array('conditions' => array(
+										'PostsTag.post_id' => $post_id,
+										'PostsTag.tag_id' => $tag_id,
+									));
 			$this->request->data = $this->PostsTag->find('first', $options);
 		}
 		$posts = $this->PostsTag->Post->find('list');
@@ -109,15 +119,20 @@ class PostsTagsController extends AppController {
  * @param string $id
  * @return void
  */
-	public function delete($id = null) {
-		$this->PostsTag->id = $id;
-		if (!$this->PostsTag->exists()) {
+	public function delete($post_id = null, $tag_id = null) {
+//		$this->PostsTag->id = $id;
+		if (!$this->PostsTag->existsPkey($post_id, $tag_id)) {
 //			throw new NotFoundException(__('Invalid posts tag'));
 			throw new NotFoundException(__('無効な投稿タグです'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		$this->PostsTag->delete();
-		if (!$this->PostsTag->exists()) {
+		$this->PostsTag->deleteAll(
+			array(
+				'PostsTag.post_id' => $post_id,
+				'PostsTag.tag_id' => $tag_id,),
+			false
+		);
+		if (!$this->PostsTag->existsPkey($post_id, $tag_id)) {
 //			$this->Flash->success(__('The posts tag has been deleted.'));
 			$this->Flash->success(__('投稿タグを削除しました。'));
 		} else {
@@ -126,4 +141,6 @@ class PostsTagsController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+	
+	
 }

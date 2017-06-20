@@ -37,7 +37,7 @@ class Group extends AppModel {
 			'className' => 'User',
 			'foreignKey' => 'group_id',
 			'dependent' => false,
-			'conditions' => array('deleted' => '0'),
+			'conditions' => array('delete_flg' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',

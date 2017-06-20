@@ -77,7 +77,7 @@ class Image extends AppModel {
 		'Post' => array(
 			'className' => 'Post',
 			'foreignKey' => 'post_id',
-			'conditions' => array('Post.deleted' => '0'),
+			'conditions' => array('Post.delete_flg' => '0'),
 			'fields' => '',
 			'order' => ''
 		)

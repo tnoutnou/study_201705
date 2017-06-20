@@ -29,7 +29,7 @@ class Category extends AppModel {
 			'className' => 'Post',
 //			'conditions' => array('' => '1'),
 // 下記条件はいらないかも？
-			'conditions' =>array('deleted' => '0'),
+			'conditions' =>array('delete_flg' => '0'),
 			'order' => 'Post.id ASC'
 		)
 	);

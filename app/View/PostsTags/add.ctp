@@ -7,7 +7,12 @@
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="postsTags form">
 <?php echo $this->Form->create('PostsTag'); ?>
-<?php $this->Form->inputDefaults(array('label' => array('text' => '' ,'class' => 'label label-default'), 'class' => 'form-control')); ?>
+<?php
+	$this->Form->inputDefaults(
+		array(
+			'label' => array('text' => '' ,'class' => 'label label-default'),
+			'class' => 'form-control'));
+?>
 	<fieldset>
 		<legend><?php echo __('投稿タグ追加'); ?></legend>
 	<?php

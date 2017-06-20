@@ -3,12 +3,14 @@
 			'label' => '投稿タグ編集',
 			'controller' => 'PostsTags',
 			'action' => 'edit',
-			'id' => $postsTag['PostsTag']['id']),
+			'id' => $postsTag['PostsTag']['post_id'],
+			'id2' => $postsTag['PostsTag']['tag_id']),
 		array(
 			'label' => '投稿タグ削除',
 			'controller' => 'PostsTags',
 			'action' => 'delete',
-			'id' => $postsTag['PostsTag']['id']),
+			'id' => $postsTag['PostsTag']['post_id'],
+			'id2' => $postsTag['PostsTag']['tag_id']),
 		array(
 			'label' => '投稿タグ追加',
 			'controller' => 'PostsTags',
@@ -30,12 +32,26 @@
 		</dd>
 		<dt><?php echo __('投稿'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($postsTag['Post']['title'], array('controller' => 'posts', 'action' => 'view', $postsTag['Post']['id'])); ?>
+			<?php
+				echo $this->Html->link(
+					$postsTag['Post']['title'],
+					array(
+						'controller' => 'posts',
+						'action' => 'view',
+						$postsTag['Post']['id']));
+			?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('タグ'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($postsTag['Tag']['id'], array('controller' => 'tags', 'action' => 'view', $postsTag['Tag']['id'])); ?>
+			<?php
+				echo $this->Html->link(
+					$postsTag['Tag']['id'],
+					array(
+						'controller' => 'tags',
+						'action' => 'view',
+						$postsTag['Tag']['id']));
+			?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('作成日時'); ?></dt>

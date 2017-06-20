@@ -114,7 +114,7 @@ class User extends AppModel {
 			'className' => 'Post',
 			'foreignKey' => 'user_id',
 			'dependent' => false,
-			'conditions' => array('deleted' => '0'),
+			'conditions' => array('delete_flg' => '0'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
