@@ -11,6 +11,7 @@ class PostsTag extends AppModel {
 	public $actsAs = array('SoftDelete');
 
 	public $primaryKeyArray = array('post_id', 'tag_id');
+	public $primaryKey = null;
 	
 /**
  * Validation rules

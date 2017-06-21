@@ -24,6 +24,10 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'customUnique' => array(
+				'rule' => array('checkUnique'),
+				'message' => 'すでに同じユーザ名が登録されています。',
+			), 
 		),
 		'password' => array(
 			'notBlank' => array(
@@ -184,7 +188,6 @@ class User extends AppModel {
 			return true;
 		}
 		return false;
-
 	}
 		
 		

@@ -394,14 +394,28 @@ class PostsController extends AppController {
 			// タグが全解除の場合に登録されていたタグを削除する
 			if (empty($this->request->data['Tag'])) {
 				$poststags = $this->Post->PostsTag->find(
-					'list',
+//					'list',
+					'all',
 					array(
-						'fields'=>array('id'),
+//						'fields'=>array('id'),
+						'fields'=>array('post_id','tag_id'),
 						'conditions' => array('PostsTag.' . 'post_id' => $id )
 					)
 				);
 				foreach ($poststags as $poststag) {
-					$this->PostsTag->delete($poststag);
+//					$this->PostsTag->delete($poststag);
+//					$this->log($poststag);
+//					$this->log($poststag['PostsTag']['post_id']);
+//					$this->log($poststag['PostsTag']['tag_id']);
+//					$this->PostsTag->delete($poststag['PostsTag']['post_id'], $poststag['PostsTag']['tag_id']);
+//					$this->PostsTag->delete($poststag['PostsTag']['post_id'], $poststag['PostsTag']['tag_id']);
+					$this->PostsTag->deleteAll(
+						array(
+							'PostsTag.post_id' => $poststag['PostsTag']['post_id'],
+							'PostsTag.tag_id' => $poststag['PostsTag']['tag_id']),
+						false
+					);
+					
 				}
 			}
 			
@@ -484,8 +498,10 @@ class PostsController extends AppController {
 	
 		$selected = $this->Post->PostsTag->find(
 			'list',
+//			'all',
 			array(
-				'fields'=>array('tag_id'),
+				'fields'=>array('tag_id','tag_id'),
+//				'fields'=>array('tag_id','post_id'),
 				'conditions' => array('PostsTag.' . 'post_id' => $id )
 			)
 		);

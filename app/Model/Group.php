@@ -22,6 +22,10 @@ class Group extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'customUnique' => array(
+				'rule' => array('checkUnique'),
+				'message' => 'すでに同じグループ名が登録されています。',			
+			),
 		),
 	);
 
@@ -54,6 +58,7 @@ class Group extends AppModel {
         return null;
     }
 	
-
+		
+	
 	
 }

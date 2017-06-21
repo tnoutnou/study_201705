@@ -11,7 +11,7 @@
 <div class="row">
 <div class="blogposts posts index col-xs-12 col-sm-8 col-md-9">
 <div class="groups index">
-	<h2><?php echo __('Groups'); ?></h2>
+	<h2><?php echo __('グループ一覧'); ?></h2>
 	<table cellpadding="0" cellspacing="0" class="table table-bordered table-condensed">
 	<thead>
 	<tr>

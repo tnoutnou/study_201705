@@ -98916,3 +98916,536 @@ Request URL: /css/bootstrap-select.css.map
 Stack Trace:
 #0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-06-20 18:47:13 Error: !!!!!!
+2017-06-20 18:47:13 Error: 2017年06月
+2017-06-20 18:47:13 Error: !!!!!!
+2017-06-20 18:47:13 Error: 2017年06月
+2017-06-20 18:47:18 Error: !!!!!!
+2017-06-20 18:47:18 Error: 2017年06月
+2017-06-20 18:47:18 Error: !!!!!!
+2017-06-20 18:47:18 Error: 2017年06月
+2017-06-20 18:47:22 Error: !!!!!!
+2017-06-20 18:47:22 Error: 2017年06月
+2017-06-20 18:47:22 Error: !!!!!!
+2017-06-20 18:47:22 Error: 2017年06月
+2017-06-21 11:08:01 Warning: SplFileInfo::openFile(//var/www/html/vagrant/cakephpc/app/tmp/cache/persistent/myapp_cake_core_file_map): failed to open stream: Permission denied in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Engine/FileEngine.php, line 356]
+2017-06-21 11:08:01 Warning: _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/html/vagrant/cakephpc/lib/Cake/Cache/Cache.php, line 328]
+2017-06-21 13:16:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Tag`.`i...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Tag`.`i...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1545): DboSource->fetchAll('SELECT `Tag`.`i...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1394): DboSource->_fetchHasAndBelongsToMany(Object(Post), 'SELECT `Tag`.`i...', Array, 'Tag')
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1215): DboSource->queryAssociation(Object(Post), Object(AppModel), 'hasAndBelongsTo...', 'Tag', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#10 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(55): Controller->paginate()
+#11 [internal function]: PostsController->index()
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#15 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-06-21 13:16:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Tag`.`i...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Tag`.`i...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1545): DboSource->fetchAll('SELECT `Tag`.`i...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1394): DboSource->_fetchHasAndBelongsToMany(Object(Post), 'SELECT `Tag`.`i...', Array, 'Tag')
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1215): DboSource->queryAssociation(Object(Post), Object(AppModel), 'hasAndBelongsTo...', 'Tag', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#10 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(55): Controller->paginate()
+#11 [internal function]: PostsController->index('home')
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#15 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-06-21 13:20:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts/edit/152
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(491): Model->find('list', Array)
+#7 [internal function]: PostsController->edit('152')
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-21 13:26:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts/edit/152
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(493): Model->find('list', Array)
+#7 [internal function]: PostsController->edit('152')
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-21 13:29:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts/edit/152
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(493): Model->find('list', Array)
+#7 [internal function]: PostsController->edit('152')
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-21 13:30:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(493): Model->find('list', Array)
+#7 [internal function]: PostsController->edit('153')
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-21 13:34:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(493): Model->find('list', Array)
+#7 [internal function]: PostsController->edit('153')
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-21 13:45:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts/edit/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(493): Model->find('list', Array)
+#7 [internal function]: PostsController->edit('1')
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-21 13:46:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(494): Model->find('list', Array)
+#7 [internal function]: PostsController->edit('153')
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-21 13:59:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'where clause'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('count', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2920): Model->find('count', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Model/AppModel.php(39): Model->exists(NULL)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2697): AppModel->exists()
+#9 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(406): Model->delete('1', '1')
+#10 [internal function]: PostsController->edit('153')
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-06-21 14:08:03 Error: 3
+2017-06-21 14:08:03 Error: 3
+2017-06-21 14:08:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'where clause'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('count', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2920): Model->find('count', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Model/AppModel.php(39): Model->exists(NULL)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2697): AppModel->exists()
+#9 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(408): Model->delete('3', '3')
+#10 [internal function]: PostsController->edit('153')
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-06-21 14:10:28 Error: 3
+2017-06-21 14:10:28 Error: 3
+2017-06-21 14:10:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'where clause'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('count', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2920): Model->find('count', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Model/AppModel.php(39): Model->exists(NULL)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2697): AppModel->exists()
+#9 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(408): Model->delete('3', '3')
+#10 [internal function]: PostsController->edit('153')
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-06-21 14:12:17 Error: 3
+2017-06-21 14:12:17 Error: 3
+2017-06-21 14:12:17 Error: 3
+2017-06-21 14:12:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'where clause'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('count', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2920): Model->find('count', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Model/AppModel.php(39): Model->exists(NULL)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2697): AppModel->exists()
+#9 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(409): Model->delete('3', '3')
+#10 [internal function]: PostsController->edit('153')
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-06-21 14:14:03 Error: Array
+(
+    [PostsTag] => Array
+        (
+            [post_id] => 153
+            [tag_id] => 3
+        )
+
+)
+
+2017-06-21 14:14:03 Error: 
+2017-06-21 14:14:03 Error: 
+2017-06-21 14:14:07 Error: Array
+(
+    [PostsTag] => Array
+        (
+            [post_id] => 153
+            [tag_id] => 3
+        )
+
+)
+
+2017-06-21 14:14:07 Error: 
+2017-06-21 14:14:07 Error: 
+2017-06-21 14:17:25 Error: Array
+(
+    [PostsTag] => Array
+        (
+            [post_id] => 153
+            [tag_id] => 3
+        )
+
+)
+
+2017-06-21 14:17:25 Error: 153
+2017-06-21 14:17:25 Error: 3
+2017-06-21 14:17:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'where clause'
+Request URL: /posts/edit/153
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('count', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2920): Model->find('count', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Model/AppModel.php(39): Model->exists(NULL)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2697): AppModel->exists()
+#9 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(410): Model->delete('153', '3')
+#10 [internal function]: PostsController->edit('153')
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-06-21 14:26:32 Error: [NotFoundException] Invalid post
+Request URL: /posts/delete/153
+Stack Trace:
+#0 [internal function]: PostsController->delete('153')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-21 14:26:49 Error: [NotFoundException] Invalid post
+Request URL: /posts/delete/153
+Stack Trace:
+#0 [internal function]: PostsController->delete('153')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-21 14:28:19 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 339]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+PostsController::delTmpFile() - APP/Controller/PostsController.php, line 339
+PostsController::add() - APP/Controller/PostsController.php, line 259
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-21 14:28:39 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 139]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 139
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-21 14:30:25 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 139]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 139
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-21 17:37:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'uuud' for key 'username'
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(User), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/app/Controller/UsersController.php(53): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-06-21 17:46:27 Error: ユニークチェックテスト
+2017-06-21 17:46:27 Error: Array
+(
+    [username] => uuud
+)
+
+2017-06-21 17:46:27 Error: username
+2017-06-21 17:46:27 Error: 
+2017-06-21 17:56:41 Error: Fatal Error (4): syntax error, unexpected '$' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 229]
+2017-06-21 17:56:41 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 229, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 229, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-21 17:56:43 Error: Fatal Error (4): syntax error, unexpected '$' in [/var/www/html/vagrant/cakephpc/app/Model/User.php, line 229]
+2017-06-21 17:56:43 Error: [InternalErrorException] Internal Server Error
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 229, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 229, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-21 17:57:17 Error: ユニークチェックテスト
+2017-06-21 17:57:17 Error: Array
+(
+    [username] => uuud
+)
+
+2017-06-21 17:57:17 Error: username
+2017-06-21 17:57:17 Error: 
+2017-06-21 17:57:17 Error: ユニークチェックテストA
+2017-06-21 17:57:17 Error: 1
+2017-06-21 17:57:58 Error: ユニークチェックテスト
+2017-06-21 17:57:58 Error: Array
+(
+    [username] => uuue
+)
+
+2017-06-21 17:57:58 Error: username
+2017-06-21 17:57:58 Error: 
+2017-06-21 17:57:58 Error: ユニークチェックテストA
+2017-06-21 17:57:58 Error: 0
+2017-06-21 17:58:30 Error: ユニークチェックテスト
+2017-06-21 17:58:30 Error: Array
+(
+    [username] => uuud
+)
+
+2017-06-21 17:58:30 Error: username
+2017-06-21 17:58:30 Error: 37
+2017-06-21 17:58:30 Error: ユニークチェックテストB
+2017-06-21 17:58:30 Error: 1
+2017-06-21 17:58:36 Error: ユニークチェックテスト
+2017-06-21 17:58:36 Error: Array
+(
+    [username] => uuuf
+)
+
+2017-06-21 17:58:36 Error: username
+2017-06-21 17:58:36 Error: 37
+2017-06-21 17:58:36 Error: ユニークチェックテストB
+2017-06-21 17:58:36 Error: 0
+2017-06-21 17:59:23 Error: ユニークチェックテスト
+2017-06-21 17:59:23 Error: Array
+(
+    [username] => uuuf
+)
+
+2017-06-21 17:59:23 Error: username
+2017-06-21 17:59:23 Error: 37
+2017-06-21 17:59:23 Error: ユニークチェックテストB
+2017-06-21 17:59:23 Error: 1
+2017-06-21 18:00:49 Error: ユニークチェックテスト
+2017-06-21 18:00:49 Error: Array
+(
+    [username] => uuuf
+)
+
+2017-06-21 18:00:49 Error: username
+2017-06-21 18:00:49 Error: 37
+2017-06-21 18:00:49 Error: ユニークチェックテストB
+2017-06-21 18:00:49 Error: Array
+(
+    [User.username] => Array
+        (
+            [username] => uuuf
+        )
+
+    [User.id !=] => 
+    [User.delete_flg] => 0
+)
+
+2017-06-21 18:00:49 Error: 1
+2017-06-21 18:01:55 Error: ユニークチェックテスト
+2017-06-21 18:01:55 Error: Array
+(
+    [username] => uuuf
+)
+
+2017-06-21 18:01:55 Error: username
+2017-06-21 18:01:55 Error: 37
+2017-06-21 18:01:55 Error: ユニークチェックテストB
+2017-06-21 18:01:55 Error: Array
+(
+    [User.username] => Array
+        (
+            [username] => uuuf
+        )
+
+    [User.id !=] => 37
+    [User.delete_flg] => 0
+)
+
+2017-06-21 18:01:55 Error: 0
+2017-06-21 18:02:20 Error: ユニークチェックテスト
+2017-06-21 18:02:20 Error: Array
+(
+    [username] => uuud
+)
+
+2017-06-21 18:02:20 Error: username
+2017-06-21 18:02:20 Error: 37
+2017-06-21 18:02:20 Error: ユニークチェックテストB
+2017-06-21 18:02:20 Error: Array
+(
+    [User.username] => Array
+        (
+            [username] => uuud
+        )
+
+    [User.id !=] => 37
+    [User.delete_flg] => 0
+)
+
+2017-06-21 18:02:20 Error: 1
+2017-06-21 18:23:21 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/Group.php, line 29]
+2017-06-21 18:23:21 Error: [InternalErrorException] Internal Server Error
+Request URL: /groups
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 29, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 29, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-21 18:23:23 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/vagrant/cakephpc/app/Model/Group.php, line 29]
+2017-06-21 18:23:23 Error: [InternalErrorException] Internal Server Error
+Request URL: /groups
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 29, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 29, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -22,6 +22,11 @@ class Tag extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'customUnique' => array(
+				'rule' => array('checkUnique'),
+				'message' => 'すでに同じカテゴリ名が登録されています。',
+			), 
+			
 		),
 	);
 

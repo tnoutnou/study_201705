@@ -40,6 +40,39 @@ class AppModel extends Model {
         }
     }
 
+	// ユーザ名の重複チェック（論理削除を考慮）
+	public function checkUnique($valid_field1){
+		// フィールド名とフォームへの入力値の配列から、キーであるフィールド名を取得
+		$fieldname = key($valid_field1);
+		if ($this->id == NULL) {
+			$conditions = array(
+					$this->alias . '.' . $fieldname => $valid_field1,
+					$this->alias . '.' . 'delete_flg' => 0,					
+				);
+		} else {
+			$conditions = array(
+					$this->alias . '.' . $fieldname => $valid_field1,
+					$this->alias . '.' . $this->primaryKey . ' !=' => $this->id,
+					$this->alias . '.' . 'delete_flg' => 0,					
+				);
+		}
+		// 同一ユーザ名の存在チェック（カウント）
+		$n_cnt = $this->find('count', array(
+				'conditions' => $conditions,
+			));
+		// 存在する場合は重複エラー
+		if($n_cnt > 0)
+		{
+			return false;
+		}
+		return true;
+	}
+
+		
+	
+
+	
+	
 }
 
 
