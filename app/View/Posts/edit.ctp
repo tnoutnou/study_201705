@@ -1,7 +1,7 @@
-<?php echo $this->Html->script( 'jquery-git.js'); ?>
-<?php $filemaxcnt = 3 ?>
-<div id="global-cont" data-filemax=<?php echo $filemaxcnt ?> >
-<?php echo $this->Html->script( 'post_edit.js'); ?>
+<?php echo $this->Html->script('jquery-git.js'); ?>
+<?php $filemaxcnt = 3; ?>
+<div id="global-cont" data-filemax=<?php echo $filemaxcnt - count($post['Image']);	?>	></div>
+<?php echo $this->Html->script('post_edit.js'); ?>
 
 <?php $actionLists = array(
 		array(
@@ -135,7 +135,7 @@
 	&nbsp;
 </ul>
 
-		
+<?php /*	まとめてコメントアウト	
 <!--	<?php foreach ($data['Tag'] as $taglist) {?>	-->
 <!--	<?php echo h($taglist['tagname']); ?>	-->
 <!--	<?php } ?>	-->
@@ -145,7 +145,6 @@
 <!--			<?php echo h($taglist['tagname']); ?>	-->
 <!--			<td class="actions">	-->
 <!--				<?php echo $this->Html->link(__('TagEdit'), array('controller' => 'PostsTags', 'action' => 'edit', $taglist['PostsTag']['id'])); ?>	-->
-<!--	/**		<?php echo $this->Form->postLink(__('TagDelete'), array('controller' => 'PostsTags', 'action' => 'delete', $taglist['PostsTag']['id']), array('confirm' => __('本当に削除してもよろしいでしょうか　?'))); ?>	*/ -->
 <!--			</td>			-->
 <!--		</li>	-->
 <!--		<?php } ?>	-->
@@ -153,7 +152,8 @@
 <!--		-->
 <!--		&nbsp;	--> 
 <!--	</ul>	-->
-
+*/
+?>
 
 
 </div>

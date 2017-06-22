@@ -99449,3 +99449,2250 @@ Stack Trace:
 #3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2017-06-22 10:15:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 10:18:29 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 139]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 139
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-22 10:18:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 10:27:52 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 139]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 139
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-22 10:28:37 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 139]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 139
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-22 10:28:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 139]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 139
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-22 10:28:57 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 112]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 112
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-22 10:28:57 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 139]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 139
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-22 10:28:57 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/html/vagrant/cakephpc/app/View/Posts/edit.ctp, line 143]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Posts/edit.ctp, line 143
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 111
+
+2017-06-22 10:42:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'dirname' doesn't have a default value
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1090): DboSource->execute('INSERT INTO `ac...')
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Image), Array, Array)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(1752): Model->_doSave(Array, Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2350): Model->save(Array, Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2570): Model->saveMany(Array, Array)
+#7 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2285): Model->saveAssociated(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(244): Model->saveAll(Array)
+#9 [internal function]: PostsController->add()
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-06-22 11:01:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts?category_id=&category_str=&title=&tag_id=14&tag_str=&created_ym=
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Model/Post.php(152): Model->find('list', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Plugin/Search/Model/Behavior/SearchableBehavior.php(456): Post->findByTags(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Plugin/Search/Model/Behavior/SearchableBehavior.php(108): SearchableBehavior->_addCondQuery(Object(Post), Array, Array, Array)
+#9 [internal function]: SearchableBehavior->parseCriteria(Object(Post), Array)
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Model/BehaviorCollection.php(239): call_user_func_array(Array, Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(829): BehaviorCollection->dispatchMethod(Object(Post), 'parseCriteria', Array)
+#12 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(40): Model->__call('parseCriteria', Array)
+#13 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(40): Post->parseCriteria(Array)
+#14 [internal function]: PostsController->index()
+#15 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#16 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#17 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#18 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2017-06-22 11:07:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /posts?category_id=&category_str=&title=&tag_id=14&tag_str=&created_ym=
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(43): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-22 11:09:03 Error: Array
+(
+    [0] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 3
+                )
+
+        )
+
+    [1] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 4
+                )
+
+        )
+
+    [2] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 5
+                )
+
+        )
+
+    [3] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 10
+                )
+
+        )
+
+    [4] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 11
+                )
+
+        )
+
+    [5] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 91
+                )
+
+        )
+
+    [6] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 106
+                )
+
+        )
+
+    [7] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 110
+                )
+
+        )
+
+    [8] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 112
+                )
+
+        )
+
+    [9] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 114
+                )
+
+        )
+
+    [10] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 115
+                )
+
+        )
+
+    [11] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 128
+                )
+
+        )
+
+    [12] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 139
+                )
+
+        )
+
+    [13] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 140
+                )
+
+        )
+
+    [14] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 145
+                )
+
+        )
+
+    [15] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 147
+                )
+
+        )
+
+    [16] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 151
+                )
+
+        )
+
+    [17] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 153
+                )
+
+        )
+
+    [18] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 155
+                )
+
+        )
+
+)
+
+2017-06-22 11:09:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /posts?category_id=&category_str=&title=&tag_id=2&tag_str=&created_ym=
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(43): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-22 11:10:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /posts?category_id=&category_str=&title=&tag_id=3&tag_str=&created_ym=
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(43): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-22 11:11:40 Error: Array
+(
+    [0] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 3
+                )
+
+        )
+
+    [1] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 5
+                )
+
+        )
+
+    [2] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 17
+                )
+
+        )
+
+    [3] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 104
+                )
+
+        )
+
+    [4] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 108
+                )
+
+        )
+
+    [5] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 111
+                )
+
+        )
+
+    [6] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 112
+                )
+
+        )
+
+    [7] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 116
+                )
+
+        )
+
+    [8] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 118
+                )
+
+        )
+
+    [9] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 119
+                )
+
+        )
+
+    [10] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 121
+                )
+
+        )
+
+    [11] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 122
+                )
+
+        )
+
+    [12] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 136
+                )
+
+        )
+
+    [13] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 139
+                )
+
+        )
+
+    [14] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 140
+                )
+
+        )
+
+    [15] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 141
+                )
+
+        )
+
+    [16] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 143
+                )
+
+        )
+
+    [17] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 153
+                )
+
+        )
+
+    [18] => Array
+        (
+            [PostsTag] => Array
+                (
+                    [post_id] => 155
+                )
+
+        )
+
+)
+
+2017-06-22 11:11:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /posts?category_id=&category_str=&title=&tag_id=14&tag_str=&created_ym=
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Post), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(43): Model->find('all', Array)
+#7 [internal function]: PostsController->index()
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-06-22 11:13:24 Error: Array
+(
+    [0] => 3
+    [1] => 5
+    [2] => 17
+    [3] => 104
+    [4] => 108
+    [5] => 111
+    [6] => 112
+    [7] => 116
+    [8] => 118
+    [9] => 119
+    [10] => 121
+    [11] => 122
+    [12] => 136
+    [13] => 139
+    [14] => 140
+    [15] => 141
+    [16] => 143
+    [17] => 153
+    [18] => 155
+)
+
+2017-06-22 11:13:24 Error: Array
+(
+    [0] => 3
+    [1] => 5
+    [2] => 17
+    [3] => 104
+    [4] => 108
+    [5] => 111
+    [6] => 112
+    [7] => 116
+    [8] => 118
+    [9] => 119
+    [10] => 121
+    [11] => 122
+    [12] => 136
+    [13] => 139
+    [14] => 140
+    [15] => 141
+    [16] => 143
+    [17] => 153
+    [18] => 155
+)
+
+2017-06-22 11:33:38 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 145
+            [user_id] => 1
+            [title] => 投稿6/16
+            [body] => いつから
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+
+            [category_id] => 5
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-16 14:40:08
+            [modified] => 2017-06-16 14:40:08
+            [old_modified] => 2017-06-16 14:40:08
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 5
+            [name] => めも
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:41:18
+            [modified] => 2017-06-02 16:41:18
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 292
+                    [post_id] => 145
+                    [filename] => africa-2026052_640.png
+                    [dirname] => 292
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-16 14:40:08
+                    [modified] => 2017-06-16 14:40:08
+                )
+
+            [1] => Array
+                (
+                    [id] => 293
+                    [post_id] => 145
+                    [filename] => fruit-2287298_640.png
+                    [dirname] => 293
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-16 14:40:08
+                    [modified] => 2017-06-16 14:40:08
+                )
+
+            [2] => Array
+                (
+                    [id] => 294
+                    [post_id] => 145
+                    [filename] => pathway-2289978_640.jpg
+                    [dirname] => 294
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-16 14:40:08
+                    [modified] => 2017-06-16 14:40:08
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => タグ２
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-08 16:34:45
+                    [modified] => 2017-05-08 16:34:45
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 145
+                            [tag_id] => 2
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 13
+                    [name] => 朝食
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:44:57
+                    [modified] => 2017-06-02 16:44:57
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 145
+                            [tag_id] => 13
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 11:33:38 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [name] => タグ２
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 16:34:45
+            [modified] => 2017-05-08 16:34:45
+            [PostsTag] => Array
+                (
+                    [post_id] => 145
+                    [tag_id] => 2
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 
+                    [modified] => 
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 13
+            [name] => 朝食
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:44:57
+            [modified] => 2017-06-02 16:44:57
+            [PostsTag] => Array
+                (
+                    [post_id] => 145
+                    [tag_id] => 13
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 
+                    [modified] => 
+                )
+
+        )
+
+)
+
+2017-06-22 11:36:30 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 146
+            [user_id] => 1
+            [title] => 投稿6/16BBBBB
+            [body] => ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+ああああああああああああああああああああああああああああああああ、
+
+            [category_id] => 5
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-16 16:51:45
+            [modified] => 2017-06-16 16:51:45
+            [old_modified] => 2017-06-16 16:51:45
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 5
+            [name] => めも
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:41:18
+            [modified] => 2017-06-02 16:41:18
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 295
+                    [post_id] => 146
+                    [filename] => fruit-2287298_640.png
+                    [dirname] => 295
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-16 16:51:45
+                    [modified] => 2017-06-16 16:51:45
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [name] => 朝食
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:44:57
+                    [modified] => 2017-06-02 16:44:57
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 146
+                            [tag_id] => 13
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 11:36:30 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [name] => 朝食
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:44:57
+            [modified] => 2017-06-02 16:44:57
+            [PostsTag] => Array
+                (
+                    [post_id] => 146
+                    [tag_id] => 13
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 
+                    [modified] => 
+                )
+
+        )
+
+)
+
+2017-06-22 11:36:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'where clause'
+Request URL: /posts/delete/146
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('count', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2920): Model->find('count', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Model/AppModel.php(39): Model->exists(NULL)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2697): AppModel->exists()
+#9 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(559): Model->delete('146', '13')
+#10 [internal function]: PostsController->delete('146')
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-06-22 11:46:05 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 143
+            [user_id] => 1
+            [title] => 投稿6/14BBBBBBBBBB
+            [body] => ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+
+            [category_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-14 10:06:45
+            [modified] => 2017-06-14 10:06:45
+            [old_modified] => 2017-06-14 10:06:45
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 1
+            [name] => カテゴリ１
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 14:43:31
+            [modified] => 2017-05-08 14:43:31
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 289
+                    [post_id] => 143
+                    [filename] => daisies-2271473_640.jpg
+                    [dirname] => 289
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-14 10:06:45
+                    [modified] => 2017-06-14 10:06:45
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => タグ１
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-08 14:47:34
+                    [modified] => 2017-05-08 14:47:34
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 143
+                            [tag_id] => 1
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 14
+                    [name] => 朝会
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:45:04
+                    [modified] => 2017-06-02 16:45:04
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 143
+                            [tag_id] => 14
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 11:46:05 Error: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => タグ１
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 14:47:34
+            [modified] => 2017-05-08 14:47:34
+            [PostsTag] => Array
+                (
+                    [post_id] => 143
+                    [tag_id] => 1
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 
+                    [modified] => 
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 14
+            [name] => 朝会
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:45:04
+            [modified] => 2017-06-02 16:45:04
+            [PostsTag] => Array
+                (
+                    [post_id] => 143
+                    [tag_id] => 14
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 
+                    [modified] => 
+                )
+
+        )
+
+)
+
+2017-06-22 11:46:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'where clause'
+Request URL: /posts/delete/143
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('count', Array)
+#6 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2920): Model->find('count', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Model/AppModel.php(39): Model->exists(NULL)
+#8 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(2697): AppModel->exists()
+#9 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(559): Model->delete('143', '1')
+#10 [internal function]: PostsController->delete('143')
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-06-22 11:46:41 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/vagrant/cakephpc/app/Controller/PostsController.php, line 565]
+2017-06-22 11:46:41 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /posts/index
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/v...', 565)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/v...', 565, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/v...', 565, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-22 11:47:31 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 142
+            [user_id] => 1
+            [title] => 投稿6/14引き分け
+            [body] => サッカーは引き分け…
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+ああああああああああああああああああああああああああああああああああああああああ
+
+            [category_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-14 10:03:02
+            [modified] => 2017-06-14 10:06:12
+            [old_modified] => 2017-06-14 10:06:12
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 1
+            [name] => カテゴリ１
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 14:43:31
+            [modified] => 2017-05-08 14:43:31
+        )
+
+    [Image] => Array
+        (
+        )
+
+    [Tag] => Array
+        (
+        )
+
+)
+
+2017-06-22 11:47:31 Error: Array
+(
+)
+
+2017-06-22 12:07:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PostsTag.id' in 'field list'
+Request URL: /posts?category_id=&category_str=&title=&tag_id=&tag_str=%E6%9C%9D&created_ym=
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('SELECT `PostsTa...', Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('SELECT `PostsTa...', Array, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Datasource/DboSource.php(1184): DboSource->fetchAll('SELECT `PostsTa...', false)
+#4 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3038): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(3010): Model->_readDataSource('list', Array)
+#6 /var/www/html/vagrant/cakephpc/app/Model/Post.php(235): Model->find('list', Array)
+#7 /var/www/html/vagrant/cakephpc/app/Plugin/Search/Model/Behavior/SearchableBehavior.php(456): Post->findByTagstr(Array, Array)
+#8 /var/www/html/vagrant/cakephpc/app/Plugin/Search/Model/Behavior/SearchableBehavior.php(108): SearchableBehavior->_addCondQuery(Object(Post), Array, Array, Array)
+#9 [internal function]: SearchableBehavior->parseCriteria(Object(Post), Array)
+#10 /var/www/html/vagrant/cakephpc/lib/Cake/Model/BehaviorCollection.php(239): call_user_func_array(Array, Array)
+#11 /var/www/html/vagrant/cakephpc/lib/Cake/Model/Model.php(829): BehaviorCollection->dispatchMethod(Object(Post), 'parseCriteria', Array)
+#12 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(40): Model->__call('parseCriteria', Array)
+#13 /var/www/html/vagrant/cakephpc/app/Controller/PostsController.php(40): Post->parseCriteria(Array)
+#14 [internal function]: PostsController->index()
+#15 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#16 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#17 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#18 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2017-06-22 13:33:40 Error: [MissingControllerException] Controller class CakephpcController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpcController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpc/posts/delTmpFile
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 13:51:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:13:33 Error: [NotFoundException] 無効なイメージです
+Request URL: /images/edit/192
+Stack Trace:
+#0 [internal function]: ImagesController->edit('192')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-22 14:23:25 Error: http://www.noublogcakephp.com/posts/edit/5
+2017-06-22 14:36:47 Error: [NotFoundException] 無効な投稿です。
+Request URL: /posts/edit/10
+Stack Trace:
+#0 [internal function]: PostsController->edit('10')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-22 14:36:52 Error: [NotFoundException] 無効な投稿です。
+Request URL: /posts/edit/9
+Stack Trace:
+#0 [internal function]: PostsController->edit('9')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-22 14:36:57 Error: [NotFoundException] 無効な投稿です。
+Request URL: /posts/edit/12
+Stack Trace:
+#0 [internal function]: PostsController->edit('12')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-22 14:37:08 Error: [NotFoundException] 無効な投稿です。
+Request URL: /posts/edit/12
+Stack Trace:
+#0 [internal function]: PostsController->edit('12')
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-06-22 14:39:14 Error: 1
+2017-06-22 14:39:14 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 5
+            [user_id] => 1
+            [title] => title4
+            [body] => body 4
+１
+２
+３３３３
+ああああああああああああああああああああああああああああああああ
+
+            [category_id] => 4
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-09 10:15:07
+            [modified] => 2017-06-22 14:23:18
+            [old_modified] => 2017-06-22 14:23:18
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 4
+            [name] => 日記
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:41:11
+            [modified] => 2017-06-02 16:41:11
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 229
+                    [post_id] => 5
+                    [filename] => feet-44810_640.png
+                    [dirname] => 229
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-07 16:06:49
+                    [modified] => 2017-06-07 16:06:49
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => タグ２
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-08 16:34:45
+                    [modified] => 2017-05-08 16:34:45
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 2
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [name] => タグ４
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-09 14:42:59
+                    [modified] => 2017-05-09 14:42:59
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 4
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 14
+                    [name] => 朝会
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:45:04
+                    [modified] => 2017-06-02 16:45:04
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 14
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 14:40:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:40:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:40:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:40:33 Error: 1
+2017-06-22 14:40:33 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 5
+            [user_id] => 1
+            [title] => title4
+            [body] => body 4
+１
+２
+３３３３
+ああああああああああああああああああああああああああああああああ
+
+            [category_id] => 4
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-09 10:15:07
+            [modified] => 2017-06-22 14:23:18
+            [old_modified] => 2017-06-22 14:23:18
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 4
+            [name] => 日記
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:41:11
+            [modified] => 2017-06-02 16:41:11
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 229
+                    [post_id] => 5
+                    [filename] => feet-44810_640.png
+                    [dirname] => 229
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-07 16:06:49
+                    [modified] => 2017-06-07 16:06:49
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => タグ２
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-08 16:34:45
+                    [modified] => 2017-05-08 16:34:45
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 2
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [name] => タグ４
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-09 14:42:59
+                    [modified] => 2017-05-09 14:42:59
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 4
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 14
+                    [name] => 朝会
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:45:04
+                    [modified] => 2017-06-02 16:45:04
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 14
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 14:40:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:40:41 Error: 1
+2017-06-22 14:40:41 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 5
+            [user_id] => 1
+            [title] => title4
+            [body] => body 4
+１
+２
+３３３３
+ああああああああああああああああああああああああああああああああ
+
+            [category_id] => 4
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-09 10:15:07
+            [modified] => 2017-06-22 14:23:18
+            [old_modified] => 2017-06-22 14:23:18
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 4
+            [name] => 日記
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:41:11
+            [modified] => 2017-06-02 16:41:11
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 229
+                    [post_id] => 5
+                    [filename] => feet-44810_640.png
+                    [dirname] => 229
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-07 16:06:49
+                    [modified] => 2017-06-07 16:06:49
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => タグ２
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-08 16:34:45
+                    [modified] => 2017-05-08 16:34:45
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 2
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [name] => タグ４
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-09 14:42:59
+                    [modified] => 2017-05-09 14:42:59
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 4
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 14
+                    [name] => 朝会
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:45:04
+                    [modified] => 2017-06-02 16:45:04
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 14
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 14:40:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:43:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:43:55 Error: 1
+2017-06-22 14:43:55 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 5
+            [user_id] => 1
+            [title] => title4
+            [body] => body 4
+１
+２
+３３３３
+ああああああああああああああああああああああああああああああああ
+
+            [category_id] => 4
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-09 10:15:07
+            [modified] => 2017-06-22 14:23:18
+            [old_modified] => 2017-06-22 14:23:18
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 4
+            [name] => 日記
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:41:11
+            [modified] => 2017-06-02 16:41:11
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 229
+                    [post_id] => 5
+                    [filename] => feet-44810_640.png
+                    [dirname] => 229
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-07 16:06:49
+                    [modified] => 2017-06-07 16:06:49
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => タグ２
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-08 16:34:45
+                    [modified] => 2017-05-08 16:34:45
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 2
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [name] => タグ４
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-09 14:42:59
+                    [modified] => 2017-05-09 14:42:59
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 4
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 14
+                    [name] => 朝会
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:45:04
+                    [modified] => 2017-06-02 16:45:04
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 14
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 14:43:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap-select.css.map
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 14:46:49 Error: 1
+2017-06-22 14:46:49 Error: Array
+(
+    [Post] => Array
+        (
+            [id] => 5
+            [user_id] => 1
+            [title] => title4
+            [body] => body 4
+１
+２
+３３３３
+ああああああああああああああああああああああああああああああああ
+
+            [category_id] => 4
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-09 10:15:07
+            [modified] => 2017-06-22 14:23:18
+            [old_modified] => 2017-06-22 14:23:18
+        )
+
+    [User] => Array
+        (
+            [id] => 1
+            [username] => admin1
+            [zip_id] => 
+            [zip_code] => 
+            [town_name] => 
+            [detail_name] => 
+            [password] => 4a383c2ab67d5e26159265cd88ba4e360427a25c
+            [group_id] => 1
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-05-08 10:09:55
+            [modified] => 2017-06-02 14:25:00
+        )
+
+    [Category] => Array
+        (
+            [id] => 4
+            [name] => 日記
+            [delete_flg] => 
+            [deleted] => 
+            [created] => 2017-06-02 16:41:11
+            [modified] => 2017-06-02 16:41:11
+        )
+
+    [Image] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 229
+                    [post_id] => 5
+                    [filename] => feet-44810_640.png
+                    [dirname] => 229
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-07 16:06:49
+                    [modified] => 2017-06-07 16:06:49
+                )
+
+        )
+
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => タグ２
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-08 16:34:45
+                    [modified] => 2017-05-08 16:34:45
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 2
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [name] => タグ４
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-05-09 14:42:59
+                    [modified] => 2017-05-09 14:42:59
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 4
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 14
+                    [name] => 朝会
+                    [delete_flg] => 
+                    [deleted] => 
+                    [created] => 2017-06-02 16:45:04
+                    [modified] => 2017-06-02 16:45:04
+                    [PostsTag] => Array
+                        (
+                            [post_id] => 5
+                            [tag_id] => 14
+                            [delete_flg] => 
+                            [deleted] => 
+                            [created] => 
+                            [modified] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2017-06-22 15:18:34 Error: [MissingControllerException] Controller class PoController could not be found.
+Exception Attributes: array (
+  'class' => 'PoController',
+  'plugin' => NULL,
+)
+Request URL: /po
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 15:22:45 Error: [MissingActionException] Action PostsController::vie() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'vie',
+)
+Request URL: /posts/vie/1
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 15:35:29 Error: [MissingActionException] Action PostsController::vie() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'vie',
+)
+Request URL: /posts/vie/5
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 15:35:29 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/html/vagrant/cakephpc/app/View/Errors/missing_action.ctp, line 5]
+2017-06-22 15:35:29 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /posts/vie/5
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/v...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/v...', 5, Array)
+#2 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/v...', 5, Array)
+#3 /var/www/html/vagrant/cakephpc/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-06-22 15:37:07 Error: [MissingActionException] Action PostsController::vie() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'vie',
+)
+Request URL: /posts/vie/4
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 15:38:02 Error: [MissingActionException] Action PostsController::vie() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'vie',
+)
+Request URL: /posts/vie/4
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 15:38:54 Error: [MissingActionException] Action PostsController::vie() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'vie',
+)
+Request URL: /posts/vie/4
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 15:39:00 Error: [MissingControllerException] Controller class PosController could not be found.
+Exception Attributes: array (
+  'class' => 'PosController',
+  'plugin' => NULL,
+)
+Request URL: /pos/view/5
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-06-22 16:18:05 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/files/image/filename/313/jellyfish-154799_64.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 16:18:06 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/files/image/filename/313/jellyfish-154799_64.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 16:18:09 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/files/image/filename/313/jellyfish-154799_64.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 16:18:10 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/files/image/filename/313/jellyfish-154799_64.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 16:18:12 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/files/image/filename/313/jellyfish-154799_64.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-22 16:18:13 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/files/image/filename/313/jellyfish-154799_64.png
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -149,20 +149,20 @@ class Post extends AppModel {
 			'conditions' => array('tag_id' => $data['tag_id'])
 		);
 		
-		$tmps = $this->PostsTag->find('list', $options);
+//		$tmps = $this->PostsTag->find('list', $options);
+		$tmps = $this->PostsTag->find('all', $options);
+//		$this->log($tmps);
 		
 //		debug($tmps);
 
-		/*
 		$tmp_arr = [];
 		foreach ($tmps as $tmp) {
-			debug($tmp);
-			array_push($tmp_arr, $tmp);			
+			array_push($tmp_arr, $tmp['PostsTag']['post_id']);			
 		};
-*/
-		
-//		$condition = array('Post.id' => $tmp_arr);
-		$condition = array('Post.id' => $tmps);
+
+
+		$condition = array('Post.id' => $tmp_arr);
+//		$condition = array('Post.id' => $tmps);
 		return $condition;
 		
 	}
@@ -203,8 +203,8 @@ class Post extends AppModel {
 
 //		debug($data['created_ym']);
 //		$condition = array('tag_id' => $data['category_id_str']);
-		$this->log('!!!!!!');
-		$this->log($data['created_ym']);
+//		$this->log('!!!!!!');
+//		$this->log($data['created_ym']);
 				
 //		$condition = array('Post.id' => $tmp_arr);
 		$condition = array("DATE_FORMAT(Post.created,'%Y年%m月')"  => $data['created_ym']);
@@ -232,20 +232,18 @@ class Post extends AppModel {
 //		debug($tmps);
 
 		$options2 = array('fields'=>array('post_id') , 'conditions' => array('tag_id' => $tmps));		
-		$tmps2 = $this->PostsTag->find('list', $options2);
+//		$tmps2 = $this->PostsTag->find('list', $options2);
+		$tmps2 = $this->PostsTag->find('all', $options2);
 
 //		debug($tmps2);
 
-		/*
 		$tmp_arr = [];
-		foreach ($tmps as $tmp) {
-			debug($tmp);
-			array_push($tmp_arr, $tmp);			
+		foreach ($tmps2 as $tmp) {
+			array_push($tmp_arr, $tmp['PostsTag']['post_id']);			
 		};
-*/
 		
-//		$condition = array('Post.id' => $tmp_arr);
-		$condition = array('Post.id' => $tmps2);
+		$condition = array('Post.id' => $tmp_arr);
+//		$condition = array('Post.id' => $tmps2);
 		return $condition;
 		
 	}

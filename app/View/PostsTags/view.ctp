@@ -25,11 +25,14 @@
 <div class="postsTags view">
 <h2><?php echo __('投稿タグ'); ?></h2>
 	<dl>
+<?php /*	
 		<dt><?php echo __('投稿タグID'); ?></dt>
 		<dd>
 			<?php echo h($postsTag['PostsTag']['id']); ?>
 			&nbsp;
 		</dd>
+*/ ?>
+		
 		<dt><?php echo __('投稿'); ?></dt>
 		<dd>
 			<?php

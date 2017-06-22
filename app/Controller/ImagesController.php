@@ -113,8 +113,16 @@ class ImagesController extends AppController {
 //			$this->Flash->error(__('The image could not be deleted. Please, try again.'));
 			$this->Flash->error(__('イメージの削除に失敗しました。再度、削除して下さい。'));
 		}
-		return $this->redirect(array('action' => 'index'));
-//		return $this->redirect(array('controller' => 'posts', 'action' => 'index'));
-//		return $this->redirect($this->request->referer());
+
+	//		return $this->redirect(array('controller' => 'posts', 'action' => 'index'));
+
+//		$this->log($this->request->referer());
+		if (strpos($this->request->referer(), '/images/') == false) {
+			return $this->redirect($this->request->referer());
+		} else {
+			return $this->redirect(array('action' => 'index'));
+		}
+
+		
 	}
 }

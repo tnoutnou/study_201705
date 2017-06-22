@@ -17,7 +17,9 @@
 	<table cellpadding="0" cellspacing="0" class="table table-bordered table-condensed">
 	<thead>
 	<tr>
+<?php /* 
 			<th><?php echo $this->Paginator->sort('投稿タグID'); ?></th>
+*/ ?>
 			<th><?php echo $this->Paginator->sort('投稿ID'); ?></th>
 			<th><?php echo $this->Paginator->sort('タグID'); ?></th>
 			<th><?php echo $this->Paginator->sort('作成日時'); ?></th>
@@ -28,7 +30,11 @@
 	<tbody>
 	<?php foreach ($postsTags as $postsTag): ?>
 	<tr>
-		<td><?php echo h($postsTag['PostsTag']['id']); ?>&nbsp;</td>
+
+<?php /* 
+	<td><?php echo h($postsTag['PostsTag']['id']); ?>&nbsp;</td>
+*/ ?>
+	
 		<td>
 			<?php
 				echo $this->Html->link(
@@ -40,6 +46,7 @@
 				);
 			?>
 		</td>
+
 		<td>
 			<?php
 				echo $this->Html->link(
@@ -81,7 +88,10 @@
 						'action' => 'delete',
 						$postsTag['PostsTag']['post_id'],
 						$postsTag['PostsTag']['tag_id']),
-					array('confirm' => __('本当に削除してもよろしいでしょう # %s?', $postsTag['PostsTag']['id']),
+					array(
+						'confirm' => __('本当に削除してもよろしいでしょう # %s?',
+						$postsTag['PostsTag']['post_id'] ,
+						$postsTag['PostsTag']['tag_id']),
 					'class'=>'btn btn-default btn-sm')
 				);
 			?>

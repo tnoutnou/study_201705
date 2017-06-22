@@ -329,6 +329,10 @@
 <!--				<div class="col-sm-12" style="margin-left:auto;margin-right:10px;">	-->
 <!--					<?php /*echo $this->Form->end(array('label'=> '検索', 'div' => false, 'id' => 'src_btn', 'class'=>'btn btn-primary pull-right', 'style'=>'margin-left:auto;margin-right:10px;')); */ ?>	-->
 					<?php
+						echo $this->Form->button(
+							'条件ｸﾘｱ',
+							array('type'=>'reset','class'=>'btn btn-info pull-left')
+						);
 						echo $this->Form->end(
 								array(
 									'label'=> '検索',

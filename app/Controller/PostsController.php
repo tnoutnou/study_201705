@@ -125,13 +125,35 @@ class PostsController extends AppController {
 
 		
 		//　該当POSTの配列の位置を特定
+		$post_key = NULL;
 		$all_posts = $this->Session->read('all_posts');		// POSTSのIDとTITLEを格納した配列
 		if ($opt == null) {			
 			foreach ($all_posts as $key => $one_post) {
 				if ($one_post['Post']['id'] == $id) {
 					$post_key = $key;
+					break;
 				}
 			}
+			// 検索にヒットした投稿以外の投稿を表示している場合、検索条件を除き全件で位置を特定
+			if ($post_key == NULL ) {
+				
+				$all_posts = $this->Post->find(
+					'all',
+					array(
+						'fields'	=>	array('Post.id','Post.title'),
+						'recursive' => 0,
+						)
+				);
+				$this->Session->write('all_posts', $all_posts);
+				
+				foreach ($all_posts as $key => $one_post) {
+					if ($one_post['Post']['id'] == $id) {
+						$post_key = $key;
+						break;
+					}
+				}								
+			}
+			
 		} else {
 			$post_key = $opt;
 		}
@@ -538,22 +560,32 @@ class PostsController extends AppController {
 		$images = $posts['Image'];
 		$tags = $posts['Tag'];
 
+//		$this->log($posts);
+//		$this->log($tags);
+		
 
 		$this->Post->delete();
 		
 		if (!$this->Post->exists()) {
 			// 子データの削除処理（論理削除対応）
 			
-		foreach ($images as $image) {
-//			$this->log($image['id']);
-			$this->Image->delete($image['id']);
-		}		
+			foreach ($images as $image) {
+	//			$this->log($image['id']);
+				$this->Image->delete($image['id']);
+			}		
 
 
-		foreach ($tags as $tag) {
-//			$this->log($tag['PostsTag']['id']);
-			$this->PostsTag->delete($tag['PostsTag']['id']);
-		}
+			foreach ($tags as $tag) {
+	//			$this->log($tag['PostsTag']['id']);
+	//			$this->PostsTag->delete($tag['PostsTag']['id']);
+	//			$this->PostsTag->delete($tag['PostsTag']['post_id'], $tag['PostsTag']['tag_id']);
+				$this->PostsTag->deleteAll(
+					array(
+						'PostsTag.post_id' => $tag['PostsTag']['post_id'],
+						'PostsTag.tag_id' => $tag['PostsTag']['tag_id']),
+					false
+				);
+			}
 
 //			$this->Flash->success(__('The post has been deleted.'));
 			$this->Flash->success(__('投稿を削除しました。'));
