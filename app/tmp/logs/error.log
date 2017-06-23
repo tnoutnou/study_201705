@@ -101696,3 +101696,23 @@ Stack Trace:
 #1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2017-06-23 10:26:13 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/cake.generic.css
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/vagrant/cakephpc/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-06-23 10:27:12 Error: [MissingControllerException] Controller class TestInd.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'TestInd.phpController',
+  'plugin' => NULL,
+)
+Request URL: /test_ind.php
+Stack Trace:
+#0 /var/www/html/vagrant/cakephpc/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
